@@ -3,6 +3,17 @@
 
 A project to revive the old 2015-2016 YouTubeTV HTML5 Web App.
 
+
+## Screenshots
+![Screenshot 1](screenshots/s1.png)
+![Screenshot 2](screenshots/s2.png)
+
+## Credits
+
+- YouTube/Google
+
+- Erie Valley Software/Erievs
+
 [When I say V, I mean the version of the YouTube App]
 
 Progress Report
