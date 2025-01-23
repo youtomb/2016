@@ -6,7 +6,7 @@ A project to revive the old 2015-2016 YouTubeTV HTML5 Web App.
 
 ## Screenshots
 
-[Note These Are As Of The 23rd Of January At 1:47am EST, Things Will Have Changed]
+**[Note These Are As Of The 23rd Of January At 1:47am EST, Things Will Have Changed]**
 
 ![Screenshot 1](screenshots/s1.png)
 ![Screenshot 2](screenshots/s2.png)
