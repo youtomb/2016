@@ -1,34 +1,34 @@
-const axios = require('axios');
-
+const fs = require('fs');
+const path = require('path');
 
 async function fetchGuideData() {
-    const apiKey = 'AIzaSyDCU8hByM-4DrUqRUYnGn-3llEO78bcxq8';
-    const apiUrl = 'https://www.googleapis.com/youtubei/v1/guide';
-
-    const postData = {
-        context: {
-            client: {
-                clientName: 'TVHTML5',
-                clientVersion: '6.90240701.16.00',
-                hl: 'en',
-                gl: 'US',
-            }
-        }
-    };
+    const filePath = path.join(__dirname, '..', 'assets', 'guide_json.json');
 
     try {
-        console.log('Sending request to YouTube Guide API with payload:', postData);
+        // Read the guide JSON file
+        const rawData = fs.readFileSync(filePath, 'utf-8');
+        const guideData = JSON.parse(rawData);
 
-        const response = await axios.post(apiUrl, postData, {
-            headers: { 'Content-Type': 'application/json' },
-            params: { key: apiKey }
-        });
+        // Log the raw response data to the console
+        console.log('Raw response data:', JSON.stringify(guideData, null, 2));
 
-        console.log('Received response from YouTube Guide API:', response.data);
-        return response.data;
+
+        // Save the modified response data to a log file
+        const logsDir = path.join(__dirname, 'logs');
+        if (!fs.existsSync(logsDir)) {
+            fs.mkdirSync(logsDir); // Create the logs directory if it doesn't exist
+        }
+
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-'); // Replace invalid filename characters
+        const logFilePath = path.join(logsDir, `response-${timestamp}.json`); // Add .json extension
+        fs.writeFileSync(logFilePath, JSON.stringify(guideData, null, 2)); // Write the modified response to the file
+
+        console.log('Response saved to log file:', logFilePath);
+
+        return guideData;
     } catch (error) {
-        console.error('Error fetching guide data:', error.message);
-        throw new Error('Failed to fetch data from YouTube Guide API.');
+        console.error('Error reading or processing guide data:', error.message);
+        throw new Error('Failed to read or process the guide data.');
     }
 }
 

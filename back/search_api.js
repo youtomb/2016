@@ -1,4 +1,5 @@
 const axios = require('axios');
+const { channel } = require('diagnostics_channel');
 const fs = require('fs');
 const path = require('path');
 
@@ -10,7 +11,7 @@ function addVideoRendererToEachItem(data) {
             if (section.shelfRenderer && section.shelfRenderer.content && section.shelfRenderer.content.horizontalListRenderer) {
                 section.shelfRenderer.content.horizontalListRenderer.items.forEach(item => {
                     if (item.tileRenderer) {
-                        item.videoRenderer = generateVideoRenderer(item.tileRenderer);
+                        item.videoRenderer = generateVideoRenderer(item.tileRenderer);  // Adding full video renderer for further details
                         delete item.tileRenderer;
                     }
                 });
@@ -20,15 +21,70 @@ function addVideoRendererToEachItem(data) {
     return data;
 }
 
+function generateVideoMetadataRenderer(tileRenderer) {
+    return {
+        videoId: extractVideoId(tileRenderer),
+        title: extractTitle(tileRenderer),
+        description: "placeholder",
+        channelName: "yap"
+    };
+}
+
+function generatePivotVideoRenderer(tileRenderer) {
+    return {
+        videoId: extractVideoId(tileRenderer), // Extracting video ID
+        title: extractTitle(tileRenderer), // Extracting title
+        viewCountText: extractViewCountText(tileRenderer), // Extracting view count text
+        shortBylineText: extractShortBylineText(tileRenderer) // Extracting channel name
+    };
+}
+
+
 function generateVideoRenderer(tileRenderer) {
     return {
         title: extractTitle(tileRenderer),
         description: extractDescription(tileRenderer),
-        channel: extractChannel(tileRenderer),
+        shortBylineText: extractChannel(tileRenderer),
         views: extractViews(tileRenderer),
         publishedTime: extractPublishedTime(tileRenderer),
-        videoId: extractVideoId(tileRenderer)
+        videoId: extractVideoId(tileRenderer),
+        onSelectCommand: extractOnSelectCommand(tileRenderer),
+        pivotVideoRenderer: generatePivotVideoRenderer(tileRenderer),
     };
+}
+
+function extractOnSelectCommand(tileRenderer) {
+    return tileRenderer.onSelectCommand || null;
+}
+
+
+function extractViewCountText(tileRenderer) {
+    const metadata = tileRenderer.metadata || {};
+    const lines = metadata.tileMetadataRenderer && metadata.tileMetadataRenderer.lines || [];
+
+    const viewCountLine = lines.find(line =>
+        line.lineRenderer && line.lineRenderer.items.some(item =>
+            item.lineItemRenderer && item.lineItemRenderer.text && item.lineItemRenderer.text.simpleText && item.lineItemRenderer.text.simpleText.includes('views')
+        )
+    );
+
+    if (viewCountLine) {
+        const viewCountText = viewCountLine.lineRenderer.items.find(item =>
+            item.lineItemRenderer && item.lineItemRenderer.text && item.lineItemRenderer.text.simpleText
+        );
+        return viewCountText ? viewCountText.lineItemRenderer.text.simpleText : '0 views';
+    }
+
+    return '0 views'; // Default if no view count is found
+}
+
+function extractShortBylineText(tileRenderer) {
+    const metadata = tileRenderer.metadata || {};
+    const channelMetadata = metadata.tileMetadataRenderer && metadata.tileMetadataRenderer.lines
+        ? metadata.tileMetadataRenderer.lines[1]?.lineRenderer?.items[0]?.lineItemRenderer?.text?.simpleText || 'Unknown Channel'
+        : 'Unknown Channel';
+
+    return channelMetadata;
 }
 
 function extractTitle(tileRenderer) {
@@ -52,10 +108,7 @@ function extractDescription(tileRenderer) {
 }
 
 function extractChannel(tileRenderer) {
-    const metadata = tileRenderer.metadata || {};
-    const channelMetadata = metadata.tileMetadataRenderer && metadata.tileMetadataRenderer.lines
-        ? metadata.tileMetadataRenderer.lines[1]?.lineRenderer?.items[0]?.lineItemRenderer?.text?.simpleText || 'Unknown Channel'
-        : 'Unknown Channel';
+    const channelMetadata = tileRenderer?.metadata?.tileMetadataRenderer?.lines?.[0]?.lineRenderer?.items?.[0]?.lineItemRenderer?.text?.runs?.[0]?.text || 'Unknown Channel';
     
     console.log("Channel:", channelMetadata); 
     return {
@@ -111,7 +164,10 @@ function extractPublishedTime(tileRenderer) {
 }
 
 function extractVideoId(tileRenderer) {
-    return tileRenderer.videoId || 'Unknown videoId';
+    if (tileRenderer.onSelectCommand && tileRenderer.onSelectCommand.watchEndpoint) {
+        return tileRenderer.onSelectCommand.watchEndpoint.videoId || 'Unknown videoId';
+    }
+    return 'Unknown videoId'; 
 }
 
 const logsDir = path.join(__dirname, 'logs');

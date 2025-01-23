@@ -17,7 +17,7 @@ if (!self.__WB_pmw) {
   let opener = _____WB$wombat$assign$function_____("opener");
 
   window.labels = {
-      'default': 'c96c1c11'
+      'default': ''
   };
   (function() {
       var b = window.labels;
@@ -33,7 +33,7 @@ if (!self.__WB_pmw) {
           n = "Cobalt" == window.environment.browser,
           p = ("Steel" == window.environment.browser || n) && !e && !c,
           q = window.csp_nonce;
-      window.label = h ? h : b && b["default"] ? b["default"] : "unknown";
+      window.label = h ? h : b && b["default"] ? b["default"] : "";
       var r = window.appRoot + window.label,
           t, u = !1,
           v = [];
@@ -88,12 +88,12 @@ if (!self.__WB_pmw) {
           }, w(r + "/lasagna-parse.js"), w(CLOSURE_BASE_PATH + "base.js"), w(r + "/deps.js"), w(r + "/js/base_initializer.js"), z ? w(r + "/js/chromecast_initializer.js") : w(r + "/js/initializer.js"), w(r + "/css-list.js"), x("loadStylesheets()");
           else if (e) {
               window.CLOSURE_NO_DEPS = !0;
-              var A = window.environment.tv_css || "/app-prod.css";
+              var A = "http://localhost:8090/assets/app-prod.css";
               y(r +
                   A);
               z ? w(r + "/chromecast-concat-bundle.js") : w(r + "/app-concat-bundle.js")
           }
-      } else A = window.environment.tv_css || "/app-prod.css", y(r + A), w(r + window.environment.tv_binary), (k || l || m) && w(window.environment.player_url);
+      } else A = "http://localhost:8090/assets/app-prod.css", y(A), w("http://localhost:8090/assets/app-prod.js"), (k || l || m) && w(window.environment.player_url);
       window.checkBrokenLabel = function() {
           "undefined" == typeof yt && h && (window.location.href = window.location.href.replace(/([?&])label=[^&]+&?/, "$1stick=0&"))
       };

@@ -978,6 +978,8 @@ if (!self.__WB_pmw) {
           dc = {
               GUIDE_CIRCULAR_MASK: "guide-circular-mask",
               HAPPY: "icon-hats-happy",
+              GAMING: "icon-gaming",
+              MOVIE: "icon-people",
               LIKES_PLAYLIST: "icon-like",
               MEH: "icon-hats-neutral",
               MUSIC: "icon-music",
@@ -5531,7 +5533,7 @@ if (!self.__WB_pmw) {
       cg.inject = ["method", "post", "opt_data"];
 
       function dg(a, b, c, e) {
-          a.Tu ? b.get() || dg.f(c, b, e, "https://web.archive.org/web/20160228021433/https://www.youtube.com/experiments?action_zero=Zero", !0) : a.kz && b.get() && dg.f(c, b, e, "https://web.archive.org/web/20160228021433/https://www.youtube.com/experiments?action_clear=Clear", !1)
+          a.Tu ? b.get() || dg.f(c, b, e, "https://www.youtube.com/experiments?action_zero=Zero", !0) : a.kz && b.get() && dg.f(c, b, e, "https://www.youtube.com/experiments?action_clear=Clear", !1)
       }
       dg.f = function(a, b, c, e, f) {
           e = new cg("GET", e);
@@ -6330,7 +6332,7 @@ if (!self.__WB_pmw) {
           z(c, b.TK());
           a().f(eh.f, c)
       }
-      eh.f = "//web.archive.org/web/20160228021433/http://www.youtube-nocookie.com/device_204";
+      eh.f = "http://localh/device_204";
       eh.inject = ["reportFactory", "statsService"];
       var fh = {
               I1: "autoplay-enabled",
@@ -7423,10 +7425,10 @@ if (!self.__WB_pmw) {
               var c = this.S.f(b, a.videoRenderer, this.g);
               c && c !== this.g && (this.sb(c), this.H.insertBefore(c.H, this.H.firstChild), this.g = c);
               this.g && this.g.render(!0);
-              c = a.videoRenderer.pivotVideoRenderer;
+              c = a.videoRenderer;
               this.title = L(c.title);
-              this.viewCount = L(c.viewCountText);
-              this.channelName = L(c.shortBylineText);
+              this.viewCount = L(viewCountText);
+              this.channelName = L(shortBylineText);
               this.nd = a.countDownSecs;
               this.o = a
           }
@@ -22536,7 +22538,7 @@ if (!self.__WB_pmw) {
                       metadataType: 0,
                       title: L(this.ea.title),
                       images: [{
-                          url: "https://web.archive.org/web/20160228021433/https://i.ytimg.com/vi/" + this.h + "/hqdefault.jpg"
+                          url: "https://i.ytimg.com/vi/" + this.h + "/hqdefault.jpg"
                       }]
                   }, a = !0);
                   1 != this.f.state || this.f.Ea || (c.duration = this.f.If(), b = !0);
@@ -22735,7 +22737,7 @@ if (!self.__WB_pmw) {
               Zd: !1,
               df: !1,
               watchEndpoint: this.Xa({
-                  videoId: b.videoId || "",
+                  videoId: b.videoId || "s",
                   opt_playlistId: a || b.playlistId,
                   opt_index: b.index,
                   opt_videoCtt: jp(b),
@@ -22822,7 +22824,7 @@ if (!self.__WB_pmw) {
           this.I == this.h && (this.Wp(), this.J("currentPlayerState:changed", this.md()))
       };
       d.FM = function() {
-          var a = this.o && this.o.videoId || "";
+          var a = this.o && this.o.videoId || "s";
           this.Pa = (this.I = a) ? this.Fe() : 0;
           this.mq(a)
       };
@@ -22840,8 +22842,8 @@ if (!self.__WB_pmw) {
               var c = this.hv();
               2 == b && (c = null);
               this.j.status = b;
-              this.j.appMediaId = c && c.videoId || "";
-              this.j.videoTitle = c && L(c.title) || "";
+              this.j.appMediaId = c && c.videoId || "s";
+              this.j.videoTitle = c && L(c.title) || "yap";
               this.j.playbackRate = a;
               this.j.minSeekTime = 0;
               this.j.mediaStartTime = 0;
@@ -24632,7 +24634,7 @@ if (!self.__WB_pmw) {
           return this.mD(a, "vi", c)
       };
       d.mD = function(a, b, c) {
-          return this.f + "//web.archive.org/web/20160228021433/http://i1.ytimg.com/" + b + "/" + a + "/" + c + ".jpg"
+         return "http://i1.ytimg.com/" + b + "/" + a + "/" + c + ".jpg"
       };
       d.KV = function(a) {
           return 24 == a.length ? a.substr(2) : a
@@ -27777,14 +27779,26 @@ if (!self.__WB_pmw) {
       d.yL = function(a) {
           return (a = this.f(n("descriptionSnippet", a))) && a.slice(0, 165) || ""
       };
-      d.vL = function(a, b) {
-          a.userId = n("shortBylineText.runs.0.navigationEndpoint.browseEndpoint.browseId", b);
-          a.displayName = this.f(n("shortBylineText", b));
-          a.username = a.displayName;
-          a.title = a.displayName;
-          a.imageUrl = n("channelThumbnail.thumbnails.0.url", b);
-          return a
-      };
+      d.vL = function (userData, sourceData) {
+        // Extract the user ID from the `shortBylineText` navigation endpoint.
+        userData.userId = extractValue("shortBylineText.runs.0.navigationEndpoint.browseEndpoint.browseId", sourceData);
+    
+        userData.displayName = this.f(extractValue("shortBylineText.name", sourceData));
+
+        userData.videoId = this.f(extractValue("videoId", sourceData));
+
+        userData.username = userData.displayName;
+        userData.title = userData.displayName;
+    
+        userData.imageUrl = "http://localhost:8090/assets/default_pfp.png";
+  
+        return userData;
+      };    
+      function extractValue(path, obj) {
+        const value = path.split('.').reduce((acc, key) => (acc && acc[key] !== undefined ? acc[key] : null), obj);
+        console.log(`Path: ${path}, Extracted Value:`, value);
+        return value;
+    }
       d.zL = function(a) {
           return this.f(n("lengthText", a))
       };
@@ -28185,7 +28199,7 @@ if (!self.__WB_pmw) {
           this.f.Nf({
               continuerThresholdDistance: 4,
               failDialogBackground: this.G + "/kiwi.png",
-              homeFeedBrowseId: "default",
+              homeFeedBrowseId: "home",
               myVideosFeedBrowseId: "FEmy_videos",
               shelfCount: 4,
               templatePreprocessor: x(this.j.ia, this.j),

@@ -33,6 +33,64 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'));
 });
 
+
+app.get('/get-thumbnail', async (req, res) => {
+    const videoId = req.query.videoId;
+
+    if (!videoId) {
+        return res.status(400).json({ error: 'Video ID is required.' });
+    }
+
+    const youtubeThumbnailUrl = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+
+    try {
+        res.json({ thumbnailUrl: youtubeThumbnailUrl });
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to fetch thumbnail.' });
+    }
+});
+
+
+app.get('/web/*', (req, res) => {
+    const requestedUrl = req.params[0];  
+
+    const urlStartIndex = requestedUrl.indexOf('http');
+    const youtubeUrl = requestedUrl.substring(urlStartIndex);  
+    const fileName = path.basename(youtubeUrl);
+
+    console.log(`Redirecting to asset: /assets/${fileName}`);
+
+    return res.redirect(`/assets/${fileName}`);
+});
+
+
+app.get('/gen_204', async (req, res) => {
+    try {
+        const youtubeUrl = 'https://www.youtube-nocookie.com/gen_204?app_anon_id=a8d9033a-9d84-4178-a37f-8bf49003bc66&firstactive=1456804800&prevactive=1456804800&firstactivegeo=US&loginstate=0&firstlogin=0&prevlogin=0&c=TVHTML5&cver=5.20150715&ctheme=CLASSIC&label=c96c1c11';
+
+        const response = await axios.get(youtubeUrl);
+
+        res.status(response.status).send(response.data);
+    } catch (error) {
+        console.error('Error forwarding request to YouTube:', error);
+        res.status(200).json({ status: 'Failed to fetch data from YouTube' });
+    }
+});
+
+
+app.get('/device_204', async (req, res) => {
+    try {
+        const youtubeUrl = 'https://www.youtube-nocookie.com/device_204?app_anon_id=a8d9033a-9d84-4178-a37f-8bf49003bc66&firstactive=1456804800&prevactive=1456804800&firstactivegeo=US&loginstate=0&firstlogin=0&prevlogin=0&c=TVHTML5&cver=5.20150715&ctheme=CLASSIC&label=c96c1c11';
+
+        const response = await axios.get(youtubeUrl);
+
+        res.status(response.status).send(response.data);
+    } catch (error) {
+        console.error('Error forwarding request to YouTube:', error);
+        res.status(200).json({ status: 'Failed to fetch data from YouTube' });
+    }
+});
+
 app.get('/api/browse', async (req, res) => {
     const { browseId } = req.query;  
 

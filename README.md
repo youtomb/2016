@@ -35,10 +35,10 @@ Progress Report
     Status: Suggestions are fully functional, with the first steps of search results implemented.
     Next Steps: Fully finish the API, right now only really titles are working.
 
-2. Guide - 75% Done
+2. Guide - 100% Done
 
-    Status: Major work completed; pretty much just have to celan it up a bit.
-    Next Steps: Clean it up a bit.
+    Status: Done
+    Next None;
 
 3. Browse/Channels - 25% Done
 
