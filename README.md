@@ -17,6 +17,16 @@ A project to revive the old 2015-2016 YouTubeTV HTML5 Web App.
 
 - Erie Valley Software/Erievs
 
+## Setup
+
+**[Note This Really Is Very Early On In The Project, So Guide Won't Be Super Great]**
+
+- Step 1: run git clone https://github.com/erievs/2016YouTubeTV.git
+
+- Step 2: run npm install
+
+- Step 3: run npm start, and you're done!
+
 [When I say V, I mean the version of the YouTube App]
 
 Progress Report
