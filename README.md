@@ -30,10 +30,10 @@ A project to revive the old 2015-2016 YouTubeTV HTML5 Web App.
 [When I say V, I mean the version of the YouTube App]
 
 Progress Report
-1. Search - 40% Done
+1. Search - 60% Done
 
     Status: Suggestions are fully functional, with the first steps of search results implemented.
-    Next Steps: Fully finish the API, right now only really titles are working.
+    Next Steps: Fully finish the API, right now only really titles/thumbnails/channel name are working.
 
 2. Guide - 100% Done
 
