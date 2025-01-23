@@ -1,5 +1,5 @@
-Here's a polished version of your progress report draft for GitHub:
-2016YouTubeTV
+
+#2016YouTubeTV
 
 A project to revive the old 2015-2016 YouTubeTV HTML5 Web App.
 
