@@ -1,17 +1,30 @@
+const fs = require('fs');
+const path = require('path');
 const axios = require('axios');
+
+function addDataToContent(data) {
+    console.log('Received Data:', data);
+
+    if (data) {
+        data.newField = 'Added this new data';
+
+        if (data.content && data.content.horizontalListRenderer) {
+            data.content.horizontalListRenderer.newList = 'Added new data here!';
+        }
+    }
+    
+    return data;
+}
 
 async function fetchBrowseData(browseId) {
     const apiKey = 'AIzaSyDCU8hByM-4DrUqRUYnGn-3llEO78bcxq8';
-    const apiUrl = 'https://www.googleapis.com/youtubei/v1/browse';
-
-    // Define the user agent
-    const USER_AGENT_TV_HTML5 = "Mozilla/5.0 (PlayStation 4 5.55) AppleWebKit/601.2 (KHTML, like Gecko)";
+    const apiUrl = `https://www.googleapis.com/youtubei/v1/browse?key=${apiKey}`;
 
     const postData = {
         context: {
             client: {
                 clientName: 'TVHTML5',
-                clientVersion: '7.20220918',
+                clientVersion: '7.20240701.16.00',
                 hl: 'en',
                 gl: 'US',
             }
@@ -22,16 +35,31 @@ async function fetchBrowseData(browseId) {
     try {
         console.log('Sending request to YouTube Browse API with payload:', postData);
 
+        // Remove the 'User-Agent' and just send a plain request
         const response = await axios.post(apiUrl, postData, {
             headers: { 
-                'Content-Type': 'application/json',
-                'User-Agent': USER_AGENT_TV_HTML5  // Add User-Agent header here
-            },
-            params: { key: apiKey }
+                'Content-Type': 'application/json'
+            }
         });
 
         console.log('Received response from YouTube Browse API:', response.data);
-        return response.data;  
+
+        const updatedData = addDataToContent(response.data);
+
+        // Ensure the logs directory exists
+        const logsDir = path.join(__dirname, 'logs');
+        if (!fs.existsSync(logsDir)) {
+            fs.mkdirSync(logsDir); 
+        }
+
+        // Log the response data with timestamp
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-'); 
+        const logFilePath = path.join(logsDir, `response-${timestamp}.json`);
+        fs.writeFileSync(logFilePath, JSON.stringify(updatedData, null, 2)); 
+
+        console.log('Updated response saved to log file:', logFilePath);
+
+        return updatedData;
     } catch (error) {
         console.error('Error fetching browse data:', error.message);
         throw new Error('Failed to fetch data from YouTube Browse API.');

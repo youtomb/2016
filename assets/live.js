@@ -101,29 +101,9 @@ if (!self.__WB_pmw) {
       g && (e || c ? w(r + "/modules/media-diagnostics-debug.js") : w(r + "/modules/media-diagnostics.js"));
       x("initializeOrRedirect('" + r + "');");
       n && (window.onload = function() {
-          for (var a = 0, d = v.length; a < d; ++a) document.body.appendChild(v[a])
+         
       });
   })();
 
 
 }
-/*
-   FILE ARCHIVED ON 02:14:32 Feb 28, 2016 AND RETRIEVED FROM THE
-   INTERNET ARCHIVE ON 17:05:15 Jan 22, 2025.
-   JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-   ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-   SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-captures_list: 0.672
-exclusion.robots: 0.024
-exclusion.robots.policy: 0.01
-esindex: 0.014
-cdx.remote: 81.435
-LoadShardBlock: 612.389 (3)
-PetaboxLoader3.datanode: 757.179 (4)
-load_resource: 465.931
-PetaboxLoader3.resolve: 280.628
-*/

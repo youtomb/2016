@@ -1,0 +1,478 @@
+{
+  "responseContext": {
+    "visitorData": "CgtvcGZxenFoWXpuOCij5cy8BjIKCgJVUxIEGgAgJA%3D%3D",
+    "serviceTrackingParams": [
+      {
+        "service": "GFEEDBACK",
+        "params": [
+          {
+            "key": "has_unlimited_entitlement",
+            "value": "False"
+          },
+          {
+            "key": "has_premium_lite_entitlement",
+            "value": "False"
+          },
+          {
+            "key": "logged_in",
+            "value": "0"
+          },
+          {
+            "key": "e",
+            "value": "23804281,23943651,24004644,24077241,24166867,24181174,24241378,24290153,24439361,24457854,24459436,24490089,24499533,24548629,24566687,39328397,51010235,51017346,51020570,51025415,51037346,51037349,51050361,51053689,51063643,51089007,51098299,51111738,51115184,51124104,51146484,51151423,51152050,51174143,51176511,51178320,51178335,51178344,51178355,51183910,51193717,51204329,51213888,51217504,51222382,51222973,51227037,51228850,51230478,51237842,51241028,51242448,51248734,51255676,51256074,51256084,51274583,51276557,51276565,51281227,51285717,51287196,51292055,51294322,51296439,51298020,51299710,51299724,51303432,51303667,51303669,51303789,51304155,51305031,51305839,51306543,51310742,51311025,51311040,51313109,51313767,51313802,51316747,51318845,51322669,51326932,51327144,51327169,51327182,51327613,51329146,51330194,51331481,51331500,51331522,51331533,51331538,51331547,51331554,51331559,51332896,51333541,51333879,51334604,51335392,51335594,51335644,51335928,51337186,51339142,51340662,51340992,51341226,51341974,51342857,51343368,51344342,51345228,51345300,51345629,51346046,51346799,51346816,51346829,51346838,51346849,51346866,51346881,51346906,51347325,51348881,51349010,51349880,51351446,51353231,51353393,51353454,51353498,51354114,51354567,51355268,51355273,51355291,51355307,51355316,51355335,51355344,51355679,51357477,51360104,51360119,51360130,51360210,51360217,51361727,51361828,51362040,51362071,51362455,51362617,51362643,51362857,51363725,51363738,51363747,51363756,51363759,51363770,51364289,51365348,51365460,51365462,51365597,51365759,51366423,51366844,51366864,51367489,51367993,51369295,51369398,51370259,51370274,51370303,51370737,51371001,51371008,51371294,51371521,51372970,51374017,51374438,51375168,51375719,51376050,51376157,51376330,51376516,51379006,51379274,51379626,51380312,51380378,51380383,51380398,51380763,51380770,51380785,51380796,51380799,51380812,51380829,51380892,51381276,51381818,51381857,51381974,51383428,51384307,51384391,51384461,51384608,51384888,51385023,51385277,51385539,51386539,51387183,51388998"
+          }
+        ]
+      }
+    ],
+    "maxAgeSeconds": 7200
+  },
+  "estimatedResults": "2",
+  "contents": {
+    "sectionListRenderer": {
+      "contents": [
+        {
+          "shelfRenderer": {
+            "content": {
+              "horizontalListRenderer": {
+                "items": [
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/gH2ODx1qhS8/hq2.jpg?sqp=-oaymwEvCMACELQBSFDyq4qpAyEVAACIQhgB8AEB-AH-CYAC0AWKAgwIABABGEcgVihlMA8=&rs=AOn4CLAd58kMKMOe9aFCU0hvu6fiZjJhWQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "accessibility": {
+                                    "accessibilityData": {
+                                      "label": "4 minutes, 25 seconds"
+                                    }
+                                  },
+                                  "simpleText": "4:25"
+                                },
+                                "style": "DEFAULT"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "ST6 JodyBoof x Ac640 x SlimeGoon - Demon Music"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "ehuncho"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "badge": {
+                                        "metadataBadgeRenderer": {
+                                          "style": "BADGE_STYLE_TYPE_SIMPLE",
+                                          "label": "New",
+                                          "trackingParams": "CAgQhbwCGAAiEwj_j9r73I2LAxVudBIBHcX3Lq8="
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "229 views"
+                                          }
+                                        },
+                                        "simpleText": "229 views"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "•"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "7 hours ago"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAgQhbwCGAAiEwj_j9r73I2LAxVudBIBHcX3Lq8yBnNlYXJjaFIIYWRhZGFzYXeaAQMQ9CQ=",
+                        "watchEndpoint": {
+                          "videoId": "gH2ODx1qhS8",
+                          "playlistId": "RDgH2ODx1qhS8",
+                          "params": "qgMIYWRhZGFzYXe6AwoIjvaEr6Phh9g9uAUB",
+                          "playerParams": "ygUIYWRhZGFzYXegBwE%3D",
+                          "loggingContext": {
+                            "vssLoggingContext": {
+                              "serializedContextData": "Gg1SRGdIMk9EeDFxaFM4"
+                            }
+                          },
+                          "watchEndpointSupportedOnesieConfig": {
+                            "html5PlaybackOnesieConfig": {
+                              "commonConfig": {
+                                "url": "https://rr1---sn-tt1e7nls.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=807d8e0f1d6a852f&ip=67.144.118.91&initcwndbps=5866250&mt=1737699647&pxtags=Cg4KAnR4Egg1MTM3OTYyNg&rxtags=Cg4KAnR4Egg1MTM3OTYyMw%2CCg4KAnR4Egg1MTM3OTYyNA%2CCg4KAnR4Egg1MTM3OTYyNQ%2CCg4KAnR4Egg1MTM3OTYyNg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "trackingParams": "CAgQhbwCGAAiEwj_j9r73I2LAxVudBIBHcX3Lq9Ar4qq6_HB476AAQ==",
+                      "contentId": "gH2ODx1qhS8",
+                      "contentType": "TILE_CONTENT_TYPE_VIDEO",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAgQhbwCGAAiEwj_j9r73I2LAxVudBIBHcX3Lq8=",
+                        "showMenuCommand": {
+                          "contentId": "gH2ODx1qhS8",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/gH2ODx1qhS8/hq2.jpg?sqp=-oaymwEvCMACELQBSFDyq4qpAyEVAACIQhgB8AEB-AH-CYAC0AWKAgwIABABGEcgVihlMA8=&rs=AOn4CLAd58kMKMOe9aFCU0hvu6fiZjJhWQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "ST6 JodyBoof x Ac640 x SlimeGoon - Demon Music"
+                          },
+                          "subtitle": {
+                            "simpleText": "ehuncho"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Play"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAoQmvwFGAAiEwj_j9r73I2LAxVudBIBHcX3Lq8yBnNlYXJjaFIIYWRhZGFzYXeaAQMQ9CQ=",
+                                      "watchEndpoint": {
+                                        "videoId": "gH2ODx1qhS8",
+                                        "params": "qgMIYWRhZGFzYXe6AwoIjvaEr6Phh9g9",
+                                        "playerParams": "ygUIYWRhZGFzYXc%3D",
+                                        "watchEndpointSupportedOnesieConfig": {
+                                          "html5PlaybackOnesieConfig": {
+                                            "commonConfig": {
+                                              "url": "https://rr1---sn-tt1e7nls.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=807d8e0f1d6a852f&ip=67.144.118.91&initcwndbps=5866250&mt=1737699647&pxtags=Cg4KAnR4Egg1MTM3OTYyNg&rxtags=Cg4KAnR4Egg1MTM3OTYyMw%2CCg4KAnR4Egg1MTM3OTYyNA%2CCg4KAnR4Egg1MTM3OTYyNQ%2CCg4KAnR4Egg1MTM3OTYyNg"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "trackingParams": "CAoQmvwFGAAiEwj_j9r73I2LAxVudBIBHcX3Lq8="
+                                  }
+                                },
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAkQ8sgIGAEiEwj_j9r73I2LAxVudBIBHcX3Lq8=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCNVnDa2DhY5-YEB28RwTspA"
+                                      }
+                                    },
+                                    "trackingParams": "CAkQ8sgIGAEiEwj_j9r73I2LAxVudBIBHcX3Lq8="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAgQhbwCGAAiEwj_j9r73I2LAxVudBIBHcX3Lq8=",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/PbAfCjXhOw4/hq2.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLA5T_P3Io_sz7Le4bd1SIXG7LPOeA",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "accessibility": {
+                                    "accessibilityData": {
+                                      "label": "2 hours, 41 minutes, 19 seconds"
+                                    }
+                                  },
+                                  "simpleText": "2:41:19"
+                                },
+                                "style": "DEFAULT"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "ĐẦU LẪU XƯƠNG CHÉO ĐẠO ĐỨC CH.....Ó NHÁ ĐẠO LÝ CH.....Ó NGHE"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "Ak47"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "badge": {
+                                        "metadataBadgeRenderer": {
+                                          "style": "BADGE_STYLE_TYPE_SIMPLE",
+                                          "label": "New",
+                                          "trackingParams": "CAUQpDAYASITCP-P2vvcjYsDFW50EgEdxfcurw=="
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "4.1K views"
+                                          }
+                                        },
+                                        "simpleText": "4.1K views"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "•"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "Streamed 1 day ago"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAUQpDAYASITCP-P2vvcjYsDFW50EgEdxfcurzIGc2VhcmNoUghhZGFkYXNhd5oBAxD0JA==",
+                        "watchEndpoint": {
+                          "videoId": "PbAfCjXhOw4",
+                          "params": "qgMIYWRhZGFzYXe6AwsIr4qq6_HB476AAQ%3D%3D",
+                          "playerParams": "ygUIYWRhZGFzYXc%3D",
+                          "watchEndpointSupportedOnesieConfig": {
+                            "html5PlaybackOnesieConfig": {
+                              "commonConfig": {
+                                "url": "https://rr3---sn-tt1e7nlz.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=3db01f0a35e13b0e&ip=67.144.118.91&initcwndbps=5866250&mt=1737699647&pxtags=Cg4KAnR4Egg1MTM3OTYyNg&rxtags=Cg4KAnR4Egg1MTM3OTYyMw%2CCg4KAnR4Egg1MTM3OTYyNA%2CCg4KAnR4Egg1MTM3OTYyNQ%2CCg4KAnR4Egg1MTM3OTYyNg"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "trackingParams": "CAUQpDAYASITCP-P2vvcjYsDFW50EgEdxfcur0CO9oSvo-GH2D0=",
+                      "contentId": "PbAfCjXhOw4",
+                      "contentType": "TILE_CONTENT_TYPE_VIDEO",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAUQpDAYASITCP-P2vvcjYsDFW50EgEdxfcurw==",
+                        "showMenuCommand": {
+                          "contentId": "PbAfCjXhOw4",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/PbAfCjXhOw4/hq2.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLA5T_P3Io_sz7Le4bd1SIXG7LPOeA",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "ĐẦU LẪU XƯƠNG CHÉO ĐẠO ĐỨC CH.....Ó NHÁ ĐẠO LÝ CH.....Ó NGHE"
+                          },
+                          "subtitle": {
+                            "simpleText": "Ak47"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Play"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAcQmvwFGAAiEwj_j9r73I2LAxVudBIBHcX3Lq8yBnNlYXJjaFIIYWRhZGFzYXeaAQMQ9CQ=",
+                                      "watchEndpoint": {
+                                        "videoId": "PbAfCjXhOw4",
+                                        "params": "qgMIYWRhZGFzYXe6AwsIr4qq6_HB476AAQ%3D%3D",
+                                        "playerParams": "ygUIYWRhZGFzYXc%3D",
+                                        "watchEndpointSupportedOnesieConfig": {
+                                          "html5PlaybackOnesieConfig": {
+                                            "commonConfig": {
+                                              "url": "https://rr3---sn-tt1e7nlz.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=3db01f0a35e13b0e&ip=67.144.118.91&initcwndbps=5866250&mt=1737699647&pxtags=Cg4KAnR4Egg1MTM3OTYyNg&rxtags=Cg4KAnR4Egg1MTM3OTYyMw%2CCg4KAnR4Egg1MTM3OTYyNA%2CCg4KAnR4Egg1MTM3OTYyNQ%2CCg4KAnR4Egg1MTM3OTYyNg"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "trackingParams": "CAcQmvwFGAAiEwj_j9r73I2LAxVudBIBHcX3Lq8="
+                                  }
+                                },
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAYQ8sgIGAEiEwj_j9r73I2LAxVudBIBHcX3Lq8=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCkuH5efYwTmfkqEmsVj02qw"
+                                      }
+                                    },
+                                    "trackingParams": "CAYQ8sgIGAEiEwj_j9r73I2LAxVudBIBHcX3Lq8="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAUQpDAYASITCP-P2vvcjYsDFW50EgEdxfcurw==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "trackingParams": "CAMQxjkiEwj_j9r73I2LAxVudBIBHcX3Lq8=",
+                "continuations": [
+                  {
+                    "nextContinuationData": {
+                      "continuation": "EkASCGFkYWRhc2F3GjRTQlNDQVF0blNESlBSSGd4Y1doVE9JSUJDMUJpUVdaRGFsaG9UM2Mwc2dFR0NnUUlBUkFDGIHg6Bg%3D",
+                      "clickTrackingParams": "CAQQybcCIhMI_4_a-9yNiwMVbnQSAR3F9y6v"
+                    }
+                  }
+                ],
+                "collapsedItemCount": 3,
+                "visibleItemCount": 3
+              }
+            },
+            "trackingParams": "CAIQ3BwYACITCP-P2vvcjYsDFW50EgEdxfcurw==",
+            "headerRenderer": {
+              "shelfHeaderRenderer": {
+                "avatarLockup": {
+                  "avatarLockupRenderer": {
+                    "title": {
+                      "simpleText": "Search results for adadasaw"
+                    },
+                    "size": "AVATAR_LOCKUP_SIZE_SMALL"
+                  }
+                }
+              }
+            },
+            "tvhtml5Style": {
+              "style": "TV_SHELF_STYLE_DEFAULT",
+              "sizeStrategy": "TV_SHELF_SIZE_STRATEGY_FIXED"
+            }
+          }
+        }
+      ],
+      "trackingParams": "CAEQui8iEwj_j9r73I2LAxVudBIBHcX3Lq8="
+    }
+  },
+  "trackingParams": "CAAQvGkiEwj_j9r73I2LAxVudBIBHcX3Lq8="
+}

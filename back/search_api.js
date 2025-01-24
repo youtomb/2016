@@ -9,9 +9,15 @@ function addVideoRendererToEachItem(data) {
 
         sections.forEach(section => {
             if (section.shelfRenderer && section.shelfRenderer.content && section.shelfRenderer.content.horizontalListRenderer) {
+                // Remove adSlotRenderer items first
+                section.shelfRenderer.content.horizontalListRenderer.items = section.shelfRenderer.content.horizontalListRenderer.items.filter(item => {
+                    return !item.hasOwnProperty('adSlotRenderer'); // Filter out adSlotRenderer items
+                });
+
+                // Now process the remaining items (after ad removal)
                 section.shelfRenderer.content.horizontalListRenderer.items.forEach(item => {
                     if (item.tileRenderer) {
-                        item.videoRenderer = generateVideoRenderer(item.tileRenderer);  // Adding full video renderer for further details
+                        item.videoRenderer = generateVideoRenderer(item.tileRenderer); 
                         delete item.tileRenderer;
                     }
                 });
@@ -21,71 +27,54 @@ function addVideoRendererToEachItem(data) {
     return data;
 }
 
-function generateVideoMetadataRenderer(tileRenderer) {
-    return {
-        videoId: extractVideoId(tileRenderer),
-        title: extractTitle(tileRenderer),
-        description: "placeholder",
-        channelName: "yap"
-    };
-}
 
-function generatePivotVideoRenderer(tileRenderer) {
-    return {
-        videoId: extractVideoId(tileRenderer), // Extracting video ID
-        title: extractTitle(tileRenderer), // Extracting title
-        viewCountText: extractViewCountText(tileRenderer), // Extracting view count text
-        shortBylineText: extractShortBylineText(tileRenderer) // Extracting channel name
-    };
-}
 
 
 function generateVideoRenderer(tileRenderer) {
+    const title = extractTitle(tileRenderer);
+    const description = extractDescription(tileRenderer);
+    const shortBylineText = extractChannel(tileRenderer);
+    const browseId = extractBrowseID(tileRenderer);
+    const views = extractViews(tileRenderer);
+    const publishedTime = extractPublishedTime(tileRenderer);
+    const videoId = extractVideoId(tileRenderer);
+    const lengthText = extractLength(tileRenderer); // New lengthText extraction
+
+    if (!shortBylineText || shortBylineText.name === 'Unknown Channel' || !views || views === '0 views' || !publishedTime || publishedTime === 'Unknown time') {
+        console.log("Video excluded due to missing or unknown channel, views, or published time.");
+        return null; 
+    }
+
     return {
-        title: extractTitle(tileRenderer),
-        description: extractDescription(tileRenderer),
-        shortBylineText: extractChannel(tileRenderer),
-        views: extractViews(tileRenderer),
-        publishedTime: extractPublishedTime(tileRenderer),
-        videoId: extractVideoId(tileRenderer),
-        onSelectCommand: extractOnSelectCommand(tileRenderer),
-        pivotVideoRenderer: generatePivotVideoRenderer(tileRenderer),
+        title,
+        description,
+        shortBylineText,
+        browseId,
+        views,
+        publishedTime,
+        lengthText,
+        videoId
     };
 }
 
-function extractOnSelectCommand(tileRenderer) {
-    return tileRenderer.onSelectCommand || null;
-}
 
 
-function extractViewCountText(tileRenderer) {
-    const metadata = tileRenderer.metadata || {};
-    const lines = metadata.tileMetadataRenderer && metadata.tileMetadataRenderer.lines || [];
-
-    const viewCountLine = lines.find(line =>
-        line.lineRenderer && line.lineRenderer.items.some(item =>
-            item.lineItemRenderer && item.lineItemRenderer.text && item.lineItemRenderer.text.simpleText && item.lineItemRenderer.text.simpleText.includes('views')
-        )
+function extractLength(tileRenderer) {
+    const thumbnailOverlays = tileRenderer?.header?.tileHeaderRenderer?.thumbnailOverlays || [];
+    
+    const lengthOverlay = thumbnailOverlays.find(overlay =>
+        overlay.thumbnailOverlayTimeStatusRenderer && overlay.thumbnailOverlayTimeStatusRenderer.text
     );
-
-    if (viewCountLine) {
-        const viewCountText = viewCountLine.lineRenderer.items.find(item =>
-            item.lineItemRenderer && item.lineItemRenderer.text && item.lineItemRenderer.text.simpleText
-        );
-        return viewCountText ? viewCountText.lineItemRenderer.text.simpleText : '0 views';
+    
+    if (lengthOverlay && lengthOverlay.thumbnailOverlayTimeStatusRenderer.text) {
+        const lengthText = lengthOverlay.thumbnailOverlayTimeStatusRenderer.text.simpleText || 'Unknown length';
+        console.log("Extracted length:", lengthText);
+        return lengthText;
     }
 
-    return '0 views'; // Default if no view count is found
+    return 'Unknown length'; 
 }
 
-function extractShortBylineText(tileRenderer) {
-    const metadata = tileRenderer.metadata || {};
-    const channelMetadata = metadata.tileMetadataRenderer && metadata.tileMetadataRenderer.lines
-        ? metadata.tileMetadataRenderer.lines[1]?.lineRenderer?.items[0]?.lineItemRenderer?.text?.simpleText || 'Unknown Channel'
-        : 'Unknown Channel';
-
-    return channelMetadata;
-}
 
 function extractTitle(tileRenderer) {
     const metadata = tileRenderer.metadata || {};
@@ -96,6 +85,7 @@ function extractTitle(tileRenderer) {
     console.log("Title:", title); 
     return title;
 }
+
 
 function extractDescription(tileRenderer) {
     const metadata = tileRenderer.metadata || {};
@@ -117,30 +107,18 @@ function extractChannel(tileRenderer) {
     };
 }
 
-function extractViews(tileRenderer) {
-    const metadata = tileRenderer.metadata || {};
-    const lines = metadata.tileMetadataRenderer && metadata.tileMetadataRenderer.lines || [];
-    
-    console.log("Lines for Views:", lines); 
-    
-    const viewsLine = lines.find(line => {
-        return line.lineRenderer && line.lineRenderer.items.some(item => 
-            item.lineItemRenderer && item.lineItemRenderer.text && item.lineItemRenderer.text.simpleText
-        );
-    });
+function extractBrowseID(tileRenderer) {
 
-    if (viewsLine) {
-        const viewsText = viewsLine.lineRenderer.items.find(item => {
-            return item.lineItemRenderer && item.lineItemRenderer.text && item.lineItemRenderer.text.simpleText && item.lineItemRenderer.text.simpleText.includes('views');
-        });
-        const views = viewsText ? viewsText.lineItemRenderer.text.simpleText : '0 views';
-        console.log("Views:", views);
-        return views;
-    }
-    return '0 views';
+    const browseId = tileRenderer?.onLongPressCommand?.showMenuCommand?.menu?.menuRenderer?.items?.find(item => item.menuNavigationItemRenderer?.navigationEndpoint?.browseEndpoint)?.menuNavigationItemRenderer?.navigationEndpoint?.browseEndpoint?.browseId;
+
+    console.log("Browse ID:", browseId || 'Unknown');
+
+    return {
+        browseId: browseId || 'Unknown',
+    };
 }
 
-function extractPublishedTime(tileRenderer) {
+function extractViews(tileRenderer) {
     const metadata = tileRenderer.metadata || {};
     const lines = metadata.tileMetadataRenderer && metadata.tileMetadataRenderer.lines || [];
     
@@ -153,15 +131,42 @@ function extractPublishedTime(tileRenderer) {
     });
 
     if (timeLine) {
+
         const timeText = timeLine.lineRenderer.items.find(item => {
             return item.lineItemRenderer && item.lineItemRenderer.text && item.lineItemRenderer.text.simpleText;
         });
-        const time = timeText ? timeText.lineItemRenderer.text.simpleText : 'Unknown time';
+        
+        const time = timeText ? timeText.lineItemRenderer.text.simpleText : '0 Views';
+        
+        console.log("Views:", time);  
+        return time;
+    }
+    return '0 views';  
+}
+
+function extractPublishedTime(tileRenderer) {
+
+    const metadata = tileRenderer.metadata || {};
+    const lines = metadata.tileMetadataRenderer && metadata.tileMetadataRenderer.lines || [];
+    
+    console.log("Lines for Time:", lines);
+
+    if (lines.length > 1) {
+        const secondLine = lines[1].lineRenderer.items;
+
+        const timeItem = secondLine.find(item => 
+            item.lineItemRenderer && item.lineItemRenderer.text && item.lineItemRenderer.text.simpleText && item.lineItemRenderer.text.simpleText.includes("ago")
+        );
+        
+        const time = timeItem ? timeItem.lineItemRenderer.text.simpleText : 'Unknown time';
+        
         console.log("Published Time:", time);
         return time;
     }
-    return 'Unknown time';
+    
+    return 'Unknown time'; 
 }
+
 
 function extractVideoId(tileRenderer) {
     if (tileRenderer.onSelectCommand && tileRenderer.onSelectCommand.watchEndpoint) {

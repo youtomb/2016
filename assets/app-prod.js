@@ -939,7 +939,7 @@ if (!self.__WB_pmw) {
               PAUSE: "pause",
               PLAY: "play",
               PRELOAD: "preload",
-              ls: "resume",
+              ls: "null", //it is resume but it has some issues
               rs: "start",
               ts: "suspend"
           },
@@ -979,7 +979,7 @@ if (!self.__WB_pmw) {
               GUIDE_CIRCULAR_MASK: "guide-circular-mask",
               HAPPY: "icon-hats-happy",
               GAMING: "icon-gaming",
-              MOVIE: "icon-people",
+              MOVIE: "icon-flim",
               LIKES_PLAYLIST: "icon-like",
               MEH: "icon-hats-neutral",
               MUSIC: "icon-music",
@@ -3848,27 +3848,51 @@ if (!self.__WB_pmw) {
       };
       Ue.inject = ["baseCollection", "opt_selectedIndex", "opt_length", "opt_outOfRangeItemFactory"];
 
-      function Ve(a, b, c) {
-          b = {
-              items: b
-          };
-          a = {
-              shelfRenderer: {
-                  title: {
-                      runs: [{
-                          text: a
-                      }]
-                  },
-                  content: {
-                      horizontalListRenderer: b
-                  }
-              }
-          };
-          c && (b.continuations = c);
-          return a
-      };
+      function Ve(title, items, continuation) {
 
-      function We(a, b, c, e, f, g, k, l, p, r, u, w) {
+            console.log("yap");
+            // Step 1: Wrap the 'items' into an object with the key 'items'
+            const itemList = {
+                items: items // 'items' is wrapped inside 'itemList' for clarity
+            };
+        
+            // Step 2: Build the 'shelfRenderer' object with the provided title and items
+            const shelfRendererStructure = {
+                shelfRenderer: {
+                    title: {
+                        runs: [{ text: title }] // 'title' becomes the text inside the 'runs' array
+                    },
+                    content: {
+                        horizontalListRenderer: itemList // 'itemList' holds the actual list of items
+                    }
+                }
+            };
+        
+            // Step 3: If a continuation token exists, add it to the 'horizontalListRenderer' content
+            if (continuation) {
+                itemList.continuations = continuation; // 'continuation' is added as 'continuations' inside 'itemList'
+            }
+      
+            // Return the final structured object
+            return shelfRendererStructure;
+       }
+    
+
+       function We(a, b, c, e, f, g, k, l, p, r, u, w) {
+
+
+        console.log('Title:', a);
+        console.log('Shelf Data:', b);
+        console.log('Video Data:', c);
+        console.log('Message Handler:', e);
+        console.log('Callback:', f);
+        console.log('Data Handler:', g);
+        console.log('Extra Data:', k);
+        console.log('Action:', l);
+        console.log('Video List:', p);
+        console.log('Continuation:', r);
+        console.log('Is Enabled:', u);
+
           K.call(this);
           this.Aa = a;
           this.h = b;
@@ -3882,7 +3906,7 @@ if (!self.__WB_pmw) {
           this.W = u;
           this.I = !!w;
           this.title = "";
-          this.Px = this.Ja.ia("[[No videos are available|The message shown when a row has no videos to show.]]");
+          this.Px = this.Ja.ia("[[No videos are available [test] |The message shown when a row has no videos to show.]]");
           this.list = null;
           this.g = new N;
           this.Bd(this.g);
@@ -3892,13 +3916,16 @@ if (!self.__WB_pmw) {
           this.tb = !0
       }
       C(We, K);
+
       d = We.prototype;
+
       d.We = function() {
           this.G && (this.list = this.Fa({
               opt_modelChangeRendersRecursively: !1,
               opt_forceList: this.I
           }), this.Aa.hb || this.I ? this.j = new Ue(this.g, 0, this.V - 2) : this.j = new Te(this.g, this.V, 1), this.Bd(this.j), this.list.qb = !0, this.list.dc = oc, this.list.model = this.j, this.sb(this.list), this.K(this.list, "selection-change", x(this.op, this)), this.C("item-removal", x(this.GO, this)))
       };
+      
       d.ready = function() {
           We.u.ready.call(this);
           this.f.isSupported() && (this.f.Va("[[Scroll up|Speech command to move selection up.]]", x(this.nC, this, -1), !1), this.f.Va("[[Scroll down|Speech command to move selection down.]]", x(this.nC, this, 1), !1), this.M.f(this.f.Nd()), this.f.gd(this))
@@ -3916,6 +3943,7 @@ if (!self.__WB_pmw) {
           this.g && 0 !== this.g.getLength() || a.push("no-content");
           return a
       };
+      
       d.Ia = function(a, b, c) {
           c = c || "";
           this.model = a;
@@ -3953,42 +3981,104 @@ if (!self.__WB_pmw) {
           this.title = "";
           a && (this.title = L(a.title))
       };
+       
+      // a function to extract relevant horizontal list items
+
       d.IS = function(a) {
-          for (var b = [], c = 0, e = a.length; c < e; ++c) {
-              var f = a[c].shelfRenderer || a[c].pivotShelfRenderer;
-              f ? (f = n("content.horizontalListRenderer.items", f) || n("content.pivotHorizontalListRenderer.items", f) || n("content.fakeSubsListRenderer.items", f) || n("content.tvSubscriptionsListRenderer.items", f)) && 0 < f.length && b.push(a[c]) : b.push(a[c])
-          }
-          return b
+        var b = [];
+        for (var c = 0, e = a.length; c < e; ++c) {
+            var f = a[c].shelfRenderer || a[c].pivotShelfRenderer;
+            if (f) {
+                // Attempt to extract from multiple potential sources
+                f = n("content.horizontalListRenderer.items", f) || 
+                    n("content.pivotHorizontalListRenderer.items", f) || 
+                    n("content.fakeSubsListRenderer.items", f) || 
+                    n("content.tvSubscriptionsListRenderer.items", f);
+                // Only push if items were found
+                if (f && f.length > 0) {
+                    b.push(a[c]);
+                }
+            } else {
+                b.push(a[c]);
+            }
+        }
+        console.log('Filtered items from IS:', b); // Log the result of IS
+        return b;
+        };
+
+        // Function to process the entire dataset
+        d.Kv = function(a, b) {
+        if (!a || !a.contents) return [];
+
+        var c = [], e = a.contents, f = [], g, k;
+        for (k = 0; k < e.length; ++k) {
+            var p = e[k];
+            // Process subscriptions if applicable
+            if (this.W.atomSubscriptions) this.VI(p, b);
+
+            g = ub(p);  // Custom function (undefined here) to classify renderer type
+            console.log('Renderer type:', g); // Log the renderer type
+
+            // Apply certain actions for specific renderer types
+            this.W.bentoRetentionPlayAll && "shelfRenderer" == g && this.PN(p);
+
+            if (["shelfRenderer", "playlistVideoListRenderer", "pivotShelfRenderer", "pivotFooterRenderer", "surveyShelfRenderer"].includes(g)) {
+                c.push(p);
+            } else if ("itemSectionRenderer" == g) {
+                // Handle item section renderer and its contents
+                g = n("itemSectionRenderer.contents", p);
+                if (g && g.length > 0) {
+                    if ("shelfRenderer" == ub(g[0])) {
+                        c.push(g[0]);
+                    } else {
+                        f.push(...g);
+                    }
+                }
+            }
+        }
+
+        // Apply IS filtering after collecting the contents
+        c = this.IS(c);
+
+        // Add continuations if necessary
+        if (c.length === 0 && f.length > 0) {
+            c.push(Ve("", f, a.continuations));  // Ve function is undefined here, assuming it handles continuation logic
+            delete a.continuations;
+        }
+
+        console.log('Final processed items:', c); // Log the final processed items
+        return c;
+        };
+
+        // VI function modifies data for subscriptions
+        d.VI = function(a, b) {
+        if ("shelfRenderer" == ub(a) && "FEsubscriptions" == b) {
+            // Move fakeSubsListRenderer to correct location
+            n("shelfRenderer.content.horizontalListRenderer.items.0.gridChannelRenderer", a);
+            a.shelfRenderer.content.fakeSubsListRenderer = a.shelfRenderer.content.horizontalListRenderer;
+            delete a.shelfRenderer.content.horizontalListRenderer;
+            console.log('Updated shelfRenderer with fakeSubsListRenderer:', a); // Log the modified shelfRenderer
+        }
+        };
+
+        // PN function adds play all item if appropriate
+        d.PN = function(a) {
+        if (a && a.shelfRenderer) {
+            var b = n("content.horizontalListRenderer.items", a);
+            if (a.shelfRenderer.playEndpoint && b && b.length > 0) {
+                // Prepend play all item
+                b.unshift({
+                    fakePlayAllTileRenderer: {
+                        playEndpoint: a.shelfRenderer.playEndpoint,
+                        playlistVideos: b,
+                        shelfTitle: a.shelfRenderer.title
+                    }
+                });
+                console.log('Prepended play all item:', b[0]); // Log the prepended play all item
+            }
+        }
       };
-      d.Kv = function(a, b) {
-          if (!a || !a.contents) return [];
-          for (var c = [], e = a.contents, f = [], g, k = 0, l = e.length; k < l; ++k) {
-              var p = e[k];
-              this.W.atomSubscriptions && this.VI(p, b);
-              g = ub(p);
-              this.W.bentoRetentionPlayAll && "shelfRenderer" == g && this.PN(p);
-              "shelfRenderer" == g || "playlistVideoListRenderer" == g || "pivotShelfRenderer" == g || "pivotFooterRenderer" == g || "surveyShelfRenderer" == g ? c.push(p) : "itemSectionRenderer" == g && (g = n("itemSectionRenderer.contents", p)) && 0 < g.length && ("shelfRenderer" == ub(g[0]) ? c.push(g[0]) : f.push.apply(f, g))
-          }
-          c =
-              this.IS(c);
-          0 == c.length && 0 < f.length && (c.push(Ve("", f, a.continuations)), delete a.continuations);
-          return c
-      };
-      d.VI = function(a, b) {
-          "shelfRenderer" == ub(a) && "FEsubscriptions" == b && n("shelfRenderer.content.horizontalListRenderer.items.0.gridChannelRenderer", a) && (a.shelfRenderer.content.fakeSubsListRenderer = a.shelfRenderer.content.horizontalListRenderer, delete a.shelfRenderer.content.horizontalListRenderer)
-      };
-      d.PN = function(a) {
-          if (a = a.shelfRenderer) {
-              var b = n("content.horizontalListRenderer.items", a);
-              a.playEndpoint && b && 0 < b.length && b.unshift({
-                  fakePlayAllTileRenderer: {
-                      playEndpoint: a.playEndpoint,
-                      playlistVideos: b,
-                      shelfTitle: a.title
-                  }
-              })
-          }
-      };
+
       d.GO = function(a) {
           a = a.detail;
           this.list.Tp(a.Jd, a.Wb)
@@ -6332,7 +6422,7 @@ if (!self.__WB_pmw) {
           z(c, b.TK());
           a().f(eh.f, c)
       }
-      eh.f = "http://localh/device_204";
+      eh.f = "http://localhost:8090/device_204";
       eh.inject = ["reportFactory", "statsService"];
       var fh = {
               I1: "autoplay-enabled",
@@ -9016,10 +9106,40 @@ if (!self.__WB_pmw) {
           return a
       };
       d.Ia = function(a) {
-          a.videoMetadataRenderer && (this.ha = a.videoMetadataRenderer.videoId, this.Xa = L(a.videoMetadataRenderer.title), this.W = a.videoMetadataRenderer.likeStatus, this.cC());
-          a.videoOwnerRenderer && a.videoOwnerRenderer.subscribeButton && (this.w = a.videoOwnerRenderer.subscribeButton.subscribeButtonRenderer, this.I = !!this.w.subscribed, this.M.Vb(this.I));
-          this.gm(!1)
-      };
+        // Log the input 'a' to see the structure
+        console.log('Ia called with input:', a);
+    
+        // Check if videoMetadataRenderer is available
+        if (a.videoMetadataRenderer) {
+            console.log('videoMetadataRenderer found:', a.videoMetadataRenderer);
+    
+            // Set values based on videoMetadataRenderer
+            this.ha = a.videoMetadataRenderer.videoId;
+            this.Xa = L(a.videoMetadataRenderer.title);
+            this.W = a.videoMetadataRenderer.likeStatus;
+            console.log('Updated ha, Xa, W:', this.ha, this.Xa, this.W);
+    
+            // Call cC method (assuming it does something relevant)
+            this.cC();
+        }
+    
+        // Check if videoOwnerRenderer and subscribeButton are available
+        if (a.videoOwnerRenderer && a.videoOwnerRenderer.subscribeButton) {
+            console.log('videoOwnerRenderer and subscribeButton found:', a.videoOwnerRenderer);
+    
+            // Set values based on subscribeButtonRenderer
+            this.w = a.videoOwnerRenderer.subscribeButton.subscribeButtonRenderer;
+            this.I = !!this.w.subscribed;
+            this.M.Vb(this.I);
+    
+            console.log('Updated subscription status:', this.I);
+        }
+    
+        // Call gm method with argument false
+        console.log('Calling gm with argument false');
+        this.gm(false);
+     };
+    
       d.gr = function() {
           return this.sa && this.Ja + 1E3 > this.Wa.Cb().getTime()
       };
@@ -11186,23 +11306,73 @@ if (!self.__WB_pmw) {
           this.h && (this.o.eA(this.h.kh()), this.o.oU(this.h.jh()));
           this.Er("select")
       };
+      
       Pj.prototype.Ia = function(a) {
-          var b = 0,
-              c = !1,
-              e = a.contents;
-          if (e) {
-              for (var f = 0, g = e.length; f < g; f++) {
-                  var k = e[f],
-                      b = b + (parseInt(k.estimatedResults, 10) || 0),
-                      l = n("shelfRenderer.content.horizontalListRenderer.items", k),
-                      c = c || 0 < b && !!l && 0 < l.length;
-                  this.M.attachChild(k.trackingParams)
-              }
-              this.resultCount += b;
-              (this.I = c) || this.g.Za() || this.Bf("[[No videos are available|The message shown when a row has no videos to show.]]");
-              this.I && (this.h || (this.h = this.va("search-shelves")), this.h.Ia(a, this.Aa, "search"), this.h.ba() && this.h.show())
-          } else this.Bf("[[No videos are available|The message shown when a row has no videos to show.]]")
+        console.log('Ia function called with argument:', a);
+    
+        var b = 0,
+            c = !1,
+            e = a.contents;
+    
+        if (e) {
+            console.log('Processing contents:', e);
+    
+            // Loop through each item in the 'contents' array
+            for (var f = 0, g = e.length; f < g; f++) {
+                var k = e[f],
+                    estimatedResults = parseInt(k.estimatedResults, 10) || 0;
+    
+                // Update the result count
+                b = b + estimatedResults;
+    
+                // Check for 'items' in 'horizontalListRenderer' and update flag 'c'
+                var l = n("shelfRenderer.content.horizontalListRenderer.items", k);
+                c = c || (b > 0 && !!l && l.length > 0);
+    
+                // Attach the tracking params to 'M'
+                this.M.attachChild(k.trackingParams);
+    
+                // Log the individual item details
+                console.log('Processing item:', k);
+                console.log('Estimated Results:', estimatedResults);
+                console.log('Horizontal List Items:', l);
+                console.log('Flag c:', c);
+            }
+    
+            // Update the result count and check availability
+            this.resultCount += b;
+            console.log('Updated result count:', this.resultCount);
+    
+            // Log and check if the row has no videos
+            if (!this.I && !this.g.Za()) {
+                console.log('No videos are available');
+                this.Bf("[[No videos are available|The message shown when a row has no videos to show.]]");
+            }
+    
+            // If videos are available, update and show the shelf
+            if (this.I) {
+                console.log('Videos are available, showing search shelf...');
+                if (!this.h) {
+                    this.h = this.va("search-shelves");
+                }
+                console.log('Search shelf:', this.h);
+    
+                // Call the 'Ia' function on the shelf
+                this.h.Ia(a, this.Aa, "search");
+    
+                // Check if shelf should be shown
+                if (this.h.ba()) {
+                    console.log('Showing the search shelf');
+                    this.h.show();
+                }
+            }
+        } else {
+            console.log('No contents found');
+            this.Bf("[[No videos are available|The message shown when a row has no videos to show.]]");
+        }
       };
+    
+
       Pj.inject = Nj.inject;
 
       function Qj(a, b, c, e, f, g) {
@@ -11462,13 +11632,50 @@ if (!self.__WB_pmw) {
           this.h = a.detail[0];
           this.Xq()
       };
+
       d.Xq = function() {
-          var a = null;
-          this.h && (this.g.Ea ? (this.j.clear(), a = this.h.videoMetadataRenderer) : (this.j.Ia(this.h), a = this.h.zb && n("autoplayVideoRenderer.gridVideoRenderer", this.h.zb) || n("autoplayVideoRenderer.pivotVideoRenderer", this.h.zb)));
-          a ? (this.ni = L(a.title), this.Rk = this.ka.f(a, a.videoId)) : this.Rk = this.ni = "";
-          this.j.Ra(this.g.Ea);
-          this.render(!0)
-      };
+        var a = null;
+    
+        // Log the state of 'this.h' before checking conditions
+        console.log('Initial state of this.h:', this.h);
+    
+        if (this.h) {
+            if (this.g.Ea) {
+                // If 'this.g.Ea' is truthy, clear 'this.j' and assign 'a'
+                console.log('this.g.Ea is truthy. Clearing this.j and assigning videoMetadataRenderer.');
+                this.j.clear();
+                a = this.h.videoMetadataRenderer;
+            } else {
+                // If 'this.g.Ea' is falsy, assign 'a' based on conditions
+                console.log('this.g.Ea is falsy. Assigning a based on autoplayVideoRenderer or pivotVideoRenderer.');
+                this.j.Ia(this.h);
+                a = this.h.zb && n("autoplayVideoRenderer.gridVideoRenderer", this.h.zb) || n("autoplayVideoRenderer.pivotVideoRenderer", this.h.zb);
+            }
+        }
+    
+        // Log the value of 'a' after assignment
+        console.log('Value of a:', a);
+    
+        if (a) {
+            // If 'a' is truthy, assign values to 'this.ni' and 'this.Rk'
+            console.log('a is truthy, setting this.ni and this.Rk.');
+            this.ni = L(a.title);
+            this.Rk = this.ka.f(a, a.videoId);
+        } else {
+            // If 'a' is falsy, reset 'this.ni' and 'this.Rk'
+            console.log('a is falsy, resetting this.ni and this.Rk.');
+            this.Rk = this.ni = "";
+        }
+    
+        // Log the state of 'this.j' and 'this.g.Ea' before calling 'this.j.Ra'
+        console.log('Calling this.j.Ra with this.g.Ea:', this.g.Ea);
+        this.j.Ra(this.g.Ea);
+    
+        // Log before rendering
+        console.log('Rendering with argument true');
+        this.render(true);
+     };
+    
       d.mZ = function(a) {
           a ? this.za("ypc-playback") : this.Ha("ypc-playback");
           this.render()
@@ -11866,11 +12073,39 @@ if (!self.__WB_pmw) {
       d.ZI = function(a) {
           if (a = a.dismissalButton && a.dismissalButton.buttonRenderer) this.g.model = new M(L(a.text)), this.g.model.Ca = a.serviceEndpoint, this.g.render(), this.i.lb(a.trackingParams)
       };
+
       d.$I = function(a, b, c) {
-          if (a = a.list && a.list.horizontalListRenderer)
-              if (this.MS(a), this.h.Ia(a, b, c), b = a.items)
-                  for (c = 0, a = b.length; c < a; c++) this.i.lb(b[c].gridButtonRenderer && b[c].gridButtonRenderer.trackingParams)
-      };
+        console.log('Function $I called with arguments:', a, b, c);
+        console.log('yadqd');
+
+            // Check if 'a.list' exists and contains 'horizontalListRenderer'
+            if (a = a.list && a.list.horizontalListRenderer) {
+                console.log('Found horizontalListRenderer:', a);
+
+                // Call MS function on the horizontalListRenderer
+                this.MS(a);
+                console.log('Called MS with horizontalListRenderer:', a);
+
+                // Call the 'Ia' function on 'this.h' with arguments 'a', 'b', and 'c'
+                this.h.Ia(a, b, c);
+                console.log('Called Ia on this.h with:', a, b, c);
+
+                // If 'a.items' exists, process each item in the list
+                if (b = a.items) {
+                    console.log('Processing items:', b);
+
+                    // Loop through each item in the 'items' array
+                    for (c = 0, a = b.length; c < a; c++) {
+                        // Log the gridButtonRenderer tracking params if available
+                        if (b[c].gridButtonRenderer && b[c].gridButtonRenderer.trackingParams) {
+                            console.log('Grid Button Tracking Params:', b[c].gridButtonRenderer.trackingParams);
+                            this.i.lb(b[c].gridButtonRenderer.trackingParams);  // Call lb on each trackingParams
+                        }
+                    }
+                }
+            }
+        };
+
       d.mg = function() {
           return 13.5
       };
@@ -19928,7 +20163,7 @@ if (!self.__WB_pmw) {
       d.ob = function(a, b) {
           for (var c = 0, e = a.length; c < e; ++c) {
               var f = this.Ao(a[c]);
-              f && f.tick(b)
+              f
           }
       };
       d.tick = function(a, b) {
@@ -19948,7 +20183,7 @@ if (!self.__WB_pmw) {
           }
       };
       d.iP = function() {
-          this.o(this.l + "/csi-tail.js").Yd(x(this.OT, this))
+          this.o(this.l + "csi-tail.js").Yd(x(this.OT, this))
       };
       d.OT = function() {
           for (; 0 < this.g.length;) this.g.pop()()
@@ -27781,13 +28016,13 @@ if (!self.__WB_pmw) {
       };
       d.vL = function (userData, sourceData) {
         // Extract the user ID from the `shortBylineText` navigation endpoint.
-        userData.userId = extractValue("shortBylineText.runs.0.navigationEndpoint.browseEndpoint.browseId", sourceData);
+        userData.userId = extractValue("browseId.browseId", sourceData);
     
         userData.displayName = this.f(extractValue("shortBylineText.name", sourceData));
 
         userData.videoId = this.f(extractValue("videoId", sourceData));
 
-        userData.username = userData.displayName;
+        userData.username = sourceData.displayName;
         userData.title = userData.displayName;
     
         userData.imageUrl = "http://localhost:8090/assets/default_pfp.png";
@@ -27799,21 +28034,80 @@ if (!self.__WB_pmw) {
         console.log(`Path: ${path}, Extracted Value:`, value);
         return value;
     }
-      d.zL = function(a) {
-          return this.f(n("lengthText", a))
-      };
+
+    d.zL = function(a) {
+        // Log the entire object 'a' to inspect its structure
+        console.log("Received object a:", a);
+    
+        // Extract the lengthText if it exists
+        const lengthText = a.lengthText;
+    
+        // Log the extracted lengthText
+        console.log("Extracted lengthText:", lengthText);
+    
+        // Process the extracted lengthText with 'this.f'
+        const result = lengthText;
+    
+        // Log the final result after passing through 'this.f'
+        console.log("Result after passing through this.f:", result);
+    
+        // Return the processed result
+        return result;
+    };
+    
+
+
       d.x_ = function(a) {
-          return n("videoId", a)
+            const videoId = n("videoId", a);
+            console.log("Extracted Video ID:", videoId);
+            return videoId;
       };
+
       d.AL = function(a) {
           return this.f(n("title", a))
       };
+
       d.BL = function(a) {
-          return this.f(n("viewCountText", a))
+        // Log the entire object 'a' to inspect its structure
+        console.log("Received object a:", a);
+    
+        // Extract the viewCountText if it exists
+        const viewCountText = a.views;
+    
+        // Log the extracted viewCountText
+        console.log("Extracted viewCountText:", viewCountText);
+    
+        // Process the extracted viewCountText with 'this.f'
+        const result = this.f(viewCountText);
+    
+        // Log the final result after passing through 'this.f'
+        console.log("Result after passing through this.f:", result);
+    
+        // Return the processed result
+        return result;
       };
+    
       d.w_ = function(a) {
-          return this.f(n("publishedTimeText", a))
-      };
+        // Log the entire object 'a' to inspect its structure
+        console.log("Received object a:", a);
+    
+        // Extract the 'publishedTimeText' from 'a' if it exists
+        const publishedTimeText = a.publishedTime;
+    
+        // Log the extracted 'publishedTimeText'
+        console.log("Extracted publishedTimeText:", publishedTimeText);
+    
+        // Process the extracted 'publishedTimeText' with 'this.f'
+        const result = this.f(publishedTimeText);
+    
+        // Log the final result after passing through 'this.f'
+        console.log("Result after passing through this.f:", result);
+    
+        // Return the processed result
+        return result;
+     };
+    
+      
       d.vba = function() {
           return !1
       };
@@ -27990,20 +28284,57 @@ if (!self.__WB_pmw) {
           this.f = this.i = this.h = null
       }
       d = Vt.prototype;
+
       d.apply = function(a) {
-          this.o = a();
-          this.R.jstiming.load.tick("msg_rq");
-          this.g.f && "en_US" != this.g.f ? ("ja_JP" == this.g.f && (this.f = "jp_KTK"), this.aP()) : this.G.setTimeout(x(this.vr, this), 0)
+        this.o = a();
+
+        if (this.R && this.R.jstiming && this.R.jstiming.load && typeof this.R.jstiming.load.tick === "function") {
+            this.R.jstiming.load.tick("msg_rq");
+        } else {
+            console.warn("jstiming.load.tick is not a function or is undefined. Check initialization.");
+        }
+
+        if (this.g.f && this.g.f !== "en_US") {
+            if (this.g.f === "ja_JP") {
+                this.f = "jp_KTK";
+            }
+            this.aP();
+        } else {
+            this.G.setTimeout(x(this.vr, this), 0);
+        }
       };
+    
       d.vr = function() {
-          this.l.F((new S("messages", Ut)).Z().X({
-              translatedMessages: this.h,
-              speechPhrases: this.i
-          }));
-          this.l.F((new S("localeService", St)).Z());
-          this.R.jstiming.load.tick("msg_r");
-          this.o()
-      };
+        // Handle the "messages" service
+        this.l.F(
+            (new S("messages", Ut))
+                .Z()
+                .X({
+                    translatedMessages: this.h,
+                    speechPhrases: this.i
+                })
+        );
+    
+        // Handle the "localeService"
+        this.l.F(
+            (new S("localeService", St)).Z()
+        );
+    
+        // Ensure `tick` is a valid function before calling it
+        if (this.R && this.R.jstiming && this.R.jstiming.load && typeof this.R.jstiming.load.tick === "function") {
+            this.R.jstiming.load.tick("msg_r");
+        } else {
+            console.warn("jstiming.load.tick is not a function or is undefined. Skipping tick.");
+        }
+    
+        // Call the stored function `this.o`
+        if (typeof this.o === "function") {
+            this.o();
+        } else {
+            console.error("this.o is not a function. Ensure it's properly initialized.");
+        }
+     };
+    
       d.Jx = function(a) {
           this.h = a || {};
           !this.i && this.f || this.vr()
@@ -28832,11 +29163,25 @@ if (!self.__WB_pmw) {
       ru.inject = ["component", "source", "innerTubePlaylistParser"];
 
       function su(a, b, c) {
-          var e = b["@videoModel"];
-          e || (e = c.hy(b), b["@videoModel"] = e);
-          a.model = e;
-          return a
-      }
+        // Check if b is not null or undefined
+        if (b) {
+            var e = b["@videoModel"];
+            
+            // If @videoModel doesn't exist, create it using c.hy(b)
+            if (!e) {
+                e = c.hy(b);
+                b["@videoModel"] = e;
+            }
+    
+            // Assign the model to a.model
+            a.model = e;
+        } else {
+            console.warn("Error: 'b' is null or undefined.");
+        }
+        
+        return null;
+    }
+    
       su.inject = ["component", "source", "innerTubeVideoParser"];
 
       function tu(a, b, c, e) {
@@ -29696,14 +30041,16 @@ if (!self.__WB_pmw) {
           b ? (this.g = q, this.l = this.Zs(c, !0)) : (this.h = q, this.j = this.Zs(c, !1));
           this.Yw() && (b = this.zG([this.l, this.j]), this.J("results:changed", b, a))
       };
+
       d.Zs = function(a, b) {
           var c = b ? "[[Long Videos|Title for search results row indicating that it contains videos with a long duration]]" : "[[All Videos|Title for search results row indicating that it contains all videos]]",
-              e = n("contents.sectionListRenderer.contents.0.itemSectionRenderer.contents", a) || [],
+              e = n("contents.sectionListRenderer.contents.0.itemSectionRenderer", a) || [],
               f = n("contents.sectionListRenderer.contents.0.itemSectionRenderer.continuations", a),
               c = Ve(this.w.ia(c), e, f);
           c.estimatedResults = a.estimatedResults;
           return c
       };
+
       d.zG = function(a) {
           2 == this.G.twoRowSearchOrder && a.reverse();
           return {
@@ -32950,16 +33297,29 @@ if (!self.__WB_pmw) {
       var yw = {},
           xw = 0;
 
-      function zw(a) {
-          if (nu(a)) a.jstiming.load.tick = q;
-          else {
-              var b = "home";
-              a.location.href.match(/[?&]v=[\w\+\/\-_=]+/) ? b = "start_watch" : a.location.href.match(/[?&]reversePairingCode=/) && (b = "start_dial");
-              a.jstiming.load.name = b
-          }
-      }
+       function zw(a) {
+            // Ensure `a.jstiming` and `a.jstiming.load` are initialized
+            if (!a.jstiming) {
+                a.jstiming = {};
+            }
+            if (!a.jstiming.load) {
+                a.jstiming.load = {};
+            }
+        
+            if (nu(a)) {
+                a.jstiming.load.tick = q;
+            } else {
+                var b = "home";
+                if (a.location.href.match(/[?&]v=[\w\+\/\-_=]+/)) {
+                    b = "start_watch";
+                } else if (a.location.href.match(/[?&]reversePairingCode=/)) {
+                    b = "start_dial";
+                }
+                a.jstiming.load.name = b;
+            }
+        }
 
-      function Aw() {
+        function Aw() {
           zi = yi = JSON.parse;
           Ai = JSON.stringify;
           kt.prototype.parse = function(a) {
@@ -32998,20 +33358,51 @@ if (!self.__WB_pmw) {
           this.f.F(new V("registerTemplates", Ew || q));
           this.g = this.f.get("window")
       }
+
       Dw.prototype.initialize = function() {
-          if (!Bw(this.g)) {
-              zw(this.g);
-              Aw();
-              ba("yt.logging.errors.log", ww, void 0);
-              var a = new tv(this.f);
-              this.i(a, x(function() {
-                  this.g.jstiming.load.tick("app_b");
-                  this.f.get("bootstrap")();
-                  this.f.get("localStorage").flush();
-                  this.f.get("renderApplication")()
-              }, this))
-          }
-      };
+            if (!Bw(this.g)) {
+
+                zw(this.g);
+
+                Aw();
+
+                ba("yt.logging.errors.log", ww, void 0);
+
+                var a = new tv(this.f);
+
+                this.i(a, x(function() {
+
+                    if (
+                        this.g &&
+                        this.g.jstiming &&
+                        this.g.jstiming.load &&
+                        typeof this.g.jstiming.load.tick === "function"
+                    ) {
+                        this.g.jstiming.load.tick("app_b");
+                    } else {
+                        console.warn("jstiming.load.tick is not a function or is undefined. Skipping tick.");
+                    }
+
+                    if (this.f.get("bootstrap")) {
+                        this.f.get("bootstrap")();
+                    } else {
+                        console.error("Bootstrap function is missing.");
+                    }
+
+                    if (this.f.get("localStorage") && typeof this.f.get("localStorage").flush === "function") {
+                        this.f.get("localStorage").flush();
+                    } else {
+                        console.warn("LocalStorage flush function is missing or not callable.");
+                    }
+                    
+                    if (this.f.get("renderApplication")) {
+                        this.f.get("renderApplication")();
+                    } else {
+                        console.error("RenderApplication function is missing.");
+                    }
+                }, this));
+            }
+        };
 
       function Fw(a, b) {
           this.f = a;

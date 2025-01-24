@@ -1,0 +1,3533 @@
+{
+  "responseContext": {
+    "visitorData": "CgtEV2ZyWlBUeUZoSSiL3sy8BjIKCgJVUxIEGgAgNA%3D%3D",
+    "serviceTrackingParams": [
+      {
+        "service": "GFEEDBACK",
+        "params": [
+          {
+            "key": "has_unlimited_entitlement",
+            "value": "False"
+          },
+          {
+            "key": "has_premium_lite_entitlement",
+            "value": "False"
+          },
+          {
+            "key": "logged_in",
+            "value": "0"
+          },
+          {
+            "key": "e",
+            "value": "23804281,23943577,23943651,24004644,24077241,24166867,24181174,24186126,24241378,24290153,24367821,24378826,24439361,24548629,24566687,39328397,51010235,51017346,51020570,51025415,51037346,51037349,51050361,51053689,51063643,51089007,51098299,51111738,51115184,51124104,51146484,51151423,51152050,51157841,51174143,51176511,51178318,51178327,51178344,51178357,51183909,51193717,51204329,51213888,51217504,51220160,51222382,51222973,51227037,51228850,51230478,51237842,51241028,51242448,51248734,51255676,51256074,51256084,51274583,51276557,51276565,51281227,51285717,51287196,51292055,51294322,51294641,51296439,51298020,51299710,51299724,51303432,51303667,51303669,51303789,51304155,51305839,51308098,51310742,51311029,51311040,51313109,51313767,51313802,51316745,51318845,51320246,51322669,51326288,51326932,51327140,51327165,51327186,51327613,51330194,51330475,51331481,51331502,51331520,51331531,51331542,51331547,51331556,51331559,51332896,51333879,51334604,51335392,51335594,51335644,51335928,51337186,51340611,51340662,51341226,51341975,51342857,51343368,51343821,51344661,51345230,51345629,51346046,51346795,51346810,51346823,51346840,51346855,51346872,51346891,51346904,51347325,51351446,51353231,51353393,51353454,51353498,51354057,51354114,51354567,51355264,51355273,51355287,51355305,51355314,51355339,51355342,51355679,51356976,51357477,51360106,51360113,51360134,51360212,51360215,51361727,51361828,51362038,51362455,51362643,51362857,51363023,51363727,51363732,51363743,51363756,51363765,51363768,51364289,51365348,51365459,51365462,51366270,51366423,51366864,51367487,51367993,51369295,51369889,51370258,51370274,51370999,51371006,51371043,51371294,51371521,51372970,51374198,51374200,51374438,51375168,51375719,51376157,51376330,51376516,51379209,51379274,51379938,51380378,51380383,51380398,51380757,51380770,51380783,51380792,51380805,51380812,51380827,51380894,51381276,51381818,51381857,51381974,51383427,51384305,51384391,51384461,51384887,51385023,51385539,51386539,51388999,51389629"
+          }
+        ]
+      }
+    ],
+    "maxAgeSeconds": 7200
+  },
+  "estimatedResults": "10679",
+  "contents": {
+    "sectionListRenderer": {
+      "contents": [
+        {
+          "shelfRenderer": {
+            "content": {
+              "horizontalListRenderer": {
+                "items": [
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/YkGqy1gXs6mOGXww5KFBzVR3bISHM2RE5nrQKZ-3dzmpb5WLKqUJhAy-z6un9iAUB2mU5KB8ug=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/YkGqy1gXs6mOGXww5KFBzVR3bISHM2RE5nrQKZ-3dzmpb5WLKqUJhAy-z6un9iAUB2mU5KB8ug=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "DSDSD"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "@dsdsd1"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "4.77K subscribers"
+                                          }
+                                        },
+                                        "simpleText": "4.77K subscribers"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CC8QoTAYACITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UCBIa84fnJ07gWDA6uPho_9A"
+                        }
+                      },
+                      "trackingParams": "CC8QoTAYACITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "UCBIa84fnJ07gWDA6uPho_9A",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CC8QoTAYACITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UCBIa84fnJ07gWDA6uPho_9A",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/YkGqy1gXs6mOGXww5KFBzVR3bISHM2RE5nrQKZ-3dzmpb5WLKqUJhAy-z6un9iAUB2mU5KB8ug=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/YkGqy1gXs6mOGXww5KFBzVR3bISHM2RE5nrQKZ-3dzmpb5WLKqUJhAy-z6un9iAUB2mU5KB8ug=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "DSDSD"
+                          },
+                          "subtitle": {
+                            "simpleText": "@dsdsd1"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CC8QoTAYACITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UCBIa84fnJ07gWDA6uPho_9A"
+                                      }
+                                    },
+                                    "trackingParams": "CC8QoTAYACITCLPv_sTZjYsDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CC8QoTAYACITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/KYq4xDh79-U/hqdefault.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLBP8Q9ygziOBdy8592IgEj6HkMC_w",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "accessibility": {
+                                    "accessibilityData": {
+                                      "label": "42 minutes, 30 seconds"
+                                    }
+                                  },
+                                  "simpleText": "42:30"
+                                },
+                                "style": "DEFAULT"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Chess Civilization: THE MOVIE"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "DSDSD"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "195K views"
+                                          }
+                                        },
+                                        "simpleText": "195K views"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "•"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "3 months ago"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CCwQpDAYASITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNoUgVkc2RzZJoBAxD0JA==",
+                        "watchEndpoint": {
+                          "videoId": "KYq4xDh79-U",
+                          "params": "qgMFZHNkc2S6AwsIz4uUzNSV4c7fAboDCgjTsLXB2vi1wwW6AwsI9_Lq0PbwrPfuAboDJBIiUEx2Mll2Tk5ZXzNMcWUxV1hxMENpeUtJN0l3V1B4MXJtSLoDJBIiUEx0YXFuUU9GSXN5X1l5bWRYYVhlcldsQ3B1dkxkeFg2VroDFBISUEwwMjZCNzFEQjRGQTZDRjUzugMkEiJQTDF3M1ljNXNUZV9OQkQ5aGY5NFFGdGNxQVhtRGE3eGJQugMkEiJQTDVuRjlwc3JBRzczV1NtYXVjV0ZxeHE1aWNwcGtfTmM0ugMKCJbl4aqmub29W7oDJBIiUExGTlNSa0NwQW5MbVctcHMzaEJ5dFJBd3dhQ2pFMTdWMLoDFBISUEw4NUQ0M0ZGQzlFNTQxRUE2ugMUEhJQTEY4MjdDOEMwQTZEMTkxNTW6AxQSElBMOEVDRkI0RUUxNzlGN0JDQboDFBISUEwyNTk1Qjk0RUM1NUEzRTM4ugMkEiJQTDlzcXphRXdfWnZPcU8ybHhTd0xvOWhHdS1IMkFYTXdnugMUEhJQTENFQjNFQkNCRTdCNERDQUS6AyQSIlBMUFJPODVmUVg1YzVlbEF0UjVsTGtaSDN1SUUxeGkxQ0ryAwUNE803Pg%3D%3D",
+                          "playerParams": "ygUFZHNkc2Q%3D",
+                          "watchEndpointSupportedOnesieConfig": {
+                            "html5PlaybackOnesieConfig": {
+                              "commonConfig": {
+                                "url": "https://rr3---sn-tt1e7nlz.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=298ab8c4387bf7e5&ip=67.144.118.91&initcwndbps=5860000&mt=1737698692"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "trackingParams": "CCwQpDAYASITCLPv_sTZjYsDFeOmwgEdGCEmqUDl7-_Dw5iuxSk=",
+                      "contentId": "KYq4xDh79-U",
+                      "contentType": "TILE_CONTENT_TYPE_VIDEO",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CCwQpDAYASITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "KYq4xDh79-U",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/KYq4xDh79-U/hqdefault.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLBP8Q9ygziOBdy8592IgEj6HkMC_w",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Chess Civilization: THE MOVIE"
+                          },
+                          "subtitle": {
+                            "simpleText": "DSDSD"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Play"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CC4QmvwFGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqkyBnNlYXJjaFIFZHNkc2SaAQMQ9CQ=",
+                                      "watchEndpoint": {
+                                        "videoId": "KYq4xDh79-U",
+                                        "params": "qgMFZHNkc2S6AwsIz4uUzNSV4c7fAboDCgjTsLXB2vi1wwW6AwsI9_Lq0PbwrPfuAboDJBIiUEx2Mll2Tk5ZXzNMcWUxV1hxMENpeUtJN0l3V1B4MXJtSLoDJBIiUEx0YXFuUU9GSXN5X1l5bWRYYVhlcldsQ3B1dkxkeFg2VroDFBISUEwwMjZCNzFEQjRGQTZDRjUzugMkEiJQTDF3M1ljNXNUZV9OQkQ5aGY5NFFGdGNxQVhtRGE3eGJQugMkEiJQTDVuRjlwc3JBRzczV1NtYXVjV0ZxeHE1aWNwcGtfTmM0ugMKCJbl4aqmub29W7oDJBIiUExGTlNSa0NwQW5MbVctcHMzaEJ5dFJBd3dhQ2pFMTdWMLoDFBISUEw4NUQ0M0ZGQzlFNTQxRUE2ugMUEhJQTEY4MjdDOEMwQTZEMTkxNTW6AxQSElBMOEVDRkI0RUUxNzlGN0JDQboDFBISUEwyNTk1Qjk0RUM1NUEzRTM4ugMkEiJQTDlzcXphRXdfWnZPcU8ybHhTd0xvOWhHdS1IMkFYTXdnugMUEhJQTENFQjNFQkNCRTdCNERDQUS6AyQSIlBMUFJPODVmUVg1YzVlbEF0UjVsTGtaSDN1SUUxeGkxQ0ryAwUNE803Pg%3D%3D",
+                                        "playerParams": "ygUFZHNkc2Q%3D",
+                                        "watchEndpointSupportedOnesieConfig": {
+                                          "html5PlaybackOnesieConfig": {
+                                            "commonConfig": {
+                                              "url": "https://rr3---sn-tt1e7nlz.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=298ab8c4387bf7e5&ip=67.144.118.91&initcwndbps=5860000&mt=1737698692"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "trackingParams": "CC4QmvwFGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                },
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CC0Q8sgIGAEiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCBIa84fnJ07gWDA6uPho_9A"
+                                      }
+                                    },
+                                    "trackingParams": "CC0Q8sgIGAEiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CCwQpDAYASITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/352ErUmFBc8/hqdefault.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLDekYJiqmcJuot7l9VbC53fcdYguw",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "accessibility": {
+                                    "accessibilityData": {
+                                      "label": "10 minutes, 20 seconds"
+                                    }
+                                  },
+                                  "simpleText": "10:20"
+                                },
+                                "style": "DEFAULT"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Chess, but the world is LIMITED"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "DSDSD"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "18K views"
+                                          }
+                                        },
+                                        "simpleText": "18K views"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "•"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "2 months ago"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CCkQpDAYAiITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNoUgVkc2RzZJoBAxD0JA==",
+                        "watchEndpoint": {
+                          "videoId": "352ErUmFBc8",
+                          "params": "qgMFZHNkc2S6AwoI5e_vw8OYrsUpugMKCNOwtcHa-LXDBboDCwj38urQ9vCs9-4BugMkEiJQTHYyWXZOTllfM0xxZTFXWHEwQ2l5S0k3SXdXUHgxcm1IugMkEiJQTHRhcW5RT0ZJc3lfWXltZFhhWGVyV2xDcHV2TGR4WDZWugMUEhJQTDAyNkI3MURCNEZBNkNGNTO6AyQSIlBMMXczWWM1c1RlX05CRDloZjk0UUZ0Y3FBWG1EYTd4YlC6AyQSIlBMNW5GOXBzckFHNzNXU21hdWNXRnF4cTVpY3Bwa19OYzS6AwoIluXhqqa5vb1bugMkEiJQTEZOU1JrQ3BBbkxtVy1wczNoQnl0UkF3d2FDakUxN1YwugMUEhJQTDg1RDQzRkZDOUU1NDFFQTa6AxQSElBMRjgyN0M4QzBBNkQxOTE1NboDFBISUEw4RUNGQjRFRTE3OUY3QkNBugMUEhJQTDI1OTVCOTRFQzU1QTNFMzi6AyQSIlBMOXNxemFFd19adk9xTzJseFN3TG85aEd1LUgyQVhNd2e6AxQSElBMQ0VCM0VCQ0JFN0I0RENBRLoDJBIiUExQUk84NWZRWDVjNWVsQXRSNWxMa1pIM3VJRTF4aTFDSvIDBQ0TzTc-",
+                          "playerParams": "ygUFZHNkc2Q%3D",
+                          "watchEndpointSupportedOnesieConfig": {
+                            "html5PlaybackOnesieConfig": {
+                              "commonConfig": {
+                                "url": "https://rr1---sn-tt1e7nls.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=df9d84ad498505cf&ip=67.144.118.91&initcwndbps=5860000&mt=1737698692"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "trackingParams": "CCkQpDAYAiITCLPv_sTZjYsDFeOmwgEdGCEmqUDPi5TM1JXhzt8B",
+                      "contentId": "352ErUmFBc8",
+                      "contentType": "TILE_CONTENT_TYPE_VIDEO",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CCkQpDAYAiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "352ErUmFBc8",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/352ErUmFBc8/hqdefault.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLDekYJiqmcJuot7l9VbC53fcdYguw",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Chess, but the world is LIMITED"
+                          },
+                          "subtitle": {
+                            "simpleText": "DSDSD"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Play"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CCsQmvwFGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqkyBnNlYXJjaFIFZHNkc2SaAQMQ9CQ=",
+                                      "watchEndpoint": {
+                                        "videoId": "352ErUmFBc8",
+                                        "params": "qgMFZHNkc2S6AwoI5e_vw8OYrsUpugMKCNOwtcHa-LXDBboDCwj38urQ9vCs9-4BugMkEiJQTHYyWXZOTllfM0xxZTFXWHEwQ2l5S0k3SXdXUHgxcm1IugMkEiJQTHRhcW5RT0ZJc3lfWXltZFhhWGVyV2xDcHV2TGR4WDZWugMUEhJQTDAyNkI3MURCNEZBNkNGNTO6AyQSIlBMMXczWWM1c1RlX05CRDloZjk0UUZ0Y3FBWG1EYTd4YlC6AyQSIlBMNW5GOXBzckFHNzNXU21hdWNXRnF4cTVpY3Bwa19OYzS6AwoIluXhqqa5vb1bugMkEiJQTEZOU1JrQ3BBbkxtVy1wczNoQnl0UkF3d2FDakUxN1YwugMUEhJQTDg1RDQzRkZDOUU1NDFFQTa6AxQSElBMRjgyN0M4QzBBNkQxOTE1NboDFBISUEw4RUNGQjRFRTE3OUY3QkNBugMUEhJQTDI1OTVCOTRFQzU1QTNFMzi6AyQSIlBMOXNxemFFd19adk9xTzJseFN3TG85aEd1LUgyQVhNd2e6AxQSElBMQ0VCM0VCQ0JFN0I0RENBRLoDJBIiUExQUk84NWZRWDVjNWVsQXRSNWxMa1pIM3VJRTF4aTFDSvIDBQ0TzTc-",
+                                        "playerParams": "ygUFZHNkc2Q%3D",
+                                        "watchEndpointSupportedOnesieConfig": {
+                                          "html5PlaybackOnesieConfig": {
+                                            "commonConfig": {
+                                              "url": "https://rr1---sn-tt1e7nls.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=df9d84ad498505cf&ip=67.144.118.91&initcwndbps=5860000&mt=1737698692"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "trackingParams": "CCsQmvwFGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                },
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CCoQ8sgIGAEiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCBIa84fnJ07gWDA6uPho_9A"
+                                      }
+                                    },
+                                    "trackingParams": "CCoQ8sgIGAEiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CCkQpDAYAiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/gM65y03zLefNfu_l3JoaUyLKWc3My0B5PJgYMpU5S3VyCIka-DMqgL8Loh8bUykaiJJ920aqbA=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/gM65y03zLefNfu_l3JoaUyLKWc3My0B5PJgYMpU5S3VyCIka-DMqgL8Loh8bUykaiJJ920aqbA=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "DSDSD - Dutch Seminar on Data Systems Design"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "@dsdsd-dutchseminarondatasy9022"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "1.24K subscribers"
+                                          }
+                                        },
+                                        "simpleText": "1.24K subscribers"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CCgQoTAYAyITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UC-lFJg2eN9Qds1MBZzMM9mQ"
+                        }
+                      },
+                      "trackingParams": "CCgQoTAYAyITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "UC-lFJg2eN9Qds1MBZzMM9mQ",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CCgQoTAYAyITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UC-lFJg2eN9Qds1MBZzMM9mQ",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/gM65y03zLefNfu_l3JoaUyLKWc3My0B5PJgYMpU5S3VyCIka-DMqgL8Loh8bUykaiJJ920aqbA=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/gM65y03zLefNfu_l3JoaUyLKWc3My0B5PJgYMpU5S3VyCIka-DMqgL8Loh8bUykaiJJ920aqbA=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "DSDSD - Dutch Seminar on Data Systems Design"
+                          },
+                          "subtitle": {
+                            "simpleText": "@dsdsd-dutchseminarondatasy9022"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CCgQoTAYAyITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UC-lFJg2eN9Qds1MBZzMM9mQ"
+                                      }
+                                    },
+                                    "trackingParams": "CCgQoTAYAyITCLPv_sTZjYsDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CCgQoTAYAyITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/BYbXxagtWFM/hqdefault.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLC8huOV8TN79qHJptAkXctGSbRLQQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "accessibility": {
+                                    "accessibilityData": {
+                                      "label": "8 minutes, 33 seconds"
+                                    }
+                                  },
+                                  "simpleText": "8:33"
+                                },
+                                "style": "DEFAULT"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Washing Machine INVASION in Chess Civilization!"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "DSDSD"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "2.4K views"
+                                          }
+                                        },
+                                        "simpleText": "2.4K views"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "•"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "6 months ago"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CCUQpDAYBCITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNoUgVkc2RzZJoBAxD0JA==",
+                        "watchEndpoint": {
+                          "videoId": "BYbXxagtWFM",
+                          "params": "qgMFZHNkc2S6AwoI5e_vw8OYrsUpugMLCM-LlMzUleHO3wG6AwsI9_Lq0PbwrPfuAboDJBIiUEx2Mll2Tk5ZXzNMcWUxV1hxMENpeUtJN0l3V1B4MXJtSLoDJBIiUEx0YXFuUU9GSXN5X1l5bWRYYVhlcldsQ3B1dkxkeFg2VroDFBISUEwwMjZCNzFEQjRGQTZDRjUzugMkEiJQTDF3M1ljNXNUZV9OQkQ5aGY5NFFGdGNxQVhtRGE3eGJQugMkEiJQTDVuRjlwc3JBRzczV1NtYXVjV0ZxeHE1aWNwcGtfTmM0ugMKCJbl4aqmub29W7oDJBIiUExGTlNSa0NwQW5MbVctcHMzaEJ5dFJBd3dhQ2pFMTdWMLoDFBISUEw4NUQ0M0ZGQzlFNTQxRUE2ugMUEhJQTEY4MjdDOEMwQTZEMTkxNTW6AxQSElBMOEVDRkI0RUUxNzlGN0JDQboDFBISUEwyNTk1Qjk0RUM1NUEzRTM4ugMkEiJQTDlzcXphRXdfWnZPcU8ybHhTd0xvOWhHdS1IMkFYTXdnugMUEhJQTENFQjNFQkNCRTdCNERDQUS6AyQSIlBMUFJPODVmUVg1YzVlbEF0UjVsTGtaSDN1SUUxeGkxQ0ryAwUNE803Pg%3D%3D",
+                          "playerParams": "ygUFZHNkc2Q%3D",
+                          "watchEndpointSupportedOnesieConfig": {
+                            "html5PlaybackOnesieConfig": {
+                              "commonConfig": {
+                                "url": "https://rr1---sn-tt1elnel.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=0586d7c5a82d5853&ip=67.144.118.91&initcwndbps=5860000&mt=1737698692"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "trackingParams": "CCUQpDAYBCITCLPv_sTZjYsDFeOmwgEdGCEmqUDTsLXB2vi1wwU=",
+                      "contentId": "BYbXxagtWFM",
+                      "contentType": "TILE_CONTENT_TYPE_VIDEO",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CCUQpDAYBCITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "BYbXxagtWFM",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/BYbXxagtWFM/hqdefault.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLC8huOV8TN79qHJptAkXctGSbRLQQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Washing Machine INVASION in Chess Civilization!"
+                          },
+                          "subtitle": {
+                            "simpleText": "DSDSD"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Play"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CCcQmvwFGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqkyBnNlYXJjaFIFZHNkc2SaAQMQ9CQ=",
+                                      "watchEndpoint": {
+                                        "videoId": "BYbXxagtWFM",
+                                        "params": "qgMFZHNkc2S6AwoI5e_vw8OYrsUpugMLCM-LlMzUleHO3wG6AwsI9_Lq0PbwrPfuAboDJBIiUEx2Mll2Tk5ZXzNMcWUxV1hxMENpeUtJN0l3V1B4MXJtSLoDJBIiUEx0YXFuUU9GSXN5X1l5bWRYYVhlcldsQ3B1dkxkeFg2VroDFBISUEwwMjZCNzFEQjRGQTZDRjUzugMkEiJQTDF3M1ljNXNUZV9OQkQ5aGY5NFFGdGNxQVhtRGE3eGJQugMkEiJQTDVuRjlwc3JBRzczV1NtYXVjV0ZxeHE1aWNwcGtfTmM0ugMKCJbl4aqmub29W7oDJBIiUExGTlNSa0NwQW5MbVctcHMzaEJ5dFJBd3dhQ2pFMTdWMLoDFBISUEw4NUQ0M0ZGQzlFNTQxRUE2ugMUEhJQTEY4MjdDOEMwQTZEMTkxNTW6AxQSElBMOEVDRkI0RUUxNzlGN0JDQboDFBISUEwyNTk1Qjk0RUM1NUEzRTM4ugMkEiJQTDlzcXphRXdfWnZPcU8ybHhTd0xvOWhHdS1IMkFYTXdnugMUEhJQTENFQjNFQkNCRTdCNERDQUS6AyQSIlBMUFJPODVmUVg1YzVlbEF0UjVsTGtaSDN1SUUxeGkxQ0ryAwUNE803Pg%3D%3D",
+                                        "playerParams": "ygUFZHNkc2Q%3D",
+                                        "watchEndpointSupportedOnesieConfig": {
+                                          "html5PlaybackOnesieConfig": {
+                                            "commonConfig": {
+                                              "url": "https://rr1---sn-tt1elnel.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=0586d7c5a82d5853&ip=67.144.118.91&initcwndbps=5860000&mt=1737698692"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "trackingParams": "CCcQmvwFGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                },
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CCYQ8sgIGAEiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCBIa84fnJ07gWDA6uPho_9A"
+                                      }
+                                    },
+                                    "trackingParams": "CCYQ8sgIGAEiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CCUQpDAYBCITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/7u6zh2oauXc/hqdefault.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLCpxVsg1JYP0sEtMl0WIusH-2Unyg",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "accessibility": {
+                                    "accessibilityData": {
+                                      "label": "7 minutes, 20 seconds"
+                                    }
+                                  },
+                                  "simpleText": "7:20"
+                                },
+                                "style": "DEFAULT"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "I Joined a DIFFERENT Chess Civilization!"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "DSDSD"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "5.4K views"
+                                          }
+                                        },
+                                        "simpleText": "5.4K views"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "•"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "9 months ago"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CCIQpDAYBSITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNoUgVkc2RzZJoBAxD0JA==",
+                        "watchEndpoint": {
+                          "videoId": "7u6zh2oauXc",
+                          "params": "qgMFZHNkc2S6AwoI5e_vw8OYrsUpugMLCM-LlMzUleHO3wG6AwoI07C1wdr4tcMFugMkEiJQTHYyWXZOTllfM0xxZTFXWHEwQ2l5S0k3SXdXUHgxcm1IugMkEiJQTHRhcW5RT0ZJc3lfWXltZFhhWGVyV2xDcHV2TGR4WDZWugMUEhJQTDAyNkI3MURCNEZBNkNGNTO6AyQSIlBMMXczWWM1c1RlX05CRDloZjk0UUZ0Y3FBWG1EYTd4YlC6AyQSIlBMNW5GOXBzckFHNzNXU21hdWNXRnF4cTVpY3Bwa19OYzS6AwoIluXhqqa5vb1bugMkEiJQTEZOU1JrQ3BBbkxtVy1wczNoQnl0UkF3d2FDakUxN1YwugMUEhJQTDg1RDQzRkZDOUU1NDFFQTa6AxQSElBMRjgyN0M4QzBBNkQxOTE1NboDFBISUEw4RUNGQjRFRTE3OUY3QkNBugMUEhJQTDI1OTVCOTRFQzU1QTNFMzi6AyQSIlBMOXNxemFFd19adk9xTzJseFN3TG85aEd1LUgyQVhNd2e6AxQSElBMQ0VCM0VCQ0JFN0I0RENBRLoDJBIiUExQUk84NWZRWDVjNWVsQXRSNWxMa1pIM3VJRTF4aTFDSvIDBQ0TzTc-",
+                          "playerParams": "ygUFZHNkc2Q%3D",
+                          "watchEndpointSupportedOnesieConfig": {
+                            "html5PlaybackOnesieConfig": {
+                              "commonConfig": {
+                                "url": "https://rr3---sn-tt1elnel.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=eeeeb3876a1ab977&ip=67.144.118.91&initcwndbps=5860000&mt=1737698692"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "trackingParams": "CCIQpDAYBSITCLPv_sTZjYsDFeOmwgEdGCEmqUD38urQ9vCs9-4B",
+                      "contentId": "7u6zh2oauXc",
+                      "contentType": "TILE_CONTENT_TYPE_VIDEO",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CCIQpDAYBSITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "7u6zh2oauXc",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/7u6zh2oauXc/hqdefault.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLCpxVsg1JYP0sEtMl0WIusH-2Unyg",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "I Joined a DIFFERENT Chess Civilization!"
+                          },
+                          "subtitle": {
+                            "simpleText": "DSDSD"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Play"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CCQQmvwFGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqkyBnNlYXJjaFIFZHNkc2SaAQMQ9CQ=",
+                                      "watchEndpoint": {
+                                        "videoId": "7u6zh2oauXc",
+                                        "params": "qgMFZHNkc2S6AwoI5e_vw8OYrsUpugMLCM-LlMzUleHO3wG6AwoI07C1wdr4tcMFugMkEiJQTHYyWXZOTllfM0xxZTFXWHEwQ2l5S0k3SXdXUHgxcm1IugMkEiJQTHRhcW5RT0ZJc3lfWXltZFhhWGVyV2xDcHV2TGR4WDZWugMUEhJQTDAyNkI3MURCNEZBNkNGNTO6AyQSIlBMMXczWWM1c1RlX05CRDloZjk0UUZ0Y3FBWG1EYTd4YlC6AyQSIlBMNW5GOXBzckFHNzNXU21hdWNXRnF4cTVpY3Bwa19OYzS6AwoIluXhqqa5vb1bugMkEiJQTEZOU1JrQ3BBbkxtVy1wczNoQnl0UkF3d2FDakUxN1YwugMUEhJQTDg1RDQzRkZDOUU1NDFFQTa6AxQSElBMRjgyN0M4QzBBNkQxOTE1NboDFBISUEw4RUNGQjRFRTE3OUY3QkNBugMUEhJQTDI1OTVCOTRFQzU1QTNFMzi6AyQSIlBMOXNxemFFd19adk9xTzJseFN3TG85aEd1LUgyQVhNd2e6AxQSElBMQ0VCM0VCQ0JFN0I0RENBRLoDJBIiUExQUk84NWZRWDVjNWVsQXRSNWxMa1pIM3VJRTF4aTFDSvIDBQ0TzTc-",
+                                        "playerParams": "ygUFZHNkc2Q%3D",
+                                        "watchEndpointSupportedOnesieConfig": {
+                                          "html5PlaybackOnesieConfig": {
+                                            "commonConfig": {
+                                              "url": "https://rr3---sn-tt1elnel.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=eeeeb3876a1ab977&ip=67.144.118.91&initcwndbps=5860000&mt=1737698692"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "trackingParams": "CCQQmvwFGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                },
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CCMQ8sgIGAEiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCBIa84fnJ07gWDA6uPho_9A"
+                                      }
+                                    },
+                                    "trackingParams": "CCMQ8sgIGAEiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CCIQpDAYBSITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/DPZEPP0xUto/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBjYn5jiBBe243b9qxFGt9yRECihw",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 17,
+                              "green": 65,
+                              "blue": 114
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 465971,
+                              "iconInactiveColor": 7767187,
+                              "iconDisabledColor": 4410969
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 7045529
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "6",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4282601049,
+                                "lowerStackColor": 4285957267
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "Denise Puchegger",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CCAQojAYBiITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCslq2MT3ZVIFtA3TizraHhA"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CCAQojAYBiITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPLv2YvNNY_3Lqe1WXq0CiyKI7IwWPx1rmH"
+                        }
+                      },
+                      "trackingParams": "CCAQojAYBiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "PLv2YvNNY_3Lqe1WXq0CiyKI7IwWPx1rmH",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CCAQojAYBiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PLv2YvNNY_3Lqe1WXq0CiyKI7IwWPx1rmH",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/DPZEPP0xUto/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBjYn5jiBBe243b9qxFGt9yRECihw",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 17,
+                              "green": 65,
+                              "blue": 114
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 465971,
+                              "iconInactiveColor": 7767187,
+                              "iconDisabledColor": 4410969
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 7045529
+                            }
+                          },
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "Denise Puchegger",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CCAQojAYBiITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCslq2MT3ZVIFtA3TizraHhA"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CCEQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCslq2MT3ZVIFtA3TizraHhA"
+                                      }
+                                    },
+                                    "trackingParams": "CCEQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CCAQojAYBiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/i8a95irCxsk/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAz5lCE0Ayso2lthXh60bn_CV56lA",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 114,
+                              "green": 46,
+                              "blue": 39
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3347473,
+                              "iconInactiveColor": 9664630,
+                              "iconDisabledColor": 5850435
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10055275
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "13",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284040515,
+                                "lowerStackColor": 4287854710
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "deenwin",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CB4QojAYByITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCrLxqmUoysc-X8BSS3jgRSA"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CB4QojAYByITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPLtaqnQOFIsy_YymdXaXerWlCpuvLdxX6V"
+                        }
+                      },
+                      "trackingParams": "CB4QojAYByITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "PLtaqnQOFIsy_YymdXaXerWlCpuvLdxX6V",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CB4QojAYByITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PLtaqnQOFIsy_YymdXaXerWlCpuvLdxX6V",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/i8a95irCxsk/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAz5lCE0Ayso2lthXh60bn_CV56lA",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 114,
+                              "green": 46,
+                              "blue": 39
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3347473,
+                              "iconInactiveColor": 9664630,
+                              "iconDisabledColor": 5850435
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10055275
+                            }
+                          },
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "deenwin",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CB4QojAYByITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCrLxqmUoysc-X8BSS3jgRSA"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CB8Q8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCrLxqmUoysc-X8BSS3jgRSA"
+                                      }
+                                    },
+                                    "trackingParams": "CB8Q8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CB4QojAYByITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/Ug88HO2mg44/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBWVwmpzBXYD0gd3ZxT-admyrsFoA",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 89,
+                              "green": 80,
+                              "blue": 72
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3353897,
+                              "iconInactiveColor": 9667704,
+                              "iconDisabledColor": 5853256
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10062205
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "13",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284043336,
+                                "lowerStackColor": 4287857784
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "Martin Pinkster",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CBwQojAYCCITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCIC32uvgCOYV58n9ebxXv1Q"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CBwQojAYCCITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPL026B71DB4FA6CF53"
+                        }
+                      },
+                      "trackingParams": "CBwQojAYCCITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "PL026B71DB4FA6CF53",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CBwQojAYCCITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PL026B71DB4FA6CF53",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/Ug88HO2mg44/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBWVwmpzBXYD0gd3ZxT-admyrsFoA",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 89,
+                              "green": 80,
+                              "blue": 72
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3353897,
+                              "iconInactiveColor": 9667704,
+                              "iconDisabledColor": 5853256
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10062205
+                            }
+                          },
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "Martin Pinkster",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CBwQojAYCCITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCIC32uvgCOYV58n9ebxXv1Q"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CB0Q8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCIC32uvgCOYV58n9ebxXv1Q"
+                                      }
+                                    },
+                                    "trackingParams": "CB0Q8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CBwQojAYCCITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/TKXafcpKp1c/hqdefault.jpg?sqp=-oaymwExCMACELQBSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYZSBlKGUwDw==&rs=AOn4CLDz1F3JNtq1bKARdNzskYqIgwM43g",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 89,
+                              "green": 89,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3355443,
+                              "iconInactiveColor": 9211020,
+                              "iconDisabledColor": 5855577
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10066329
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "7",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284045657,
+                                "lowerStackColor": 4287401100
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "pi pe",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CBoQojAYCSITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCJiyqeUC3EmXlVOMVsAbIqA"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CBoQojAYCSITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPL1w3Yc5sTe_NBD9hf94QFtcqAXmDa7xbP"
+                        }
+                      },
+                      "trackingParams": "CBoQojAYCSITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "PL1w3Yc5sTe_NBD9hf94QFtcqAXmDa7xbP",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CBoQojAYCSITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PL1w3Yc5sTe_NBD9hf94QFtcqAXmDa7xbP",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/TKXafcpKp1c/hqdefault.jpg?sqp=-oaymwExCMACELQBSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYZSBlKGUwDw==&rs=AOn4CLDz1F3JNtq1bKARdNzskYqIgwM43g",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 89,
+                              "green": 89,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3355443,
+                              "iconInactiveColor": 9211020,
+                              "iconDisabledColor": 5855577
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10066329
+                            }
+                          },
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "pi pe",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CBoQojAYCSITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCJiyqeUC3EmXlVOMVsAbIqA"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBsQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCJiyqeUC3EmXlVOMVsAbIqA"
+                                      }
+                                    },
+                                    "trackingParams": "CBsQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CBoQojAYCSITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/4IMaIbfAFLY/hqdefault.jpg?sqp=-oaymwExCMACELQBSFryq4qpAyMIARUAAIhCGAHwAQH4AfgGgALQBYoCDAgAEAEYZSBlKGUwDw==&rs=AOn4CLDDPCgIsjDoklVI_yFC4zsaGgN0jw",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 89,
+                              "green": 89,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3355443,
+                              "iconInactiveColor": 9211020,
+                              "iconDisabledColor": 5855577
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10066329
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "15",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284045657,
+                                "lowerStackColor": 4287401100
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "Tanguy Denis",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CBgQojAYCiITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCY5ykoyS3cV8_1XcwD9eJQQ"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CBgQojAYCiITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPL5nF9psrAG73WSmaucWFqxq5icppk_Nc4"
+                        }
+                      },
+                      "trackingParams": "CBgQojAYCiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "PL5nF9psrAG73WSmaucWFqxq5icppk_Nc4",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CBgQojAYCiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PL5nF9psrAG73WSmaucWFqxq5icppk_Nc4",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/4IMaIbfAFLY/hqdefault.jpg?sqp=-oaymwExCMACELQBSFryq4qpAyMIARUAAIhCGAHwAQH4AfgGgALQBYoCDAgAEAEYZSBlKGUwDw==&rs=AOn4CLDDPCgIsjDoklVI_yFC4zsaGgN0jw",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 89,
+                              "green": 89,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3355443,
+                              "iconInactiveColor": 9211020,
+                              "iconDisabledColor": 5855577
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10066329
+                            }
+                          },
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "Tanguy Denis",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CBgQojAYCiITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCY5ykoyS3cV8_1XcwD9eJQQ"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBkQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCY5ykoyS3cV8_1XcwD9eJQQ"
+                                      }
+                                    },
+                                    "trackingParams": "CBkQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CBgQojAYCiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/W3r1ymVYcpY/hqdefault.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLAPHlT9hgIlmP_ZA6bNMlF6_2b4Ng",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "accessibility": {
+                                    "accessibilityData": {
+                                      "label": "2 minutes, 4 seconds"
+                                    }
+                                  },
+                                  "simpleText": "2:04"
+                                },
+                                "style": "DEFAULT"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Chess PUZZLES be like..."
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "DSDSD"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "3.1K views"
+                                          }
+                                        },
+                                        "simpleText": "3.1K views"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "•"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "1 year ago"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CBUQpDAYCyITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNoUgVkc2RzZJoBAxD0JA==",
+                        "watchEndpoint": {
+                          "videoId": "W3r1ymVYcpY",
+                          "params": "qgMFZHNkc2S6AwoI5e_vw8OYrsUpugMLCM-LlMzUleHO3wG6AwoI07C1wdr4tcMFugMLCPfy6tD28Kz37gG6AyQSIlBMdjJZdk5OWV8zTHFlMVdYcTBDaXlLSTdJd1dQeDFybUi6AyQSIlBMdGFxblFPRklzeV9ZeW1kWGFYZXJXbENwdXZMZHhYNla6AxQSElBMMDI2QjcxREI0RkE2Q0Y1M7oDJBIiUEwxdzNZYzVzVGVfTkJEOWhmOTRRRnRjcUFYbURhN3hiULoDJBIiUEw1bkY5cHNyQUc3M1dTbWF1Y1dGcXhxNWljcHBrX05jNLoDJBIiUExGTlNSa0NwQW5MbVctcHMzaEJ5dFJBd3dhQ2pFMTdWMLoDFBISUEw4NUQ0M0ZGQzlFNTQxRUE2ugMUEhJQTEY4MjdDOEMwQTZEMTkxNTW6AxQSElBMOEVDRkI0RUUxNzlGN0JDQboDFBISUEwyNTk1Qjk0RUM1NUEzRTM4ugMkEiJQTDlzcXphRXdfWnZPcU8ybHhTd0xvOWhHdS1IMkFYTXdnugMUEhJQTENFQjNFQkNCRTdCNERDQUS6AyQSIlBMUFJPODVmUVg1YzVlbEF0UjVsTGtaSDN1SUUxeGkxQ0ryAwUNE803Pg%3D%3D",
+                          "playerParams": "ygUFZHNkc2Q%3D",
+                          "watchEndpointSupportedOnesieConfig": {
+                            "html5PlaybackOnesieConfig": {
+                              "commonConfig": {
+                                "url": "https://rr4---sn-tt1elnel.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=5b7af5ca65587296&ip=67.144.118.91&initcwndbps=5860000&mt=1737698692"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "trackingParams": "CBUQpDAYCyITCLPv_sTZjYsDFeOmwgEdGCEmqUCW5eGqprm9vVs=",
+                      "contentId": "W3r1ymVYcpY",
+                      "contentType": "TILE_CONTENT_TYPE_VIDEO",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CBUQpDAYCyITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "W3r1ymVYcpY",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/W3r1ymVYcpY/hqdefault.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLAPHlT9hgIlmP_ZA6bNMlF6_2b4Ng",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Chess PUZZLES be like..."
+                          },
+                          "subtitle": {
+                            "simpleText": "DSDSD"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Play"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBcQmvwFGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqkyBnNlYXJjaFIFZHNkc2SaAQMQ9CQ=",
+                                      "watchEndpoint": {
+                                        "videoId": "W3r1ymVYcpY",
+                                        "params": "qgMFZHNkc2S6AwoI5e_vw8OYrsUpugMLCM-LlMzUleHO3wG6AwoI07C1wdr4tcMFugMLCPfy6tD28Kz37gG6AyQSIlBMdjJZdk5OWV8zTHFlMVdYcTBDaXlLSTdJd1dQeDFybUi6AyQSIlBMdGFxblFPRklzeV9ZeW1kWGFYZXJXbENwdXZMZHhYNla6AxQSElBMMDI2QjcxREI0RkE2Q0Y1M7oDJBIiUEwxdzNZYzVzVGVfTkJEOWhmOTRRRnRjcUFYbURhN3hiULoDJBIiUEw1bkY5cHNyQUc3M1dTbWF1Y1dGcXhxNWljcHBrX05jNLoDJBIiUExGTlNSa0NwQW5MbVctcHMzaEJ5dFJBd3dhQ2pFMTdWMLoDFBISUEw4NUQ0M0ZGQzlFNTQxRUE2ugMUEhJQTEY4MjdDOEMwQTZEMTkxNTW6AxQSElBMOEVDRkI0RUUxNzlGN0JDQboDFBISUEwyNTk1Qjk0RUM1NUEzRTM4ugMkEiJQTDlzcXphRXdfWnZPcU8ybHhTd0xvOWhHdS1IMkFYTXdnugMUEhJQTENFQjNFQkNCRTdCNERDQUS6AyQSIlBMUFJPODVmUVg1YzVlbEF0UjVsTGtaSDN1SUUxeGkxQ0ryAwUNE803Pg%3D%3D",
+                                        "playerParams": "ygUFZHNkc2Q%3D",
+                                        "watchEndpointSupportedOnesieConfig": {
+                                          "html5PlaybackOnesieConfig": {
+                                            "commonConfig": {
+                                              "url": "https://rr4---sn-tt1elnel.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=5b7af5ca65587296&ip=67.144.118.91&initcwndbps=5860000&mt=1737698692"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "trackingParams": "CBcQmvwFGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                },
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBYQ8sgIGAEiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCBIa84fnJ07gWDA6uPho_9A"
+                                      }
+                                    },
+                                    "trackingParams": "CBYQ8sgIGAEiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CBUQpDAYCyITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/LqidzQWWEZY/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDoe2Dsm7PwE65Tcos-LU18H06A2Q",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 114,
+                              "green": 74,
+                              "blue": 34
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 2628108,
+                              "iconInactiveColor": 9667958,
+                              "iconDisabledColor": 6313289
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 12558981
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "22",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284503369,
+                                "lowerStackColor": 4287858038
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "AndréaG",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CBMQojAYDCITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCDApGSt3t0PutHQBOQj1Y8A"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CBMQojAYDCITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPLFNSRkCpAnLmW-ps3hBytRAwwaCjE17V0"
+                        }
+                      },
+                      "trackingParams": "CBMQojAYDCITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "PLFNSRkCpAnLmW-ps3hBytRAwwaCjE17V0",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CBMQojAYDCITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PLFNSRkCpAnLmW-ps3hBytRAwwaCjE17V0",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/LqidzQWWEZY/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDoe2Dsm7PwE65Tcos-LU18H06A2Q",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 114,
+                              "green": 74,
+                              "blue": 34
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 2628108,
+                              "iconInactiveColor": 9667958,
+                              "iconDisabledColor": 6313289
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 12558981
+                            }
+                          },
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "AndréaG",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CBMQojAYDCITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCDApGSt3t0PutHQBOQj1Y8A"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBQQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCDApGSt3t0PutHQBOQj1Y8A"
+                                      }
+                                    },
+                                    "trackingParams": "CBQQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CBMQojAYDCITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/7YaHP3u4UK4/hqdefault.jpg?sqp=-oaymwExCMACELQBSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYfyAfKBMwDw==&rs=AOn4CLD20Cxw5UcUQDW_Le_tg8SNCfFweQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 114,
+                              "green": 28,
+                              "blue": 17
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3345415,
+                              "iconInactiveColor": 9664886,
+                              "iconDisabledColor": 5850691
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10055787
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "41",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284040771,
+                                "lowerStackColor": 4287854966
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "MrPaulinho148",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CBEQojAYDSITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UC9FcNpGnpxJEDSa5IpYyyhw"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CBEQojAYDSITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPL85D43FFC9E541EA6"
+                        }
+                      },
+                      "trackingParams": "CBEQojAYDSITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "PL85D43FFC9E541EA6",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CBEQojAYDSITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PL85D43FFC9E541EA6",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/7YaHP3u4UK4/hqdefault.jpg?sqp=-oaymwExCMACELQBSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYfyAfKBMwDw==&rs=AOn4CLD20Cxw5UcUQDW_Le_tg8SNCfFweQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 114,
+                              "green": 28,
+                              "blue": 17
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3345415,
+                              "iconInactiveColor": 9664886,
+                              "iconDisabledColor": 5850691
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10055787
+                            }
+                          },
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "MrPaulinho148",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CBEQojAYDSITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UC9FcNpGnpxJEDSa5IpYyyhw"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBIQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UC9FcNpGnpxJEDSa5IpYyyhw"
+                                      }
+                                    },
+                                    "trackingParams": "CBIQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CBEQojAYDSITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/MQyHyfLp5NI/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBgC5c0XyCBDP5LsKm2oohEzf9TwQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 70,
+                              "green": 89,
+                              "blue": 85
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 1975844,
+                              "iconInactiveColor": 7376006,
+                              "iconDisabledColor": 4610389
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 7903633
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "8",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4282800469,
+                                "lowerStackColor": 4285566086
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "meeeehx",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CA8QojAYDiITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UC5Q-TLWASPAWoAP2n5oZgvQ"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CA8QojAYDiITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPLF827C8C0A6D19155"
+                        }
+                      },
+                      "trackingParams": "CA8QojAYDiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "PLF827C8C0A6D19155",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CA8QojAYDiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PLF827C8C0A6D19155",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/MQyHyfLp5NI/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBgC5c0XyCBDP5LsKm2oohEzf9TwQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 70,
+                              "green": 89,
+                              "blue": 85
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 1975844,
+                              "iconInactiveColor": 7376006,
+                              "iconDisabledColor": 4610389
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 7903633
+                            }
+                          },
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "meeeehx",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CA8QojAYDiITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UC5Q-TLWASPAWoAP2n5oZgvQ"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBAQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UC5Q-TLWASPAWoAP2n5oZgvQ"
+                                      }
+                                    },
+                                    "trackingParams": "CBAQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CA8QojAYDiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/QQu14k_RcSM/hqdefault.jpg?sqp=-oaymwExCMACELQBSFryq4qpAyMIARUAAIhCGAHwAQH4Af4EgALgA4oCDAgAEAEYZSBlKGUwDw==&rs=AOn4CLDpzHqwOiur_hZea6Hi5BwkxWMelQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 89,
+                              "green": 89,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3355443,
+                              "iconInactiveColor": 9211020,
+                              "iconDisabledColor": 5855577
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10066329
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "9",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284045657,
+                                "lowerStackColor": 4287401100
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "Daniel",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CA0QojAYDyITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCgLjneWUmUZ9DEZa1J1JVPg"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CA0QojAYDyITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPL8ECFB4EE179F7BCA"
+                        }
+                      },
+                      "trackingParams": "CA0QojAYDyITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "PL8ECFB4EE179F7BCA",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CA0QojAYDyITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PL8ECFB4EE179F7BCA",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/QQu14k_RcSM/hqdefault.jpg?sqp=-oaymwExCMACELQBSFryq4qpAyMIARUAAIhCGAHwAQH4Af4EgALgA4oCDAgAEAEYZSBlKGUwDw==&rs=AOn4CLDpzHqwOiur_hZea6Hi5BwkxWMelQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 89,
+                              "green": 89,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3355443,
+                              "iconInactiveColor": 9211020,
+                              "iconDisabledColor": 5855577
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10066329
+                            }
+                          },
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "Daniel",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CA0QojAYDyITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCgLjneWUmUZ9DEZa1J1JVPg"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CA4Q8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCgLjneWUmUZ9DEZa1J1JVPg"
+                                      }
+                                    },
+                                    "trackingParams": "CA4Q8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CA0QojAYDyITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/rTSzZ0J-f-0/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCKJuzcLOrO5Sso2ohWQok2r0mEdw",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 89,
+                              "green": 89,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3355443,
+                              "iconInactiveColor": 9211020,
+                              "iconDisabledColor": 5855577
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10066329
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "7",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284045657,
+                                "lowerStackColor": 4287401100
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "Karol Der",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CAsQojAYECITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCWqVqa5Rzjkia1VWFuNxACw"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAsQojAYECITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPL2595B94EC55A3E38"
+                        }
+                      },
+                      "trackingParams": "CAsQojAYECITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "PL2595B94EC55A3E38",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAsQojAYECITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PL2595B94EC55A3E38",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/rTSzZ0J-f-0/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCKJuzcLOrO5Sso2ohWQok2r0mEdw",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 89,
+                              "green": 89,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3355443,
+                              "iconInactiveColor": 9211020,
+                              "iconDisabledColor": 5855577
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10066329
+                            }
+                          },
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "Karol Der",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CAsQojAYECITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCWqVqa5Rzjkia1VWFuNxACw"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAwQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCWqVqa5Rzjkia1VWFuNxACw"
+                                      }
+                                    },
+                                    "trackingParams": "CAwQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAsQojAYECITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/nq1JNOPQaKg/hqdefault.jpg?sqp=-oaymwEdCMACELQBSFryq4qpAw8IARUAAIhCGAHtAczMzEE=&rs=AOn4CLA-4aIuZiWd1Vio6iG_y0jKB_4zPA",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 17,
+                              "green": 61,
+                              "blue": 114
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 465715,
+                              "iconInactiveColor": 7766931,
+                              "iconDisabledColor": 4410713
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 7045273
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "187",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4282600793,
+                                "lowerStackColor": 4285957011
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "abhi nov",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CAkQojAYESITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UC2ZCFU3bqmye-QjHqXqcj2A"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAkQojAYESITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPL9sqzaEw_ZvOqO2lxSwLo9hGu-H2AXMwg"
+                        }
+                      },
+                      "trackingParams": "CAkQojAYESITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "PL9sqzaEw_ZvOqO2lxSwLo9hGu-H2AXMwg",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAkQojAYESITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PL9sqzaEw_ZvOqO2lxSwLo9hGu-H2AXMwg",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/nq1JNOPQaKg/hqdefault.jpg?sqp=-oaymwEdCMACELQBSFryq4qpAw8IARUAAIhCGAHtAczMzEE=&rs=AOn4CLA-4aIuZiWd1Vio6iG_y0jKB_4zPA",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 17,
+                              "green": 61,
+                              "blue": 114
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 465715,
+                              "iconInactiveColor": 7766931,
+                              "iconDisabledColor": 4410713
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 7045273
+                            }
+                          },
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "abhi nov",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CAkQojAYESITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UC2ZCFU3bqmye-QjHqXqcj2A"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAoQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UC2ZCFU3bqmye-QjHqXqcj2A"
+                                      }
+                                    },
+                                    "trackingParams": "CAoQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAkQojAYESITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/oyERJwubHWI/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBT110e_XLKOu0S0a3bxaocq21qTA",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 78,
+                              "green": 78,
+                              "blue": 78
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 2631720,
+                              "iconInactiveColor": 9211020,
+                              "iconDisabledColor": 5855577
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 12566463
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "27",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284045657,
+                                "lowerStackColor": 4287401100
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "Ricardo Cano",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CAcQojAYEiITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCr2ItgYh1a1WsMfZkfht33w"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAcQojAYEiITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPLCEB3EBCBE7B4DCAD"
+                        }
+                      },
+                      "trackingParams": "CAcQojAYEiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "PLCEB3EBCBE7B4DCAD",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAcQojAYEiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PLCEB3EBCBE7B4DCAD",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/oyERJwubHWI/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBT110e_XLKOu0S0a3bxaocq21qTA",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 78,
+                              "green": 78,
+                              "blue": 78
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 2631720,
+                              "iconInactiveColor": 9211020,
+                              "iconDisabledColor": 5855577
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 12566463
+                            }
+                          },
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "Ricardo Cano",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CAcQojAYEiITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCr2ItgYh1a1WsMfZkfht33w"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAgQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCr2ItgYh1a1WsMfZkfht33w"
+                                      }
+                                    },
+                                    "trackingParams": "CAgQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAcQojAYEiITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/2fngvQS_PmQ/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCv0krbsIQiqA3kCd91vBjy7S6dRQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 101,
+                              "green": 66,
+                              "blue": 55
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3350811,
+                              "iconInactiveColor": 9665910,
+                              "iconDisabledColor": 6311753
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10057067
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "12",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284501833,
+                                "lowerStackColor": 4287855990
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "Rahul Gupta",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CAUQojAYEyITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCNcGyZN8ocTRiueOwAHM2Pg"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAUQojAYEyITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPLPRO85fQX5c5elAtR5lLkZH3uIE1xi1CJ"
+                        }
+                      },
+                      "trackingParams": "CAUQojAYEyITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                      "contentId": "PLPRO85fQX5c5elAtR5lLkZH3uIE1xi1CJ",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAUQojAYEyITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PLPRO85fQX5c5elAtR5lLkZH3uIE1xi1CJ",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/2fngvQS_PmQ/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCv0krbsIQiqA3kCd91vBjy7S6dRQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 101,
+                              "green": 66,
+                              "blue": 55
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3350811,
+                              "iconInactiveColor": 9665910,
+                              "iconDisabledColor": 6311753
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10057067
+                            }
+                          },
+                          "title": {
+                            "simpleText": "dsdsd"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "Rahul Gupta",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CAUQojAYEyITCLPv_sTZjYsDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCNcGyZN8ocTRiueOwAHM2Pg"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAYQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCNcGyZN8ocTRiueOwAHM2Pg"
+                                      }
+                                    },
+                                    "trackingParams": "CAYQ8sgIGAAiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAUQojAYEyITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "trackingParams": "CAMQxjkiEwiz7_7E2Y2LAxXjpsIBHRghJqk=",
+                "continuations": [
+                  {
+                    "nextContinuationData": {
+                      "continuation": "EsYFEgVkc2RzZBq8BVNCU0NBUmhWUTBKSllUZzBabTVLTURkblYwUkJOblZRYUc5Zk9VR0NBUXRMV1hFMGVFUm9Oemt0VllJQkN6TTFNa1Z5VlcxR1FtTTRnZ0VZVlVNdGJFWktaekpsVGpsUlpITXhUVUphZWsxTk9XMVJnZ0VMUWxsaVdIaGhaM1JYUmsyQ0FRczNkVFo2YURKdllYVllZNElCSWxCTWRqSlpkazVPV1Y4elRIRmxNVmRZY1RCRGFYbExTVGRKZDFkUWVERnliVWlDQVNKUVRIUmhjVzVSVDBaSmMzbGZXWGx0WkZoaFdHVnlWMnhEY0hWMlRHUjRXRFpXZ2dFU1VFd3dNalpDTnpGRVFqUkdRVFpEUmpVemdnRWlVRXd4ZHpOWll6VnpWR1ZmVGtKRU9XaG1PVFJSUm5SamNVRlliVVJoTjNoaVVJSUJJbEJNTlc1R09YQnpja0ZITnpOWFUyMWhkV05YUm5GNGNUVnBZM0J3YTE5T1l6U0NBUXRYTTNJeGVXMVdXV053V1lJQklsQk1SazVUVW10RGNFRnVURzFYTFhCek0yaENlWFJTUVhkM1lVTnFSVEUzVmpDQ0FSSlFURGcxUkRRelJrWkRPVVUxTkRGRlFUYUNBUkpRVEVZNE1qZERPRU13UVRaRU1Ua3hOVFdDQVJKUVREaEZRMFpDTkVWRk1UYzVSamRDUTBHQ0FSSlFUREkxT1RWQ09UUkZRelUxUVRORk16aUNBU0pRVERsemNYcGhSWGRmV25aUGNVOHliSGhUZDB4dk9XaEhkUzFJTWtGWVRYZG5nZ0VTVUV4RFJVSXpSVUpEUWtVM1FqUkVRMEZFZ2dFaVVFeFFVazg0TldaUldEVmpOV1ZzUVhSU05XeE1hMXBJTTNWSlJURjRhVEZEU3JJQkJnb0VDQUVRQWclM0QlM0QYgeDoGA%3D%3D",
+                      "clickTrackingParams": "CAQQybcCIhMIs-_-xNmNiwMV46bCAR0YISap"
+                    }
+                  }
+                ],
+                "collapsedItemCount": 3,
+                "visibleItemCount": 3
+              }
+            },
+            "trackingParams": "CAIQ3BwYACITCLPv_sTZjYsDFeOmwgEdGCEmqQ==",
+            "headerRenderer": {
+              "shelfHeaderRenderer": {
+                "avatarLockup": {
+                  "avatarLockupRenderer": {
+                    "title": {
+                      "simpleText": "Search results for dsdsd"
+                    },
+                    "size": "AVATAR_LOCKUP_SIZE_SMALL"
+                  }
+                }
+              }
+            },
+            "tvhtml5Style": {
+              "style": "TV_SHELF_STYLE_DEFAULT",
+              "sizeStrategy": "TV_SHELF_SIZE_STRATEGY_FIXED"
+            }
+          }
+        }
+      ],
+      "trackingParams": "CAEQui8iEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+    }
+  },
+  "trackingParams": "CAAQvGkiEwiz7_7E2Y2LAxXjpsIBHRghJqk="
+}
