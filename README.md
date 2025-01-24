@@ -30,10 +30,10 @@ A project to revive the old 2015-2016 YouTubeTV HTML5 Web App.
 [When I say V, I mean the version of the YouTube App]
 
 Progress Report
-1. Search - 60% Done
+1. Search - 80% Done
 
-    Status: Suggestions are fully functional, with the first steps of search results implemented.
-    Next Steps: Fully finish the API, right now only really titles/thumbnails/channel name are working.
+    Status: Suggestions are fully functional, with search mostly implemented.
+    Next Steps: Fix the css .
 
 2. Guide - 100% Done
 
@@ -45,10 +45,10 @@ Progress Report
     Status: The Browse API (which is what channels use and the homepage and such)
     Next Steps: Work on getting the v7 formated json to work on v5.
 
-4. Watch - 0% Done
+4. Watch - 40% Done
 
-    Status: No work has been done on this yet.
-    Next Steps: Try to get to the watch page.
+    Status: Got to load the info/meatdata ..
+    Next Steps: Get it to play video.
 
 5. Pairing - 0% Done
 

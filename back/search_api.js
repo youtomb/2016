@@ -39,6 +39,7 @@ function generateVideoRenderer(tileRenderer) {
     const publishedTime = extractPublishedTime(tileRenderer);
     const videoId = extractVideoId(tileRenderer);
     const lengthText = extractLength(tileRenderer); // New lengthText extraction
+    const navigationEndpoint = extractNavigationEndpoint(tileRenderer);
 
     if (!shortBylineText || shortBylineText.name === 'Unknown Channel' || !views || views === '0 views' || !publishedTime || publishedTime === 'Unknown time') {
         console.log("Video excluded due to missing or unknown channel, views, or published time.");
@@ -53,7 +54,8 @@ function generateVideoRenderer(tileRenderer) {
         views,
         publishedTime,
         lengthText,
-        videoId
+        videoId,
+        navigationEndpoint
     };
 }
 
@@ -96,6 +98,26 @@ function extractDescription(tileRenderer) {
     console.log("Description:", description); 
     return description;
 }
+
+function extractNavigationEndpoint(tileRenderer) {
+    if (tileRenderer.onSelectCommand && tileRenderer.onSelectCommand.watchEndpoint) {
+        const watchEndpoint = tileRenderer.onSelectCommand.watchEndpoint;
+        const navigationEndpoint = {
+            clickTrackingParams: watchEndpoint.clickTrackingParams || '',
+            watchEndpoint: {
+                videoId: watchEndpoint.videoId || '',
+                params: watchEndpoint.params || '',
+                playerParams: watchEndpoint.playerParams || '',
+                watchEndpointSupportedOnesieConfig: watchEndpoint.watchEndpointSupportedOnesieConfig || {}
+            }
+        };
+        console.log("Extracted navigationEndpoint:", JSON.stringify(navigationEndpoint, null, 2));
+        return navigationEndpoint;
+    }
+    console.log("Navigation endpoint not found.");
+    return null;
+}
+
 
 function extractChannel(tileRenderer) {
     const channelMetadata = tileRenderer?.metadata?.tileMetadataRenderer?.lines?.[0]?.lineRenderer?.items?.[0]?.lineItemRenderer?.text?.runs?.[0]?.text || 'Unknown Channel';

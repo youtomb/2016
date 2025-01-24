@@ -1,0 +1,580 @@
+{
+  "responseContext": {
+    "visitorData": "Cgs3MmNoNVZXZGxSMCir-M68BjIKCgJVUxIEGgAgag%3D%3D",
+    "serviceTrackingParams": [
+      {
+        "service": "GFEEDBACK",
+        "params": [
+          {
+            "key": "logged_in",
+            "value": "0"
+          },
+          {
+            "key": "e",
+            "value": "23804281,23943651,24004644,24077241,24166867,24181174,24241378,24290153,24439361,24457854,24499534,24548629,24566687,39328397,51010235,51017346,51020570,51025415,51037342,51037349,51050361,51053689,51063643,51089007,51098299,51111738,51115184,51124104,51146484,51151423,51152050,51174143,51176422,51176511,51178318,51178327,51178342,51178355,51183910,51193717,51203015,51204329,51217504,51222382,51222973,51227037,51227408,51228850,51230478,51237842,51241028,51242448,51248734,51255676,51256074,51256084,51274583,51276557,51276565,51281227,51285717,51287196,51292055,51294322,51296439,51298020,51299710,51299724,51303432,51303667,51303669,51303789,51304155,51305839,51310742,51311029,51311040,51313109,51313767,51313802,51316746,51316844,51318845,51322669,51326932,51327138,51327167,51327180,51327613,51330194,51331481,51331500,51331520,51331533,51331542,51331545,51331556,51331561,51332896,51333879,51334604,51335392,51335594,51335646,51335928,51337186,51340613,51340662,51341228,51341974,51342857,51343368,51343819,51343948,51345629,51346046,51346772,51346801,51346810,51346825,51346842,51346851,51346876,51346879,51346900,51347325,51349880,51349913,51350577,51351446,51353231,51353393,51353454,51353498,51354114,51354569,51355264,51355277,51355287,51355307,51355318,51355339,51355344,51355517,51355679,51355802,51357477,51357887,51358967,51360106,51360123,51360136,51360212,51360219,51360432,51361727,51361828,51362071,51362455,51362643,51362857,51363725,51363734,51363741,51363756,51363765,51363770,51364291,51365342,51365460,51365462,51366246,51366423,51366864,51367993,51369295,51369398,51370274,51370738,51370997,51371010,51371270,51371294,51371521,51372970,51374438,51375168,51375518,51375719,51376049,51376330,51376516,51376815,51379274,51380372,51380389,51380400,51380761,51380766,51380783,51380794,51380801,51380810,51380829,51380892,51381276,51381818,51381857,51381974,51383428,51383438,51384304,51384391,51384461,51384887,51385023,51385539,51386539,51387282,51388998"
+          }
+        ]
+      }
+    ]
+  },
+  "contents": {
+    "singleColumnWatchNextResults": {
+      "results": {
+        "results": {
+          "contents": [
+            {
+              "itemSectionRenderer": {
+                "contents": [
+                  {
+                    "videoMetadataRenderer": {
+                      "title": {
+                        "runs": [
+                          {
+                            "text": "Paying for software is stupid… 10 free and open-source SaaS replacements"
+                          }
+                        ]
+                      },
+                      "viewCountText": {
+                        "runs": [
+                          {
+                            "text": "1,092,650 views"
+                          }
+                        ]
+                      },
+                      "likesCount": {
+                        "simpleText": "76K"
+                      },
+                      "description": {
+                        "runs": [
+                          {
+                            "text": "Find all the best dev content at https://daily.dev/fireship\n\nRemember, for every paid SaaS, there is a free open-source self-hosted alternative. Let's take a look at 10 FOSS tools designed to replace popular tools like MS Office, Notion, Heroku, Vercel, Zoom, Adobe, and more.  \n\n#software #programming #linux \n\n💬 Chat with Me on Discord\n\nhttps://discord.gg/fireship\n\n🔗 Resources\n\nMy Full Linux Self-hosting Course https://fireship.io/courses/linux/\n10 Fullstack Apps https://youtu.be/FQPlEnKav48\nUnhappy developers https://youtu.be/-pSf9_MgsZ4\n\n🔥 Get More Content - Upgrade to PRO\n\nUpgrade at https://fireship.io/pro\nUse code YT25 for 25% off PRO access \n\n🎨 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font\n\n⭐ Repos mentioned\n\nLibreOffice https://github.com/LibreOffice\nMattermost https://github.com/mattermost/mattermost\nNocodb https://github.com/nocodb/nocodb\nPlane https://github.com/makeplane/plane\nAppflowy https://github.com/AppFlowy-IO/AppFlowy\nJitsi https://github.com/jitsi\nERPNext https://github.com/frappe/erpnext\nCoolify https://github.com/coollabsio/coolify\nDokku https://github.com/dokku/dokku\nInstant https://github.com/instantdb/instant"
+                          }
+                        ]
+                      },
+                      "likesCountWithLike": {
+                        "simpleText": "76K"
+                      },
+                      "allowRatings": true,
+                      "dateText": {
+                        "runs": [
+                          {
+                            "text": "4mo ago"
+                          }
+                        ]
+                      },
+                      "likeStatus": "INDIFFERENT",
+                      "videoId": "e5dhaQm_J6U",
+                      "trackingParams": "CBQQ6TgYACITCMaD34_gjosDFcmawgEd-00gow==",
+                      "shortViewCountText": {
+                        "runs": [
+                          {
+                            "text": "1M views"
+                          }
+                        ]
+                      },
+                      "underTitleStandaloneBadge": {
+                        "standaloneCollectionBadgeRenderer": {
+                          "label": {
+                            "runs": [
+                              {
+                                "text": "#linux",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CBgQpbcDGAAiEwjGg9-P4I6LAxXJmsIBHftNIKM=",
+                                  "searchEndpoint": {
+                                    "query": "#linux"
+                                  }
+                                },
+                                "loggingDirectives": {
+                                  "trackingParams": "CBgQpbcDGAAiEwjGg9-P4I6LAxXJmsIBHftNIKM="
+                                }
+                              },
+                              {
+                                "text": " "
+                              },
+                              {
+                                "text": "#programming",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CBcQpbcDGAIiEwjGg9-P4I6LAxXJmsIBHftNIKM=",
+                                  "searchEndpoint": {
+                                    "query": "#programming"
+                                  }
+                                },
+                                "loggingDirectives": {
+                                  "trackingParams": "CBcQpbcDGAIiEwjGg9-P4I6LAxXJmsIBHftNIKM="
+                                }
+                              },
+                              {
+                                "text": " "
+                              },
+                              {
+                                "text": "#software",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CBYQpbcDGAQiEwjGg9-P4I6LAxXJmsIBHftNIKM=",
+                                  "searchEndpoint": {
+                                    "query": "#software"
+                                  }
+                                },
+                                "loggingDirectives": {
+                                  "trackingParams": "CBYQpbcDGAQiEwjGg9-P4I6LAxXJmsIBHftNIKM="
+                                }
+                              }
+                            ]
+                          },
+                          "style": {
+                            "badgeStyle": "STYLE_PLAIN"
+                          },
+                          "trackingParams": "CBUQkYUBIhMIxoPfj-COiwMVyZrCAR37TSCj"
+                        }
+                      },
+                      "isLimitedState": false,
+                      "mayTruncateChannelName": true,
+                      "accessibilityText": "About",
+                      "onClickCommand": {
+                        "clickTrackingParams": "CBQQ6TgYACITCMaD34_gjosDFcmawgEd-00gow==",
+                        "changeEngagementPanelVisibilityAction": {
+                          "targetId": "video-description-ep-identifier",
+                          "visibility": "ENGAGEMENT_PANEL_VISIBILITY_EXPANDED"
+                        }
+                      },
+                      "educationText": {
+                        "runs": [
+                          {
+                            "text": "Learn more about this video"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "trackingParams": "CBMQuy8YACITCMaD34_gjosDFcmawgEd-00gow=="
+              }
+            },
+            {
+              "itemSectionRenderer": {
+                "contents": [
+                  {
+                    "videoOwnerRenderer": {
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "https://yt3.ggpht.com/ytc/AIdro_mKzklyPPhghBJQH5H3HpZ108YcE618DBRLAvRUD1AjKNw=s48-c-k-c0x00ffffff-no-rj",
+                            "width": 48,
+                            "height": 48
+                          },
+                          {
+                            "url": "https://yt3.ggpht.com/ytc/AIdro_mKzklyPPhghBJQH5H3HpZ108YcE618DBRLAvRUD1AjKNw=s88-c-k-c0x00ffffff-no-rj",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "https://yt3.ggpht.com/ytc/AIdro_mKzklyPPhghBJQH5H3HpZ108YcE618DBRLAvRUD1AjKNw=s176-c-k-c0x00ffffff-no-rj",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "title": {
+                        "runs": [
+                          {
+                            "text": "Fireship"
+                          }
+                        ]
+                      },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CBEQ4TkYACITCMaD34_gjosDFcmawgEd-00gow==",
+                        "browseEndpoint": {
+                          "browseId": "UCsBjURrPoezykLs9EqgamOA",
+                          "canonicalBaseUrl": "/@Fireship"
+                        }
+                      },
+                      "subscriberCountText": {
+                        "runs": [
+                          {
+                            "text": "3.54M subscribers"
+                          }
+                        ]
+                      },
+                      "subscribeButton": {
+                        "subscribeButtonRenderer": {
+                          "buttonText": {
+                            "runs": [
+                              {
+                                "text": "Subscribe"
+                              }
+                            ]
+                          },
+                          "subscribed": false,
+                          "enabled": true,
+                          "type": "FREE",
+                          "channelId": "UCsBjURrPoezykLs9EqgamOA",
+                          "showPreferences": true,
+                          "unsubscribedButtonText": {
+                            "runs": [
+                              {
+                                "text": "Subscribe"
+                              }
+                            ]
+                          },
+                          "trackingParams": "CBIQmysiEwjGg9-P4I6LAxXJmsIBHftNIKMyBXdhdGNo",
+                          "unsubscribeButtonText": {
+                            "runs": [
+                              {
+                                "text": "Unsubscribe"
+                              }
+                            ]
+                          },
+                          "targetId": "watch-subscribe"
+                        }
+                      },
+                      "trackingParams": "CBEQ4TkYACITCMaD34_gjosDFcmawgEd-00gow=="
+                    }
+                  }
+                ],
+                "trackingParams": "CBAQuy8YASITCMaD34_gjosDFcmawgEd-00gow=="
+              }
+            }
+          ],
+          "trackingParams": "CA8Qui8iEwjGg9-P4I6LAxXJmsIBHftNIKM="
+        }
+      },
+      "autoplay": {
+        "autoplay": {
+          "sets": [
+            {
+              "mode": "NORMAL",
+              "autoplayVideoRenderer": {
+                "pivotVideoRenderer": {
+                  "videoId": "Sxxw3qtb3_g",
+                  "thumbnail": {
+                    "thumbnails": [
+                      {
+                        "url": "https://i.ytimg.com/vi/Sxxw3qtb3_g/hqdefault.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLCzmxjmnEK764qiRxuLWJaDAZaXMg",
+                        "width": 320,
+                        "height": 180
+                      }
+                    ]
+                  },
+                  "title": {
+                    "runs": [
+                      {
+                        "text": "How to OVER Engineer a Website // What is a Tech Stack?"
+                      }
+                    ]
+                  },
+                  "shortBylineText": {
+                    "runs": [
+                      {
+                        "text": "Fireship"
+                      }
+                    ]
+                  },
+                  "viewCountText": {
+                    "runs": [
+                      {
+                        "text": "2.6M views"
+                      }
+                    ]
+                  },
+                  "lengthText": {
+                    "runs": [
+                      {
+                        "text": "11:20"
+                      }
+                    ]
+                  },
+                  "navigationEndpoint": {
+                    "clickTrackingParams": "CA4Qi1wiEwjGg9-P4I6LAxXJmsIBHftNIKMyB2F1dG9uYXZIpc_8zZCt2Mt7mgEFCAMQ-B0=",
+                    "watchEndpoint": {
+                      "videoId": "Sxxw3qtb3_g"
+                    }
+                  },
+                  "trackingParams": "CA4Qi1wiEwjGg9-P4I6LAxXJmsIBHftNIKNA-L_v2uqbnI5L"
+                }
+              }
+            }
+          ],
+          "title": {
+            "runs": [
+              {
+                "text": "Up next"
+              }
+            ]
+          },
+          "countDownSecs": 5,
+          "replayVideoRenderer": {
+            "pivotVideoRenderer": {
+              "videoId": "e5dhaQm_J6U",
+              "thumbnail": {
+                "thumbnails": [
+                  {
+                    "url": "https://i.ytimg.com/vi/e5dhaQm_J6U/hqdefault.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLDVGPHceIBS6Y8iDu1Rxf2rVMCdGQ",
+                    "width": 320,
+                    "height": 180
+                  }
+                ]
+              },
+              "title": {
+                "runs": [
+                  {
+                    "text": "Paying for software is stupid… 10 free and open-source SaaS replacements"
+                  }
+                ]
+              },
+              "shortBylineText": {
+                "runs": [
+                  {
+                    "text": "Fireship",
+                    "navigationEndpoint": {
+                      "clickTrackingParams": "CA0Qi1wiEwjGg9-P4I6LAxXJmsIBHftNIKM=",
+                      "browseEndpoint": {
+                        "browseId": "UCsBjURrPoezykLs9EqgamOA",
+                        "canonicalBaseUrl": "/@Fireship"
+                      }
+                    }
+                  }
+                ]
+              },
+              "viewCountText": {
+                "runs": [
+                  {
+                    "text": "1M views"
+                  }
+                ]
+              },
+              "lengthText": {
+                "runs": [
+                  {
+                    "text": "6:23"
+                  }
+                ]
+              },
+              "navigationEndpoint": {
+                "clickTrackingParams": "CA0Qi1wiEwjGg9-P4I6LAxXJmsIBHftNIKM=",
+                "watchEndpoint": {
+                  "videoId": "e5dhaQm_J6U"
+                }
+              },
+              "trackingParams": "CA0Qi1wiEwjGg9-P4I6LAxXJmsIBHftNIKNApc_8zZCt2Mt7",
+              "overlayIcon": {
+                "iconType": "REPLAY"
+              },
+              "overlayLabel": {
+                "runs": [
+                  {
+                    "text": "Replay"
+                  }
+                ]
+              }
+            }
+          },
+          "trackingParams": "CAwQ0TkiEwjGg9-P4I6LAxXJmsIBHftNIKM="
+        }
+      }
+    }
+  },
+  "currentVideoEndpoint": {
+    "clickTrackingParams": "CAAQg2ciEwjGg9-P4I6LAxXJmsIBHftNIKM=",
+    "watchEndpoint": {
+      "videoId": "e5dhaQm_J6U",
+      "ustreamerConfig": "GgIIBQ=="
+    }
+  },
+  "trackingParams": "CAAQg2ciEwjGg9-P4I6LAxXJmsIBHftNIKM=",
+  "playerOverlays": {
+    "playerOverlayRenderer": {}
+  },
+  "videoReporting": {
+    "optionsRenderer": {
+      "items": [
+        {
+          "serviceItem": {
+            "text": {
+              "runs": [
+                {
+                  "text": "Sexual content"
+                }
+              ]
+            },
+            "serviceEndpoint": {
+              "clickTrackingParams": "CAsQ9koYACITCMaD34_gjosDFcmawgEd-00gow==",
+              "flagEndpoint": {
+                "flagAction": "EAciDwoLZTVkaGFRbV9KNlVQBTILZTVkaGFRbV9KNlWQASyYAQGoAQM%3D"
+              }
+            },
+            "trackingParams": "CAsQ9koYACITCMaD34_gjosDFcmawgEd-00gow=="
+          }
+        },
+        {
+          "serviceItem": {
+            "text": {
+              "runs": [
+                {
+                  "text": "Violent or repulsive content"
+                }
+              ]
+            },
+            "serviceEndpoint": {
+              "clickTrackingParams": "CAoQ9koYASITCMaD34_gjosDFcmawgEd-00gow==",
+              "flagEndpoint": {
+                "flagAction": "EAciDwoLZTVkaGFRbV9KNlVQBTILZTVkaGFRbV9KNlWQATaYAQGoAQM%3D"
+              }
+            },
+            "trackingParams": "CAoQ9koYASITCMaD34_gjosDFcmawgEd-00gow=="
+          }
+        },
+        {
+          "serviceItem": {
+            "text": {
+              "runs": [
+                {
+                  "text": "Hateful or abusive content"
+                }
+              ]
+            },
+            "serviceEndpoint": {
+              "clickTrackingParams": "CAkQ9koYAiITCMaD34_gjosDFcmawgEd-00gow==",
+              "flagEndpoint": {
+                "flagAction": "EAciDwoLZTVkaGFRbV9KNlVQBTILZTVkaGFRbV9KNlWQARSYAQGoAQM%3D"
+              }
+            },
+            "trackingParams": "CAkQ9koYAiITCMaD34_gjosDFcmawgEd-00gow=="
+          }
+        },
+        {
+          "serviceItem": {
+            "text": {
+              "runs": [
+                {
+                  "text": "Harassment or bullying"
+                }
+              ]
+            },
+            "serviceEndpoint": {
+              "clickTrackingParams": "CAgQ9koYAyITCMaD34_gjosDFcmawgEd-00gow==",
+              "flagEndpoint": {
+                "flagAction": "EAciDwoLZTVkaGFRbV9KNlVQBTILZTVkaGFRbV9KNlWQARGYAQGoAQM%3D"
+              }
+            },
+            "trackingParams": "CAgQ9koYAyITCMaD34_gjosDFcmawgEd-00gow=="
+          }
+        },
+        {
+          "serviceItem": {
+            "text": {
+              "runs": [
+                {
+                  "text": "Harmful or dangerous acts"
+                }
+              ]
+            },
+            "serviceEndpoint": {
+              "clickTrackingParams": "CAcQ9koYBCITCMaD34_gjosDFcmawgEd-00gow==",
+              "flagEndpoint": {
+                "flagAction": "EAciDwoLZTVkaGFRbV9KNlVQBTILZTVkaGFRbV9KNlWQAQ2YAQGoAQM%3D"
+              }
+            },
+            "trackingParams": "CAcQ9koYBCITCMaD34_gjosDFcmawgEd-00gow=="
+          }
+        },
+        {
+          "serviceItem": {
+            "text": {
+              "runs": [
+                {
+                  "text": "Misinformation"
+                }
+              ]
+            },
+            "serviceEndpoint": {
+              "clickTrackingParams": "CAYQ9koYBSITCMaD34_gjosDFcmawgEd-00gow==",
+              "flagEndpoint": {
+                "flagAction": "EAciDwoLZTVkaGFRbV9KNlVQBTILZTVkaGFRbV9KNlWQAUGYAQGoAQM%3D"
+              }
+            },
+            "trackingParams": "CAYQ9koYBSITCMaD34_gjosDFcmawgEd-00gow=="
+          }
+        },
+        {
+          "serviceItem": {
+            "text": {
+              "runs": [
+                {
+                  "text": "Child abuse"
+                }
+              ]
+            },
+            "serviceEndpoint": {
+              "clickTrackingParams": "CAUQ9koYBiITCMaD34_gjosDFcmawgEd-00gow==",
+              "flagEndpoint": {
+                "flagAction": "EAciDwoLZTVkaGFRbV9KNlVQBTILZTVkaGFRbV9KNlWQAQyYAQGoAQM%3D"
+              }
+            },
+            "trackingParams": "CAUQ9koYBiITCMaD34_gjosDFcmawgEd-00gow=="
+          }
+        },
+        {
+          "serviceItem": {
+            "text": {
+              "runs": [
+                {
+                  "text": "Legal issue"
+                }
+              ]
+            },
+            "serviceEndpoint": {
+              "clickTrackingParams": "CAQQ9koYByITCMaD34_gjosDFcmawgEd-00gow==",
+              "flagEndpoint": {
+                "flagAction": "EAciDwoLZTVkaGFRbV9KNlVQBTILZTVkaGFRbV9KNlWQAUWYAQGoAQM%3D"
+              }
+            },
+            "trackingParams": "CAQQ9koYByITCMaD34_gjosDFcmawgEd-00gow=="
+          }
+        },
+        {
+          "serviceItem": {
+            "text": {
+              "runs": [
+                {
+                  "text": "Promotes terrorism"
+                }
+              ]
+            },
+            "serviceEndpoint": {
+              "clickTrackingParams": "CAMQ9koYCCITCMaD34_gjosDFcmawgEd-00gow==",
+              "flagEndpoint": {
+                "flagAction": "EAciDwoLZTVkaGFRbV9KNlVQBTILZTVkaGFRbV9KNlWQATWYAQGoAQM%3D"
+              }
+            },
+            "trackingParams": "CAMQ9koYCCITCMaD34_gjosDFcmawgEd-00gow=="
+          }
+        },
+        {
+          "serviceItem": {
+            "text": {
+              "runs": [
+                {
+                  "text": "Spam or misleading"
+                }
+              ]
+            },
+            "serviceEndpoint": {
+              "clickTrackingParams": "CAIQ9koYCSITCMaD34_gjosDFcmawgEd-00gow==",
+              "flagEndpoint": {
+                "flagAction": "EAciDwoLZTVkaGFRbV9KNlVQBTILZTVkaGFRbV9KNlWQATGYAQGoAQM%3D"
+              }
+            },
+            "trackingParams": "CAIQ9koYCSITCMaD34_gjosDFcmawgEd-00gow=="
+          }
+        }
+      ],
+      "title": {
+        "runs": [
+          {
+            "text": "Report"
+          }
+        ]
+      },
+      "trackingParams": "CAEQ9EoiEwjGg9-P4I6LAxXJmsIBHftNIKM="
+    }
+  }
+}

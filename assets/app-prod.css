@@ -8362,7 +8362,8 @@ h3.call-to-cast-text {
   opacity: 1;
   -o-transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  transform: translateZ(0)
+  transform: translateZ(0);
+  /*margin-top: 10%; */
 }
 
 .horizontal-list.focused>.content {

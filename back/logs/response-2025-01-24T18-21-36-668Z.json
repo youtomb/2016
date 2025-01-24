@@ -1,0 +1,3051 @@
+{
+  "responseContext": {
+    "visitorData": "Cgtfb1lfNEtlTExLMCiwtM-8BjIKCgJVUxIEGgAgQA%3D%3D",
+    "serviceTrackingParams": [
+      {
+        "service": "GFEEDBACK",
+        "params": [
+          {
+            "key": "has_unlimited_entitlement",
+            "value": "False"
+          },
+          {
+            "key": "has_premium_lite_entitlement",
+            "value": "False"
+          },
+          {
+            "key": "logged_in",
+            "value": "0"
+          },
+          {
+            "key": "e",
+            "value": "23804281,23943651,24004644,24077241,24166867,24181174,24241378,24290153,24439361,24548629,24566687,39328397,51010235,51017346,51020570,51025415,51050361,51053689,51063643,51089007,51098299,51111738,51115184,51124104,51146484,51151423,51152050,51157841,51174143,51176511,51183910,51193717,51204329,51217504,51222382,51222973,51227037,51228850,51230478,51237842,51241028,51242448,51248734,51255676,51256074,51256084,51274583,51276557,51276565,51281227,51285717,51287196,51292055,51294322,51296439,51298020,51299710,51299724,51303432,51303667,51303669,51303789,51304155,51305839,51310742,51313109,51313767,51313802,51318845,51322669,51326932,51327613,51330194,51332896,51333879,51334605,51335392,51335594,51335928,51337186,51338028,51340662,51341975,51342752,51342857,51343368,51345629,51346046,51347325,51351446,51353231,51353393,51353454,51353498,51354114,51355679,51357477,51361727,51362455,51362643,51362857,51365255,51365460,51365462,51366423,51366427,51366864,51367993,51369295,51369398,51370095,51370274,51371294,51371521,51372971,51374438,51375168,51375719,51376157,51376330,51376516,51379274,51380892,51381276,51381818,51381857,51381974,51383427,51384391,51384461,51384887,51385023,51385539,51386539,51386540,51388998"
+          }
+        ]
+      }
+    ],
+    "maxAgeSeconds": 7200
+  },
+  "estimatedResults": "8565",
+  "contents": {
+    "sectionListRenderer": {
+      "contents": [
+        {
+          "shelfRenderer": {
+            "content": {
+              "horizontalListRenderer": {
+                "items": [
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/tCrHAAx23ZPM83vC7sAl3uFC1-vE-I8DsH2XzFfzeEpRM4FYUOQS2REUtCV5QBaL7IUNPPHahw=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/tCrHAAx23ZPM83vC7sAl3uFC1-vE-I8DsH2XzFfzeEpRM4FYUOQS2REUtCV5QBaL7IUNPPHahw=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "ASSAASSA"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "@FerozShirzad-o9f"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "1 video"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CCEQoTAYACITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UCRNXOokVsRRqEMsoC44e8_Q"
+                        }
+                      },
+                      "trackingParams": "CCEQoTAYACITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "UCRNXOokVsRRqEMsoC44e8_Q",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CCEQoTAYACITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UCRNXOokVsRRqEMsoC44e8_Q",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/tCrHAAx23ZPM83vC7sAl3uFC1-vE-I8DsH2XzFfzeEpRM4FYUOQS2REUtCV5QBaL7IUNPPHahw=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/tCrHAAx23ZPM83vC7sAl3uFC1-vE-I8DsH2XzFfzeEpRM4FYUOQS2REUtCV5QBaL7IUNPPHahw=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "ASSAASSA"
+                          },
+                          "subtitle": {
+                            "simpleText": "@FerozShirzad-o9f"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CCEQoTAYACITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UCRNXOokVsRRqEMsoC44e8_Q"
+                                      }
+                                    },
+                                    "trackingParams": "CCEQoTAYACITCKqzrOD8josDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CCEQoTAYACITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_nK23S-OawLWDKo-qIIuEK51dsZl6Awtjllie1nmYluCiMZVMq-fSeMHKP5eDTJrgTaEA=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_nK23S-OawLWDKo-qIIuEK51dsZl6Awtjllie1nmYluCiMZVMq-fSeMHKP5eDTJrgTaEA=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "assaassa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "@samimaksimsek-db4ws"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "3"
+                                          },
+                                          {
+                                            "text": " videos"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CCAQoTAYASITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UCDPh5-w5gFVTZXsmjCnQTOA"
+                        }
+                      },
+                      "trackingParams": "CCAQoTAYASITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "UCDPh5-w5gFVTZXsmjCnQTOA",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CCAQoTAYASITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UCDPh5-w5gFVTZXsmjCnQTOA",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_nK23S-OawLWDKo-qIIuEK51dsZl6Awtjllie1nmYluCiMZVMq-fSeMHKP5eDTJrgTaEA=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_nK23S-OawLWDKo-qIIuEK51dsZl6Awtjllie1nmYluCiMZVMq-fSeMHKP5eDTJrgTaEA=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "assaassa"
+                          },
+                          "subtitle": {
+                            "simpleText": "@samimaksimsek-db4ws"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CCAQoTAYASITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UCDPh5-w5gFVTZXsmjCnQTOA"
+                                      }
+                                    },
+                                    "trackingParams": "CCAQoTAYASITCKqzrOD8josDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CCAQoTAYASITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/CK6CN7IF0qg/hq2.jpg?sqp=-oaymwEvCMACELQBSFDyq4qpAyEVAACIQhgB8AEB-AH-CYAC0AWKAgwIABABGF4gZShMMA8=&rs=AOn4CLC-giK_sPu_gldt90FCjLEgZTOmLQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "accessibility": {
+                                    "accessibilityData": {
+                                      "label": "5 minutes, 21 seconds"
+                                    }
+                                  },
+                                  "simpleText": "5:21"
+                                },
+                                "style": "DEFAULT"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "AASAI - TeeJay Ft Pragathi Guruprasad [Official Music Video]"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "TeeJay Arunasalam"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "65 million views"
+                                          }
+                                        },
+                                        "simpleText": "65M views"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "•"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "11 years ago"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CB0QhbwCGAIiEwiqs6zg_I6LAxXjpsIBHRghJqkyBnNlYXJjaFIIYXNzYWFzc2GaAQMQ9CQ=",
+                        "watchEndpoint": {
+                          "videoId": "CK6CN7IF0qg",
+                          "playlistId": "RDCK6CN7IF0qg",
+                          "params": "qgMIYXNzYWFzc2G6AwsI94WOkI3H5p3EAboDJBIiUExuckd3TUxRaFQ5Q0hxdUtqSG9BS3d0azZqaW9JeVIza7oDJBIiUExyc0l0aDhNVVJLRGwteVpWTHcyX3AwekZyS2NfN2ZCWboDJBIiUExOX0FIY21aUTFWMmxZamJOMm11T25OWEFsUXM5enhod7oDJBIiUEx5UUx6YmtZWE5ZTXZnSFNNUk5uSTFHNVZiWVZ4dGhoRboDJBIiUEw3NS1KYjdiNzJEWl95YTZoelI1WWlPcHNDcFp3T25FRLoDKxIpT0xBSzV1eV9uS0hVUV9MZFhlZlpka1M3c2RQVzllaW8tUFVaVlYzR1G4BQE%3D",
+                          "playerParams": "ygUIYXNzYWFzc2GgBwE%3D",
+                          "loggingContext": {
+                            "vssLoggingContext": {
+                              "serializedContextData": "Gg1SRENLNkNON0lGMHFn"
+                            }
+                          },
+                          "watchEndpointSupportedOnesieConfig": {
+                            "html5PlaybackOnesieConfig": {
+                              "commonConfig": {
+                                "url": "https://rr2---sn-v5goxu-jhi6.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=08ae8237b205d2a8&ip=192.232.30.231&initcwndbps=4632500&mt=1737742369"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "trackingParams": "CB0QhbwCGAIiEwiqs6zg_I6LAxXjpsIBHRghJqlAqKWXkPvGoNcI",
+                      "contentId": "CK6CN7IF0qg",
+                      "contentType": "TILE_CONTENT_TYPE_VIDEO",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CB0QhbwCGAIiEwiqs6zg_I6LAxXjpsIBHRghJqk=",
+                        "showMenuCommand": {
+                          "contentId": "CK6CN7IF0qg",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/CK6CN7IF0qg/hq2.jpg?sqp=-oaymwEvCMACELQBSFDyq4qpAyEVAACIQhgB8AEB-AH-CYAC0AWKAgwIABABGF4gZShMMA8=&rs=AOn4CLC-giK_sPu_gldt90FCjLEgZTOmLQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "AASAI - TeeJay Ft Pragathi Guruprasad [Official Music Video]"
+                          },
+                          "subtitle": {
+                            "simpleText": "TeeJay Arunasalam"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Play"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CB8QmvwFGAAiEwiqs6zg_I6LAxXjpsIBHRghJqkyBnNlYXJjaFIIYXNzYWFzc2GaAQMQ9CQ=",
+                                      "watchEndpoint": {
+                                        "videoId": "CK6CN7IF0qg",
+                                        "params": "qgMIYXNzYWFzc2G6AwsI94WOkI3H5p3EAboDJBIiUExuckd3TUxRaFQ5Q0hxdUtqSG9BS3d0azZqaW9JeVIza7oDJBIiUExyc0l0aDhNVVJLRGwteVpWTHcyX3AwekZyS2NfN2ZCWboDJBIiUExOX0FIY21aUTFWMmxZamJOMm11T25OWEFsUXM5enhod7oDJBIiUEx5UUx6YmtZWE5ZTXZnSFNNUk5uSTFHNVZiWVZ4dGhoRboDJBIiUEw3NS1KYjdiNzJEWl95YTZoelI1WWlPcHNDcFp3T25FRLoDKxIpT0xBSzV1eV9uS0hVUV9MZFhlZlpka1M3c2RQVzllaW8tUFVaVlYzR1E%3D",
+                                        "playerParams": "ygUIYXNzYWFzc2E%3D",
+                                        "watchEndpointSupportedOnesieConfig": {
+                                          "html5PlaybackOnesieConfig": {
+                                            "commonConfig": {
+                                              "url": "https://rr2---sn-v5goxu-jhi6.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=08ae8237b205d2a8&ip=192.232.30.231&initcwndbps=4632500&mt=1737742369"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "trackingParams": "CB8QmvwFGAAiEwiqs6zg_I6LAxXjpsIBHRghJqk="
+                                  }
+                                },
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CB4Q8sgIGAEiEwiqs6zg_I6LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCQG-_sBRf0TMTqzOzsvTg4w"
+                                      }
+                                    },
+                                    "trackingParams": "CB4Q8sgIGAEiEwiqs6zg_I6LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CB0QhbwCGAIiEwiqs6zg_I6LAxXjpsIBHRghJqk=",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/xDuaONIDgvc/hq2.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLDiUJPc1SdwMhNrfHaSLFtawtue1w",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "accessibility": {
+                                    "accessibilityData": {
+                                      "label": "3 minutes, 24 seconds"
+                                    }
+                                  },
+                                  "simpleText": "3:24"
+                                },
+                                "style": "DEFAULT"
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "시그니처 (cignature) - '아싸 (ASSA)' MV"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "cignature"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "badge": {
+                                        "metadataBadgeRenderer": {
+                                          "style": "BADGE_STYLE_TYPE_SIMPLE",
+                                          "label": "4K",
+                                          "trackingParams": "CBoQhbwCGAMiEwiqs6zg_I6LAxXjpsIBHRghJqk="
+                                        }
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "3.2 million views"
+                                          }
+                                        },
+                                        "simpleText": "3.2M views"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "•"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "4 years ago"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CBoQhbwCGAMiEwiqs6zg_I6LAxXjpsIBHRghJqkyBnNlYXJjaFIIYXNzYWFzc2GaAQMQ9CQ=",
+                        "watchEndpoint": {
+                          "videoId": "xDuaONIDgvc",
+                          "playlistId": "RDxDuaONIDgvc",
+                          "params": "qgMIYXNzYWFzc2G6AwoIqKWXkPvGoNcIugMkEiJQTG5yR3dNTFFoVDlDSHF1S2pIb0FLd3RrNmppb0l5UjNrugMkEiJQTHJzSXRoOE1VUktEbC15WlZMdzJfcDB6RnJLY183ZkJZugMkEiJQTE5fQUhjbVpRMVYybFlqYk4ybXVPbk5YQWxRczl6eGh3ugMkEiJQTHlRTHpia1lYTllNdmdIU01STm5JMUc1VmJZVnh0aGhFugMkEiJQTDc1LUpiN2I3MkRaX3lhNmh6UjVZaU9wc0NwWndPbkVEugMrEilPTEFLNXV5X25LSFVRX0xkWGVmWmRrUzdzZFBXOWVpby1QVVpWVjNHUbgFAQ%3D%3D",
+                          "playerParams": "ygUIYXNzYWFzc2GgBwE%3D",
+                          "loggingContext": {
+                            "vssLoggingContext": {
+                              "serializedContextData": "Gg1SRHhEdWFPTklEZ3Zj"
+                            }
+                          },
+                          "watchEndpointSupportedOnesieConfig": {
+                            "html5PlaybackOnesieConfig": {
+                              "commonConfig": {
+                                "url": "https://rr1---sn-v5goxu-jhi6.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=c43b9a38d20382f7&ip=192.232.30.231&initcwndbps=4632500&mt=1737742369"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "trackingParams": "CBoQhbwCGAMiEwiqs6zg_I6LAxXjpsIBHRghJqlA94WOkI3H5p3EAQ==",
+                      "contentId": "xDuaONIDgvc",
+                      "contentType": "TILE_CONTENT_TYPE_VIDEO",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CBoQhbwCGAMiEwiqs6zg_I6LAxXjpsIBHRghJqk=",
+                        "showMenuCommand": {
+                          "contentId": "xDuaONIDgvc",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/xDuaONIDgvc/hq2.jpg?sqp=-oaymwEVCMACELQBSFDyq4qpAwcVAACIQhgB&rs=AOn4CLDiUJPc1SdwMhNrfHaSLFtawtue1w",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "시그니처 (cignature) - '아싸 (ASSA)' MV"
+                          },
+                          "subtitle": {
+                            "simpleText": "cignature"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Play"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBwQmvwFGAAiEwiqs6zg_I6LAxXjpsIBHRghJqkyBnNlYXJjaFIIYXNzYWFzc2GaAQMQ9CQ=",
+                                      "watchEndpoint": {
+                                        "videoId": "xDuaONIDgvc",
+                                        "params": "qgMIYXNzYWFzc2G6AwoIqKWXkPvGoNcIugMkEiJQTG5yR3dNTFFoVDlDSHF1S2pIb0FLd3RrNmppb0l5UjNrugMkEiJQTHJzSXRoOE1VUktEbC15WlZMdzJfcDB6RnJLY183ZkJZugMkEiJQTE5fQUhjbVpRMVYybFlqYk4ybXVPbk5YQWxRczl6eGh3ugMkEiJQTHlRTHpia1lYTllNdmdIU01STm5JMUc1VmJZVnh0aGhFugMkEiJQTDc1LUpiN2I3MkRaX3lhNmh6UjVZaU9wc0NwWndPbkVEugMrEilPTEFLNXV5X25LSFVRX0xkWGVmWmRrUzdzZFBXOWVpby1QVVpWVjNHUQ%3D%3D",
+                                        "playerParams": "ygUIYXNzYWFzc2E%3D",
+                                        "watchEndpointSupportedOnesieConfig": {
+                                          "html5PlaybackOnesieConfig": {
+                                            "commonConfig": {
+                                              "url": "https://rr1---sn-v5goxu-jhi6.googlevideo.com/initplayback?source=youtube&oeis=1&c=TVHTML5&oad=3200&ovd=3200&oaad=3200&oavd=3200&ocs=700&oewis=1&oputc=1&ofpcc=1&msp=1&odepv=1&id=c43b9a38d20382f7&ip=192.232.30.231&initcwndbps=4632500&mt=1737742369"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "trackingParams": "CBwQmvwFGAAiEwiqs6zg_I6LAxXjpsIBHRghJqk="
+                                  }
+                                },
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBsQ8sgIGAEiEwiqs6zg_I6LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UC_pwIXKXNm5KGhdEVzmY60A"
+                                      }
+                                    },
+                                    "trackingParams": "CBsQ8sgIGAEiEwiqs6zg_I6LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CBoQhbwCGAMiEwiqs6zg_I6LAxXjpsIBHRghJqk=",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/dSlYFtXENPo/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB0JMhmAXLqCxBjmCd-tg1WuvmYYQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 55,
+                              "green": 83,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 1516326,
+                              "iconInactiveColor": 7769747,
+                              "iconDisabledColor": 4808032
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 7049625
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "20",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4282998112,
+                                "lowerStackColor": 4285959827
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "assaassa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "Dyverse",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CBgQojAYBCITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCLjuk-3CiuH6IThuhwsD_mA"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CBgQojAYBCITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPLnrGwMLQhT9CHquKjHoAKwtk6jioIyR3k"
+                        }
+                      },
+                      "trackingParams": "CBgQojAYBCITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "PLnrGwMLQhT9CHquKjHoAKwtk6jioIyR3k",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CBgQojAYBCITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PLnrGwMLQhT9CHquKjHoAKwtk6jioIyR3k",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/dSlYFtXENPo/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB0JMhmAXLqCxBjmCd-tg1WuvmYYQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 55,
+                              "green": 83,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 1516326,
+                              "iconInactiveColor": 7769747,
+                              "iconDisabledColor": 4808032
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 7049625
+                            }
+                          },
+                          "title": {
+                            "simpleText": "assaassa"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "Dyverse",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CBgQojAYBCITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCLjuk-3CiuH6IThuhwsD_mA"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBkQ8sgIGAAiEwiqs6zg_I6LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCLjuk-3CiuH6IThuhwsD_mA"
+                                      }
+                                    },
+                                    "trackingParams": "CBkQ8sgIGAAiEwiqs6zg_I6LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CBgQojAYBCITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/8XK-Mf82GMA/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBJmhwarxNdErya2XTK6FWPLoXWig",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 114,
+                              "green": 17,
+                              "blue": 25
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3344139,
+                              "iconInactiveColor": 9664120,
+                              "iconDisabledColor": 5849925
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10054510
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "11",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284040005,
+                                "lowerStackColor": 4287854200
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Assaassa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "SuraBlyat",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CBYQojAYBSITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCautzFDFtScJZdDn9qAwpfw"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CBYQojAYBSITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPLrsIth8MURKDl-yZVLw2_p0zFrKc_7fBY"
+                        }
+                      },
+                      "trackingParams": "CBYQojAYBSITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "PLrsIth8MURKDl-yZVLw2_p0zFrKc_7fBY",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CBYQojAYBSITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PLrsIth8MURKDl-yZVLw2_p0zFrKc_7fBY",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/8XK-Mf82GMA/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBJmhwarxNdErya2XTK6FWPLoXWig",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 114,
+                              "green": 17,
+                              "blue": 25
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3344139,
+                              "iconInactiveColor": 9664120,
+                              "iconDisabledColor": 5849925
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10054510
+                            }
+                          },
+                          "title": {
+                            "simpleText": "Assaassa"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "SuraBlyat",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CBYQojAYBSITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCautzFDFtScJZdDn9qAwpfw"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBcQ8sgIGAAiEwiqs6zg_I6LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCautzFDFtScJZdDn9qAwpfw"
+                                      }
+                                    },
+                                    "trackingParams": "CBcQ8sgIGAAiEwiqs6zg_I6LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CBYQojAYBSITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/Trl7AVb1lg4/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCcI3vHyGd2FMf__NR3wKddSaGLGQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 60,
+                              "green": 86,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 1713446,
+                              "iconInactiveColor": 7375244,
+                              "iconDisabledColor": 4413273
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 7050393
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "10",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4282603353,
+                                "lowerStackColor": 4285565324
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "assaassa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "Abdullah keskintaş",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CBQQojAYBiITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCzfj2a5R93g2H16csrIuC8A"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CBQQojAYBiITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPLN_AHcmZQ1V2lYjbN2muOnNXAlQs9zxhw"
+                        }
+                      },
+                      "trackingParams": "CBQQojAYBiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "PLN_AHcmZQ1V2lYjbN2muOnNXAlQs9zxhw",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CBQQojAYBiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PLN_AHcmZQ1V2lYjbN2muOnNXAlQs9zxhw",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/Trl7AVb1lg4/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCcI3vHyGd2FMf__NR3wKddSaGLGQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 60,
+                              "green": 86,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 1713446,
+                              "iconInactiveColor": 7375244,
+                              "iconDisabledColor": 4413273
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 7050393
+                            }
+                          },
+                          "title": {
+                            "simpleText": "assaassa"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "Abdullah keskintaş",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CBQQojAYBiITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCzfj2a5R93g2H16csrIuC8A"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBUQ8sgIGAAiEwiqs6zg_I6LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCzfj2a5R93g2H16csrIuC8A"
+                                      }
+                                    },
+                                    "trackingParams": "CBUQ8sgIGAAiEwiqs6zg_I6LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CBQQojAYBiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/oHfqi7VSWqw/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC2WJKdsGYLGBUKs9PUNggXVdRXvg",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 89,
+                              "green": 89,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3355443,
+                              "iconInactiveColor": 9211020,
+                              "iconDisabledColor": 5855577
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10066329
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "7",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284045657,
+                                "lowerStackColor": 4287401100
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "assaassa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "silva manu",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CBIQojAYByITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UC_beDdCR8Ehek_e9touTBjw"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CBIQojAYByITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPLyQLzbkYXNYMvgHSMRNnI1G5VbYVxthhE"
+                        }
+                      },
+                      "trackingParams": "CBIQojAYByITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "PLyQLzbkYXNYMvgHSMRNnI1G5VbYVxthhE",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CBIQojAYByITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PLyQLzbkYXNYMvgHSMRNnI1G5VbYVxthhE",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/oHfqi7VSWqw/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC2WJKdsGYLGBUKs9PUNggXVdRXvg",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 89,
+                              "green": 89,
+                              "blue": 89
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3355443,
+                              "iconInactiveColor": 9211020,
+                              "iconDisabledColor": 5855577
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10066329
+                            }
+                          },
+                          "title": {
+                            "simpleText": "assaassa"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "silva manu",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CBIQojAYByITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UC_beDdCR8Ehek_e9touTBjw"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBMQ8sgIGAAiEwiqs6zg_I6LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UC_beDdCR8Ehek_e9touTBjw"
+                                      }
+                                    },
+                                    "trackingParams": "CBMQ8sgIGAAiEwiqs6zg_I6LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CBIQojAYByITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/kMwt5Pxpv9Y/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBOgXxhbHHLttx16fQlmyGpahq5aQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 114,
+                              "green": 41,
+                              "blue": 17
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3346951,
+                              "iconInactiveColor": 9665910,
+                              "iconDisabledColor": 6311753
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10057323
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "12",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284501833,
+                                "lowerStackColor": 4287855990
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "assaassa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "Kürşat Tunçer",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CBAQojAYCCITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                              "browseEndpoint": {
+                                                "browseId": "UCxkPfU-wMSrVKXlGFeAbPHg"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CBAQojAYCCITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLPL75-Jb7b72DZ_ya6hzR5YiOpsCpZwOnED"
+                        }
+                      },
+                      "trackingParams": "CBAQojAYCCITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "PL75-Jb7b72DZ_ya6hzR5YiOpsCpZwOnED",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CBAQojAYCCITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "PL75-Jb7b72DZ_ya6hzR5YiOpsCpZwOnED",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i.ytimg.com/vi/kMwt5Pxpv9Y/hqdefault.jpg?sqp=-oaymwEXCMACELQBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBOgXxhbHHLttx16fQlmyGpahq5aQ",
+                                "width": 320,
+                                "height": 180
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 114,
+                              "green": 41,
+                              "blue": 17
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 3346951,
+                              "iconInactiveColor": 9665910,
+                              "iconDisabledColor": 6311753
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 10057323
+                            }
+                          },
+                          "title": {
+                            "simpleText": "assaassa"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "Kürşat Tunçer",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CBAQojAYCCITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                                  "browseEndpoint": {
+                                    "browseId": "UCxkPfU-wMSrVKXlGFeAbPHg"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "Go to channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CBEQ8sgIGAAiEwiqs6zg_I6LAxXjpsIBHRghJqk=",
+                                      "browseEndpoint": {
+                                        "browseId": "UCxkPfU-wMSrVKXlGFeAbPHg"
+                                      }
+                                    },
+                                    "trackingParams": "CBEQ8sgIGAAiEwiqs6zg_I6LAxXjpsIBHRghJqk="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CBAQojAYCCITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.googleusercontent.com/ytc/AIdro_lSWGKp6rt1NPMlMtDbiSuNYp11ztMJ-7KFk7mvTel5Bw=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.googleusercontent.com/ytc/AIdro_lSWGKp6rt1NPMlMtDbiSuNYp11ztMJ-7KFk7mvTel5Bw=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Memmufassa ASSAASSA"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "@memmufassaassaassa5246"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "1 video"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CA8QoTAYCSITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UCim3KT0Q38pvnHew9JxL5Ng"
+                        }
+                      },
+                      "trackingParams": "CA8QoTAYCSITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "UCim3KT0Q38pvnHew9JxL5Ng",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CA8QoTAYCSITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UCim3KT0Q38pvnHew9JxL5Ng",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.googleusercontent.com/ytc/AIdro_lSWGKp6rt1NPMlMtDbiSuNYp11ztMJ-7KFk7mvTel5Bw=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.googleusercontent.com/ytc/AIdro_lSWGKp6rt1NPMlMtDbiSuNYp11ztMJ-7KFk7mvTel5Bw=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Memmufassa ASSAASSA"
+                          },
+                          "subtitle": {
+                            "simpleText": "@memmufassaassaassa5246"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CA8QoTAYCSITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UCim3KT0Q38pvnHew9JxL5Ng"
+                                      }
+                                    },
+                                    "trackingParams": "CA8QoTAYCSITCKqzrOD8josDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CA8QoTAYCSITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.googleusercontent.com/ytc/AIdro_nDnysdPWqkyfccyNSGon0yxQ4z5Gxjpg84nnTCeGI=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.googleusercontent.com/ytc/AIdro_nDnysdPWqkyfccyNSGon0yxQ4z5Gxjpg84nnTCeGI=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "@assaassa9018"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "1 subscriber"
+                                          }
+                                        },
+                                        "simpleText": "1 subscriber"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CA4QoTAYCiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UCoTKsezRXinfpyZJKO5h51w"
+                        }
+                      },
+                      "trackingParams": "CA4QoTAYCiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "UCoTKsezRXinfpyZJKO5h51w",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CA4QoTAYCiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UCoTKsezRXinfpyZJKO5h51w",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.googleusercontent.com/ytc/AIdro_nDnysdPWqkyfccyNSGon0yxQ4z5Gxjpg84nnTCeGI=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.googleusercontent.com/ytc/AIdro_nDnysdPWqkyfccyNSGon0yxQ4z5Gxjpg84nnTCeGI=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "subtitle": {
+                            "simpleText": "@assaassa9018"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CA4QoTAYCiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UCoTKsezRXinfpyZJKO5h51w"
+                                      }
+                                    },
+                                    "trackingParams": "CA4QoTAYCiITCKqzrOD8josDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CA4QoTAYCiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_DEFAULT",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i9.ytimg.com/s_p/OLAK5uy_nKHUQ_LdXefZdkS7sdPW9eio-PUZVV3GQ/mqdefault.jpg?sqp=CNCzz7wGir7X7AMICPeP_bsGEAE=&rs=AOn4CLDAzY1K3SRcw3FiyTNNhVJhq9QGUQ&v=1736394743",
+                                "width": 180,
+                                "height": 180
+                              },
+                              {
+                                "url": "https://i9.ytimg.com/s_p/OLAK5uy_nKHUQ_LdXefZdkS7sdPW9eio-PUZVV3GQ/sddefault.jpg?sqp=CNCzz7wGir7X7AMICPeP_bsGEAE=&rs=AOn4CLCFqDHCNXyTVFfyaL515K_eTNGCdA&v=1736394743",
+                                "width": 640,
+                                "height": 640
+                              },
+                              {
+                                "url": "https://i9.ytimg.com/s_p/OLAK5uy_nKHUQ_LdXefZdkS7sdPW9eio-PUZVV3GQ/maxresdefault.jpg?sqp=CNCzz7wGir7X7AMICPeP_bsGEAE=&rs=AOn4CLCwotunPTp8vr8hABEo8qaTP20sRw&v=1736394743",
+                                "width": 1200,
+                                "height": 1200
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 101,
+                              "green": 82,
+                              "blue": 33
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 2629645,
+                              "iconInactiveColor": 9208944,
+                              "iconDisabledColor": 5854019
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 12562053
+                            }
+                          },
+                          "thumbnailOverlays": [
+                            {
+                              "thumbnailOverlayTimeStatusRenderer": {
+                                "text": {
+                                  "runs": [
+                                    {
+                                      "text": "6",
+                                      "bold": true
+                                    },
+                                    {
+                                      "text": " videos"
+                                    }
+                                  ]
+                                },
+                                "style": "DEFAULT",
+                                "icon": {
+                                  "iconType": "PLAYLISTS"
+                                }
+                              }
+                            },
+                            {
+                              "thumbnailOverlayStackingEffectRenderer": {
+                                "upperStackColor": 4284044099,
+                                "lowerStackColor": 4287399024
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "El assassa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "Bekakchi Khier",
+                                            "navigationEndpoint": {
+                                              "clickTrackingParams": "CA0QojAYCyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                              "browseEndpoint": {
+                                                "browseId": "UCAHlxM4Ne55dOBzsF88CvXw",
+                                                "canonicalBaseUrl": "/channel/UCAHlxM4Ne55dOBzsF88CvXw"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CA0QojAYCyITCKqzrOD8josDFeOmwgEdGCEmqTIGc2VhcmNo",
+                        "browseEndpoint": {
+                          "browseId": "VLOLAK5uy_nKHUQ_LdXefZdkS7sdPW9eio-PUZVV3GQ"
+                        }
+                      },
+                      "trackingParams": "CA0QojAYCyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "OLAK5uy_nKHUQ_LdXefZdkS7sdPW9eio-PUZVV3GQ",
+                      "contentType": "TILE_CONTENT_TYPE_PLAYLIST",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CA0QojAYCyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "OLAK5uy_nKHUQ_LdXefZdkS7sdPW9eio-PUZVV3GQ",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "https://i9.ytimg.com/s_p/OLAK5uy_nKHUQ_LdXefZdkS7sdPW9eio-PUZVV3GQ/mqdefault.jpg?sqp=CNCzz7wGir7X7AMICPeP_bsGEAE=&rs=AOn4CLDAzY1K3SRcw3FiyTNNhVJhq9QGUQ&v=1736394743",
+                                "width": 180,
+                                "height": 180
+                              },
+                              {
+                                "url": "https://i9.ytimg.com/s_p/OLAK5uy_nKHUQ_LdXefZdkS7sdPW9eio-PUZVV3GQ/sddefault.jpg?sqp=CNCzz7wGir7X7AMICPeP_bsGEAE=&rs=AOn4CLCFqDHCNXyTVFfyaL515K_eTNGCdA&v=1736394743",
+                                "width": 640,
+                                "height": 640
+                              },
+                              {
+                                "url": "https://i9.ytimg.com/s_p/OLAK5uy_nKHUQ_LdXefZdkS7sdPW9eio-PUZVV3GQ/maxresdefault.jpg?sqp=CNCzz7wGir7X7AMICPeP_bsGEAE=&rs=AOn4CLCwotunPTp8vr8hABEo8qaTP20sRw&v=1736394743",
+                                "width": 1200,
+                                "height": 1200
+                              }
+                            ],
+                            "sampledThumbnailColor": {
+                              "red": 101,
+                              "green": 82,
+                              "blue": 33
+                            },
+                            "darkColorPalette": {
+                              "section2Color": 2629645,
+                              "iconInactiveColor": 9208944,
+                              "iconDisabledColor": 5854019
+                            },
+                            "vibrantColorPalette": {
+                              "iconInactiveColor": 12562053
+                            }
+                          },
+                          "title": {
+                            "simpleText": "El assassa"
+                          },
+                          "subtitle": {
+                            "runs": [
+                              {
+                                "text": "Bekakchi Khier",
+                                "navigationEndpoint": {
+                                  "clickTrackingParams": "CA0QojAYCyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                  "browseEndpoint": {
+                                    "browseId": "UCAHlxM4Ne55dOBzsF88CvXw",
+                                    "canonicalBaseUrl": "/channel/UCAHlxM4Ne55dOBzsF88CvXw"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "trackingParams": "CA0QojAYCyITCKqzrOD8josDFeOmwgEdGCEmqQ=="
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_l5LLkTg-D-orAjIv3QnONs9TM45y_AotBXm2mRPRn4eltxYktPs1EaE6EeEfGMXSfLHQ=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_l5LLkTg-D-orAjIv3QnONs9TM45y_AotBXm2mRPRn4eltxYktPs1EaE6EeEfGMXSfLHQ=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "@AssaAssa-d9y"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "3 subscribers"
+                                          }
+                                        },
+                                        "simpleText": "3 subscribers"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAwQoTAYDCITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UCJZcU1E7W8dehwMb4y5FuzQ"
+                        }
+                      },
+                      "trackingParams": "CAwQoTAYDCITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "UCJZcU1E7W8dehwMb4y5FuzQ",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAwQoTAYDCITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UCJZcU1E7W8dehwMb4y5FuzQ",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_l5LLkTg-D-orAjIv3QnONs9TM45y_AotBXm2mRPRn4eltxYktPs1EaE6EeEfGMXSfLHQ=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_l5LLkTg-D-orAjIv3QnONs9TM45y_AotBXm2mRPRn4eltxYktPs1EaE6EeEfGMXSfLHQ=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "subtitle": {
+                            "simpleText": "@AssaAssa-d9y"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAwQoTAYDCITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UCJZcU1E7W8dehwMb4y5FuzQ"
+                                      }
+                                    },
+                                    "trackingParams": "CAwQoTAYDCITCKqzrOD8josDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAwQoTAYDCITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_mIq3VHfPUrGhS9seKsJqeGzc2vC6doz0-nM2OENLkRxafGhMnaFzOjB0stCwcIPBngbw=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_mIq3VHfPUrGhS9seKsJqeGzc2vC6doz0-nM2OENLkRxafGhMnaFzOjB0stCwcIPBngbw=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "@AssaAssa-k2p"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "1 video"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAsQoTAYDSITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UCnz308dQAbjCKtBSoLqP4KQ"
+                        }
+                      },
+                      "trackingParams": "CAsQoTAYDSITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "UCnz308dQAbjCKtBSoLqP4KQ",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAsQoTAYDSITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UCnz308dQAbjCKtBSoLqP4KQ",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_mIq3VHfPUrGhS9seKsJqeGzc2vC6doz0-nM2OENLkRxafGhMnaFzOjB0stCwcIPBngbw=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_mIq3VHfPUrGhS9seKsJqeGzc2vC6doz0-nM2OENLkRxafGhMnaFzOjB0stCwcIPBngbw=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "subtitle": {
+                            "simpleText": "@AssaAssa-k2p"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAsQoTAYDSITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UCnz308dQAbjCKtBSoLqP4KQ"
+                                      }
+                                    },
+                                    "trackingParams": "CAsQoTAYDSITCKqzrOD8josDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAsQoTAYDSITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_n0P3r2dt_xOW7IMpld2RrxGBWw0u14CCrewTD_k6rGgh-rAJJjEjQc9tcAQhDqX28vZA=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_n0P3r2dt_xOW7IMpld2RrxGBWw0u14CCrewTD_k6rGgh-rAJJjEjQc9tcAQhDqX28vZA=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "@AssaAssa-x1h"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "1 video"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAoQoTAYDiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UCCXYwrkAV9JLAa72UJLfEUA"
+                        }
+                      },
+                      "trackingParams": "CAoQoTAYDiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "UCCXYwrkAV9JLAa72UJLfEUA",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAoQoTAYDiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UCCXYwrkAV9JLAa72UJLfEUA",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_n0P3r2dt_xOW7IMpld2RrxGBWw0u14CCrewTD_k6rGgh-rAJJjEjQc9tcAQhDqX28vZA=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_n0P3r2dt_xOW7IMpld2RrxGBWw0u14CCrewTD_k6rGgh-rAJJjEjQc9tcAQhDqX28vZA=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "subtitle": {
+                            "simpleText": "@AssaAssa-x1h"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAoQoTAYDiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UCCXYwrkAV9JLAa72UJLfEUA"
+                                      }
+                                    },
+                                    "trackingParams": "CAoQoTAYDiITCKqzrOD8josDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAoQoTAYDiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_nHNmhgK4mtwlkvbYzWQNsHe7dvV4nJKisK6SmVW8O7u9Pa8T0cWxyinae9f8_eisKzEw=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_nHNmhgK4mtwlkvbYzWQNsHe7dvV4nJKisK6SmVW8O7u9Pa8T0cWxyinae9f8_eisKzEw=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "@AssaAssa-eo6ts"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "3 subscribers"
+                                          }
+                                        },
+                                        "simpleText": "3 subscribers"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAkQoTAYDyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UCrRGMDA4vod5shyelFZM62g"
+                        }
+                      },
+                      "trackingParams": "CAkQoTAYDyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "UCrRGMDA4vod5shyelFZM62g",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAkQoTAYDyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UCrRGMDA4vod5shyelFZM62g",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_nHNmhgK4mtwlkvbYzWQNsHe7dvV4nJKisK6SmVW8O7u9Pa8T0cWxyinae9f8_eisKzEw=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_nHNmhgK4mtwlkvbYzWQNsHe7dvV4nJKisK6SmVW8O7u9Pa8T0cWxyinae9f8_eisKzEw=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "subtitle": {
+                            "simpleText": "@AssaAssa-eo6ts"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAkQoTAYDyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UCrRGMDA4vod5shyelFZM62g"
+                                      }
+                                    },
+                                    "trackingParams": "CAkQoTAYDyITCKqzrOD8josDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAkQoTAYDyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_li0yM6cYLIOWjD11MRFrJBTyO1UpGuxl0HXyI_Shaix_AohWC1X6iVYA2plRVEmtsyaw=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_li0yM6cYLIOWjD11MRFrJBTyO1UpGuxl0HXyI_Shaix_AohWC1X6iVYA2plRVEmtsyaw=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "@AssaAssa-j5r"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "9 subscribers"
+                                          }
+                                        },
+                                        "simpleText": "9 subscribers"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAgQoTAYECITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UCJYEVIZ06OMgabYAvoMGMDg"
+                        }
+                      },
+                      "trackingParams": "CAgQoTAYECITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "UCJYEVIZ06OMgabYAvoMGMDg",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAgQoTAYECITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UCJYEVIZ06OMgabYAvoMGMDg",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_li0yM6cYLIOWjD11MRFrJBTyO1UpGuxl0HXyI_Shaix_AohWC1X6iVYA2plRVEmtsyaw=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_li0yM6cYLIOWjD11MRFrJBTyO1UpGuxl0HXyI_Shaix_AohWC1X6iVYA2plRVEmtsyaw=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "subtitle": {
+                            "simpleText": "@AssaAssa-j5r"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAgQoTAYECITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UCJYEVIZ06OMgabYAvoMGMDg"
+                                      }
+                                    },
+                                    "trackingParams": "CAgQoTAYECITCKqzrOD8josDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAgQoTAYECITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_n0P3r2dt_xOW7IMpld2RrxGBWw0u14CCrewTD_k6rGgh-rAJJjEjQc9tcAQhDqX28vZA=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_n0P3r2dt_xOW7IMpld2RrxGBWw0u14CCrewTD_k6rGgh-rAJJjEjQc9tcAQhDqX28vZA=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "@AssaAssa-pr7re"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "1 video"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAcQoTAYESITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UCcZp1QuJKLzxpTwia6iplZg"
+                        }
+                      },
+                      "trackingParams": "CAcQoTAYESITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "UCcZp1QuJKLzxpTwia6iplZg",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAcQoTAYESITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UCcZp1QuJKLzxpTwia6iplZg",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_n0P3r2dt_xOW7IMpld2RrxGBWw0u14CCrewTD_k6rGgh-rAJJjEjQc9tcAQhDqX28vZA=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_n0P3r2dt_xOW7IMpld2RrxGBWw0u14CCrewTD_k6rGgh-rAJJjEjQc9tcAQhDqX28vZA=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "subtitle": {
+                            "simpleText": "@AssaAssa-pr7re"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAcQoTAYESITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UCcZp1QuJKLzxpTwia6iplZg"
+                                      }
+                                    },
+                                    "trackingParams": "CAcQoTAYESITCKqzrOD8josDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAcQoTAYESITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.googleusercontent.com/ytc/AIdro_mCs4r9nnFTs7vgI2s29j6WdGB6Beb-FqTSkRHytOU=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.googleusercontent.com/ytc/AIdro_mCs4r9nnFTs7vgI2s29j6WdGB6Beb-FqTSkRHytOU=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "accessibility": {
+                                          "accessibilityData": {
+                                            "label": "3 subscribers"
+                                          }
+                                        },
+                                        "simpleText": "3 subscribers"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAYQoTAYEiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UCd_V6-j_CMATmH5362vOk0A"
+                        }
+                      },
+                      "trackingParams": "CAYQoTAYEiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "UCd_V6-j_CMATmH5362vOk0A",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAYQoTAYEiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UCd_V6-j_CMATmH5362vOk0A",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.googleusercontent.com/ytc/AIdro_mCs4r9nnFTs7vgI2s29j6WdGB6Beb-FqTSkRHytOU=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.googleusercontent.com/ytc/AIdro_mCs4r9nnFTs7vgI2s29j6WdGB6Beb-FqTSkRHytOU=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "subtitle": {
+                            "simpleText": "3 subscribers"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAYQoTAYEiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UCd_V6-j_CMATmH5362vOk0A"
+                                      }
+                                    },
+                                    "trackingParams": "CAYQoTAYEiITCKqzrOD8josDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAYQoTAYEiITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "tileRenderer": {
+                      "style": "TILE_STYLE_YTLR_ROUND",
+                      "header": {
+                        "tileHeaderRenderer": {
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_lImVEFshLCzwKPwsKil_wI44W3fLO5VgHisdM_-Jtm5ZMsPSMXFTRot9-tSU3zW38Ftw=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_lImVEFshLCzwKPwsKil_wI44W3fLO5VgHisdM_-Jtm5ZMsPSMXFTRot9-tSU3zW38Ftw=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "metadata": {
+                        "tileMetadataRenderer": {
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "lines": [
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "simpleText": "@AssaAssa-o1k"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            },
+                            {
+                              "lineRenderer": {
+                                "items": [
+                                  {
+                                    "lineItemRenderer": {
+                                      "text": {
+                                        "runs": [
+                                          {
+                                            "text": "3"
+                                          },
+                                          {
+                                            "text": " videos"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "wrap": true
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "onSelectCommand": {
+                        "clickTrackingParams": "CAUQoTAYEyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "browseEndpoint": {
+                          "browseId": "UCjCB2HmzOEbEx1Sy7LazQLg"
+                        }
+                      },
+                      "trackingParams": "CAUQoTAYEyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                      "contentId": "UCjCB2HmzOEbEx1Sy7LazQLg",
+                      "contentType": "TILE_CONTENT_TYPE_CHANNEL",
+                      "onLongPressCommand": {
+                        "clickTrackingParams": "CAUQoTAYEyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                        "showMenuCommand": {
+                          "contentId": "UCjCB2HmzOEbEx1Sy7LazQLg",
+                          "thumbnail": {
+                            "thumbnails": [
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_lImVEFshLCzwKPwsKil_wI44W3fLO5VgHisdM_-Jtm5ZMsPSMXFTRot9-tSU3zW38Ftw=s88-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 88,
+                                "height": 88
+                              },
+                              {
+                                "url": "//yt3.ggpht.com/ytc/AIdro_lImVEFshLCzwKPwsKil_wI44W3fLO5VgHisdM_-Jtm5ZMsPSMXFTRot9-tSU3zW38Ftw=s176-c-k-c0x00ffffff-no-rj-mo",
+                                "width": 176,
+                                "height": 176
+                              }
+                            ]
+                          },
+                          "title": {
+                            "simpleText": "Assa Assa"
+                          },
+                          "subtitle": {
+                            "simpleText": "@AssaAssa-o1k"
+                          },
+                          "menu": {
+                            "menuRenderer": {
+                              "items": [
+                                {
+                                  "menuNavigationItemRenderer": {
+                                    "text": {
+                                      "runs": [
+                                        {
+                                          "text": "View channel"
+                                        }
+                                      ]
+                                    },
+                                    "navigationEndpoint": {
+                                      "clickTrackingParams": "CAUQoTAYEyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                                      "browseEndpoint": {
+                                        "browseId": "UCjCB2HmzOEbEx1Sy7LazQLg"
+                                      }
+                                    },
+                                    "trackingParams": "CAUQoTAYEyITCKqzrOD8josDFeOmwgEdGCEmqQ=="
+                                  }
+                                }
+                              ],
+                              "trackingParams": "CAUQoTAYEyITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+                              "accessibility": {
+                                "accessibilityData": {
+                                  "label": "Action menu"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "trackingParams": "CAMQxjkiEwiqs6zg_I6LAxXjpsIBHRghJqk=",
+                "continuations": [
+                  {
+                    "nextContinuationData": {
+                      "continuation": "EqkGEghhc3NhYXNzYRqcBlNCU0NBUmhWUTFKT1dFOXZhMVp6VWxKeFJVMXpiME0wTkdVNFgxR0NBUmhWUTBSUWFEVXRkelZuUmxaVVdsaHpiV3BEYmxGVVQwR0NBUXREU3paRFRqZEpSakJ4WjRJQkMzaEVkV0ZQVGtsRVozWmpnZ0VpVUV4dWNrZDNUVXhSYUZRNVEwaHhkVXRxU0c5QlMzZDBhelpxYVc5SmVWSXphNElCSWxCTWNuTkpkR2c0VFZWU1MwUnNMWGxhVmt4M01sOXdNSHBHY2t0alh6ZG1RbG1DQVNKUVRFNWZRVWhqYlZwUk1WWXliRmxxWWs0eWJYVlBiazVZUVd4UmN6bDZlR2gzZ2dFaVVFeDVVVXg2WW10WldFNVpUWFpuU0ZOTlVrNXVTVEZITlZaaVdWWjRkR2hvUllJQklsQk1OelV0U21JM1lqY3lSRnBmZVdFMmFIcFNOVmxwVDNCelEzQmFkMDl1UlVTQ0FSaFZRMmx0TTB0VU1GRXpPSEIyYmtobGR6bEtlRXcxVG1lQ0FSaFZRMjlVUzNObGVsSllhVzVtY0hsYVNrdFBOV2cxTVhlQ0FTbFBURUZMTlhWNVgyNUxTRlZSWDB4a1dHVm1XbVJyVXpkelpGQlhPV1ZwYnkxUVZWcFdWak5IVVlJQkdGVkRTbHBqVlRGRk4xYzRaR1ZvZDAxaU5IazFSblY2VVlJQkdGVkRibm96TURoa1VVRmlha05MZEVKVGIweHhVRFJMVVlJQkdGVkRRMWhaZDNKclFWWTVTa3hCWVRjeVZVcE1aa1ZWUVlJQkdGVkRjbEpIVFVSQk5IWnZaRFZ6YUhsbGJFWmFUVFl5WjRJQkdGVkRTbGxGVmtsYU1EWlBUV2RoWWxsQmRtOU5SMDFFWjRJQkdGVkRZMXB3TVZGMVNrdE1lbmh3VkhkcFlUWnBjR3hhWjRJQkdGVkRaRjlXTmkxcVgwTk5RVlJ0U0RVek5qSjJUMnN3UVlJQkdGVkRha05DTWtodGVrOUZZa1Y0TVZONU4weGhlbEZNWjdJQkJnb0VDQUVRQWclM0QlM0QYgeDoGA%3D%3D",
+                      "clickTrackingParams": "CAQQybcCIhMIqrOs4PyOiwMV46bCAR0YISap"
+                    }
+                  }
+                ],
+                "collapsedItemCount": 3,
+                "visibleItemCount": 3
+              }
+            },
+            "trackingParams": "CAIQ3BwYACITCKqzrOD8josDFeOmwgEdGCEmqQ==",
+            "headerRenderer": {
+              "shelfHeaderRenderer": {
+                "avatarLockup": {
+                  "avatarLockupRenderer": {
+                    "title": {
+                      "simpleText": "Search results for assaassa"
+                    },
+                    "size": "AVATAR_LOCKUP_SIZE_SMALL"
+                  }
+                }
+              }
+            },
+            "tvhtml5Style": {
+              "style": "TV_SHELF_STYLE_DEFAULT",
+              "sizeStrategy": "TV_SHELF_SIZE_STRATEGY_FIXED"
+            }
+          }
+        }
+      ],
+      "trackingParams": "CAEQui8iEwiqs6zg_I6LAxXjpsIBHRghJqk="
+    }
+  },
+  "trackingParams": "CAAQvGkiEwiqs6zg_I6LAxXjpsIBHRghJqk="
+}

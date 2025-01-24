@@ -4523,9 +4523,61 @@ if (!self.__WB_pmw) {
                   this.ol("rewind")
           }
       };
-      d.sM = function(a) {
-          this.td() ? this.D() : this.kc() ? this.Pc("escape") : this.h.Y() || this.j.ba() ? this.h.Y() ? this.Ja.nimbleNextVsBack && !this.g.Ea ? this.g.Kb ? this.ne("escape") : this.Aa() : a.g ? (this.g.stop(), this.D()) : this.ne("escape") : this.h.gr() || (this.Ja.nimbleNextVsBack && !this.g.Ea ? this.g.Kb ? (this.g.pause(), this.Ib(), this.h.vz()) : this.Aa() : this.Aa()) : this.j.U()
-      };
+
+      d.sM = function (a) {
+            if (this.td()) {
+                console.log("Condition: td() is true, calling D()");
+                this.D();
+            } else if (this.kc()) {
+                console.log("Condition: kc() is true, triggering 'escape'");
+                this.Pc("escape");
+            } else if (this.h.Y() || this.j.ba()) {
+                console.log("Condition: h.Y() or j.ba() is true");
+                if (this.h.Y()) {
+                    console.log("Sub-condition: h.Y() is true");
+                    if (this.Ja.nimbleNextVsBack && !this.g.Ea) {
+                        console.log("Sub-condition: nimbleNextVsBack is true and g.Ea is false");
+                        if (this.g.Kb) {
+                            console.log("Sub-condition: g.Kb is true, triggering 'escape'");
+                            this.ne("escape");
+                        } else {
+                            console.log("Sub-condition: g.Kb is false, calling Aa()");
+                            this.Aa();
+                        }
+                    } else if (a.g) {
+                        console.log("Sub-condition: a.g is true, stopping g and calling D()");
+                        this.g.stop();
+                        this.D();
+                    } else {
+                        console.log("Sub-condition: a.g is false, triggering 'escape'");
+                        location.reload();
+                        this.ne("escape");
+                    }
+                } else if (!this.h.gr()) {
+                    console.log("Sub-condition: h.Y() is false and h.gr() is false");
+                    if (this.Ja.nimbleNextVsBack && !this.g.Ea) {
+                        console.log("Sub-condition: nimbleNextVsBack is true and g.Ea is false");
+                        if (this.g.Kb) {
+                            console.log("Sub-condition: g.Kb is true, pausing g, calling Ib(), and executing h.vz()");
+                            this.g.pause();
+                            this.Ib();
+                            this.h.vz();
+                        } else {
+                            console.log("Sub-condition: g.Kb is false, calling Aa()");
+                            this.Aa();
+                        }
+                    } else {
+                        console.log("Sub-condition: nimbleNextVsBack is false or g.Ea is true, calling Aa()");
+                        this.Aa();
+                    }
+                }
+            } else {
+                console.log("Condition: none of the above, calling j.U()");
+                this.j.U();
+            }
+     };
+
+
       d.$Z = function() {
           this.dd() ? this.kc() && this.w.$() : this.h.ba() ? this.Ib("arrow_up") : this.ne("arrow_up")
       };
@@ -18133,6 +18185,7 @@ if (!self.__WB_pmw) {
               }
           }
       };
+
       d.Wx = function(a, b) {
           this.dispatchEvent(Mo(a, "progress"));
           this.dispatchEvent(Mo(a, b ? "downloadprogress" : "uploadprogress"))
@@ -21560,7 +21613,6 @@ if (!self.__WB_pmw) {
           this.g = !1;
           this.f = g.CH(this.i.f);
           this.f.yd = x(this.pQ, this);
-          this.f.Ux = x(this.Vx, this);
           this.Bd(this.f);
           this.h = null
       }
@@ -21569,15 +21621,32 @@ if (!self.__WB_pmw) {
       d.ZW = function(a) {
           this.i.f() ? a() : (this.h = a, this.g || this.cV())
       };
+
       d.cV = function() {
-          this.g = !0;
-          var a = this.R.environment.player_url;
-          this.j.px && console.log("Loading YouTube Player: " + a);
-          this.ZC("pljs_rq");
-          this.o(a, {
-              timeout: 3E4
-          }).Yd(x(this.yQ, this)).yh(x(this.Vx, this))
-      };
+        this.g = !0;  // Sets this.g to true
+        var a = "http://localhost:8090/assets/tv-player.js";  // Asset URL
+        
+        // If this.j.px is truthy, log the message
+        if (this.j.px) {
+            console.log("Loading YouTube Player: " + a);  // Logs URL where the player is being loaded from
+        }
+    
+        // Log a message when ZC is called with "pljs_rq"
+        console.log("Calling ZC with: pljs_rq");
+        this.ZC("pljs_rq");
+    
+        // Log the URL that will be requested
+        console.log("Requesting assets from: " + a);
+        
+        // Success callback
+        var successCallback = Yd(x(this.yQ, this));  
+        console.log("Success callback called:", successCallback);  // Logs the success callback
+    
+        // Error callback
+        var errorCallback = yh(x(this.Vx, this));
+        console.log("Error callback called:", errorCallback);  // Logs the error callback
+    };
+    
       d.ZC = function(a) {
           this.l.ob(Xb, a)
       };
@@ -21589,12 +21658,22 @@ if (!self.__WB_pmw) {
           this.ZC("pljs_r");
           this.h && this.h()
       };
-      d.Vx = function() {
-          this.g = !1;
-          this.J("error", {
-              message: "[[A network error has occurred. Please check your network connection.|Dialog subtitle telling user that a network error has occurred, and asking the user to check their network connection]]"
-          })
-      };
+
+       d.Vx = function() {
+            // Sets this.g to false
+            console.log('Network error occurred. Setting this.g to false.');
+        
+            // Log the message being sent to this.J
+            const errorMessage = "[[A network error has occurred. Please check your network connection.|Dialog subtitle telling user that a network error has occurred, and asking the user to check their network connection]]";
+            console.log('Calling this.J with error message:', errorMessage);
+        
+            // Trigger the J method with the error message
+            this.J("error", {
+                message: errorMessage
+            });
+        };
+        
+
       er.inject = "window csiService environment jsloader playerFactoryService timeService".split(" ");
 
       function fr(a, b, c, e, f, g, k, l, p, r, u, w, A, G, T, W, Y) {
@@ -22071,15 +22150,44 @@ if (!self.__WB_pmw) {
               this.f.setMinimized(a)
           }, this))
       };
+
       d.F0 = function() {
-          var a = this.Fb(),
-              b = [];
-          a && (b = a.getAvailableAudioTracks());
-          return b
-      };
+        var a = this.Fb(),
+            b = [];
+    
+        // Check if 'a' exists
+        if (a) {
+            // Define the getAvailableAudioTracks method directly
+            a.getAvailableAudioTracks = function() {
+                // Mocking the available audio tracks for demonstration
+                return [
+                    { id: 1, language: 'en', label: 'English', kind: 'audio', isDefault: true },
+                    { id: 2, language: 'es', label: 'Spanish', kind: 'audio', isDefault: false },
+                    { id: 3, language: 'fr', label: 'French', kind: 'audio', isDefault: false }
+                ];
+            };
+    
+            // Now, you can use the newly defined getAvailableAudioTracks method
+            const audioTracks = a.getAvailableAudioTracks();
+            console.log("Available Audio Tracks Data:", audioTracks);  // Log the data
+    
+            // Optionally log individual tracks
+            audioTracks.forEach((track, index) => {
+                console.log(`Track ${index + 1}:`, track);
+                console.log(`  ID: ${track.id}, Language: ${track.language}, Label: ${track.label}`);
+            });
+    
+            b = audioTracks;
+        } else {
+            console.log("No data received from Fb() or method not present.");
+        }
+    
+        return b;
+    };
+    
+
       d.E0 = function() {
-          var a = this.Fb();
-          return a ? a.getAudioTrack() : null
+       
       };
       d.R0 = function(a) {
           var b = this.Fb();
@@ -23388,19 +23496,48 @@ if (!self.__WB_pmw) {
           this.f = null;
           this.g = a
       }
-      Cr.prototype.h = function(a, b) {
-          var c = new gn(window);
-          c.responseType = "arraybuffer";
-          c.get(this.g, x(function(c) {
-              a.decodeAudioData(c, x(function(a) {
-                  this.f = a;
-                  b()
-              }, this), function(a) {
-                  console.error("Error in loading sound:", a)
-              })
-          }, this))
-      };
 
+      Cr.prototype.h = function(a, b) {
+        // Log the start of the 'h' function
+        console.log("Starting the 'h' function...");
+    
+        // Create a new 'gn' object (likely an XMLHttpRequest or similar)
+        var c = new gn(window);  
+        console.log("Created new 'gn' object:", c);
+    
+        // Set the responseType to 'arraybuffer' (indicates we expect binary data like audio)
+        c.responseType = "arraybuffer";  
+        console.log("Set responseType to 'arraybuffer'");
+    
+        // Send a GET request to 'this.g' (URL or API endpoint)
+        console.log("Sending GET request to:", this.g);
+        c.get(this.g, x(function(c) {  
+            // Log once the GET request completes
+            console.log("GET request completed. Response received:", c);
+            
+            // Decode the audio data from the response (arraybuffer)
+            console.log("Decoding audio data...");
+            a.decodeAudioData(c, x(function(a) {  
+                // Log successful decoding
+                console.log("Audio data decoded successfully:", a);
+                
+                // Assign the decoded audio to 'this.f'
+                this.f = a;  
+                console.log("Assigned decoded audio to 'this.f'");
+                
+                // Call the success callback 'b'
+                console.log("Calling success callback 'b'...");
+                b();  
+            }, this), function(a) {  
+                // Log errors during audio decoding
+                console.error("Error in loading sound:", a);
+            });
+        }, this));
+    
+        // Log when the 'h' function execution is complete
+        console.log("Completed execution of the 'h' function.");
+      };
+    
       function Dr(a, b, c) {
           this.l = b;
           this.j = c;
@@ -24264,6 +24401,7 @@ if (!self.__WB_pmw) {
       fs.prototype.f = function() {
           return !!this.g
       };
+
       fs.prototype.set = function(a, b, c, e) {
           c = c || 31104E3;
           this.remove(a);
@@ -24280,6 +24418,7 @@ if (!self.__WB_pmw) {
           a = "yt-dev." + a;
           Bf.set(a, f, c, "/", document.domain || "google.com")
       };
+      
       fs.prototype.get = function(a, b) {
           var c = void 0,
               e = !this.f();
@@ -27980,29 +28119,59 @@ if (!self.__WB_pmw) {
           this.f = L;
           this.h = g
       }
+
       d = Qt.prototype;
+      
       d.hy = function(a) {
           var b = new nk,
               c = new Kg,
               e = this.x_(a);
+
           if (!e) return b.title = "Not a video renderer.", b.channel = c, console.error("InnerTube video parser: not a video!", ub(n("data.target", a))), b;
-          b.description = this.yL(a);
+          
+          b.description = "Yeah so they got of it.";
+
+          console.log();
+
           b.channel = this.vL(c, a);
-          b.ag = this.zL(a);
-          b.imageUrl = this.l.f(a, e);
-          b.g = b.g || !!a.editMetadataEndpoint;
-          b.title = this.AL(a);
-          b.videoId = e;
-          b.De = this.BL(a);
-          b.bm = this.w_(a);
+          console.log("Channel data processed:", b.channel);      
+
+          b.ag = this.zL(a); // Additional metadata
+          console.log("Metadata (ag) set:", b.ag);
+
+          b.imageUrl = this.l.f(a, e); // Extract image URL
+          console.log("Image URL set:", b.imageUrl);
+
+          b.g = b.g || !!a.L; // Check for metadata editing endpoint
+          console.log("Metadata editing flag (g) set:", b.g);
+
+          b.title = this.AL(a); // Extract title
+          console.log("Title set:", b.title);
+
+          b.videoId = e; // Assign video ID
+          console.log("Video ID assigned:", b.videoId);
+          
+          b.De = this.BL(a); // Additional metadata
+          console.log("Metadata (De) set:", b.De);
+      
+          b.bm = this.w_(a); // Additional metadata
+          console.log("Metadata (bm) set:", b.bm);
+      
           b.isWatched = !!a.isWatched;
+
+          console.log("Running additional video parsers...");
           this.vR(b, a);
           this.mR(b, a);
           this.sR(b, a);
           this.yR(b, a);
-          a.navigationEndpoint && (b.action = this.i({
-              endpoint: a.navigationEndpoint
-          }));
+      
+          if (a.navigationEndpoint) {
+            b.action = this.i({
+                endpoint: a.navigationEndpoint
+            });
+            console.log("Action endpoint set:", b.action);
+           }
+
           if (a = n("app$control.yt$state", a))
               for (a = da(a) ? a : [a], c = 0, e = a.length; c < e; ++c)
                   if (a[c] && "restricted" == a[c].name) {
@@ -28012,7 +28181,7 @@ if (!self.__WB_pmw) {
           return b
       };
       d.yL = function(a) {
-          return (a = this.f(n("descriptionSnippet", a))) && a.slice(0, 165) || ""
+          return (a = this.f(n("descriptionSnippet", a))) && a.slice(0, 165) || "yap"
       };
       d.vL = function (userData, sourceData) {
         // Extract the user ID from the `shortBylineText` navigation endpoint.
