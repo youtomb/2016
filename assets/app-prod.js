@@ -979,7 +979,7 @@ if (!self.__WB_pmw) {
               GUIDE_CIRCULAR_MASK: "guide-circular-mask",
               HAPPY: "icon-hats-happy",
               GAMING: "icon-gaming",
-              MOVIE: "icon-flim",
+              MOVIE: "icon-film",
               LIKES_PLAYLIST: "icon-like",
               MEH: "icon-hats-neutral",
               MUSIC: "icon-music",
@@ -11312,25 +11312,106 @@ if (!self.__WB_pmw) {
           this.D.U()
       };
       d.Ia = function(a) {
-          this.resultCount = a && parseInt(a.estimatedResults, 10) || 0;
-          var b = n("contents.sectionListRenderer.contents.0", a);
-          a && this.M.attachChild(a.trackingParams);
-          (this.I = 0 < this.resultCount && !!b) || this.g.Za() || this.Bf("[[No videos are available|The message shown when a row has no videos to show.]]");
-          this.I && (a = n("contents.sectionListRenderer.trackingParams", a), this.M.lb(a), b = this.Na.f(this.Aa, b, this.h), b != this.h && (a = this.h ? this.h.H : this.H.querySelector("#results-placeholder"), this.H.replaceChild(b.H,
-              a), this.h && this.removeChild(this.h), b.H.id = "search-results", this.sb(b), this.h = b, this.kB()), b.ba() ? b.show() : (this.K(this.h, "selection-change", x(this.kB, this)), b.render()))
-      };
-      d.Bf = function(a) {
-          !this.Y() && a || this.Ja.set(a || "")
-      };
-      d.ua = function() {
-          var a = Nj.u.ua.call(this);
-          this.i && (this.i.ba() ? a.push("input-collapsed") : this.ba() || this.B != this.i || a.push("input-open"));
-          return a
-      };
-      d.kB = function() {
-          var a = this.h.Oa();
-          this.M.Ok(a, this.h.la(), this.Bb)
-      };
+        this.resultCount = a && parseInt(a.estimatedResults, 10) || 0;
+        var b = n("contents.sectionListRenderer.contents.0", a);
+        
+        if (a) {
+            this.M.attachChild(a.trackingParams);
+        }
+    
+        // Check if there are results or handle "no videos" scenario
+            this.I = 0 < this.resultCount && !!b;
+            if (!this.I && !this.g.Za()) {
+                this.Bf("[[No videos are available|The message shown when a row has no videos to show.]]");
+            }
+    
+        // If there are results, process and render them
+            if (this.I) {
+                var trackingParams = n("contents.sectionListRenderer.trackingParams", a);
+                this.M.lb(trackingParams);
+        
+                var contentNode = this.Na.f(this.Aa, b, this.h);
+        
+                if (contentNode !== this.h) {
+                    var placeholder = this.h ? this.h.H : this.H.querySelector("#results-placeholder");
+                    this.H.replaceChild(contentNode.H, placeholder);
+        
+                    if (this.h) {
+                        this.removeChild(this.h);
+                    }
+        
+                    contentNode.H.id = "search-results";
+                    this.sb(contentNode);
+                    this.h = contentNode;
+                    this.kB();
+                }
+        
+                if (contentNode.ba()) {
+                    contentNode.show();
+                } else {
+                    this.K(this.h, "selection-change", x(this.kB, this));
+                    contentNode.render();
+                }
+            }
+        };
+    
+        d.Bf = function(message) {
+            if (!this.Y() && message) {
+                this.Ja.set(message || "");
+            }
+        };
+
+        d.ua = function() {
+            var classes = Nj.u.ua.call(this);
+            if (this.i) {
+                if (this.i.ba()) {
+                    classes.push("input-collapsed");
+                } else if (!this.ba() && this.B === this.i) {
+                    classes.push("input-open");
+                }
+            }
+            return classes;
+        };
+
+        d.kB = function() {
+            if (typeof this.Oa === "function") {
+                // Call Oa if it's a valid function
+                var state = this.Oa();
+                console.log("Oa() returned state:", state);
+        
+                if (state && this.h && typeof this.h.la === "function") {
+                    console.log("Calling Ok with state:", state, ", la():", this.h.la(), ", Bb:", this.Bb);
+                    this.M.Ok(state, this.h.la(), this.Bb);
+                } else {
+                    console.log("State or h.la() is invalid. state:", state, "h:", this.h);
+                }
+            } else {
+                // Log a clear error message if Oa is not a function
+                console.error("Oa is not a function or is undefined. this.Oa:", this.Oa);
+            }
+        };
+        
+        d.Oa = function(a) {
+            // yeah this is custom bii  
+            console.log("Oa function called with argument:", a);
+        
+            // Log the properties of the argument for debugging
+            console.log("Properties of the argument:", a);
+        
+            // Get the 'search-results' element
+            var searchResultsElement = document.getElementById("search-results");
+            if (searchResultsElement) {
+                // Apply CSS transform to move the element down by 20% of its height (you can adjust this value)
+                searchResultsElement.style.transition = "transform 1s ease-in-out";  // Adding transition for smooth movement
+                searchResultsElement.style.height = "22em";
+                searchResultsElement.style.transform = "translateY(90%)";  // Move it down by 20% of its height
+            } else {
+                console.log("Element with ID 'search-results' not found.");
+            }
+        };
+        
+        
+    
       Nj.inject = "environment timeService searchQueryModel remoteService searchReporting searchApi legendModel searchService inflater searchHistoryService safeModeFlag isLoading goBack appMessage isBackgroundVisible screenManager visibilityConfig isPointerOverlayEnabled opt_voiceSearchModel".split(" ");
 
       function Oj(a, b, c, e, f, g, k, l, p, r, u, w) {
@@ -19821,7 +19902,7 @@ if (!self.__WB_pmw) {
               try {
                   var b = n("yt.www.ads.biscotti.getId_"),
                       c;
-                  b ? c = b() : (rq || (rq = qq("//web.archive.org/web/20160228021433/http://googleads.g.doubleclick.net/pagead/id", {
+                  b ? c = b() : (rq || (rq = qq("", {
                       format: "RAW",
                       method: "GET",
                       timeout: 5E3,
@@ -19839,90 +19920,127 @@ if (!self.__WB_pmw) {
       }
 
       function xq(a) {
-          var b;
-          a: {
-              try {
-                  b = window.top.location.href
-              } catch (G) {
-                  b = 2;
-                  break a
-              }
-              b = null != b ? b == window.document.location.href ? 0 : 1 : 2
-          }
-          b = {
-              dt: Wp,
-              flash: Np,
-              frm: b
-          };
-          b.u_tz = -(new Date).getTimezoneOffset();
-          var c;
-          try {
-              c = yp.history.length
-          } catch (G) {
-              c = 0
-          }
-          b.u_his = c;
-          b.u_java = !!yp.navigator && "unknown" !== typeof yp.navigator.javaEnabled && !!yp.navigator.javaEnabled && yp.navigator.javaEnabled();
-          yp.screen && (b.u_h = yp.screen.height, b.u_w = yp.screen.width, b.u_ah = yp.screen.availHeight, b.u_aw = yp.screen.availWidth, b.u_cd = yp.screen.colorDepth);
-          yp.navigator && yp.navigator.plugins && (b.u_nplug = yp.navigator.plugins.length);
-          yp.navigator && yp.navigator.mimeTypes && (b.u_nmime = yp.navigator.mimeTypes.length);
-          b.bid = a;
-          b.ca_type = Mp ? "flash" : "image";
-          if ($p("EXPERIMENT_FLAGS", {}).enable_server_side_search_pyv) {
-              var e;
-              try {
-                  var f = window.screenX,
-                      g = window.screenY
-              } catch (G) {}
-              try {
-                  var k = window.outerWidth,
-                      l = window.outerHeight
-              } catch (G) {}
-              try {
-                  var p = window.innerWidth,
-                      r = window.innerHeight
-              } catch (G) {}
-              a = [window.screenLeft, window.screenTop, f, g, window.screen ? window.screen.availWidth :
-                  void 0, window.screen ? window.screen.availTop : void 0, k, l, p, r
-              ];
-              c = window.top || yp;
-              try {
-                  var u;
-                  if (c.document && !c.document.body) u = new Xc(-1, -1);
-                  else {
-                      var w = (c || window).document,
-                          A = "CSS1Compat" == w.compatMode ? w.documentElement : w.body;
-                      u = (new Xc(A.clientWidth, A.clientHeight)).round()
-                  }
-                  e = u
-              } catch (G) {
-                  e = new Xc(-12245933, -12245933)
-              }
-              window.f && document.createElementNS && (Vp |= 1);
-              e = {
-                  bc: Vp,
-                  bih: e.height,
-                  biw: e.width,
-                  brdim: a.join(),
-                  vis: {
-                      visible: 1,
-                      hidden: 2,
-                      prerender: 3,
-                      preview: 4
-                  }[xp.webkitVisibilityState || xp.mozVisibilityState ||
-                      xp.visibilityState || ""
-                  ] || 0,
-                  wgl: !!yp.WebGLRenderingContext
-              };
-              z(b, e)
-          }
-          e = {
-              wc: b,
-              method: "POST"
-          };
-          e.wc || (e.wc = {});
-          lq("//web.archive.org/web/20160228021433/http://www.youtube.com/ad_data_204", e)
-      };
+        var b;
+        
+        // Try to determine if the current window is in a top-level window or an iframe
+        try {
+            b = window.top.location.href;
+        } catch (G) {
+            b = 2; // If an error occurs (likely due to being inside an iframe), set b to 2
+        }
+        
+        // Check if the top window location is the same as the current document location
+        b = b !== 2 ? (b === window.document.location.href ? 0 : 1) : 2;
+    
+        // Create an object with various properties related to the environment
+        var data = {
+            dt: Wp,             // The `Wp` variable (presumably a timestamp or identifier)
+            flash: Np,          // The `Np` variable (probably the flash support status)
+            frm: b,             // The iframe status (0 for same, 1 for different, 2 for iframe)
+            u_tz: -(new Date).getTimezoneOffset(),  // User's timezone offset in minutes
+            u_his: 0,           // To track history length (will be updated in try-catch)
+            u_java: false,      // Whether Java is enabled in the browser
+            u_h: null,          // User screen height (to be set below)
+            u_w: null,          // User screen width (to be set below)
+            u_ah: null,         // User screen available height (to be set below)
+            u_aw: null,         // User screen available width (to be set below)
+            u_cd: null,         // User screen color depth (to be set below)
+            u_nplug: 0,         // Number of plugins installed (to be set below)
+            u_nmime: 0,         // Number of mime types supported (to be set below)
+            bid: a,             // Bid ID (parameter passed to the function)
+            ca_type: Mp ? "flash" : "image" // Type of content (either flash or image)
+        };
+    
+        // Attempt to get history length from the window object
+        try {
+            data.u_his = yp.history.length;
+        } catch (G) {
+            data.u_his = 0;
+        }
+    
+        // Check if Java is enabled in the user's browser
+        if (yp.navigator && "unknown" !== typeof yp.navigator.javaEnabled && yp.navigator.javaEnabled()) {
+            data.u_java = true;
+        }
+    
+        // Get user screen information (height, width, available height/width, color depth)
+        if (yp.screen) {
+            data.u_h = yp.screen.height;
+            data.u_w = yp.screen.width;
+            data.u_ah = yp.screen.availHeight;
+            data.u_aw = yp.screen.availWidth;
+            data.u_cd = yp.screen.colorDepth;
+        }
+    
+        // Get plugin and mime type information if available
+        if (yp.navigator && yp.navigator.plugins) {
+            data.u_nplug = yp.navigator.plugins.length;
+        }
+    
+        if (yp.navigator && yp.navigator.mimeTypes) {
+            data.u_nmime = yp.navigator.mimeTypes.length;
+        }
+    
+        // Check if experiment flags are enabled for server-side search
+        if ($p("EXPERIMENT_FLAGS", {}).enable_server_side_search_pyv) {
+            var e;
+            
+            // Attempt to get window size and position
+            try {
+                var f = window.screenX, g = window.screenY;
+            } catch (G) {}
+    
+            try {
+                var k = window.outerWidth, l = window.outerHeight;
+            } catch (G) {}
+    
+            try {
+                var p = window.innerWidth, r = window.innerHeight;
+            } catch (G) {}
+    
+            // Create an array for window position and size data
+            var a = [window.screenLeft, window.screenTop, f, g, window.screen ? window.screen.availWidth : undefined, window.screen ? window.screen.availTop : undefined, k, l, p, r];
+            
+            // Attempt to get the viewport dimensions
+            try {
+                var u;
+                if (c.document && !c.document.body) {
+                    u = new Xc(-1, -1);
+                } else {
+                    var w = (c || window).document;
+                    var A = "CSS1Compat" == w.compatMode ? w.documentElement : w.body;
+                    u = (new Xc(A.clientWidth, A.clientHeight)).round();
+                }
+                e = u;
+            } catch (G) {
+                e = new Xc(-12245933, -12245933); // Fallback values if something goes wrong
+            }
+    
+            // Check if the browser supports WebGL and create the object to send
+   
+            // Construct the visibility object and extend the data object
+            e = {
+                bc: Vp,
+                bih: e.height,
+                biw: e.width,
+                brdim: a.join(),
+                vis: {
+                    visible: 1,
+                    hidden: 2,
+                    prerender: 3,
+                    preview: 4
+                }[xp.webkitVisibilityState || xp.mozVisibilityState || xp.visibilityState || ""] || 0,
+                wgl: !!yp.WebGLRenderingContext
+            };
+    
+            // Merge additional data (e.g., environment details) into the existing object
+            z(data, e);
+        }
+
+        
+        // Further processing can be done here (e.g., sending data to a server)
+    };
+    
 
       function yq(a, b, c) {
           this.l = a;
@@ -21813,7 +21931,7 @@ if (!self.__WB_pmw) {
           var a = this.R.swfConfig;
           z(a.args, {
               autoplay: 0,
-              BASE_YT_URL: null,
+              BASE_YT_URL: "",
               controls: 0,
               disablekb: 1,
               el: "leanback",
@@ -21836,7 +21954,7 @@ if (!self.__WB_pmw) {
           z(a.args, this.h.uj());
           a.assets.css =
               null;
-          a.html5 = !0;
+          a.html5 = 1;
           a.disable = {
               flash: !0
           };

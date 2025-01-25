@@ -38,7 +38,7 @@ async function fetchNextData(params, videoId) {
 
         console.log('Received response from YouTube /next API.');
 
-        // Save raw response to a file
+
         const logsDir = path.join(__dirname, 'logs');
         if (!fs.existsSync(logsDir)) {
             fs.mkdirSync(logsDir);
@@ -47,7 +47,6 @@ async function fetchNextData(params, videoId) {
         const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
         const logFilePath = path.join(logsDir, `next-response-${timestamp}.json`);
 
-        // Directly write raw response data (stringify only the `data` field to avoid circular issues)
         fs.writeFileSync(logFilePath, JSON.stringify(response.data, null, 2), 'utf-8');
 
         console.log('Response saved to:', logFilePath);
@@ -56,7 +55,6 @@ async function fetchNextData(params, videoId) {
     } catch (error) {
         console.error('Error fetching next data:', error.message);
 
-        // Log error details if present
         if (error.response && error.response.data) {
             console.error('Error Response Data:', JSON.stringify(error.response.data, null, 2));
         }

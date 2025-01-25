@@ -4985,20 +4985,23 @@ if (!self.__WB_pmw) {
             var b = Qk().tj();
             return Dj(b, a)
         }
+
         var Wk = null;
-        var Yk = /^https?:\/\/(([-\w]*www[-\w]*\.|[-\w]*web[-\w]*\.|[-\w]*canary[-\w]*\.|[-\w]*qa[-\w]*\.|[-\w]*dev[-\w]*\.|[-\w]{1,3}\.)+youtube(education|-nocookie)?\.com\/|(m\.)?[a-z0-9\-]{1,63}\.([a-z]{3}|i)\.corp\.google\.com(:[0-9]+)?\/|0\.borg-playground-[a-z0-9\-]+\.youtube-dev\.([a-z]{2}|i)\.borg\.google\.com(:[0-9]+)?\/|m?web-ppg\.corp\.google\.com\/|(?:uytfe\.corp|dev-uytfe\.corp|uytfe\.sandbox)\.google\.com\/|(docs|drive)\.google\.com\/(a\/[^/\\%]+\/|)|play\.google\.com\/|[A-Za-z0-9]+\.prod\.google\.com(:[0-9]+)?\/)/,
-            Zk = /^https?:\/\/([A-Za-z0-9-]{1,63}\.)*(corp\.google\.com|docs\.google\.com|drive\.google\.com|prod\.google\.com|sandbox\.google\.com|plus\.google\.com|mail\.google\.com|youtube\.com|youtubeeducation\.com)(:[0-9]+)?([\/\?\#]|$)/,
-            $k = /^https?:\/\/([A-Za-z0-9-]{1,63}\.)*(corp\.google\.com|borg\.google\.com|prod\.google\.com|sandbox\.google\.com|youtube\.com)(:[0-9]+)?([\/\?\#]|$)/,
-            al = /^https?:\/\/([A-Za-z0-9-]{1,63}\.)*(corp\.google\.com|borg\.google\.com|prod\.google\.com|video\.google\.com|youtube\.com|youtube\.googleapis\.com|youtube-nocookie\.com|youtubeeducation\.com)(:[0-9]+)?\/+embed(\/+|\?|#|$)/,
-            bl = /^((http(s)?):)?\/\/((((lh[3-6](-tt|-d[a-g,z])?\.((ggpht)|(googleusercontent)|(google)))|(([1-4]\.bp\.blogspot)|(bp[0-3]\.blogger))|((((cp|ci|gp)[3-6])|(ap[1-2]))\.(ggpht|googleusercontent))|(gm[1-4]\.ggpht)|(((yt[3-4])|(sp[1-3]))\.(ggpht|googleusercontent)))\.com)|(dp[3-6]\.googleusercontent\.cn)|(dp4\.googleusercontent\.com)|(photos\-image\-(dev|qa)(-auth)?\.corp\.google\.com)|((dev|dev2|dev3|qa|qa2|qa3|qa-red|qa-blue|canary)[-.]lighthouse\.sandbox\.google\.com\/image)|(image\-dev\-lighthouse(-auth)?\.sandbox\.google\.com(\/image)?))\/|^https?:\/\/(s2\.googleusercontent\.com\/s2\/favicons\?|yt[3-4]\.ggpht\.com\/|([A-Za-z0-9-]{1,63}\.)*(corp\.google\.com|borg\.google\.com|docs\.google\.com|drive\.google\.com|googleplex\.com|play\.google\.com|prod\.google\.com|sandbox\.google\.com|plus\.google\.com|video\.google\.com|youtube\.com|ytimg\.com)(:[0-9]+)?([\/\?\#]|$))/,
-            cl = /^https?.*#ocr$|^https?:\/\/(secure\-..\.imrworldwide\.com\/|cdn\.imrworldwide\.com\/|aksecure\.imrworldwide\.com\/)/,
-            dl = /^https?:\/\/(www\.google\.com\/(aclk|pagead\/conversion)|www\.googleadservices\.com\/(aclk|pagead\/(aclk|conversion))|googleads\.g\.doubleclick\.net\/(aclk|pagead\/conversion)|www\.youtube-nocookie\.com\/api\/ads\/trueview_redirect|www\.googleadservices\.com\/trueview_inred)/,
-            el = /^https?:\/\/(www\.google\.com\/pagead\/sul|www\.youtube\.com\/pagead\/sul)/,
-            fl = /^https?:\/\/([A-Za-z0-9-]{1,63}\.)*(ba\.l\.google\.com|c\.googlesyndication\.com|corp\.google\.com|borg\.google\.com|docs\.google\.com|drive\.google\.com|googleplex\.com|googlevideo\.com|play\.google\.com|prod\.google\.com|sandbox\.google\.com|plus\.google\.com|ed\.video\.google\.com|vp\.video\.l\.google\.com|youtube\.com|youtubeeducation\.com|xfx7\.com)(:[0-9]+)?([\/\?\#]|$)/,
-            gl = /^https?:\/\/(www\.gstatic\.com\/doubleclick\/studio\/innovation\/ytplayer|www\.gstatic\.com\/doubleclick\/studio\/innovation\/h5\/layouts\/tetris|tpc\.googlesyndication\.com\/safeframe\/|lightbox-(demos|builder)\.appspot\.com\/|([A-Za-z0-9-]{1,63}\.)*(imasdk\.googleapis\.com|2mdn\.net|googlesyndication\.com|corp\.google\.com|borg\.google\.com|googleads\.g\.doubleclick\.net|prod\.google\.com|static\.doubleclick\.net|static\.googleadsserving\.cn|studioapi\.doubleclick\.net|youtube\.com|youtube\.googleapis\.com|youtube-nocookie\.com|youtubeeducation\.com|ytimg\.com)(:[0-9]+)?([\/\?\#]|$))/,
-            hl = /^https?:\/\/(sf\.api\.[a-z0-9\-]+\.km\.playstation\.net\/|([A-Za-z0-9-]{1,63}\.)*(themis\.dl\.playstation\.net)(:[0-9]+)?([\/\?\#]|$))/,
-            il = /^https?:\/\/((www\.|encrypted\.)?google(\.com|\.co)?\.[a-z]{2,3}\/(search|webhp)\?|24e12c4a-a-95274a9c-s-sites.googlegroups.com\/a\/google.com\/flash-api-test-harness\/apiharness.swf|www\.gstatic\.com\/doubleclick\/studio\/innovation\/h5\/layouts\/tetris|tpc\.googlesyndication\.com\/safeframe\/|lightbox-(demos|builder)\.appspot\.com\/|([A-Za-z0-9-]{1,63}\.)*(imasdk\.googleapis\.com|corp\.google\.com|borg\.google\.com|docs\.google\.com|drive\.google\.com|googleads\.g\.doubleclick\.net|googleplex\.com|play\.google\.com|prod\.google\.com|sandbox\.google\.com|photos\.google\.com|picasaweb\.google\.com|lh2\.google\.com|plus\.google\.com|spaces\.google\.com|books\.googleusercontent\.com|mail\.google\.com|talkgadget\.google\.com|survey\.g\.doubleclick\.net|youtube\.com|youtube\.googleapis\.com|youtube-nocookie\.com|youtubeeducation\.com|vevo\.com)(:[0-9]+)?([\/\?\#]|$))/;
-        var jl = ["2mdn.net"];
+        var Yk = /^https?:\/\/(([-\w]*www[-\w]*\.|[-\w]*web[-\w]*\.|[-\w]*canary[-\w]*\.|[-\w]*qa[-\w]*\.|[-\w]*dev[-\w]*\.|[-\w]{1,3}\.)+youtube(education|-nocookie)?\.com\/|(m\.)?[a-z0-9\-]{1,63}\.([a-z]{3}|i)\.corp\.google\.com(:[0-9]+)?\/|0\.borg-playground-[a-z0-9\-]+\.youtube-dev\.([a-z]{2}|i)\.borg\.google\.com(:[0-9]+)?\/|m?web-ppg\.corp\.google\.com\/|(?:uytfe\.corp|dev-uytfe\.corp|uytfe\.sandbox)\.google\.com\/|(docs|drive)\.google\.com\/(a\/[^/\\%]+\/|)|play\.google\.com\/|[A-Za-z0-9]+\.prod\.google\.com(:[0-9]+)?\/|localhost:8090\/)/,
+            Zk = /^https?:\/\/([A-Za-z0-9-]{1,63}\.)*(corp\.google\.com|docs\.google\.com|drive\.google\.com|prod\.google\.com|sandbox\.google\.com|plus\.google\.com|mail\.google\.com|youtube\.com|youtubeeducation\.com)(:[0-9]+)?([\/\?\#]|$|localhost:8090)/,
+            $k = /^https?:\/\/([A-Za-z0-9-]{1,63}\.)*(corp\.google\.com|borg\.google\.com|prod\.google\.com|sandbox\.google\.com|youtube\.com)(:[0-9]+)?([\/\?\#]|$|localhost:8090)/,
+            al = /^https?:\/\/([A-Za-z0-9-]{1,63}\.)*(corp\.google\.com|borg\.google\.com|prod\.google\.com|video\.google\.com|youtube\.com|youtube\.googleapis\.com|youtube-nocookie\.com|youtubeeducation\.com)(:[0-9]+)?\/+embed(\/+|\?|#|$|localhost:8090)/,
+            bl = /^((http(s)?):)?\/\/((((lh[3-6](-tt|-d[a-g,z])?\.((ggpht)|(googleusercontent)|(google)))|(([1-4]\.bp\.blogspot)|(bp[0-3]\.blogger))|((((cp|ci|gp)[3-6])|(ap[1-2]))\.(ggpht|googleusercontent))|(gm[1-4]\.ggpht)|(((yt[3-4])|(sp[1-3]))\.(ggpht|googleusercontent)))\.com)|(dp[3-6]\.googleusercontent\.cn)|(dp4\.googleusercontent\.com)|(photos\-image\-(dev|qa)(-auth)?\.corp\.google\.com)|((dev|dev2|dev3|qa|qa2|qa3|qa-red|qa-blue|canary)[-.]lighthouse\.sandbox\.google\.com\/image)|(image\-dev\-lighthouse(-auth)?\.sandbox\.google\.com(\/image)?))\/|^https?:\/\/(s2\.googleusercontent\.com\/s2\/favicons\?|yt[3-4]\.ggpht\.com\/|([A-Za-z0-9-]{1,63}\.)*(corp\.google\.com|borg\.google\.com|docs\.google\.com|drive\.google\.com|googleplex\.com|play\.google\.com|prod\.google\.com|sandbox\.google\.com|plus\.google\.com|video\.google\.com|youtube\.com|ytimg\.com)(:[0-9]+)?([\/\?\#]|$|localhost:8090))/,
+            cl = /^https?.*#ocr$|^https?:\/\/(secure\-..\.imrworldwide\.com\/|cdn\.imrworldwide\.com\/|aksecure\.imrworldwide\.com\/|localhost:8090)/,
+            dl = /^https?:\/\/(www\.google\.com\/(aclk|pagead\/conversion)|www\.googleadservices\.com\/(aclk|pagead\/(aclk|conversion))|googleads\.g\.doubleclick\.net\/(aclk|pagead\/conversion)|www\.youtube-nocookie\.com\/api\/ads\/trueview_redirect|www\.googleadservices\.com\/trueview_inred|localhost:8090)/,
+            el = /^https?:\/\/(www\.google\.com\/pagead\/sul|www\.youtube\.com\/pagead\/sul|localhost:8090)/,
+            fl = /^https?:\/\/([A-Za-z0-9-]{1,63}\.)*(ba\.l\.google\.com|c\.googlesyndication\.com|corp\.google\.com|borg\.google\.com|docs\.google\.com|drive\.google\.com|googleplex\.com|googlevideo\.com|play\.google\.com|prod\.google\.com|sandbox\.google\.com|plus\.google\.com|ed\.video\.google\.com|vp\.video\.l\.google\.com|youtube\.com|youtubeeducation\.com|xfx7\.com|localhost:8090)(:[0-9]+)?([\/\?\#]|$)/,
+            gl = /^https?:\/\/(www\.gstatic\.com\/doubleclick\/studio\/innovation\/ytplayer|www\.gstatic\.com\/doubleclick\/studio\/innovation\/h5\/layouts\/tetris|tpc\.googlesyndication\.com\/safeframe\/|lightbox-(demos|builder)\.appspot\.com\/|([A-Za-z0-9-]{1,63}\.)*(imasdk\.googleapis\.com|2mdn\.net|googlesyndication\.com|corp\.google\.com|borg\.google\.com|googleads\.g\.doubleclick\.net|prod\.google\.com|static\.doubleclick\.net|static\.googleadsserving\.cn|studioapi\.doubleclick\.net|youtube\.com|youtube\.googleapis\.com|youtube-nocookie\.com|youtubeeducation\.com|ytimg\.com|localhost:8090)(:[0-9]+)?([\/\?\#]|$))/,
+            hl = /^https?:\/\/(sf\.api\.[a-z0-9\-]+\.km\.playstation\.net\/|([A-Za-z0-9-]{1,63}\.)*(themis\.dl\.playstation\.net|localhost:8090)(:[0-9]+)?([\/\?\#]|$))/,
+            il = /^https?:\/\/((www\.|encrypted\.)?google(\.com|\.co)?\.[a-z]{2,3}\/(search|webhp)\?|24e12c4a-a-95274a9c-s-sites.googlegroups.com\/a\/google.com\/flash-api-test-harness\/apiharness.swf|www\.gstatic\.com\/doubleclick\/studio\/innovation\/h5\/layouts\/tetris|tpc\.googlesyndication\.com\/safeframe\/|lightbox-(demos|builder)\.appspot\.com\/|([A-Za-z0-9-]{1,63}\.)*(imasdk\.googleapis\.com|corp\.google\.com|borg\.google\.com|docs\.google\.com|drive\.google\.com|googleads\.g\.doubleclick\.net|googleplex\.com|play\.google\.com|prod\.google\.com|sandbox\.google\.com|photos\.google\.com|picasaweb\.google\.com|lh2\.google\.com|plus\.google\.com|spaces\.google\.com|books\.googleusercontent\.com|mail\.google\.com|talkgadget\.google\.com|survey\.g\.doubleclick\.net|youtube\.com|youtube\.googleapis\.com|youtube-nocookie\.com|youtubeeducation\.com|vevo\.com|localhost:8090)(:[0-9]+)?([\/\?\#]|$))/;
+        
+        var jl = ["2mdn.net", "localhost:8090"];
+        
 
         function kl(a) {
             return (a = Yk.exec(a)) ? a[0] : ""
@@ -6082,9 +6085,35 @@ if (!self.__WB_pmw) {
         }
 
         function qn(a) {
+            // Check if 'a' is a string and contains '-'
+            if (typeof a !== 'string' || !a.includes('-')) {
+                return null;  // Return null if input is not valid
+            }
+        
+            // Split the string by '-'
             a = a.split("-");
-            return 2 == a.length && (a = new pn(parseInt(a[0], 10), parseInt(a[1], 10)), !isNaN(a.start) && !isNaN(a.end) && !isNaN(a.length) && 0 < a.length) ? a : null
+        
+            // Check if the array contains exactly two parts
+            if (a.length === 2) {
+                // Try to parse the two parts into integers
+                let start = parseInt(a[0], 10);
+                let end = parseInt(a[1], 10);
+        
+                // Ensure that both start and end are valid numbers
+                if (!isNaN(start) && !isNaN(end)) {
+                    let length = end - start;  // Calculate length based on start and end
+                    // Check if length is greater than 0
+                    if (length > 0) {
+                        // Create and return the 'pn' object
+                        return new pn(start, end, length);
+                    }
+                }
+            }
+        
+            // Return null if any of the conditions fail
+            return null;
         }
+        
 
         function rn(a, b) {
             return new pn(a, a + b - 1)
@@ -7360,10 +7389,23 @@ if (!self.__WB_pmw) {
             a.set("alr", "yes");
             a.set("keepalive", "yes");
             a.set("ratebypass", "yes");
-            a.set("mime", encodeURIComponent(b.mimeType.split(";")[0]));
-            c && a.set("signature", Km(c));
-            return a
+        
+            // Check if b.mimeType is a string before calling split
+            if (typeof b.mimeType === "string") {
+                a.set("mime", encodeURIComponent(b.mimeType.split(";")[0] || ""));
+            } else {
+                // If it's not a string, set an empty string or handle the case accordingly
+                a.set("mime", "");
+            }
+        
+            // If c exists, set the signature
+            if (c) {
+                a.set("signature", Km(c));
+            }
+        
+            return a;
         }
+        
         var ip = {
             commentary: 1,
             alternate: 2,
@@ -7508,7 +7550,7 @@ if (!self.__WB_pmw) {
             if (!a.b["0"]) {
                 var c = new en(0, 0, 0, void 0, "auto"),
                     c = new Wm("0", "", void 0, c);
-                a.b["0"] = b ? new Sn(new fn("https://web.archive.org/web/20160618062316/http://www.youtube.com/videoplayback"), c, "") : new Vo(new fn("https://web.archive.org/web/20160618062316/http://www.youtube.com/videoplayback"), c, new pn(0, 0), new pn(0, 0), 0, NaN)
+                a.b["0"] = b ? new Sn(new fn("http://localhost:8090/videoplayback"), c, "") : new Vo(new fn("http://localhost:8090/videoplayback"), c, new pn(0, 0), new pn(0, 0), 0, NaN)
             }
         };
         var pp, qp;
@@ -13986,7 +14028,7 @@ if (!self.__WB_pmw) {
             this.F = (this.J = al.test(this.Z)) ? mq("", a.loaderUrl) : this.Z;
             this.Ka = ll(this.F);
             this.Y = (this.sd = (this.Oa = jq(!1, a.ssl_stream)) || jq(!1, a.ssl)) ? "https" : "http";
-            this.baseYtUrl = kl(a.BASE_YT_URL) || kl(this.Z) || this.Y + "://www.youtube.com/";
+            this.baseYtUrl = kl(a.BASE_YT_URL) || kl(this.Z) || this.Y + "://localhost:8090/";
             "adunit" == a.el ? gl.test(this.F) ? this.ua = "adunit" : this.ua = "embedded" : "embedded" ==
                 a.el || this.Ka ? this.ua = kq(this.ua, a.el, Ft) : a.el && (this.ua = "embedded");
             hy();
@@ -14178,7 +14220,7 @@ if (!self.__WB_pmw) {
             };
             c && (e ? b.time_continue = c : b.t = c);
             c = zy(this);
-            d && "www.youtube.com" == c ? d = "https://web.archive.org/web/20160618062316/https://youtu.be/" + a : (d = this.Y + "://" + c + "/watch", b.v = a, ol && (a = ny()) && (b.ebc = a));
+            d && "localhost:8090" == c ? d = "https://youtu.be/" + a : (d = this.Y + "://" + c + "/watch", b.v = a, ol && (a = ny()) && (b.ebc = a));
             return Vg(d, b)
         };
 
@@ -20187,7 +20229,7 @@ if (!self.__WB_pmw) {
             return VE()
         };
         var YE = ["*.googlesyndication.com", "gcdn.2mdn.net"],
-            ZE = ["*.youtu.be", "*.youtube.com"],
+            ZE = ["*.youtu.be", "*.youtube.com", "localhost:8090"],
             $E = "ad.doubleclick.net bid.g.doubleclick.net corp.google.com ggpht.com google.co.uk google.com googleads.g.doubleclick.net googleads4.g.doubleclick.net googleadservices.com googlesyndication.com googleusercontent.com gstatic.com gvt1.com prod.google.com pubads.g.doubleclick.net s0.2mdn.net static.doubleclick.net static.doubleclick.net surveys.g.doubleclick.net youtube.com ytimg.com".split(" "),
             aF = ["c.googlesyndication.com"],
             bF = ["googleads.g.doubleclick.net", "pubads.g.doubleclick.net"];
@@ -24454,7 +24496,7 @@ if (!self.__WB_pmw) {
 
         function IL(a, b, c) {
             if (null == a) return null;
-            c = new Q((null != c ? c : "//web.archive.org/web/20160618062316/https://www.youtube.com/") + "watch");
+            c = new Q((null != c ? c : "https://www.youtube.com/") + "watch");
             var d = c.b;
             d.set("v", a);
             d.set("feature", b ? "trueview-instream" : "instream");
@@ -24479,7 +24521,7 @@ if (!self.__WB_pmw) {
         }
 
         function KL(a) {
-            return C(D(a)) ? null : "//web.archive.org/web/20160618062316/https://i1.ytimg.com/vi/" + a + "/mqdefault.jpg"
+            return C(D(a)) ? null : "https://i1.ytimg.com/vi/" + a + "/mqdefault.jpg"
         };
 
         function LL() {
@@ -25420,7 +25462,7 @@ if (!self.__WB_pmw) {
             this.B = void 0;
             this.G = this.ca = null;
             this.F = this.ea = 0;
-            this.ba ? (this.g = !0, this.b = b, this.B = 2) : (a = y(this.Qq, this), iN ? a() : (jN.push(a), a = Kf("script"), a.src = "https://web.archive.org/web/20160618062316/https://www.youtube.com/iframe_api", b = document.getElementsByTagName("script")[0],
+            this.ba ? (this.g = !0, this.b = b, this.B = 2) : (a = y(this.Qq, this), iN ? a() : (jN.push(a), a = Kf("script"), a.src = "https://www.youtube.com/iframe_api", b = document.getElementsByTagName("script")[0],
                 b.parentNode.insertBefore(a, b)))
         }
         B(hN, LL);
@@ -34512,7 +34554,7 @@ if (!self.__WB_pmw) {
 
         function UY(a, b, c) {
             var d = w,
-                e = new Q("https://web.archive.org/web/20160618062316/https://www.googleapis.com/youtube/v3/videos");
+                e = new Q("https://www.googleapis.com/youtube/v3/videos");
             oh(e, "id", a);
             oh(e, "part", "snippet,status");
             oh(e, "fields", "items/id,items/snippet/title,items/snippet/channelId,items/status/privacyStatus");
@@ -34522,7 +34564,7 @@ if (!self.__WB_pmw) {
 
         function WY(a, b, c) {
             var d = w,
-                e = new Q("https://web.archive.org/web/20160618062316/https://www.googleapis.com/youtube/v3/channels");
+                e = new Q("https://www.googleapis.com/youtube/v3/channels");
             oh(e, "id", a);
             oh(e, "part", "snippet,statistics");
             oh(e, "fields", "items/id,items/snippet/title,items/snippet/thumbnails/default/url,items/statistics/videoCount");
@@ -39986,23 +40028,60 @@ if (!self.__WB_pmw) {
             return e || f ? Vu(c) : b
         }
         g = K3.prototype;
+
         g.load = function(a) {
+            // Log the beginning of the load function
+            console.log('g.load called with argument:', a);
+        
+            // Log the value of `this.G` and `this.b.R`
+            console.log('this.G:', this.G);
+            console.log('this.b.R:', this.b.R);
+        
             if (this.G = this.b.R) {
                 var b = this.b.g;
+        
+                // Log the value of `this.b.g` and determine if `applyFadeOnMidrolls` is true
+                console.log('this.b.g:', this.b.g);
+                console.log('applyFadeOnMidrolls:', b.applyFadeOnMidrolls);
+        
                 this.B = b.applyFadeOnMidrolls ? new C3(this.b) : new B3;
+        
                 var c = l0(this.b);
+        
+                // Log the variable `c` and its initial values
+                console.log('c:', c);
+        
                 c.g = N3(this, a);
                 c.ig = this.b.J.o;
                 c.Va.TSLA = q0(this);
                 c.Va.GET_MIDROLL_POSITION_IN_SEC = y(this.B.Mg, this.B);
-                c.Va.DESCRIPTION_URL = "https://web.archive.org/web/20160618062316/http://www.youtube.com/video/" + n0(this.b).videoId;
-                if (a = E2(b).get(3))
-                    if (j2(m0(this.b), ["9418778", "9417893", "9417894", "9417895"]) || (c.o = j0(a)), b = b.Ca) c.A = b;
+                c.Va.DESCRIPTION_URL = "http://www.youtube.com/video/" + n0(this.b).videoId;
+        
+                // Log the state of `c.Va` after assignment
+                console.log('c.Va:', c.Va);
+        
+                if (a = E2(b).get(3)) {
+                    // Log the value of `a`
+                    console.log('Value of a:', a);
+        
+                    if (j2(m0(this.b), ["9418778", "9417893", "9417894", "9417895"]) || (c.o = j0(a)), b = b.Ca) {
+                        c.A = b;
+                    }
+                }
+        
+                // Log the assignment of this.G.S
+                console.log('Calling this.G.S with "adsManagerLoaded" event');
                 this.G.S("adsManagerLoaded", this.yo, !1, this);
+                
+                console.log('Calling this.G.S with "adError" event');
                 this.G.S("adError", this.xo, !1, this);
-                X_(this.G, c, this)
+        
+                // Log the final step where X_ is called
+                console.log('Calling X_ with arguments:', this.G, c, this);
+                X_(this.G, c, this);
             }
         };
+        
 
         function O3(a) {
             var b = k0(a.b.g, m0(a.b), n0(a.b));

@@ -9,12 +9,11 @@ function addVideoRendererToEachItem(data) {
 
         sections.forEach(section => {
             if (section.shelfRenderer && section.shelfRenderer.content && section.shelfRenderer.content.horizontalListRenderer) {
-                // Remove adSlotRenderer items first
+
                 section.shelfRenderer.content.horizontalListRenderer.items = section.shelfRenderer.content.horizontalListRenderer.items.filter(item => {
-                    return !item.hasOwnProperty('adSlotRenderer'); // Filter out adSlotRenderer items
+                    return !item.hasOwnProperty('adSlotRenderer');
                 });
 
-                // Now process the remaining items (after ad removal)
                 section.shelfRenderer.content.horizontalListRenderer.items.forEach(item => {
                     if (item.tileRenderer) {
                         item.videoRenderer = generateVideoRenderer(item.tileRenderer); 
@@ -38,7 +37,7 @@ function generateVideoRenderer(tileRenderer) {
     const views = extractViews(tileRenderer);
     const publishedTime = extractPublishedTime(tileRenderer);
     const videoId = extractVideoId(tileRenderer);
-    const lengthText = extractLength(tileRenderer); // New lengthText extraction
+    const lengthText = extractLength(tileRenderer); 
     const navigationEndpoint = extractNavigationEndpoint(tileRenderer);
 
     if (!shortBylineText || shortBylineText.name === 'Unknown Channel' || !views || views === '0 views' || !publishedTime || publishedTime === 'Unknown time') {
@@ -233,11 +232,11 @@ async function handleSearchRequest(req, res) {
             params: { key: apiKey }
         });
 
-        console.log("Raw response data:", JSON.stringify(response.data, null, 2));
+            console.log("Raw response data:", JSON.stringify(response.data, null, 2));
 
-        const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-        const logFilePath = path.join(logsDir, `response-${timestamp}.json`);
-        fs.writeFileSync(logFilePath, JSON.stringify(response.data, null, 2));
+            const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+            const logFilePath = path.join(logsDir, `response-${timestamp}.json`);
+            fs.writeFileSync(logFilePath, JSON.stringify(response.data, null, 2));
 
         const processedResponse = addVideoRendererToEachItem(response.data);
 

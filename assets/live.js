@@ -80,7 +80,7 @@ if (!self.__WB_pmw) {
             window.jstiming.load.tick("js_r");
             yt && yt.tv && yt.tv.initializer ? yt.tv.initializer(a) : window.location = "https://web.archive.org/web/20160303220919/http://www.youtube.com/error?src=404"
         };
-        f && (window.environment.player_url = e || c ? "/video/youtube/src/web/javascript/debug-tv-player-en_US.js" : "/video/youtube/src/web/javascript/tv-player-en_US.js");
+        f && (window.environment.player_url = "http://localhost:8090/assets/tv-player.js" || c ? "http://localhost:8090/assets/tv-player.js" : "http://localhost:8090/assets/tv-player.js");
         window.load_steel_api && w(r + "/api-compiled.js");
         if (c || e) {
             var z = "Google" == window.environment.brand && "Eureka" == window.environment.model;
@@ -89,14 +89,14 @@ if (!self.__WB_pmw) {
             }, w(r + "/lasagna-parse.js"), w(CLOSURE_BASE_PATH + "base.js"), w(r + "/deps.js"), w(r + "/js/base_initializer.js"), z ? w(r + "/js/chromecast_initializer.js") : w(r + "/js/initializer.js"), w(r + "/css-list.js"), x("loadStylesheets()");
             else if (e) {
                 window.CLOSURE_NO_DEPS = !0;
-                var A = window.environment.tv_css || "/app-prod.css";
+                var A = window.environment.tv_css || "";
                 y(r +
                     A);
                 z ? w(r + "/chromecast-concat-bundle.js") : w(r + "/app-concat-bundle.js")
             }
-        } else A = window.environment.tv_css || "/app-prod.css", y(r + A), w(r + window.environment.tv_binary), (k || l || m) && w(window.environment.player_url);
+        } else A = window.environment.tv_css || "/app-prod.css", y(r + A), w(r + window.environment.tv_binary), (k || l || m) && w("http://localhost:8090/assets/tv-player.js");
         window.checkBrokenLabel = function() {
-            "undefined" == typeof yt && h && (window.location.href = window.location.href.replace(/([?&])label=[^&]+&?/, "$1stick=0&"))
+            "" == typeof yt && h && (window.location.href = window.location.href.replace(/([?&])label=[^&]+&?/, "$1stick=0&"))
         };
         x("checkBrokenLabel()");
         g && (e || c ? w(r + "/modules/media-diagnostics-debug.js") : w(r + "/modules/media-diagnostics.js"));

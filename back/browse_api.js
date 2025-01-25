@@ -20,6 +20,7 @@ async function fetchBrowseData(browseId) {
     const apiKey = 'AIzaSyDCU8hByM-4DrUqRUYnGn-3llEO78bcxq8';
     const apiUrl = `https://www.googleapis.com/youtubei/v1/browse?key=${apiKey}`;
 
+
     const postData = {
         context: {
             client: {
@@ -35,7 +36,6 @@ async function fetchBrowseData(browseId) {
     try {
         console.log('Sending request to YouTube Browse API with payload:', postData);
 
-        // Remove the 'User-Agent' and just send a plain request
         const response = await axios.post(apiUrl, postData, {
             headers: { 
                 'Content-Type': 'application/json'
@@ -46,13 +46,11 @@ async function fetchBrowseData(browseId) {
 
         const updatedData = addDataToContent(response.data);
 
-        // Ensure the logs directory exists
         const logsDir = path.join(__dirname, 'logs');
         if (!fs.existsSync(logsDir)) {
             fs.mkdirSync(logsDir); 
         }
 
-        // Log the response data with timestamp
         const timestamp = new Date().toISOString().replace(/[:.]/g, '-'); 
         const logFilePath = path.join(logsDir, `response-${timestamp}.json`);
         fs.writeFileSync(logFilePath, JSON.stringify(updatedData, null, 2)); 

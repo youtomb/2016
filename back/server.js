@@ -7,6 +7,7 @@ const { fetchGuideData } = require('./guide_api');
 const { fetchBrowseData } = require('./browse_api'); 
 const { handleSearchRequest } = require('./search_api'); 
 const { fetchNextData } = require('./next_api'); 
+const { handleGetVideoInfo } = require('./get_video_info');
 
 const app = express();
 const port = 8090;
@@ -65,40 +66,32 @@ app.get('/web/*', (req, res) => {
 });
 
 app.get('/assets/:folder/*', (req, res) => {
-    // Extract the folder and the rest of the path
     const folder = req.params.folder; 
-    const requestedPath = req.params[0];  // This captures the part after the folder (e.g., "assets/app-prod.css")
+    const requestedPath = req.params[0];  
 
-    // Get the file name (e.g., app-prod.css)
     const fileName = path.basename(requestedPath);
 
-    // Redirect to the correct asset path
     const redirectUrl = `/assets/${fileName}`; 
     console.log(`Redirecting from /assets/${folder}/${requestedPath} to ${redirectUrl}`);
     
-    res.redirect(redirectUrl);  // Perform the redirect
+    res.redirect(redirectUrl);  
 });
 
 app.get('/assets/:filename', (req, res) => {
     const filename = req.params.filename;
     
-    // Regular expression to remove any alphanumeric prefix (e.g., "8adac3f2") and get the actual filename
     const cleanedFilename = filename.replace(/^[a-f0-9]{8}/, '');
 
-    // Log the cleaned filename for debugging
     console.log(`Serving file: /assets/${cleanedFilename}`);
 
-    // Serve the file from the cleaned path
     const filePath = path.join(__dirname, '../assets', cleanedFilename);
-    
-    // Check if file exists before attempting to serve it
+ 
     fs.access(filePath, fs.constants.F_OK, (err) => {
         if (err) {
             console.error(`File not found: ${filePath}`);
             return res.status(404).send('File not found');
         }
 
-        // Send the file
         res.sendFile(filePath);
     });
 });
@@ -114,6 +107,10 @@ app.get('/gen_204', async (req, res) => {
         console.error('Error forwarding request to YouTube:', error);
         res.status(200).json({ status: 'Failed to fetch data from YouTube' });
     }
+});
+
+app.get('/get_video_info', (req, res) => {
+    handleGetVideoInfo(req, res);
 });
 
 
@@ -189,28 +186,29 @@ async function handleGuideRequest(req, res) {
 app.get('/api/guide', handleGuideRequest);
 app.post('/api/guide', handleGuideRequest);
 
-app.post('/api/next', async (req, res) => {
-    const { params, videoId } = req.body;  // Ensure these are part of the body
 
-    // Check for required fields
-    if (!params || !videoId) {
+app.post('/api/next', async (req, res) => {
+    const { params, videoId } = req.body;
+
+    if (typeof params !== 'string' || !params.trim()) {
         return res.status(400).json({
-            error: 'Both "params" and "videoId" are required in the request body.'
+            error: '"params" is required and must be a non-empty string.'
+        });
+    }
+
+    if (typeof videoId !== 'string' || !videoId.trim()) {
+        return res.status(400).json({
+            error: '"videoId" is required and must be a non-empty string.'
         });
     }
 
     try {
-        // Call the fetchNextData function to get the data
         const nextData = await fetchNextData(params, videoId);
 
-        // Send the successful response
         res.json(nextData);
-
     } catch (error) {
-        // Handle errors from fetchNextData
         console.error('Error fetching next data:', error.message);
 
-        // Send error response with appropriate status and message
         res.status(500).json({
             error: 'Failed to fetch data from YouTube /next API.',
             details: error.message || 'No additional details available.'
@@ -223,5 +221,5 @@ app.post('/api/search', handleSearchRequest);
 
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at http:/   /localhost:${port}`);
 });
