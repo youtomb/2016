@@ -24,14 +24,14 @@ A project to revive the old 2015-2016 YouTubeTV HTML5 Web App.
 ## Why We Use "youtube-dl-exec"
 
 This is so we can get video urls, without having to deal with all the chiper bs you have
-to deal with no  ** you will now need python3 installed! though **
+to deal with no  ** you will now need python3.7 or higher installed! though **
 
 ## Supported YouTube TV Clients
 
 We only offically supprort 5.20150715 as of right now, however it seems like early 2018
 and 2017 ones will work. Someone sort of got a 2018 version running!
 
-Cleints I May Choose To Support In The Future:
+## Clients I May Choose To Support In The Future ##
 
 Client V4 (https://web.archive.org/web/20140517113435/https://www.youtube.com/tv#/?mode=search)
 
@@ -42,9 +42,7 @@ Client V4 (https://web.archive.org/web/20140517113435/https://www.youtube.com/tv
 
 (The guide api should work on the above one, since that's what we requested for the json data)
 
-What Will Never Happen:
-
-Clients that fully use GDATA, now there's a chance I may support client V4 as that uses 
+What Will Never Happen are clients that fully use GDATA, now there's a chance I may support client V4 as that uses 
 innertube for search and stuff, but not fully GDATA ones. Just use YT2009 at that point!
 
 ## Setup
