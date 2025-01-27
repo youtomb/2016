@@ -3,14 +3,29 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
+const corsAnywhere = require('cors-anywhere'); 
+
 const { fetchGuideData } = require('./guide_api'); 
 const { fetchBrowseData } = require('./browse_api'); 
 const { handleSearchRequest } = require('./search_api'); 
 const { fetchNextData } = require('./next_api'); 
 const { handleGetVideoInfo } = require('./get_video_info');
 
+const bodyParser = require('body-parser');
+const oauthRouter = require('./oauth_api');
+
 const app = express();
 const port = 8090;
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+corsAnywhere.createServer({
+    originWhitelist: [], 
+    removeHeaders: ['cookie', 'cookie2'], 
+}).listen(8070, 'localhost', () => {
+    console.log('CORS Anywhere proxy running on http://localhost:8070');
+});
 
 
 app.use((req, res, next) => {
@@ -30,11 +45,13 @@ app.use('/assets', express.static(path.join(__dirname, '../assets')));
 
 app.use('/logs', express.static(path.join(__dirname, '../logs')));
 
+
 app.get('/', (req, res) => {
     console.log('Received request for the root endpoint');
     res.sendFile(path.join(__dirname, '../index.html'));
 });
 
+oauthRouter(app);
 
 app.get('/get-thumbnail', async (req, res) => {
     const videoId = req.query.videoId;
@@ -109,6 +126,7 @@ app.get('/gen_204', async (req, res) => {
     }
 });
 
+
 app.get('/get_video_info', (req, res) => {
     handleGetVideoInfo(req, res);
 });
@@ -126,6 +144,8 @@ app.get('/device_204', async (req, res) => {
         res.status(200).json({ status: 'Failed to fetch data from YouTube' });
     }
 });
+
+
 
 app.get('/api/browse', async (req, res) => {
     const { browseId } = req.query;  

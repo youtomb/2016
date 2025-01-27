@@ -12,6 +12,7 @@ A project to revive the old 2015-2016 YouTubeTV HTML5 Web App.
 ![Screenshot 2](screenshots/s2.png)
 ![Screenshot 3](screenshots/s3.png)
 ![Screenshot 4](screenshots/s4.png)
+![Screenshot 5](screenshots/s4.png)
 
 ## Credits
 
@@ -21,10 +22,24 @@ A project to revive the old 2015-2016 YouTubeTV HTML5 Web App.
 
 - youtube-dl-exec [https://github.com/microlinkhq/youtube-dl-exec] 
 
+- cors-anywhere [https://github.com/Rob--W/cors-anywhere?tab=readme-ov-file]
+
 ## Why We Use "youtube-dl-exec"
 
 This is so we can get video urls, without having to deal with all the chiper bs you have
 to deal with no  ** you will now need python3.7 or higher installed! though **
+
+## Why We Use "cors-anywhere"
+
+YouTube has CORS on their googlevideo links (I forgot which settings) and it will 
+give a CORS error if you try to get it, luckly this exsits so googlevideo links
+are all going to be filtered through port 8070!
+
+## Ports Used
+
+- Port 8090
+
+- Port 8070 
 
 ## Supported YouTube TV Clients
 
@@ -75,7 +90,7 @@ Progress Report
     Status: The Browse API (which is what channels use and the homepage and such)
     Next Steps: Work on getting the v7 formated json to work on v5.
 
-4. Watch - 70% Done
+4. Watch - 60% Done
 
     Status: Got to use a custom /get_video_info, and prase it.
     Next Steps: Format it properly and add the other metadata it needs.
@@ -85,10 +100,10 @@ Progress Report
     Status: Pairing functionality has not been started.
     Next Steps: Fixing pairing features with the TV app.
 
-6. Sign In - 0% Done
+6. Sign In - 50% Done
 
-    Status: Sign in functionality has not been started.
-    Next Steps: Fixing sign in features with the TV app.
+    Status: Implemented /o/oauth2/code and it properly grabs the oauth code or whatever it is calle, and Implemented /o/oauth2/token!!
+    Next Steps: Make it so the token can request the token more than 5 times (rn you have to be fast), do all the V3 urls.
 
 7. Assets - 90% Done
 

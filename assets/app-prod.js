@@ -979,7 +979,7 @@ if (!self.__WB_pmw) {
               GUIDE_CIRCULAR_MASK: "guide-circular-mask",
               HAPPY: "icon-hats-happy",
               GAMING: "icon-gaming",
-              MOVIE: "icon-film",
+              MOVIE: "icon-flim",
               LIKES_PLAYLIST: "icon-like",
               MEH: "icon-hats-neutral",
               MUSIC: "icon-music",
@@ -11404,7 +11404,7 @@ if (!self.__WB_pmw) {
                 // Apply CSS transform to move the element down by 20% of its height (you can adjust this value)
                 searchResultsElement.style.transition = "transform 1s ease-in-out";  // Adding transition for smooth movement
                 searchResultsElement.style.height = "22em";
-                searchResultsElement.style.transform = "translateY(90%)";  // Move it down by 20% of its height
+                searchResultsElement.style.transform = "translateY(85%)";  // Move it down by 20% of its height
             } else {
                 console.log("Element with ID 'search-results' not found.");
             }
@@ -15355,7 +15355,7 @@ if (!self.__WB_pmw) {
           return this.f.br ? "in_t" : this.f.Xi ? "in_g" : this.f.$q ? "in_vi" : this.f.Zi ? "in_r" : this.f.dm ? "" : "in_v1"
       };
       d.Un = function() {
-          return this.f.dm ? "https://" + this.f.dm : this.f.AB ? "/youtubei/v1" : this.f.br ? "http://www-googleapis-test.sandbox.google.com/youtubei/vi" : this.f.Xi ? "https://staging-youtubei.sandbox.googleapis.com/v1" : this.f.$q ? this.f.Yi ? "https://youtubei.googleapis.com/youtubei/vi" : "https://web.archive.org/web/20160228021433/https://www.googleapis.com/youtubei/vi" : this.f.Zi ? "https://web.archive.org/web/20160228021433/https://www-googleapis-staging.sandbox.google.com/youtubei/v1release" : this.f.Yi ? "http://localhost:8090/api" : "http://localhost:8090/api"
+          return this.f.dm ? "https://" + this.f.dm : this.f.AB ? "/youtubei/v1" : this.f.br ? "http://www-googleapis-test.sandbox.google.com/youtubei/vi" : this.f.Xi ? "https://staging-youtubei.sandbox.googleapis.com/v1" : this.f.$q ? this.f.Yi ? "https://youtubei.googleapis.com/youtubei/vi" : "https://www.googleapis.com/youtubei/vi" : this.f.Zi ? "https://web.archive.org/web/20160228021433/https://www-googleapis-staging.sandbox.google.com/youtubei/v1release" : this.f.Yi ? "http://localhost:8090/api" : "http://localhost:8090/api"
       };
       d.fk = function(a) {
           a = a || {};
@@ -19902,7 +19902,7 @@ if (!self.__WB_pmw) {
               try {
                   var b = n("yt.www.ads.biscotti.getId_"),
                       c;
-                  b ? c = b() : (rq || (rq = qq("", {
+                  b ? c = b() : (rq || (rq = qq("http://web.archive.org/web/20160228021433/http://googleads.g.doubleclick.net/pagead/id", {
                       format: "RAW",
                       method: "GET",
                       timeout: 5E3,
@@ -19920,127 +19920,90 @@ if (!self.__WB_pmw) {
       }
 
       function xq(a) {
-        var b;
-        
-        // Try to determine if the current window is in a top-level window or an iframe
-        try {
-            b = window.top.location.href;
-        } catch (G) {
-            b = 2; // If an error occurs (likely due to being inside an iframe), set b to 2
-        }
-        
-        // Check if the top window location is the same as the current document location
-        b = b !== 2 ? (b === window.document.location.href ? 0 : 1) : 2;
-    
-        // Create an object with various properties related to the environment
-        var data = {
-            dt: Wp,             // The `Wp` variable (presumably a timestamp or identifier)
-            flash: Np,          // The `Np` variable (probably the flash support status)
-            frm: b,             // The iframe status (0 for same, 1 for different, 2 for iframe)
-            u_tz: -(new Date).getTimezoneOffset(),  // User's timezone offset in minutes
-            u_his: 0,           // To track history length (will be updated in try-catch)
-            u_java: false,      // Whether Java is enabled in the browser
-            u_h: null,          // User screen height (to be set below)
-            u_w: null,          // User screen width (to be set below)
-            u_ah: null,         // User screen available height (to be set below)
-            u_aw: null,         // User screen available width (to be set below)
-            u_cd: null,         // User screen color depth (to be set below)
-            u_nplug: 0,         // Number of plugins installed (to be set below)
-            u_nmime: 0,         // Number of mime types supported (to be set below)
-            bid: a,             // Bid ID (parameter passed to the function)
-            ca_type: Mp ? "flash" : "image" // Type of content (either flash or image)
-        };
-    
-        // Attempt to get history length from the window object
-        try {
-            data.u_his = yp.history.length;
-        } catch (G) {
-            data.u_his = 0;
-        }
-    
-        // Check if Java is enabled in the user's browser
-        if (yp.navigator && "unknown" !== typeof yp.navigator.javaEnabled && yp.navigator.javaEnabled()) {
-            data.u_java = true;
-        }
-    
-        // Get user screen information (height, width, available height/width, color depth)
-        if (yp.screen) {
-            data.u_h = yp.screen.height;
-            data.u_w = yp.screen.width;
-            data.u_ah = yp.screen.availHeight;
-            data.u_aw = yp.screen.availWidth;
-            data.u_cd = yp.screen.colorDepth;
-        }
-    
-        // Get plugin and mime type information if available
-        if (yp.navigator && yp.navigator.plugins) {
-            data.u_nplug = yp.navigator.plugins.length;
-        }
-    
-        if (yp.navigator && yp.navigator.mimeTypes) {
-            data.u_nmime = yp.navigator.mimeTypes.length;
-        }
-    
-        // Check if experiment flags are enabled for server-side search
-        if ($p("EXPERIMENT_FLAGS", {}).enable_server_side_search_pyv) {
-            var e;
-            
-            // Attempt to get window size and position
-            try {
-                var f = window.screenX, g = window.screenY;
-            } catch (G) {}
-    
-            try {
-                var k = window.outerWidth, l = window.outerHeight;
-            } catch (G) {}
-    
-            try {
-                var p = window.innerWidth, r = window.innerHeight;
-            } catch (G) {}
-    
-            // Create an array for window position and size data
-            var a = [window.screenLeft, window.screenTop, f, g, window.screen ? window.screen.availWidth : undefined, window.screen ? window.screen.availTop : undefined, k, l, p, r];
-            
-            // Attempt to get the viewport dimensions
-            try {
-                var u;
-                if (c.document && !c.document.body) {
-                    u = new Xc(-1, -1);
-                } else {
-                    var w = (c || window).document;
-                    var A = "CSS1Compat" == w.compatMode ? w.documentElement : w.body;
-                    u = (new Xc(A.clientWidth, A.clientHeight)).round();
-                }
-                e = u;
-            } catch (G) {
-                e = new Xc(-12245933, -12245933); // Fallback values if something goes wrong
-            }
-    
-            // Check if the browser supports WebGL and create the object to send
-   
-            // Construct the visibility object and extend the data object
-            e = {
-                bc: Vp,
-                bih: e.height,
-                biw: e.width,
-                brdim: a.join(),
-                vis: {
-                    visible: 1,
-                    hidden: 2,
-                    prerender: 3,
-                    preview: 4
-                }[xp.webkitVisibilityState || xp.mozVisibilityState || xp.visibilityState || ""] || 0,
-                wgl: !!yp.WebGLRenderingContext
-            };
-    
-            // Merge additional data (e.g., environment details) into the existing object
-            z(data, e);
-        }
-
-        
-        // Further processing can be done here (e.g., sending data to a server)
-    };
-    
+          var b;
+          a: {
+              try {
+                  b = window.top.location.href
+              } catch (G) {
+                  b = 2;
+                  break a
+              }
+              b = null != b ? b == window.document.location.href ? 0 : 1 : 2
+          }
+          b = {
+              dt: Wp,
+              flash: Np,
+              frm: b
+          };
+          b.u_tz = -(new Date).getTimezoneOffset();
+          var c;
+          try {
+              c = yp.history.length
+          } catch (G) {
+              c = 0
+          }
+          b.u_his = c;
+          b.u_java = !!yp.navigator && "unknown" !== typeof yp.navigator.javaEnabled && !!yp.navigator.javaEnabled && yp.navigator.javaEnabled();
+          yp.screen && (b.u_h = yp.screen.height, b.u_w = yp.screen.width, b.u_ah = yp.screen.availHeight, b.u_aw = yp.screen.availWidth, b.u_cd = yp.screen.colorDepth);
+          yp.navigator && yp.navigator.plugins && (b.u_nplug = yp.navigator.plugins.length);
+          yp.navigator && yp.navigator.mimeTypes && (b.u_nmime = yp.navigator.mimeTypes.length);
+          b.bid = a;
+          b.ca_type = Mp ? "flash" : "image";
+          if ($p("EXPERIMENT_FLAGS", {}).enable_server_side_search_pyv) {
+              var e;
+              try {
+                  var f = window.screenX,
+                      g = window.screenY
+              } catch (G) {}
+              try {
+                  var k = window.outerWidth,
+                      l = window.outerHeight
+              } catch (G) {}
+              try {
+                  var p = window.innerWidth,
+                      r = window.innerHeight
+              } catch (G) {}
+              a = [window.screenLeft, window.screenTop, f, g, window.screen ? window.screen.availWidth :
+                  void 0, window.screen ? window.screen.availTop : void 0, k, l, p, r
+              ];
+              c = window.top || yp;
+              try {
+                  var u;
+                  if (c.document && !c.document.body) u = new Xc(-1, -1);
+                  else {
+                      var w = (c || window).document,
+                          A = "CSS1Compat" == w.compatMode ? w.documentElement : w.body;
+                      u = (new Xc(A.clientWidth, A.clientHeight)).round()
+                  }
+                  e = u
+              } catch (G) {
+                  e = new Xc(-12245933, -12245933)
+              }
+              window.f && document.createElementNS && (Vp |= 1);
+              e = {
+                  bc: Vp,
+                  bih: e.height,
+                  biw: e.width,
+                  brdim: a.join(),
+                  vis: {
+                      visible: 1,
+                      hidden: 2,
+                      prerender: 3,
+                      preview: 4
+                  }[xp.webkitVisibilityState || xp.mozVisibilityState ||
+                      xp.visibilityState || ""
+                  ] || 0,
+                  wgl: !!yp.WebGLRenderingContext
+              };
+              z(b, e)
+          }
+          e = {
+              wc: b,
+              method: "POST"
+          };
+          e.wc || (e.wc = {});
+          lq("//web.archive.org/web/20160228021433/http://www.youtube.com/ad_data_204", e)
+      };
 
       function yq(a, b, c) {
           this.l = a;
@@ -20517,7 +20480,7 @@ if (!self.__WB_pmw) {
           this.fn();
           var e = {
                   client_id: this.Zj(),
-                  scope: "https://web.archive.org/web/20160228021433/http://gdata.youtube.com https://www.googleapis.com/auth/youtube-paid-content"
+                  scope: "http://gdata.youtube.com https://www.googleapis.com/auth/youtube-paid-content"
               },
               f = x(function(a) {
                   b(!!a);
@@ -20547,26 +20510,51 @@ if (!self.__WB_pmw) {
           this.ky(c.device_code, 1E3 * c.interval, b);
           a(c.user_code, .9 * Number(c.expires_in))
       };
+      
       d.ky = function(a, b, c) {
           var e = {
                   client_id: this.Zj(),
                   client_secret: this.Wn(),
-                  code: a,
-                  grant_type: "https://web.archive.org/web/20160228021433/http://oauth.net/grant_type/device/1.0"
+                  device_code: a,
+                  grant_type: "http://oauth.net/grant_type/device/1.0"
               },
               e = new cg("POST", "/o/oauth2/token", null, e),
               f = this.B();
           f.Ed(x(this.zS, this, a, b, c));
           f.Pb(e)
       };
+      
       d.zS = function(a, b, c, e) {
-          var f = e.error,
-              g = "slow_down" == f,
-              k = e.refresh_token;
-          "authorization_pending" == f || g ? (g && (b *= 2), this.ea = this.g.setTimeout(x(function() {
-              this.ky(a, b, c)
-          }, this), b)) : k ? (this.qy(k), this.f = [c], this.ph(e)) : c(null)
-      };
+        var f = e.error,
+            g = "slow_down" == f, // Check if the error is 'slow_down'
+            k = e.refresh_token;  // Get the refresh token if available
+    
+        // Handle 'authorization_pending' or 'slow_down' errors
+        if ("authorization_pending" == f || g) {
+            // If 'slow_down', multiply the retry delay (b) by 2 for exponential backoff
+            if (g) {
+                b *= 2; // Exponentially increase the delay
+            }
+    
+            // Use setTimeout to retry the request after the delay
+            this.ea = this.g.setTimeout(x(function() {
+                this.ky(a, b, c);  // Retry the token request
+            }, this), b);  // The delay is set to b (which will increase each time)
+    
+        } else if (k) {
+            // If a refresh token is available, proceed with the next step
+            this.qy(k);   // Handle the refresh token (assumed custom logic)
+            this.f = [c]; // Set the callback function to be executed after refresh
+            this.ph(e);   // Execute the provided callback with the response
+    
+        } else {
+            // If no refresh token, call the callback with null
+
+                this.ky(a, b, c);  // Retry the token request
+    
+        }
+    };
+    
       d.qy = function(a) {
           this.G.set("tv-refresh-token", a, 15768E3);
           this.G.flush()
@@ -21954,7 +21942,7 @@ if (!self.__WB_pmw) {
           z(a.args, this.h.uj());
           a.assets.css =
               null;
-          a.html5 = 1;
+          a.html5 = !0;
           a.disable = {
               flash: !0
           };
@@ -24197,7 +24185,7 @@ if (!self.__WB_pmw) {
           part: "snippet,statistics"
       };
       Pr.prototype.get = function(a, b, c) {
-          var e = new cg("GET", "/youtube/v3/channels", Qr);
+          var e = new cg("GET", "/api/youtube/channels", Qr);
           a = x(this.h, this, a);
           var f = this.g();
           f.tm(a);
@@ -28240,82 +28228,127 @@ if (!self.__WB_pmw) {
 
       d = Qt.prototype;
       
-      d.hy = function(a) {
-          var b = new nk,
-              c = new Kg,
-              e = this.x_(a);
-
-          if (!e) return b.title = "Not a video renderer.", b.channel = c, console.error("InnerTube video parser: not a video!", ub(n("data.target", a))), b;
-          
-          b.description = "Yeah so they got of it.";
-
-          console.log();
-
-          b.channel = this.vL(c, a);
-          console.log("Channel data processed:", b.channel);      
-
-          b.ag = this.zL(a); // Additional metadata
-          console.log("Metadata (ag) set:", b.ag);
-
-          b.imageUrl = this.l.f(a, e); // Extract image URL
-          console.log("Image URL set:", b.imageUrl);
-
-          b.g = b.g || !!a.L; // Check for metadata editing endpoint
-          console.log("Metadata editing flag (g) set:", b.g);
-
-          b.title = this.AL(a); // Extract title
-          console.log("Title set:", b.title);
-
-          b.videoId = e; // Assign video ID
-          console.log("Video ID assigned:", b.videoId);
-          
-          b.De = this.BL(a); // Additional metadata
-          console.log("Metadata (De) set:", b.De);
-      
-          b.bm = this.w_(a); // Additional metadata
-          console.log("Metadata (bm) set:", b.bm);
-      
-          b.isWatched = !!a.isWatched;
-
-          console.log("Running additional video parsers...");
-          this.vR(b, a);
-          this.mR(b, a);
-          this.sR(b, a);
-          this.yR(b, a);
-      
-          if (a.navigationEndpoint) {
+      d.hy = function (a) {
+        var b = new nk(),
+            c = new Kg(),
+            e = this.x_(a);
+    
+        // Early check: Is the video renderer present?
+        if (!e) {
+            b.title = "Not a video renderer.";
+            b.channel = c;
+            console.error("InnerTube video parser: not a video!", ub(n("data.target", a)));
+            return null; // Skip processing if not a video renderer
+        }
+    
+        b.description = "Yeah so they got of it.";
+    
+        // Process channel data
+        b.channel = this.vL(c, a);
+        if (!b.channel) {
+            console.error("Missing channel data. Skipping video entry:", a);
+            return null;
+        }
+        console.log("Channel data processed:", b.channel);
+    
+        // Extract thumbnail URL
+        b.imageUrl = this.l.f(a, e);
+        if (!b.imageUrl) {
+            console.error("Missing thumbnail image URL. Skipping video entry:", a);
+            return null;
+        }
+        console.log("Image URL set:", b.imageUrl);
+    
+        // Extract and set metadata
+        b.ag = this.zL(a);
+        console.log("Metadata (ag) set:", b.ag);
+    
+        b.g = b.g || !!a.L; // Check for metadata editing endpoint
+        console.log("Metadata editing flag (g) set:", b.g);
+    
+        b.title = this.AL(a);
+        if (!b.title) {
+            console.error("Missing video title. Skipping video entry:", a);
+            return null;
+        }
+        console.log("Title set:", b.title);
+    
+        b.videoId = e;
+        console.log("Video ID assigned:", b.videoId);
+    
+        b.De = this.BL(a);
+        console.log("Metadata (De) set:", b.De);
+    
+        b.bm = this.w_(a);
+        console.log("Metadata (bm) set:", b.bm);
+    
+        b.isWatched = !!a.isWatched;
+    
+        // Additional video parsers
+        console.log("Running additional video parsers...");
+        this.vR(b, a);
+        this.mR(b, a);
+        this.sR(b, a);
+        this.yR(b, a);
+    
+        // Handle navigation endpoint action
+        if (a.navigationEndpoint) {
             b.action = this.i({
                 endpoint: a.navigationEndpoint
             });
             console.log("Action endpoint set:", b.action);
-           }
+        }
+    
+        // Handle restricted content
+        if (a = n("app$control.yt$state", a)) {
+            for (a = da(a) ? a : [a], c = 0, e = a.length; c < e; ++c) {
+                if (a[c] && "restricted" == a[c].name) {
+                    b.errorCode = a[c].reasonCode;
+                    break;
+                }
+            }
+        }
+    
+        // Return the video object
+        return b;
+    };
+    
 
-          if (a = n("app$control.yt$state", a))
-              for (a = da(a) ? a : [a], c = 0, e = a.length; c < e; ++c)
-                  if (a[c] && "restricted" == a[c].name) {
-                      b.errorCode = a[c].reasonCode;
-                      break
-                  }
-          return b
-      };
       d.yL = function(a) {
           return (a = this.f(n("descriptionSnippet", a))) && a.slice(0, 165) || "yap"
       };
+
       d.vL = function (userData, sourceData) {
         // Extract the user ID from the `shortBylineText` navigation endpoint.
         userData.userId = extractValue("browseId.browseId", sourceData);
+        if (!userData.userId) {
+            console.error("Missing required field: userId. Skipping user data:", sourceData);
+            return null; // Skip this user data
+        }
     
         userData.displayName = this.f(extractValue("shortBylineText.name", sourceData));
-
+        if (!userData.displayName) {
+            console.error("Missing required field: displayName. Skipping user data:", sourceData);
+            return null; // Skip this user data
+        }
+    
         userData.videoId = this.f(extractValue("videoId", sourceData));
-
-        userData.username = sourceData.displayName;
+        if (!userData.videoId) {
+            console.error("Missing required field: videoId. Skipping user data:", sourceData);
+            return null; // Skip this user data
+        }
+    
+        // Assign defaults for optional fields
+        userData.username = sourceData.displayName || "Unknown User";
         userData.title = userData.displayName;
     
+        // Default image URL if not provided
         userData.imageUrl = "http://localhost:8090/assets/default_pfp.png";
-  
-        return userData;
-      };    
+    
+        return userData; // Return only if all required fields are present
+    };
+    
+
       function extractValue(path, obj) {
         const value = path.split('.').reduce((acc, key) => (acc && acc[key] !== undefined ? acc[key] : null), obj);
         console.log(`Path: ${path}, Extracted Value:`, value);

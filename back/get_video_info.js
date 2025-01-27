@@ -4,18 +4,19 @@ const youtubeDl = require('youtube-dl-exec');
 
 function handleGetVideoInfo(req, res) {
     const videoId = req.query.video_id;
+    const prettyPrint = req.query.prettyprint === 'true'; // Check for prettyprint
+    const unurlencode = req.query.unurlencode === 'true'; // Check for unurlencode
 
     if (!videoId) {
         return res.status(400).send('Video ID is required');
     }
 
     youtubeDl(videoId, {
-        dumpSingleJson: true, 
-        noWarnings: true,  
-        quiet: true,         
+        dumpSingleJson: true,
+        noWarnings: true,
+        quiet: true,
     })
     .then(output => {
-
         console.log('Video Info:', output);
 
         const logsDir = path.join(__dirname, 'logs');
@@ -27,73 +28,187 @@ function handleGetVideoInfo(req, res) {
         const logFilePath = path.join(logsDir, `video-info-${timestamp}.json`);
 
         fs.writeFileSync(logFilePath, JSON.stringify(output, null, 2));
+
+        const adaptiveFmts = []
+        const fmtListArr = [];
+        
         console.log('Video info logged to file:', logFilePath);
-
-        const adaptiveFmts = {
-            video: [],
-            audio: []
-        };
-
-        console.log('formats:', output.formats);
-
         if (output.formats && Array.isArray(output.formats)) {
             output.formats.forEach(format => {
-                if (format.url && format.format_id) {
-                    if (format.vcodec && format.vcodec !== 'none') {
-                        let type = format.vcodec.includes('vp9') ? 'video/webm' : 'video/mp4';
-                        let videoFormat = `quality_label=${encodeURIComponent(format.quality_label || '')}&lmt=${encodeURIComponent(format.lmt || '')}&type=${encodeURIComponent(type)}&url=${encodeURIComponent(format.url)}&itag=${encodeURIComponent(format.format_id)}&signature=${encodeURIComponent(format.signature || '')}`;
-                        adaptiveFmts.video.push(videoFormat);
-                    }
-                    else if (format.container && format.container.includes('m4a_dash')) {
-                        let type = 'audio/mp4';
-                        let audioFormat = `quality_label=${encodeURIComponent(format.quality_label || '')}&lmt=${encodeURIComponent(format.lmt || '')}&type=${encodeURIComponent(type)}&url=${encodeURIComponent(format.url)}&itag=${encodeURIComponent(format.format_id)}&signature=${encodeURIComponent(format.signature || '')}`;
-                        adaptiveFmts.audio.push(audioFormat);
-                    }
+                // Skip formats with specific format_id values
+                const skipFormatIds = ["sb1", "sb2", "sb0"];
+                if (skipFormatIds.includes(format.format_id)) {
+                    console.log('Skipping format with format_id:', format.format_id);
+                    return; // Skip this format
                 }
-            });
+            
+                if (format.url && format.format_id) {
+                    // Dynamically determine the MIME type based on format properties
+                    let mimeType;
+                    if (format.vcodec && format.vcodec !== "none" && format.acodec && format.acodec !== "none") {
+                        // Format has both video and audio
+                        mimeType = `video/${format.ext || 'mp4'}; codecs="${format.vcodec},${format.acodec}"`;
+                    } else if (format.vcodec && format.vcodec !== "none") {
+                        // Video-only format
+                        mimeType = `video/${format.ext || 'mp4'}; codecs="${format.vcodec}"`;
+                    } else if (format.acodec && format.acodec !== "none") {
+                        // Audio-only format
+                        mimeType = `audio/${format.ext || 'mp4'}; codecs="${format.acodec}"`;
+                    } else {
+                        // Unknown type
+                        mimeType = `application/octet-stream`;
+                    }
+            
+                    // Log the determined MIME type for debugging purposes
+                    console.log(`Determined MIME type for format_id ${format.format_id}: ${mimeType}`);
+            
+                    // Create a new URLSearchParams object for adaptive formats
+                    const urlParams = new URLSearchParams();
+                    urlParams.append('url', format.url);
+                    urlParams.append('itag', format.format_id);
+                    urlParams.append('clen', format.filesize || 'unknown');
+                    urlParams.append('lmt', format.lastModified || 'unknown');
+                    urlParams.append('dur', format.duration || 'unknown');
+                    urlParams.append('fps', format.fps || 'unknown');
+                    urlParams.append('size', `${format.width || 0}x${format.height || 0}`);
+                    urlParams.append('bitrate', format.tbr || 'unknown');
+                    urlParams.append('type', mimeType);
+            
+                    // Convert URLSearchParams into a URL-encoded string and push to adaptiveFmts
+                    adaptiveFmts.push(urlParams.toString());
+            
+                    // Construct the fmtList format (format_id/resolution/quality/...)
+                    const width = format.width || "unknown";
+                    const height = format.height || "unknown";
+            
+                    if (width === "unknown" || height === "unknown") {
+                        console.log('Skipping format with unknown width or height:', format);
+                        return; // Skip this format
+                    }
+            
+                    if (format.format_id) {
+                        const fmtString = `${format.format_id}/${width}x${height}`;
+                        fmtListArr.push(fmtString);
+                    } else {
+                        console.log('Skipping format with missing format_id:', format);
+                    }
+                } else {
+                    console.log('Skipping format with missing URL or format_id:', format);
+                }
+            });            
         }
 
-  
-        if (adaptiveFmts.video.length === 0) {
-            console.log('No video formats found');
-            return res.status(404).send('No suitable video formats found');
+        
+
+        if (adaptiveFmts.length === 0) {
+            console.log('No adaptive formats found');
+            return res.status(404).send('No adaptive formats found');
         }
+    
+        // Join the fmtList array into a single string, URL-encode it, and log it
+        const fmtList = encodeURIComponent(fmtListArr.join(','));
+        
+        // Join all adaptive formats into a single string for the response
+        const adaptiveFmtsResponse = adaptiveFmts.join(',');
 
-     
-        if (adaptiveFmts.audio.length === 0) {
-            console.log('No audio formats found');
-            return res.status(404).send('No suitable audio formats found');
-        }
+        // Log adaptive_fmts for debugging purposes
+        console.log('Constructed adaptive_fmts:', adaptiveFmtsResponse);
+
+        console.log('Constructed fmt_list:', fmtList);
+        
+
+        const videoInfo = `baseUrl=https%3A%2F%2Flocalhost%3A8090
+        iv_module=https%3A%2F%2Fs.ytimg.com%2Fyts%2Fswfbin%2Fplayer-vflq9bo_X%2Fiv_module.swf
+        account_playback_token=QUFFLUhqbUNlSEVkMTBaWWVFcjgtNC1KZ3VIRzA0X2I2d3xBQ3Jtc0tsYklEbEFDemhBNlJJOS01TkFZQzJNUmVrVERqeDhaV1pqQmJEOFZ3V3pSWjNNRnhiZnd5NnJWejJONzM3dFh0MG9PT0U2Q3gzVnVKS194cEphNkVPeFE3azlSSFhabmh0QkpITW90b2FEMnpvVGZPQQ%3D%3D
+        cbr=Chrome
+        iv3_module=1
+        iv_load_policy=1
+        cosver=5.1
+        probe_url=https%3A%2F%2Fr3---sn-p5qlsu7r.googlevideo.com%2Fvideogoodput%3Fid%3Do-AAdvekeNvhTnc7BLnVx3s1tYNVrOiCABO6a6dAvgVFLF%26source%3Dgoodput%26range%3D0-99999%26expire%3D1426349446%26ip%3D207.241.226.230%26ms%3Dpm%26mm%3D35%26pl%3D24%26sparams%3Did%2Csource%2Crange%2Cexpire%2Cip%2Cms%2Cmm%2Cpl%26signature%3D16006AFBAD95DD923171C54EAD9B46BC38E9EB.423F08645F93F89A254D8AF80FB0F006623DD7F3%26key%3Dcms1
+        rvs=iurlhq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FYxjyTznqNUY%252Fhqdefault.webp%26title%3D%25D7%2591%25D7%2595%25D7%2590%25D7%2595%2B%25D7%259C%25D7%25A8%25D7%2590%25D7%2595%25D7%25AA%2B%25D7%2590%25D7%25AA%2B%25D7%2597%25D7%25A0%25D7%2595%25D7%259A%2B%25D7%2593%25D7%2590%25D7%2595%25D7%259D%2B%25D7%25A2%25D7%2595%25D7%25A9%25D7%2594%2B%25D7%259E%25D7%259E%25D7%25A0%25D7%2599%2B%25D7%25A6%25D7%2597%25D7%2595%25D7%25A7%2B%252B%2B%25D7%25A9%25D7%2597%25D7%2596%25D7%2595%25D7%25A8%2B%25D7%25A9%25D7%259C%2B%25D7%25A7%25D7%25A8%25D7%2591%2B%25D7%259B%25D7%25A4%25D7%25A8%2B%25D7%259B%25D7%25A0%25D7%2590%26endscreen_autoplay_session_data%3Dplaynext%253D0%2526feature%253Drelated-auto%2526autonav%253D1%26id%3DYxjyTznqNUY%26author%3D%25D7%25A0%25D7%25A4%25D7%25AA%25D7%259C%25D7%2599%2B%25D7%2591%25D7%25A0%25D7%2598%2B%257C%2BNaftali%2BBennett%26length_seconds%3D2101%26session_data%3Dfeature%253Dendscreen%26iurlmq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FYxjyTznqNUY%252Fmqdefault.webp%2Ciurlhq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252F_4RGlOLFSSU%252Fhqdefault.webp%26title%3D%25D7%2591%25D7%25A0%25D7%2598%2B%25D7%259C%25D7%25A0%25D7%2597%25D7%2595%25D7%259D%2B%25D7%2591%25D7%25A8%25D7%25A0%25D7%25A2%253A%2B%25D7%2590%25D7%2595%25D7%259C%25D7%2599%2B%25D7%2590%25D7%25AA%25D7%2594%2B%25D7%2594%25D7%25A7%25D7%2595%25D7%25A7%25D7%2595%253F%26id%3D_4RGlOLFSSU%26author%3D%25D7%25A0%25D7%25A4%25D7%25AA%25D7%259C%25D7%2599%2B%25D7%2591%25D7%25A0%25D7%2598%2B%257C%2BNaftali%2BBennett%26length_seconds%3D667%26session_data%3Dfeature%253Dendscreen%26iurlmq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252F_4RGlOLFSSU%252Fmqdefault.webp%2Ciurlhq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FNi0mKluwQ_o%252Fhqdefault.webp%26title%3D%25D7%25A8%25D7%2599%25D7%25A0%25D7%2595%2B%25D7%25A6%25D7%25A8%25D7%2595%25D7%25A8%2B%25D7%259E%25D7%2595%25D7%25A8%25D7%2599%25D7%2593%2B%25D7%2590%25D7%25AA%2B%25D7%2599%25D7%25A0%25D7%2595%25D7%259F%2B%25D7%259E%25D7%2592%25D7%259C%2B%25D7%259E%25D7%25A9%25D7%2599%25D7%2593%25D7%2595%25D7%25A8%2B%25D7%2591%25D7%2592%25D7%259C%25D7%2599%2B%25D7%25A6%25D7%2594%2522%25D7%259C%26id%3DNi0mKluwQ_o%26author%3D%25D7%25A0%25D7%25A4%25D7%25AA%25D7%259C%25D7%2599%2B%25D7%2591%25D7%25A0%25D7%2598%2B%257C%2BNaftali%2BBennett%26length_seconds%3D423%26session_data%3Dfeature%253Dendscreen%26iurlmq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FNi0mKluwQ_o%252Fmqdefault.webp%2Ciurlhq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FYwi1amZ29pg%252Fhqdefault.webp%26title%3D%25D7%2591%25D7%25A0%25D7%2598%2B%25D7%2591%25D7%25A2%25D7%25A8%25D7%2595%25D7%25A5%2B10%253A%2B%25D7%2594%25D7%25AA%25D7%25A7%25D7%25A9%25D7%2595%25D7%25A8%25D7%25AA%2B%25D7%259E%25D7%2595%25D7%25A4%25D7%25AA%25D7%25A2%25D7%25AA%2B%25D7%2591%25D7%259B%25D7%259C%2B%25D7%25A4%25D7%25A2%25D7%259D%2B%25D7%25A9%25D7%2594%25D7%25A2%25D7%259D%2B%25D7%2592%25D7%2595%25D7%25A0%25D7%2591%2B%25D7%2590%25D7%25AA%2B%25D7%2594%25D7%2591%25D7%2597%25D7%2599%25D7%25A8%25D7%2595%25D7%25AA%26id%3DYwi1amZ29pg%26author%3D%25D7%25A0%25D7%25A4%25D7%25AA%25D7%259C%25D7%2599%2B%25D7%2591%25D7%25A0%25D7%2598%2B%257C%2BNaftali%2BBennett%26length_seconds%3D1075%26session_data%3Dfeature%253Dendscreen%26iurlmq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FYwi1amZ29pg%252Fmqdefault.webp%2Ciurlhq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FfslrzJcnrz4%252Fhqdefault.webp%26title%3D%25D7%2590%25D7%2599%25D7%2599%25D7%259C%25D7%25AA%2B%25D7%25A9%25D7%25A7%25D7%2593%2B%25D7%2591%25D7%25A2%25D7%2599%25D7%259E%25D7%2595%25D7%25AA%2B%25D7%25A1%25D7%2595%25D7%25A2%25D7%25A8%2B%25D7%259E%25D7%2595%25D7%259C%2B%25D7%2590%25D7%2597%25D7%259E%25D7%2593%2B%25D7%2598%25D7%2599%25D7%2591%25D7%2599%2B%25D7%2591%25D7%25A2%25D7%25A8%25D7%2595%25D7%25A5%2B2%26id%3DfslrzJcnrz4%26author%3D%25D7%25A0%25D7%25A4%25D7%25AA%25D7%259C%25D7%2599%2B%25D7%2591%25D7%25A0%25D7%2598%2B%257C%2BNaftali%2BBennett%26length_seconds%3D418%26session_data%3Dfeature%253Dendscreen%26iurlmq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FfslrzJcnrz4%252Fmqdefault.webp%2Ciurlhq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FGMYp7vXBiEo%252Fhqdefault.webp%26title%3D%25D7%2594%25D7%2594%25D7%2599%25D7%25A4%25D7%25A1%25D7%2598%25D7%25A8%2B%25D7%2591%25D7%2598%25D7%2599%25D7%25A4%25D7%2595%25D7%259C%26id%3DGMYp7vXBiEo%26author%3D%25D7%25A0%25D7%25A4%25D7%25AA%25D7%259C%25D7%2599%2B%25D7%2591%25D7%25A0%25D7%2598%2B%257C%2BNaftali%2BBennett%26length_seconds%3D205%26session_data%3Dfeature%253Dendscreen%26iurlmq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FGMYp7vXBiEo%252Fmqdefault.webp%2Ciurlhq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FbhJ9Za9VhNM%252Fhqdefault.webp%26title%3D%25D7%2591%25D7%25A0%25D7%2598%2B%25D7%2591%25D7%25A2%25D7%25A8%25D7%2595%25D7%25A5%2B2%253A%2B%2522%25D7%2590%25D7%25A0%25D7%2599%2B%25D7%25A0%25D7%2590%25D7%259C%25D7%25A5%2B%25D7%259C%25D7%2594%25D7%25A1%25D7%2591%25D7%2599%25D7%25A8%2B%25D7%259C%25D7%2597%25D7%2591%25D7%25A8%25D7%2599%2B%25D7%25A7%25D7%2595%25D7%25A0%25D7%2592%25D7%25A8%25D7%25A1%2B%25D7%259C%25D7%259E%25D7%2594%2B%25D7%2594%25D7%25A9%25D7%259E%25D7%2590%25D7%259C%2B%25D7%2594%25D7%2599%25D7%25A9%25D7%25A8%25D7%2590%25D7%259C%25D7%2599%2B%25D7%25AA%25D7%2595%25D7%25A7%25D7%25A3%2B%25D7%2590%25D7%2595%25D7%25AA%25D7%25A0%25D7%2595%2522%26id%3DbhJ9Za9VhNM%26author%3D%25D7%25A0%25D7%25A4%25D7%25AA%25D7%259C%25D7%2599%2B%25D7%2591%25D7%25A0%25D7%2598%2B%257C%2BNaftali%2BBennett%26length_seconds%3D167%26session_data%3Dfeature%253Dendscreen%26iurlmq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FbhJ9Za9VhNM%252Fmqdefault.webp%2Cauthor%3Daviran15%26session_data%3Dfeature%253Dendscreen%26title%3D%25D7%2591%25D7%2595%25D7%2591%25D7%2594%2B%25D7%25A9%25D7%259C%2B%25D7%259E%25D7%2593%25D7%2599%25D7%25A0%25D7%2594%2B-%2B%25D7%259E%25D7%25A2%25D7%25A8%25D7%259B%25D7%2595%25D7%259F%2B%25D7%2590%25D7%2599%25D7%2599%25D7%259C%25D7%25AA%2B%25D7%25A9%25D7%25A7%25D7%2593%26length_seconds%3D98%26id%3Du7_1FOgPnQs%2Ciurlhq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252F_ihrEicKwOo%252Fhqdefault.webp%26title%3D%25D7%2594%25D7%2599%25D7%2592%2527%25D7%25A8%25D7%2594%2B%25D7%25A4%25D7%25A8%25D7%25A7%2B3%253A%2B%25D7%2594%25D7%25AA%25D7%25A1%25D7%259B%25D7%2595%25D7%259C%26id%3D_ihrEicKwOo%26author%3Dcapture_il%26length_seconds%3D1190%26session_data%3Dfeature%253Dendscreen%26iurlmq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252F_ihrEicKwOo%252Fmqdefault.webp%2Ciurlhq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FRYwEE7ZklCo%252Fhqdefault.webp%26title%3D%25D7%2594%25D7%2599%25D7%2592%2527%25D7%25A8%25D7%2594%2B%25D7%25A4%25D7%25A8%25D7%25A7%2B5%2B%25D7%2595%25D7%2590%25D7%2597%25D7%25A8%25D7%2595%25D7%259F%253A%2B%25D7%2594%25D7%25A4%25D7%25A6%25D7%25A6%25D7%2594%2B%25D7%2594%25D7%259E%25D7%25AA%25D7%25A7%25D7%25AA%25D7%25A7%25D7%25AA%26id%3DRYwEE7ZklCo%26author%3Dcapture_il%26length_seconds%3D986%26session_data%3Dfeature%253Dendscreen%26iurlmq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FRYwEE7ZklCo%252Fmqdefault.webp%2Ciurlhq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FVEvzFOMzgWM%252Fhqdefault.webp%26title%3D%25D7%25A0%25D7%25A4%25D7%25AA%25D7%259C%25D7%2599%2B%25D7%2594%25D7%2594%25D7%2599%25D7%25A4%25D7%25A1%25D7%2598%25D7%25A8%2B-%2B%25D7%259E%25D7%25A4%25D7%25A1%25D7%2599%25D7%25A7%25D7%2599%25D7%259D%2B%25D7%259C%25D7%2594%25D7%25AA%25D7%25A0%25D7%25A6%25D7%259C%26id%3DVEvzFOMzgWM%26author%3DEli%2BSinger%26length_seconds%3D167%26session_data%3Dfeature%253Dendscreen%26iurlmq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FVEvzFOMzgWM%252Fmqdefault.webp%2Ciurlhq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FiPJk7UbHGlU%252Fhqdefault.webp%26title%3D%25D7%259E%25D7%25A0%25D7%25A9%25D7%25A7%25D7%2599%2B%25D7%2594%25D7%259E%25D7%2596%25D7%2595%25D7%2596%25D7%2595%25D7%25AA%2B%25D7%2594%25D7%2595%25D7%259C%25D7%259B%25D7%2599%25D7%259D%2B%25D7%259C%25D7%25A0%25D7%25A6%25D7%2597%26id%3DiPJk7UbHGlU%26author%3D%25D7%25A0%25D7%25A4%25D7%25AA%25D7%259C%25D7%2599%2B%25D7%2591%25D7%25A0%25D7%2598%2B%257C%2BNaftali%2BBennett%26length_seconds%3D141%26session_data%3Dfeature%253Dendscreen%26iurlmq_webp%3D%252F%252Fi.ytimg.com%252Fvi_webp%252FiPJk7UbHGlU%252Fmqdefault.webp
+        of=DI8ulxjA44_i6rKc8TzAhw
+        iv_invideo_url=https%3A%2F%2Fwww.youtube.com%2Fannotations_invideo%3Fcap_hist%3D1%26cta%3D2%26playlist_id%3DPLSH1V8Iv8_1VZzhTkvVHYdz8KUPeBGfN9%26video_id%3D0ggR11jYS3A
+        length_seconds=68
+        has_cc=False
+        enablecsi=1
+        pltype=contentugc
+        dashmpd=https%3A%2F%2Fmanifest.googlevideo.com%2Fapi%2Fmanifest%2Fdash%2Frequiressl%2Fyes%2Fsparams%2Fas%252Cid%252Cip%252Cipbits%252Citag%252Cmm%252Cms%252Cmv%252Cpl%252Cplayback_host%252Crequiressl%252Csource%252Cexpire%2Fmm%2F31%2Fexpire%2F1426367447%2Fid%2Fo-ACX1zI2XgFa9Ua6DBBBDhejjcyuqZGGcBBuxoqx7yZEe%2Fipbits%2F0%2Ffexp%2F907263%252C927622%252C931372%252C933236%252C934954%252C937432%252C9405703%252C9406736%252C9407103%252C9407444%252C941440%252C943917%252C948124%252C951511%252C951703%252C952302%252C952612%252C952901%252C955301%252C957201%252C959701%252C963100%2Fupn%2FlzQl8NX90vo%2Fmt%2F1426345559%2Fsignature%2F83B28AA4F045410275E6A998720437E4349EF203.900B9BF39796F93CF795F626B9BD3FDD4B3723BA%2Fmv%2Fu%2Fip%2F207.241.226.230%2Fkey%2Fyt5%2Fitag%2F0%2Fpl%2F23%2Fsver%2F3%2Fplayback_host%2Fr10---sn-nwj7kned.googlevideo.com%2Fas%2Ffmp4_audio_clear%252Cwebm_audio_clear%252Cfmp4_sd_hd_clear%252Cwebm_sd_hd_clear%252Cwebm2_sd_hd_clear%2Fsource%2Fyoutube%2Fms%2Fau
+        timestamp=1426345846
+        avg_rating=4.5801980198
+        vid=0ggR11jYS3A
+        plid=AAURQQWJOzsm_uzM
+        watermark=%2Chttps%3A%2F%2Fs.ytimg.com%2Fyts%2Fimg%2Fwatermark%2Fyoutube_watermark-vflHX6b6E.png%2Chttps%3A%2F%2Fs.ytimg.com%2Fyts%2Fimg%2Fwatermark%2Fyoutube_hd_watermark-vflAzLcD6.png
+        ytfocEnabled=1
+        video_id=0ggR11jYS3A
+        atc=a%3D3%26b%3DYLfP9dWvt5WXPMSq9vEpZTP_ePU%26c%3D1426345847%26d%3D1%26e%3D0ggR11jYS3A%26c3a%3D18%26hh%3DlThS1p2buueLl16Okg75F2RkKXM
+        thumbnail_url=https%3A%2F%2Fi.ytimg.com%2Fvi%2F0ggR11jYS3A%2Fdefault.jpg
+        iurlhq=https%3A%2F%2Fi.ytimg.com%2Fvi%2F0ggR11jYS3A%2Fhqdefault.jpg
+        ldpj=0
+        allow_embed=1
+        iurlsd_webp=https%3A%2F%2Fi.ytimg.com%2Fvi_webp%2F0ggR11jYS3A%2Fsddefault.webp
+        cos=Windows
+        eventid=dk8EVYDiOemq-APyioDoDA
+        allow_ratings=1
+        iurlmq_webp=https%3A%2F%2Fi.ytimg.com%2Fvi_webp%2F0ggR11jYS3A%2Fmqdefault.webp
+        watch_xlb=https%3A%2F%2Fs.ytimg.com%2Fyts%2Fxlbbin%2Fwatch-strings-iw_IL-vflTB6g9h.xlb
+        iurlhq_webp=https%3A%2F%2Fi.ytimg.com%2Fvi_webp%2F0ggR11jYS3A%2Fhqdefault.webp
+        muted=0
+        c=web
+        fexp=907263%2C927622%2C931372%2C933236%2C934954%2C937432%2C9405703%2C9406736%2C9407103%2C9407444%2C941440%2C943917%2C948124%2C951511%2C951703%2C952302%2C952612%2C952901%2C955301%2C957201%2C959701%2C963100
+        status=ok
+        iurlmaxres=https%3A%2F%2Fi.ytimg.com%2Fvi%2F0ggR11jYS3A%2Fmaxresdefault.jpg
+        loudness=-20.4790000916
+        fmt_list=${encodeURIComponent(fmtList)}
+        aid=P-r-BXKOXj0
+        ptk=youtube_none
+        vq=auto
+        iurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2F0ggR11jYS3A%2Fhqdefault.jpg
+        author=%D7%A0%D7%A4%D7%AA%D7%9C%D7%99+%D7%91%D7%A0%D7%98+%7C+Naftali+Bennett
+        storyboard_spec=https%3A%2F%2Fi.ytimg.com%2Fsb%2F0ggR11jYS3A%2Fstoryboard3_L%24L%2F%24N.jpg%7C48%2327%23100%2310%2310%230%23default%23yvvsiusjZ_KiPonEenYmA1bW328%7C80%2345%2369%2310%2310%231000%23M%24M%23h24UdR4MSsVa86F4cpbra_vXmCM%7C160%2390%2369%235%235%231000%23M%24M%23d4EkeR6fEFwH1ZWjKntREyHAHn8
+        adaptive_fmts=${encodeURIComponent(adaptiveFmtsResponse)}
+        remarketing_url=https%3A%2F%2Fgoogleads.g.doubleclick.net%2Fpagead%2Fviewthroughconversion%2F962985656%2F%3Flabel%3Dfollowon_view%26cname%3D1%26foc_id%3D4x7LYSzgGH-TMKc9J8pwgQ%26backend%3Dplayer_vars%26cver%3DHTML5%26ptype%3Dno_rmkt%26aid%3DP989_XaxlmI
+        idpj=-2
+        cbrver=41.0.2272.89
+        iurlsd=https%3A%2F%2Fi.ytimg.com%2Fvi%2F0ggR11jYS3A%2Fsddefault.jpg
+        title=%D7%9E%D7%93%D7%99%D7%A0%D7%94+%D7%91%D7%98%D7%99%D7%A4%D7%95%D7%9C
+        iurlmaxres_webp=https%3A%2F%2Fi.ytimg.com%2Fvi_webp%2F0ggR11jYS3A%2Fmaxresdefault.webp
+        csi_page_type=embed
+        video_verticals=%5B16%2C+35%5D
+        cl=88507848
+        no_get_video_log=1
+        iv_allow_in_place_switch=1
+        iurl_webp=https%3A%2F%2Fi.ytimg.com%2Fvi_webp%2F0ggR11jYS3A%2Fhqdefault.webp
+        uid=4x7LYSzgGH-TMKc9J8pwgQ
+        view_count=71358
+        iurlmq=https%3A%2F%2Fi.ytimg.com%2Fvi%2F0ggR11jYS3A%2Fmqdefault.jpg
+        token=sSPRzi9D_lUlZc6YQ3eQUyy2ufFAoMasmxX1Ps4S1zA%3D
+        tmi=1
+        keywords=%D7%A0%D7%A4%D7%AA%D7%9C%D7%99+%D7%91%D7%A0%D7%98
+        use_cipher_signature=False
+        `;
+
+    const properties = videoInfo.trim().split("\n");
+
+    // Process each property and URL encode the value (but only if it's not already encoded)
+    const encodedProperties = properties.map(prop => {
+        // Split by '=' to get the key and value
+        const [key, value] = prop.split('=');
+
+        // Check if the value is already encoded
+        const decodedValue = decodeURIComponent(value || '');
+        
+        // Encode only if it's not already URL-encoded
+        return `${key}=${decodedValue !== value ? value : encodeURIComponent(value || '')}`;
+    });
+
+    // Join the properties back together with '&' separator and remove spaces between values
+    const encodedResponse = encodedProperties.join('&').replace(/\s+/g, '');
 
 
-        const adaptiveFmtsString = [...adaptiveFmts.video, ...adaptiveFmts.audio].join('&');
-        console.log('Adaptive Formats:', adaptiveFmtsString); 
 
-        // neeeds work!
-
-        const videoInfo = {
-            cbrver: '49.0.2623.87',
-            adformat: '1_5',
-            muted: '0',
-            watermark: ',https://s.ytimg.com/yts/img/watermark/youtube_watermark-vflHX6b6E.png,https://s.ytimg.com/yts/img/watermark/youtube_hd_watermark-vflAzLcD6.png',
-            enablecsi: '1',
-            probe_url: `https://r16---sn-aigllm7l.googlevideo.com/videogoodput?id=${videoId}&source=goodput&range=0-4999&expire=1460485980&ip=207.241.226.76`,
-            signature: '04525CFF07D8736C2E4207FF8D85F851CD44ACC6.6C15E4638F90FEF74C4F932342CC7383FDE6F822',
-            key: 'cms1',
-            ttsurl: `https://www.youtube.com/api/timedtext?v=${videoId}`,
-            caption_tracks: 'n=English+%28auto-generated%29',
-            vmap: `<?xml version="1.0" encoding="UTF-8"?><vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" xmlns:yt="http://youtube.com" version="1.0"></vmap:VMAP>`,      
-            vmap_url: `https://www.youtube.com/vmap?video_id=${videoId}`,
-            adaptive_fmts: adaptiveFmtsString 
-
-        };
-
-        const urlEncodedData = Object.keys(videoInfo)
-            .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(videoInfo[key])}`)
-            .join('&');
-
-        res.send(urlEncodedData);
+        res.send(encodedResponse);
     })
+
     .catch(err => {
         console.error('Error fetching video info:', err);
         res.status(500).send('Failed to fetch video info');
