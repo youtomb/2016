@@ -106,357 +106,7 @@
 <body class="desktop sets-ui lang-en_US lang-case-sensitive" lang="en_US" style="font-size: 118%;">
 
     <div id="leanback">
-        <div id="app-markup" class="focused exp-delayInstantSearch exp-twoRowSearchOrder exp-atomSubscriptionsMultirowShelves exp-enableSafetyModeRename exp-enableWhyThisAdForTv exp-mdxEnablePostplayAutoplay browse-sets-state browse-sets-focused      application"
-            tabindex="-1">
-            <div id="background" class="no-model background" tabindex="-1" style="background-image: url(&quot;/web/20160301042623/https://www.youtube.com/s/tv/html5/c96c1c11/img/default_bg.jpg&quot;);"></div>
-            <div id="watch" class="no-model watch" tabindex="-1">
-                <div id="player">
-                    <div id="leanback-player-container"></div>
-                    <div class=" fresca-slate" tabindex="-1">
-                        <div class="fresca-image" rebound-style="background-image:url({{getImageUrl()}})" style="background-image: url(&quot;&quot;);"></div>
-                        <div class="fresca-message"></div>
-                        <div class="fresca-timeleft"></div>
-                    </div>
-                </div>
-                <div class="title-card no-model watch-title-tray" id="title-tray" tabindex="-1">
-                    <div class="player-meta">
-                        <div class="user-details hidden">
-                            <div class="message">Added by </div>
-                            <div class="avatar no-model image" data-image-url="{{addedByUserAvatarUrl}}" tabindex="-1"></div>
-                        </div>
-                        <div class="player-video-avatar no-model image" data-image-url="{{channelAvatarUrl}}" tabindex="-1"></div>
-                        <div class="player-video-text">
-                            <div class="player-video-title"></div>
-                            <div class="player-video-details">
-                                <div class="username"></div>
-                                <div class="set-context hidden"></div>
-                                <div class="set-context-position hidden">0 of 0</div>
-                                <div class="uploaded-date"></div>
-                                <div class="view-count"><span class="view-count-label"></span></div>
-                                <div class="hidden no-model quality-status" tabindex="-1">
-                                    <div class="badge watch-hd-badge no-model" tabindex="-1">
-                                        <div class="badge-title"></div>
-                                        <div class="badge-subtitle"></div>
-                                        <div class="badge-subtitle2"></div>
-                                    </div>
-                                </div>
-                                <div class="badge watch-live-badge no-model" tabindex="-1">
-                                    <div class="badge-title"></div>
-                                    <div class="badge-subtitle"></div>
-                                    <div class="badge-subtitle2"></div>
-                                </div>
-                                <div class="ypc-preview">Preview: This video requires payment to watch.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="eureka-player-controls-container">
-                    <div id="eureka-player-controls"></div>
-                </div>
-                <div id="mdx-autoplay-interstitial" class="hidden no-model mdx-autoplay-interstitial" tabindex="-1">
-                    <div class="background no-model image" data-image-url="{{model.imageUrl}}" tabindex="-1">
-                        <div class="gradient"></div>
-                    </div>
-                    <div class="content">
-                        <div class="creator no-model image" data-image-url="{{model.channel.imageUrl}}" tabindex="-1"></div>
-                        <div class="content-container">
-                            <div class="up-next-title">Up next in
-                                <div class="up-next-countdown">0</div>
-                            </div>
-                            <div class="title"></div>
-                            <div class="details">
-                                <div class="by">by </div>
-                                <div class="views"></div>
-                                <div class="age"></div>
-                            </div>
-                            <div class="instructions">To cancel, press Stop on your mobile device</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="pivot-post-play" class="hidden no-model pivot-post-play" tabindex="-1">
-                    <div id="post-play-list" class="no-model no-content postplay-horizontal-list" tabindex="-1">
-                        <div class="no-content-message">
-                            <div class="text">No videos are available</div>
-                        </div>
-                        <div class="content">
-                            <div class="no-model carousel" tabindex="-1"></div>
-                            <div class="hidden no-model pivot-sliding-highlighter" tabindex="-1">
-                                <div class="select">Select</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="bottom-half">
-                    <div id="transport-controls" class="no-model transport-controls" tabindex="-1">
-                        <div class="player-controls-widget">
-                            <div id="player-controls" class="player-controls">
-                                <div id="button-list" class=" list" data-model="{{buttonCollection}}" data-enable-sounds="false" tabindex="-1">
-                                    <div class="first icon-ellipsis button" tabindex="-1"><span class="label">More actions</span></div>
-                                    <div class="icon-home button" tabindex="-1"><span class="label">Go Home</span></div>
-                                    <div class="disabled icon-player-prev button" tabindex="-1"><span class="label">Skip backward</span></div>
-                                    <div class="disabled icon-player-rew button" tabindex="-1"><span class="label">Rewind</span></div>
-                                    <div class="selected icon-player-play toggle-button" tabindex="-1"><span>Play</span></div>
-                                    <div class="disabled icon-player-ff button" tabindex="-1"><span class="label">Forward</span></div>
-                                    <div class="disabled icon-player-next button" tabindex="-1"><span class="label">Skip forward</span></div>
-                                    <div class="disabled icon-player-closedcaptions toggle-button" tabindex="-1"><span>Captions</span></div>
-                                    <div class="disabled icon-multiaudio toggle-button" tabindex="-1"><span>Audio channels</span></div>
-                                </div>
-                            </div>
-                            <div class="player-seekbar">
-                                <div id="progress-bar" class=" progress-bar" tabindex="-1">
-                                    <div class="progress-bar-line">
-                                        <div class="progress-bar-background"></div>
-                                        <div class="progress-bar-loaded" rebound-style="width:{{percentageLoaded}}" style="width: 0%;"></div>
-                                        <div class="progress-bar-played" rebound-style="width:{{percentagePlayed}}" style="width: 0%;"></div>
-                                    </div>
-                                    <div class="progress-bar-playhead">
-                                        <div class="no-model cue-range-markers" tabindex="-1"></div>
-                                        <div class="progress-bar-disc" rebound-style="left:{{percentagePlayed}}" style="left: 0%;"></div>
-                                    </div>
-                                </div>
-                                <div id="player-time-elapsed" class="no-model elapsed-time" tabindex="-1">0:00</div>
-                                <div class="player-time-total"></div>
-                                <div class="live-indicator">Live</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hidden skip-ad-button" tabindex="-1">
-                        <div class="label"> <span class="skip-button-text"></span> <span class="skip-symbol icon-player-next"></span> <span class="skip-symbol icon-settings-pair"></span> <span class="skip-symbol icon-cast_on"></span> </div>
-                    </div>
-                    <div class="hidden no-model advertisement-info" tabindex="-1">
-                        <div class="advertisement-info-top">
-                            <div class="youtube-hosted">
-                                <div class="advertisement-avatar no-model image" data-image-url="{{advertiserAvatar}}" tabindex="-1"></div>
-                                <div class="advertisement-info-details">
-                                    <div class="advertisement-title"></div>
-                                    <div class="advertisement-advertiser">
-                                        <div class="badge watch-ad-badge watch-ad" tabindex="-1">
-                                            <div class="badge-title">Ad</div>
-                                            <div class="badge-subtitle hidden"></div>
-                                            <div class="badge-subtitle2 hidden"></div>
-                                        </div> <span class="remaining-duration"></span> <span class="ad-point-separator">•</span> <span class="ad-by">by </span> </div>
-                                </div>
-                            </div>
-                            <div class="third-party">
-                                <div class="badge watch-third-party-ad-badge watch-ad" tabindex="-1">
-                                    <div class="badge-title">Ad</div>
-                                    <div class="badge-subtitle hidden"></div>
-                                    <div class="badge-subtitle2 hidden"></div>
-                                </div> <span class="ad-point-separator">•</span> <span class="remaining-duration"></span> </div>
-                        </div>
-                    </div>
-                    <div class="no-model no-content pivot-shelf-list" tabindex="-1">
-                        <div class="no-content-message">
-                            <div class="text">No videos are available</div>
-                        </div>
-                        <div class=" carousel" tabindex="-1"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="no-model call-to-cast" id="call-to-cast" tabindex="-1"></div>
-            <div id="browse-sets" class="focused no-background browse-sets" tabindex="-1">
-                <div id="browse-search-bar" class="browse-search-bar hidden no-model icon-button" tabindex="-1"> <span class="icon icon-search"></span> <span class="label"></span></div>
-                <div class="youtube-logo-top">
-                    <div class="youtube-logo icon-youtube-logo"></div>
-                    <div class="youtube-unlimited-logo icon-youtube-unlimited-logo"></div>
-                </div>
-                <div class="hidden empty-header" tabindex="-1"></div>
-                <div id="platform-user-icon" class="hidden no-model image" data-image-url="{{platformUserIcon}}" tabindex="-1"></div>
-                <div class="browse-content">
-                    <div id="shelves" class="hidden no-model no-content shelves" tabindex="-1">
-                        <div class="title"></div>
-                        <div class="no-content-message">
-                            <div class="text">No videos are available</div>
-                        </div>
-                        <div class=" carousel" tabindex="-1"></div>
-                    </div>
-                </div>
-            </div>
-            <div id="settings-placeholder"></div>
-            <div id="search" class="hidden no-model search" tabindex="-1">
-                <div class="youtube-logo-top">
-                    <div class="youtube-logo icon-youtube-logo"></div>
-                    <div class="youtube-unlimited-logo icon-youtube-unlimited-logo"></div>
-                </div>
-                <div class="controls">
-                    <div id="text-box-background">
-                        <div id="search-input" class="no-model text-input" tabindex="-1"> <input class="no-model component" autocomplete="off" tabindex="-1" title="search" placeholder="Search..."> <span class="text-input hidden" title="search"></span></div>
-                    </div>
-                    <div id="search-text-entry">
-                        <div class="suggestions-container">
-                            <div id="keyboard-icon" class="icon-search-keyboard"></div>
-                            <div id="search-suggestions" class=" suggestions" tabindex="-1">
-                                <div id="suggest-list" class=" list" data-model="{{model.suggestions}}" data-catch-mouse-move="{{catchMouseMove}}" data-scroll-on-focus="true" tabindex="-1"></div>
-                            </div>
-                        </div>
-                        <div id="search-keyboard" class=" keyboard" tabindex="-1">
-                            <div id="keyboard-grid" class=" grid" tabindex="-1">
-                                <div class="first selected list" data-catch-mouse-move="{{catchRowMouseMove}}" data-item-factory="{{itemFactory}}" data-is-vertical="false" data-loop="{{loopRows}}" data-consume-events="{{consumeEvents}}" data-rate-limit="{{rateLimit}}"
-                                    tabindex="-1">
-                                    <div class="first selected button" tabindex="-1"><span class="label">a</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">b</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">c</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">d</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">e</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">f</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">g</span></div>
-                                    <div class="icon-key-delete button" tabindex="-1"><span class="label"></span></div>
-                                </div>
-                                <div class=" list" data-catch-mouse-move="{{catchRowMouseMove}}" data-item-factory="{{itemFactory}}" data-is-vertical="false" data-loop="{{loopRows}}" data-consume-events="{{consumeEvents}}" data-rate-limit="{{rateLimit}}"
-                                    tabindex="-1">
-                                    <div class="first selected button" tabindex="-1"><span class="label">h</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">i</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">j</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">k</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">l</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">m</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">n</span></div>
-                                    <div class="clear-query-tile button" tabindex="-1"><span class="label">Clear</span></div>
-                                </div>
-                                <div class=" list" data-catch-mouse-move="{{catchRowMouseMove}}" data-item-factory="{{itemFactory}}" data-is-vertical="false" data-loop="{{loopRows}}" data-consume-events="{{consumeEvents}}" data-rate-limit="{{rateLimit}}"
-                                    tabindex="-1">
-                                    <div class="first selected button" tabindex="-1"><span class="label">o</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">p</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">q</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">r</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">s</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">t</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">u</span></div>
-                                    <div class="numbers-toggle-tile button" tabindex="-1"><span class="label">&amp;123</span></div>
-                                </div>
-                                <div class=" list" data-catch-mouse-move="{{catchRowMouseMove}}" data-item-factory="{{itemFactory}}" data-is-vertical="false" data-loop="{{loopRows}}" data-consume-events="{{consumeEvents}}" data-rate-limit="{{rateLimit}}"
-                                    tabindex="-1">
-                                    <div class="first selected button" tabindex="-1"><span class="label">v</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">w</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">x</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">y</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">z</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">-</span></div>
-                                    <div class=" button" tabindex="-1"><span class="label">'</span></div>
-                                </div>
-                            </div>
-                            <div id="letter-suggest" class=" list" data-is-vertical="true" data-catch-mouse-move="true" data-model="{{letterSuggestions}}" tabindex="-1"></div>
-                            <div>
-                                <div id="keyboard-spacebar" class="icon-key-space button" tabindex="-1"><span class="label"></span></div>
-                            </div>
-                        </div>
-                        <div class="search-hint hidden"> Voice search is not supported. </div>
-                        <div class="button search-action-button hidden search-action subtitled-button" id="search-action" tabindex="-1"> <span class="label">Show search results for</span> <span class="subtitle"></span></div>
-                    </div>
-                </div>
-                <div class="search-pairing hidden">
-                    <div class="search-img"></div>
-                    <div class="search-message">
-                        <div class="title">Search Faster</div>
-                        <div class="pairing no-model dial-upsell pairing-dialog" id="pairing" tabindex="-1">
-                            <div class="dialog-large-icon icon-settings-pair"></div>
-                            <div class="connection-instructions icon-dialog-content">
-                                <div class="dial-upsell-content"> Connect one or more devices to the same Wi-Fi network and select
-                                    <div class="cast-icon"> </div>
-                                </div>
-                                <div class="manual-connect-content">
-                                    <div class="connection-steps">
-                                        <div class="with-dial-connect-step1">
-                                            <div class="step1">Or go to</div>
-                                            <div class="pair-url">youtube.com/pair</div>
-                                        </div>
-                                        <div class="no-dial-connect-step1">
-                                            <div class="step1">Go to</div>
-                                            <div class="pair-url">youtube.com/pair</div>
-                                        </div>
-                                        <div class="no-dial-connect-step2">
-                                            <div class="step2">Enter pairing code</div>
-                                            <div class="pair-code">Loading...</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="results-placeholder"></div>
-            </div>
-            <div id="pointer-overlay" class="$pointer-overlay hidden"></div>
-            <div id="guide" class="no-model guide" tabindex="-1">
-                <div id="user-info-background">
-                    <div class="user-info-container">
-                        <div id="guide-user-avatar" rebound-style="background-image: url({{userAvatar}})" style="background-image: url(&quot;&quot;);"></div>
-                        <div class="guide-user-text">
-                            <div class="guide-user-name"></div>
-                            <div class="guide-user-unlimited"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapsed-guide"></div>
-                <div class="guide-carousel-background"></div>
-                <div class="collapsed-guide-icons">
-                    <div class="collapsed-guide-icon icon-guide-what-to-watch"></div>
-                    <div class="collapsed-guide-icon icon-guide-my-subs"></div>
-                    <div class="collapsed-guide-icon icon-popular"></div>
-                    <div class="collapsed-guide-icon icon-music"></div>
-                    <div class="collapsed-guide-icon icon-ellipsis"></div>
-                </div>
-                <div id="error-message">Sorry, the rest of this Guide isn’t available right now.</div>
-                <div class="hidden sliding-highlighter" tabindex="-1">
-                    <div class="select">Select</div>
-                </div>
-                <div class="hidden carousel" tabindex="-1"></div>
-            </div>
-            <div class=" application-message" tabindex="-1">Unable to load channel</div>
-            <div id="spinner" class="hidden no-model spinner" tabindex="-1">
-                <div class="fallback-loading-indicator">LOADING...</div>
-                <div class="loading-indicator">
-                    <div class="dot" id="dot1"></div>
-                    <div class="dot" id="dot2"></div>
-                    <div class="dot" id="dot3"></div>
-                    <div class="dot" id="dot4"></div>
-                    <div class="dot" id="dot5"></div>
-                    <div class="dot" id="dot6"></div>
-                    <div class="dot" id="dot7"></div>
-                    <div class="dot" id="dot8"></div>
-                </div>
-            </div>
-            <h1 class="hidden debug-watermark" tabindex="-1"></h1>
-            <div class="browse-sets no-model dialog" id="dialog" tabindex="-1">
-                <div id="dialog-wrapper">
-                    <div class="dialog-icon"></div>
-                    <!-- Only used for flat UI -->
-                    <div class="dialog-contents">
-                        <div class="header">
-                            <div class="title"></div>
-                        </div>
-                        <div class="no-model component" id="dialog-view" tabindex="-1"></div>
-                        <div class="buttons">
-                            <div id="dialog-cancel-button" class="no-model button" tabindex="-1"><span class="label"></span></div>
-                            <div id="dialog-ok-button" class="no-model button" tabindex="-1"><span class="label"></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="$voice-footer hidden"></div>
-            <div id="voice-search" class="$voice-search hidden"></div>
-            <div id="legend" class="guide search legend" tabindex="-1">
-                <div class="back no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Go Back</span></div>
-                <div class="back-to-top no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Back to top</span></div>
-                <div class="exit no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Exit</span></div>
-                <div class="reversed-back no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Go Back</span></div>
-                <div class="search no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Search</span></div>
-                <div class="space no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Space</span></div>
-                <div class="voice-search no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Voice Search</span></div>
-                <div class="home no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Go Home</span></div>
-                <div class="modify no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Modify</span></div>
-                <div class="next no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Next video</span></div>
-                <div class="delete no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Delete</span></div>
-                <div class="guide no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Open Guide</span></div>
-                <div class="close-guide no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Close Guide</span></div>
-                <div class="toggle-video-info no-model legend-item" tabindex="-1"> <span class="icon "></span> <span class="title">Toggle Video Info</span></div>
-            </div>
-            <div class=" toaster" tabindex="-1"></div>
-            <div class="no-model engagement-indicator" tabindex="-1"></div>
-            <div class="$snapControls hidden" id="snap-controls" data-hidden-by-default="true"></div>
-            <div class="$context-menu hidden" id="context-menu"></div>
-            <div class="hidden no-model fps" tabindex="-1"></div>
-        </div>
+     
     </div>
     <script>
         window['swfConfig'] = {
@@ -511,7 +161,7 @@
             "language": null,
             "tv_binary": "/assets/app-prod.js",
             "flags": {
-                "atomSubscriptionsMultirowShelves": true,
+                "atomSubscriptionsMultirowShelves": false,
                 "twoRowSearchResults": false,
                 "enableSafetyModeRename": true,
                 "useMdxProtocolV3": false,
@@ -541,7 +191,7 @@
                 "useYoutubeiDomain": false,
                 "twoRowSearchOrder": 1,
                 "newMdxSkipButtonCast": false,
-                "useColorButtons": false,
+                "useColorButtons": true,
                 "anchovyLimitedMemory": false,
                 "freshTransport": false,
                 "mdxIgnoreFlings": false,
@@ -569,10 +219,11 @@
                 "h5_exceptions_sw": 100,
                 "tv_4k_house_channel": true
             },
-            "tv_css": "",
+            "tv_css": "http://localhost:8090/assets/app-prod.css",
+            "background": "",
             "server_ua": "Mozilla\/5.0 (compatible; heritrix\/3.3.0-SNAPSHOT-20140702-2247 +http:\/\/archive.org\/details\/archive.org_bot),gzip(gfe)",
             "theme": "cl",
-            "cast_data": "",
+            "is_sandboxed": "false"
 
         };
         window['loader'] = "live";
@@ -589,6 +240,8 @@
     <script>
      
     </script>
+
+
 
 
 

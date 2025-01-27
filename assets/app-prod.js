@@ -979,7 +979,7 @@ if (!self.__WB_pmw) {
               GUIDE_CIRCULAR_MASK: "guide-circular-mask",
               HAPPY: "icon-hats-happy",
               GAMING: "icon-gaming",
-              MOVIE: "icon-flim",
+              FILM: "icon-film",
               LIKES_PLAYLIST: "icon-like",
               MEH: "icon-hats-neutral",
               MUSIC: "icon-music",
@@ -7461,9 +7461,25 @@ if (!self.__WB_pmw) {
           a.detail[0] ? this.Td("dialog") : (this.I.set(!1), this.dg());
           this.render()
       };
+      
       d.Td = function(a) {
-          if (!this.h || this.h.ba()) this.I.set("dialog" == a), a = this.va(a), a.show(), a.$(), this.render(), a.$()
-      };
+        if (!this.h || this.h.ba()) {
+            this.I.set("dialog" == a);
+            a = this.va(a);
+    
+            // Ensure 'a' is valid
+            if (a) {
+                // If 'a' is a Dialog object, it will have a show method
+                a.show();  // Call the show method
+                a.$();
+                this.render();
+                a.$();
+            } else {
+                console.error("Error: 'a' is undefined or invalid.");
+            }
+        }
+    };
+    
       d.gz = function() {
           var a = this.M();
           this.W != a && (this.W = a, this.h && (a ? (this.h.show(), this.h.$()) : this.h.ba() || (this.h.U(), this.dg())), this.o && a && this.o.U(), this.render())
@@ -17818,7 +17834,7 @@ if (!self.__WB_pmw) {
           this.f.Nf({
               appLabel: this.R.label || "unknown",
               appLoader: this.R.loader || "unknown",
-              backgroundPath: this.g + "default_bg.jpg",
+              backgroundPath: "http://localhost:8090/assets/" + "default_bg.jpg",
               htmlPath: this.g + "/html",
               imagePath: this.g + "/img",
               userAgent: zc
@@ -20424,6 +20440,7 @@ if (!self.__WB_pmw) {
           this.g.clearTimeout(this.ea);
           this.g.clearTimeout(this.D)
       };
+      
       d.LG = function(a) {
           a = a || 15;
           this.g.clearTimeout(this.D);
@@ -20431,6 +20448,7 @@ if (!self.__WB_pmw) {
               this.fn()
           }, this), 1E3 * a)
       };
+
       d.Eu = function(a) {
           a = {
               client_id: this.Zj(),
@@ -20548,9 +20566,15 @@ if (!self.__WB_pmw) {
             this.ph(e);   // Execute the provided callback with the response
     
         } else {
-            // If no refresh token, call the callback with null
+          
+            b *= 2;
 
+            console.log("Retrying request with delay...");
+            this.ea = this.g.setTimeout(x(function() {
+                console.log("Retrying ky function"); // Log retry attempt
                 this.ky(a, b, c);  // Retry the token request
+            }, this), b);  // The delay is set to b (which will increase each time)
+    
     
         }
     };
@@ -20566,12 +20590,14 @@ if (!self.__WB_pmw) {
           this.G.remove("tv-refresh-token");
           this.G.flush()
       };
+
       d.lz = function() {
           var a = this.Th();
           a && (a = new cg("POST", "/o/oauth2/revoke", null, {
               token: a
           }), this.B().Pb(a))
       };
+
       d.CR = function(a, b) {
           this.A = a;
           this.T = this.g.sd() + 1E3 * b;
@@ -27137,7 +27163,7 @@ if (!self.__WB_pmw) {
               var b = null;
               this.bb && (b = this.bb.xK(this));
               var c = x(this.zV, this);
-              b || (b = new Kh("//web.archive.org/web/20160228021433/http://www.google.com/images/cleardot.gif"), b.zg());
+              b || (b = new Kh("http://localhost:8090/assets/cleardot.gif"), b.zg());
               tt(b.toString(), 1E4, c)
           } else Z(2);
           this.gw(a)
@@ -27445,8 +27471,8 @@ if (!self.__WB_pmw) {
               this.g.stop();
               this.j = a || null;
               this.l = b || 0;
-              a = this.A + "/test";
-              b = this.A + "/bind";
+              a =  "http://localhost:8070/http://youtube.com/api/lounge/bc/" + "/test";
+              b = "http://localhost:8090/api/lounge/bc" + "/bind";
               var e = this.YP(c),
                   f = this.f;
               f && f.Mz(null);
@@ -27642,7 +27668,7 @@ if (!self.__WB_pmw) {
           aq(x(this.oA, this), 864E5)
       };
       d.sJ = function(a) {
-          lq(this.Uh("/pairing/generate_screen_id"), {
+          lq(("http://localhost:8070/https://www.youtube.com/api/lounge/pairing/generate_screen_id"), {
               method: "GET",
               format: "RAW",
               yd: function(b) {
@@ -27659,7 +27685,7 @@ if (!self.__WB_pmw) {
               screen_id: this.f.id || "",
               screen_name: a
           };
-          this.j = (c = lq(this.Uh("/pairing/get_pairing_code", {
+          this.j = (c = lq(("http://localhost:8070/https://www.youtube.com/api/lounge/pairing/get_pairing_code", {
               ctx: c
           }), {
               wc: a,
@@ -27672,7 +27698,7 @@ if (!self.__WB_pmw) {
           })) ? x(c.abort, c) : q
       };
       d.AS = function(a, b, c, e) {
-          this.f ? lq(this.Uh("/pairing/register_pairing_code"), {
+          this.f ? lq(("http://localhost:8070/https://www.youtube.com/api/lounge/pairing/register_pairing_code"), {
               wc: {
                   access_type: "permanent",
                   app: c,
@@ -27687,7 +27713,7 @@ if (!self.__WB_pmw) {
           }) : e(!1)
       };
       d.iW = function(a, b) {
-          this.f && lq(this.Uh("/pairing/unregister_pairing_code", {
+          this.f && lq(("http://localhost:8070/https://www.youtube.com/api/lounge/pairing/unregister_pairing_code", {
               s: b
           }), {
               wc: {
@@ -27706,7 +27732,7 @@ if (!self.__WB_pmw) {
               }, this);
               b(f)
           }, this);
-          lq(this.Uh("/pairing/get_lounge_token_batch"), {
+          lq(("http://localhost:8070/https://www.youtube.com/api/lounge/pairing/get_lounge_token_batch"), {
               wc: {
                   screen_ids: a
               },
@@ -29061,7 +29087,7 @@ if (!self.__WB_pmw) {
               initial: ""
           }));
           this.f.F((new S("isBackgroundVisible", Sm)).Z().X({
-              initial: !0
+              initial: 1
           }));
           this.f.F((new S("isLoading", Sm)).Z().X({
               initial: !1

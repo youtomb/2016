@@ -121,7 +121,7 @@
                   }
                 },
                 "icon": {
-                    "iconType": "MOVIE"
+                    "iconType": "FILM"
                 },
                 "trackingParams": "CAgQnOQDGAMiEwi0qMCnu4yLAxWQzBYJHWpEKpY=",
                 "formattedTitle": {
@@ -201,7 +201,7 @@
                   "navigationEndpoint": {
                     "clickTrackingParams": "CAIQtSwYACITCLSowKe7jIsDFZDMFgkdakQqlg==",
                     "applicationSettingsEndpoint": {
-                      "hack": true
+                      "hack": false
                     }
                   },
                   "icon": {
