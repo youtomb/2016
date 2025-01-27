@@ -24,6 +24,8 @@ A project to revive the old 2015-2016 YouTubeTV HTML5 Web App.
 
 - cors-anywhere [https://github.com/Rob--W/cors-anywhere?tab=readme-ov-file]
 
+- dx for his knowlage 
+
 ## Why We Use "youtube-dl-exec"
 
 This is so we can get video urls, without having to deal with all the chiper bs you have
