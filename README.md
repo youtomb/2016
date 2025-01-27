@@ -12,7 +12,7 @@ A project to revive the old 2015-2016 YouTubeTV HTML5 Web App.
 ![Screenshot 2](screenshots/s2.png)
 ![Screenshot 3](screenshots/s3.png)
 ![Screenshot 4](screenshots/s4.png)
-![Screenshot 5](screenshots/s4.png)
+![Screenshot 5](screenshots/s5.png)
 
 ## Credits
 
