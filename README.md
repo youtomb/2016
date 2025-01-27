@@ -26,6 +26,8 @@ A project to revive the old 2015-2016 YouTubeTV HTML5 Web App.
 
 - dx for his knowlage 
 
+- Venus5687 found a sound effect
+
 ## Why We Use "youtube-dl-exec"
 
 This is so we can get video urls, without having to deal with all the chiper bs you have
