@@ -54,33 +54,23 @@ async function requestDeviceCode(client_id, scope) {
     }
 }
 
-async function requestToken(client_id, device_code, client_secret, grant_type, refresh_token = null) {
-    const tokenUrl = 'https://oauth2.googleapis.com/token';
-    let params;
 
-    if (grant_type === 'http://oauth.net/grant_type/device/1.0') {
-        params = qs.stringify({
-            client_id: client_id,
-            client_secret: client_secret,
-            device_code: device_code,
-            grant_type: 'urn:ietf:params:oauth:grant-type:device_code'
-        });
-    } else if (grant_type === 'refresh_token' && refresh_token) {
-        params = qs.stringify({
-            client_id: client_id,
-            client_secret: client_secret,
-            refresh_token: refresh_token,
-            grant_type: 'refresh_token'
-        });
-    } else {
-        throw new Error('Invalid grant_type or missing refresh_token for refresh grant type.');
-    }
+async function requestToken(client_id, device_code, client_secret, interval) {
+    const tokenUrl = 'https://oauth2.googleapis.com/token';
+    
+    const params = qs.stringify({
+        client_id: client_id,
+        client_secret: client_secret,
+        device_code: device_code,
+        grant_type: 'urn:ietf:params:oauth:grant-type:device_code'  
+    });
 
     try {
+
         console.log('Requesting token with the following params:');
         console.log(`client_id: ${client_id}`);
-        console.log(`device_code: ${device_code || 'N/A'}`);
-        console.log(`client_secret: ${client_secret}`);
+        console.log(`device_code: ${device_code}`);
+        console.log(`client_secret: ${client_secret}`); 
 
         const response = await axios.post(tokenUrl, params, {
             headers: {
@@ -90,7 +80,7 @@ async function requestToken(client_id, device_code, client_secret, grant_type, r
 
         if (response.data.access_token) {
             console.log('Authorization successful, server response:', response.data);
-            return response.data;
+            return response.data;  
         }
 
         if (response.data.error === 'authorization_pending') {
@@ -99,6 +89,7 @@ async function requestToken(client_id, device_code, client_secret, grant_type, r
             throw new Error('Unexpected error during token request: ' + response.data.error_description);
         }
     } catch (error) {
+  
         console.error('Error during token request:', error.message);
 
         if (error.response) {
@@ -110,13 +101,13 @@ async function requestToken(client_id, device_code, client_secret, grant_type, r
                 console.error('Error description:', error.response.data.error_description);
             }
         } else {
+
             console.error('No response from server:', error.message);
         }
 
         throw new Error(`Error requesting token: ${error.message}`);
     }
 }
-
 
 const revokeToken = async (token) => {
     const revokeUrl = 'https://oauth2.googleapis.com/revoke';
@@ -140,7 +131,6 @@ const revokeToken = async (token) => {
         throw new Error(`Error during token revocation: ${error.message}`);
     }
 };
-
 
 async function getYouTubeChannelData() {
     try {
@@ -177,30 +167,30 @@ async function getYouTubeChannelData() {
                 if (guideAccount && guideAccount.title && guideAccount.thumbnail) {
                     const channelData = {
                         kind: 'youtube#channel',
-                        id: guideAccount.title.simpleText, 
+                        id: guideAccount.title.simpleText,
                         snippet: {
-                            title: guideAccount.title.simpleText,
-                            description: guideAccount.title.simpleText, 
+                            title: guideAccount.title.simpleText, 
+                            description: guideAccount.title.simpleText,
+                            displayName: guideAccount.title.simpleText, 
                             thumbnails: {
                                 default: {
-                                    url: guideAccount.thumbnail.thumbnails[0].url,
+                                    url: guideAccount.thumbnail.thumbnails[0].url, 
                                 },
                             },
                             localized: {
                                 title: guideAccount.title.simpleText, 
-                                description: guideAccount.title.simpleText,
+                                description: guideAccount.title.simpleText, 
                             },
                         },
                         statistics: {
                             viewCount: '0', 
-                            subscriberCount: '0',
+                            subscriberCount: '0', 
                             videoCount: '0', 
                         },
                     };
 
                     return channelData;
                 } else {
-                 
                     console.warn('Skipping invalid entry:', item);
                     return null;
                 }
@@ -244,11 +234,12 @@ const oauthRouter = (app) => {
         }
     });
 
-    app.post('/o/oauth2/token', async (req, res) => {
-        const { client_id, device_code, client_secret, grant_type, refresh_token } = req.body;
 
-        if (!client_id || !client_secret || (!device_code && grant_type !== 'refresh_token')) {
-            const errorMessage = 'Client ID, client secret, and device_code (for device flow) or refresh_token (for refresh flow) are required.';
+    app.post('/o/oauth2/token', async (req, res) => {
+        const { client_id, device_code, client_secret } = req.body; 
+    
+        if (!client_id || !device_code || !client_secret) {
+            const errorMessage = 'Client ID, client secret, and device_code are required.';
             res.status(400).send(errorMessage);
             logErrorToFile(errorMessage);
             return;
@@ -256,30 +247,20 @@ const oauthRouter = (app) => {
     
         try {
 
-            const tokenData = await requestToken(client_id, device_code, client_secret, grant_type, refresh_token);
+            const tokenData = await requestToken(client_id, device_code, client_secret);
     
+       
             if (tokenData.access_token) {
-
-                const savedData = {
-                    access_token: tokenData.access_token,
-                    expires_in: tokenData.expires_in,
-                    token_type: tokenData.token_type,
-                };
-    
-                if (tokenData.refresh_token) {
-                    savedData.refresh_token = tokenData.refresh_token;
-                } else if (grant_type === 'refresh_token') {
-                    savedData.refresh_token = refresh_token;
-                }
-    
-                fs.writeFileSync(TOKEN_FILE, JSON.stringify(savedData, null, 2), 'utf8');
                 res.json(tokenData);
+                fs.writeFileSync(TOKEN_FILE, JSON.stringify(tokenData, null, 2), 'utf8');
             } else {
+
                 const errorMessage = 'Invalid token response: ' + JSON.stringify(tokenData);
                 res.status(400).send(errorMessage);
                 logErrorToFile(errorMessage);
             }
         } catch (error) {
+
             console.error('Error during token request:', error.message);
     
             if (error.response) {
@@ -291,15 +272,17 @@ const oauthRouter = (app) => {
                 console.error('Error response data:', errorDetails);
     
                 if (errorType === 'authorization_pending') {
+                    
                     const errorMessage = 'Authorization pending. Please authorize the device.';
-                    res.status(428).send(errorMessage);
+                    res.status(428).send(errorMessage); 
                     logErrorToFile(`Authorization pending. Waiting for user authorization.`);
                 } else if (errorType === 'slow_down') {
+ 
                     console.log('Received slow_down error, retrying...');
                     const retryDelay = 2000; 
                     setTimeout(async () => {
                         try {
-                            const tokenData = await requestToken(client_id, device_code, client_secret, grant_type, refresh_token);
+                            const tokenData = await requestToken(client_id, device_code, client_secret);
                             res.json(tokenData);
                             fs.writeFileSync(TOKEN_FILE, JSON.stringify(tokenData, null, 2), 'utf8');
                         } catch (retryError) {
@@ -307,7 +290,7 @@ const oauthRouter = (app) => {
                             res.status(418).send(retryErrorMessage);
                             logErrorToFile(retryErrorMessage);
                         }
-                    }, retryDelay);
+                    }, retryDelay); 
                 } else if (error.response.status === 400) {
                     const errorMessage = `Bad request: ${errorDescription}`;
                     res.status(400).send(errorMessage);
@@ -323,12 +306,13 @@ const oauthRouter = (app) => {
                 }
             } else {
                 const errorMessage = 'Authorization pending. Please authorize the device.';
-                res.status(428).send(errorMessage);
+                res.status(428).send(errorMessage); 
                 logErrorToFile(`Authorization pending. Waiting for user authorization.`);
             }
         }
     });
-    
+
+
     app.post('/o/oauth2/revoke', async (req, res) => {
         const { token } = req.body;
         
@@ -361,63 +345,10 @@ const oauthRouter = (app) => {
             logErrorToFile(errorMessage);
         }
     });
-    app.get('/user/user_pfp', async (req, res) => {
-        try {
-            // Fetch YouTube channel data
-            const channelData = await getYouTubeChannelData();
-    
-            // Log the fetched channel data for inspection
-            console.log('Fetched YouTube channel data:', JSON.stringify(channelData, null, 2));
-    
-            // Recursive function to find the first thumbnail URL in the JSON response
-            function findThumbnailUrl(obj) {
-                if (Array.isArray(obj)) {
-                    for (let item of obj) {
-                        const result = findThumbnailUrl(item);
-                        if (result) {
-                            return result;  // Return the first found URL
-                        }
-                    }
-                } else if (typeof obj === 'object' && obj !== null) {
-                    for (let key in obj) {
-                        if (obj.hasOwnProperty(key)) {
-                            if (key === 'url' && obj[key]) {
-                                return obj[key];  // Return the URL
-                            }
-                            const result = findThumbnailUrl(obj[key]);
-                            if (result) {
-                                return result;  // Return the first found URL
-                            }
-                        }
-                    }
-                }
-                return null;  
-            }
 
-            const profilePictureUrl = findThumbnailUrl(channelData);
-    
-            if (profilePictureUrl) {
-                axios.get(profilePictureUrl, { responseType: 'arraybuffer' })
-                    .then(response => {
-                        res.set('Content-Type', 'image/jpeg');
-                        res.send(response.data); 
-                    })
-                    .catch(err => {
-                        res.status(500).json({ error: 'Error fetching the profile picture image.' });
-                    });
-            } else {
-                res.status(404).json({ error: 'Profile picture not found' });
-            }
-        } catch (error) {
-            const errorMessage = `Error fetching YouTube channel data for profile picture: ${error.message}`;
-            console.error(errorMessage);
-            res.status(500).send(errorMessage);
-        }
-    });
-    
-    
-    
 
+
+    
     
 
 };

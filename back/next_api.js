@@ -32,14 +32,13 @@ async function fetchNextData(videoId) {
                 enableSafetyMode: false,
             },
         },
-        params: params, // Using the fixed params string
-        videoId: videoId, // Only pass the videoId
+        params: params, 
+        videoId: videoId, 
     };
 
     try {
         console.log('Sending request to YouTube /next API with payload:', postData);
 
-        // Perform the POST request with axios
         const response = await axios.post(apiUrl, postData, {
             headers: {
                 'Content-Type': 'application/json',
@@ -48,7 +47,7 @@ async function fetchNextData(videoId) {
 
         console.log('Received response from YouTube /next API.');
 
-        // Log the response data to a file
+    
         const logsDir = path.join(__dirname, 'logs');
         if (!fs.existsSync(logsDir)) {
             fs.mkdirSync(logsDir);

@@ -2,30 +2,19 @@ const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 
-function addDataToContent(data) {
-    console.log('Received Data:', data);
-
-    if (data) {
-        data.newField = 'Added this new data';
-
-        if (data.content && data.content.horizontalListRenderer) {
-            data.content.horizontalListRenderer.newList = 'Added new data here!';
-        }
-    }
-    
-    return data;
-}
-
 async function fetchBrowseData(browseId) {
     const apiKey = 'AIzaSyDCU8hByM-4DrUqRUYnGn-3llEO78bcxq8';
     const apiUrl = `https://www.googleapis.com/youtubei/v1/browse?key=${apiKey}`;
-
+    
+    if (browseId == "home") {
+        browseId = "FEtopics";
+    }
 
     const postData = {
         context: {
             client: {
                 clientName: 'TVHTML5',
-                clientVersion: '7.20240701.16.00',
+                clientVersion: '7.20200918',
                 hl: 'en',
                 gl: 'US',
             }
@@ -48,12 +37,12 @@ async function fetchBrowseData(browseId) {
 
         const logsDir = path.join(__dirname, 'logs');
         if (!fs.existsSync(logsDir)) {
-            fs.mkdirSync(logsDir); 
+            fs.mkdirSync(logsDir);
         }
 
-        const timestamp = new Date().toISOString().replace(/[:.]/g, '-'); 
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
         const logFilePath = path.join(logsDir, `response-${timestamp}.json`);
-        fs.writeFileSync(logFilePath, JSON.stringify(updatedData, null, 2)); 
+        fs.writeFileSync(logFilePath, JSON.stringify(updatedData, null, 2));
 
         console.log('Updated response saved to log file:', logFilePath);
 
@@ -62,6 +51,30 @@ async function fetchBrowseData(browseId) {
         console.error('Error fetching browse data:', error.message);
         throw new Error('Failed to fetch data from YouTube Browse API.');
     }
+}
+
+function addDataToContent(data) {
+
+    const contents = data.contents?.tvBrowseRenderer?.content?.tvSurfaceContentRenderer?.content?.sectionListRenderer?.contents;
+
+    if (contents) {
+        contents.forEach((section, index) => {
+            if (section.shelfRenderer && section.shelfRenderer.content && section.shelfRenderer.content.horizontalListRenderer) {
+                data.content = data.content || {}; 
+                data.content.horizontalListRenderer = data.content.horizontalListRenderer || {}; 
+                data.content.horizontalListRenderer.items = section.shelfRenderer.content.horizontalListRenderer.items || [];  
+                delete section.shelfRenderer;
+            }
+        });
+
+        data.content.sectionListRenderer = {
+            contents: contents
+        };
+
+        delete data.contents;
+    }
+
+    return data;
 }
 
 module.exports = { fetchBrowseData };

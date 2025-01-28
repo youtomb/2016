@@ -2336,6 +2336,7 @@ if (!self.__WB_pmw) {
           this.xg = this.gc = null;
           this.mh = db
       }
+      
       C(K, qe);
       d = K.prototype;
       d.lc = function() {
@@ -3894,6 +3895,7 @@ if (!self.__WB_pmw) {
         console.log('Is Enabled:', u);
 
           K.call(this);
+
           this.Aa = a;
           this.h = b;
           this.aa = c;
@@ -3909,12 +3911,16 @@ if (!self.__WB_pmw) {
           this.Px = this.Ja.ia("[[No videos are available [test] |The message shown when a row has no videos to show.]]");
           this.list = null;
           this.g = new N;
+          
           this.Bd(this.g);
+
           this.i = this.j = null;
           this.Na = q;
           this.f = g;
           this.tb = !0
+
       }
+
       C(We, K);
 
       d = We.prototype;
@@ -3958,10 +3964,7 @@ if (!self.__WB_pmw) {
               service: b,
               continuerThresholdDistance: 1
           }));
-          this.h.ez();
-          this.Wq();
-          this.render();
-          this.tB()
+    
       };
       d.gZ = function(a, b) {
           if (!b.continuationContents || !b.continuationContents.sectionListContinuation) return {
@@ -9563,12 +9566,22 @@ if (!self.__WB_pmw) {
               b = a.getName();
           return "browse-sets" == b ? x(this.FO, this, a.Lc()) : "settings" == b ? x(this.jx, this, "applicationSettingsEndpoint") : "search" == b ? x(this.jx, this, "searchEndpoint") : null
       };
+      
       d.FO = function(a, b) {
-          var c = n("guideEntryRenderer.navigationEndpoint.browseEndpoint", b);
-          if (!c) return !1;
-          c = c.browseId;
-          return c == a ? !0 : "default" == a && "FEtopics" == c
-      };
+        var c = n("guideEntryRenderer.navigationEndpoint.browseEndpoint", b);
+        console.log("Value of c before checking:", c); // Log intermediate value of `c`
+        if (!c) {
+            console.log("Function returns: false (c is undefined or null)");
+            return !1;
+        }
+        c = c.browseId;
+        console.log("Value of c.browseId:", c); // Log `c.browseId`
+    
+        var result = c == a ? !0 : "default" == a && "FEtopics" == c;
+        console.log("Function result:", result); // Log the final result
+        return result;
+    };
+    
       d.jx = function(a, b) {
           return !!n("guideEntryRenderer.navigationEndpoint." + a, b)
       };
@@ -20227,20 +20240,50 @@ if (!self.__WB_pmw) {
           this.f && (this.f.i != a && (this.f.B = this.f.i), this.f.i = a)
       };
       d.ny = function(a) {
-          var b = {};
-          b.features = zb(a.features).join(",");
-          b.has_subscribe = a.o ? 1 : 0;
-          b.has_trailer = a.l ? 1 : 0;
-          b.heos = a.j ? 1 : 0;
-          b.kpc = a.g;
-          b.index = a.h[a.f] || 0;
-          b.row = a.f;
-          b.rows = a.rows.join(",");
-          b.browse_id = a.browseId;
-          if ("FEtopics" == a.browseId || a.browseId == this.i && this.h.showTopicsPage) b.topic = a.i, b.prev_topic = a.B;
-          this.h0(a);
-          return b
-      };
+        var b = {};
+        
+        // Log input parameter
+        console.log("Input parameter (a):", a);
+        
+        b.features = zb(a.features).join(",");
+        console.log("Features (b.features):", b.features);
+        
+        b.has_subscribe = a.o ? 1 : 0;
+        console.log("Has Subscribe (b.has_subscribe):", b.has_subscribe);
+        
+        b.has_trailer = a.l ? 1 : 0;
+        console.log("Has Trailer (b.has_trailer):", b.has_trailer);
+        
+        b.heos = a.j ? 1 : 0;
+        console.log("HEOS (b.heos):", b.heos);
+        
+        b.kpc = a.g;
+        console.log("KPC (b.kpc):", b.kpc);
+        
+        b.index = a.h[a.f] || 0;
+        console.log("Index (b.index):", b.index);
+        
+        b.row = a.f;
+        console.log("Row (b.row):", b.row);
+        
+        b.rows = a.rows.join(",");Z
+        console.log("Rows (b.rows):", b.rows);
+        
+        b.browse_id = a.browseId;
+        console.log("Browse ID (b.browse_id):", b.browse_id);
+        
+        if ("FEtopics" == a.browseId || (a.browseId == this.i && this.h.showTopicsPage)) {
+            b.topic = a.i;
+            b.prev_topic = a.B;
+            console.log("Topic and Prev Topic (b.topic, b.prev_topic):", b.topic, b.prev_topic);
+        }
+        
+        this.h0(a);
+        console.log("Final object (b):", b);
+        
+        return b;
+    };
+        
       d.h0 = function(a) {
           a.g = 0;
           a.j = !1;
@@ -24244,6 +24287,7 @@ if (!self.__WB_pmw) {
           mine: !0,
           part: "snippet,statistics"
       };
+
       Pr.prototype.get = function(a, b, c) {
           var e = new cg("GET", "/api/youtube/channels", Qr);
           a = x(this.h, this, a);
@@ -24254,6 +24298,7 @@ if (!self.__WB_pmw) {
           return x(f.qm, f)
 
       };
+      
       Pr.prototype.h = function(a, b) {
           a(this.f(b))
       };
@@ -29924,6 +29969,7 @@ if (!self.__WB_pmw) {
           this.channel = null
       }
       C(Ku, Hu);
+      
       Ku.prototype.uL = function() {
           return this.channel && this.channel.displayName || ""
       };

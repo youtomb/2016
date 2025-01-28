@@ -24,34 +24,6 @@
             {
               "guideEntryRenderer": {
                 "navigationEndpoint": {
-                  "clickTrackingParams": "CA0QtSwYACITCLSowKe7jIsDFZDMFgkdakQqlg==",
-                  "signalNavigationEndpoint": {
-                    "signal": "ACCOUNT_SETTINGS"
-                  }
-                },
-                "icon": {
-                  "iconType": "SIGN_IN"
-                },
-                "trackingParams": "CA0QtSwYACITCLSowKe7jIsDFZDMFgkdakQqlg==",
-                "formattedTitle": {
-                  "runs": [
-                    {
-                      "text": "Sign in"
-                    }
-                  ]
-                }
-              }
-            }
-          ],
-          "trackingParams": "CAwQ5isYACITCLSowKe7jIsDFZDMFgkdakQqlg=="
-        }
-      },
-      {
-        "guideSectionRenderer": {
-          "items": [
-            {
-              "guideEntryRenderer": {
-                "navigationEndpoint": {
                   "clickTrackingParams": "CAsQtSwYACITCLSowKe7jIsDFZDMFgkdakQqlg==",
                   "searchEndpoint": {
                     "query": ""
