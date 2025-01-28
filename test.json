@@ -1,0 +1,226 @@
+{
+  "responseContext": {
+    "visitorData": "CgtTNVNpMC1SVjdQTSjo8OG8BjIKCgJVUxIEGgAgTw%3D%3D",
+    "serviceTrackingParams": [
+      {
+        "service": "GFEEDBACK",
+        "params": [
+          {
+            "key": "logged_in",
+            "value": "1"
+          },
+          {
+            "key": "e",
+            "value": "23804281,23943651,24004644,24077241,24166867,24181174,24241378,24290153,24439361,24534951,24545875,24548629,24566687,39328397,51010235,51017346,51020570,51025415,51050361,51053689,51063643,51089007,51098299,51111738,51115184,51124104,51125020,51146484,51151423,51152050,51157841,51160338,51174143,51176511,51183910,51193717,51204329,51217504,51222382,51222973,51224490,51227037,51228850,51230478,51237842,51241028,51242448,51248734,51255676,51256084,51274583,51276557,51276565,51281227,51285717,51287196,51292055,51294322,51296439,51298020,51299710,51299724,51303432,51303667,51303669,51303789,51304155,51305839,51310742,51313109,51313767,51313802,51318845,51322669,51326932,51330194,51332896,51333103,51333879,51334605,51335392,51335928,51337186,51340662,51341975,51342753,51342857,51346046,51347325,51348741,51349913,51350166,51351446,51353231,51353393,51353454,51353498,51354114,51355679,51357477,51361727,51362455,51362643,51362857,51365256,51365460,51365462,51366423,51366864,51367993,51369295,51369905,51370094,51370274,51371521,51372971,51374219,51374438,51375168,51375719,51376049,51376330,51376516,51379274,51380894,51381276,51381857,51381974,51383428,51383747,51384888,51385023,51385278,51386539,51387373,51388799,51388998,51389629,51393358"
+          }
+        ]
+      }
+    ]
+  },
+  "items": [
+    {
+      "guideSectionRenderer": {
+        "items": [
+          {
+            "guideAccountEntryRenderer": {
+              "title": {
+                "accessibility": {
+                  "accessibilityData": {
+                    "label": "Account"
+                  }
+                },
+                "simpleText": "Nicholas Brooks"
+              },
+              "thumbnail": {
+                "thumbnails": [
+                  {
+                    "url": "https://yt3.ggpht.com/yti/ANjgQV8y24P02td9Sd_Xf1-bVBRdqqm_U00zYGqY6x43YrQ=s88-c-k-c0x00ffffff-no-rj",
+                    "width": 88,
+                    "height": 88
+                  }
+                ]
+              },
+              "navigationEndpoint": {
+                "clickTrackingParams": "CA0QtSwYACITCJquiprkl4sDFXSY5QcdUmQoYw==",
+                "signalNavigationEndpoint": {
+                  "signal": "ACCOUNT_SETTINGS"
+                }
+              },
+              "trackingParams": "CA0QtSwYACITCJquiprkl4sDFXSY5QcdUmQoYw=="
+            }
+          }
+        ],
+        "trackingParams": "CAwQ5isYACITCJquiprkl4sDFXSY5QcdUmQoYw=="
+      }
+    },
+    {
+      "guideSectionRenderer": {
+        "items": [
+          {
+            "guideEntryRenderer": {
+              "navigationEndpoint": {
+                "clickTrackingParams": "CAsQtSwYACITCJquiprkl4sDFXSY5QcdUmQoYw==",
+                "searchEndpoint": {
+                  "query": ""
+                }
+              },
+              "icon": {
+                "iconType": "SEARCH"
+              },
+              "trackingParams": "CAsQtSwYACITCJquiprkl4sDFXSY5QcdUmQoYw==",
+              "formattedTitle": {
+                "simpleText": "Search"
+              }
+            }
+          },
+          {
+            "guideEntryRenderer": {
+              "navigationEndpoint": {
+                "clickTrackingParams": "CAoQtSwYASITCJquiprkl4sDFXSY5QcdUmQoYw==",
+                "browseEndpoint": {
+                  "browseId": "FEtopics"
+                }
+              },
+              "icon": {
+                "iconType": "WHAT_TO_WATCH"
+              },
+              "trackingParams": "CAoQtSwYASITCJquiprkl4sDFXSY5QcdUmQoYw==",
+              "formattedTitle": {
+                "simpleText": "Home"
+              }
+            }
+          },
+          {
+            "guideEntryRenderer": {
+              "navigationEndpoint": {
+                "clickTrackingParams": "CAkQtSwYAiITCJquiprkl4sDFXSY5QcdUmQoYw==",
+                "browseEndpoint": {
+                  "browseId": "FEtopics_gaming"
+                }
+              },
+              "icon": {
+                "iconType": "GAMING"
+              },
+              "trackingParams": "CAkQtSwYAiITCJquiprkl4sDFXSY5QcdUmQoYw==",
+              "formattedTitle": {
+                "simpleText": "Gaming"
+              }
+            }
+          },
+          {
+            "guideEntryRenderer": {
+              "navigationEndpoint": {
+                "clickTrackingParams": "CAgQnOQDGAMiEwiaroqa5JeLAxV0mOUHHVJkKGM=",
+                "browseEndpoint": {
+                  "browseId": "FEtopics_movies"
+                }
+              },
+              "icon": {
+                "iconType": "CLAPPERBOARD"
+              },
+              "trackingParams": "CAgQnOQDGAMiEwiaroqa5JeLAxV0mOUHHVJkKGM=",
+              "formattedTitle": {
+                "simpleText": "Movies & TV"
+              }
+            }
+          },
+          {
+            "guideEntryRenderer": {
+              "navigationEndpoint": {
+                "clickTrackingParams": "CAcQtSwYBCITCJquiprkl4sDFXSY5QcdUmQoYw==",
+                "browseEndpoint": {
+                  "browseId": "FEtopics_music"
+                }
+              },
+              "icon": {
+                "iconType": "YOUTUBE_MUSIC"
+              },
+              "trackingParams": "CAcQtSwYBCITCJquiprkl4sDFXSY5QcdUmQoYw==",
+              "formattedTitle": {
+                "simpleText": "Music"
+              }
+            }
+          },
+          {
+            "guideEntryRenderer": {
+              "navigationEndpoint": {
+                "clickTrackingParams": "CAYQtSwYBSITCJquiprkl4sDFXSY5QcdUmQoYw==",
+                "browseEndpoint": {
+                  "browseId": "FElibrary"
+                }
+              },
+              "icon": {
+                "iconType": "TAB_LIBRARY"
+              },
+              "trackingParams": "CAYQtSwYBSITCJquiprkl4sDFXSY5QcdUmQoYw==",
+              "formattedTitle": {
+                "simpleText": "Library"
+              }
+            }
+          },
+          {
+            "guideEntryRenderer": {
+              "navigationEndpoint": {
+                "clickTrackingParams": "CAUQtSwYBiITCJquiprkl4sDFXSY5QcdUmQoYw==",
+                "browseEndpoint": {
+                  "browseId": "FEsubscriptions"
+                }
+              },
+              "icon": {
+                "iconType": "SUBSCRIPTIONS"
+              },
+              "trackingParams": "CAUQtSwYBiITCJquiprkl4sDFXSY5QcdUmQoYw==",
+              "formattedTitle": {
+                "simpleText": "Subscriptions"
+              }
+            }
+          },
+          {
+            "guideEntryRenderer": {
+              "navigationEndpoint": {
+                "clickTrackingParams": "CAQQtSwYByITCJquiprkl4sDFXSY5QcdUmQoYw==",
+                "browseEndpoint": {
+                  "browseId": "FEtopics_more",
+                  "params": "ugdbClkKDUZFdG9waWNzX21vcmUSDwoNRkV0b3BpY3NfbmV3cxIPCg1GRXRvcGljc19saXZlEhEKD0ZFdG9waWNzX3Nwb3J0cxITChFGRXRvcGljc19wb2RjYXN0cw%3D%3D"
+                }
+              },
+              "icon": {
+                "iconType": "TAB_MORE"
+              },
+              "trackingParams": "CAQQtSwYByITCJquiprkl4sDFXSY5QcdUmQoYw==",
+              "formattedTitle": {
+                "simpleText": "More"
+              }
+            }
+          }
+        ],
+        "trackingParams": "CAMQ5isYASITCJquiprkl4sDFXSY5QcdUmQoYw=="
+      }
+    }
+  ],
+  "trackingParams": "CAAQumkiEwiaroqa5JeLAxV0mOUHHVJkKGM=",
+  "footer": {
+    "guideSectionRenderer": {
+      "items": [
+        {
+          "guideEntryRenderer": {
+            "navigationEndpoint": {
+              "clickTrackingParams": "CAIQtSwYACITCJquiprkl4sDFXSY5QcdUmQoYw==",
+              "applicationSettingsEndpoint": {
+                "hack": true
+              }
+            },
+            "icon": {
+              "iconType": "SETTINGS"
+            },
+            "trackingParams": "CAIQtSwYACITCJquiprkl4sDFXSY5QcdUmQoYw==",
+            "formattedTitle": {
+              "simpleText": "Settings"
+            }
+          }
+        }
+      ],
+      "trackingParams": "CAEQ5isiEwiaroqa5JeLAxV0mOUHHVJkKGM="
+    }
+  }
+}

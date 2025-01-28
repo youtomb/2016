@@ -94,7 +94,7 @@ Progress Report
     Status: The Browse API (which is what channels use and the homepage and such)
     Next Steps: Work on getting the v7 formated json to work on v5.
 
-4. Watch - 60% Done
+4. Watch - 65% Done
 
     Status: Got to use a custom /get_video_info, and prase it.
     Next Steps: Format it properly and add the other metadata it needs.
@@ -104,7 +104,7 @@ Progress Report
     Status: Pairing functionality has not been started.
     Next Steps: Fixing pairing features with the TV app.
 
-6. Sign In - 50% Done
+6. Sign In - 65% Done
 
     Status: Implemented /o/oauth2/code and it properly grabs the oauth code or whatever it is calle, and Implemented /o/oauth2/token!!
     Next Steps: Make it so the token can request the token more than 5 times (rn you have to be fast), do all the V3 urls.
@@ -116,9 +116,9 @@ Progress Report
 
 8. Other
 
-- Get it to load the background on homescreen.
+-̶ ̶G̶e̶t̶ ̶i̶t̶ ̶t̶o̶ ̶l̶o̶a̶d̶ ̶t̶h̶e̶ ̶b̶a̶c̶k̶g̶r̶o̶u̶n̶d̶ ̶o̶n̶ ̶h̶o̶m̶e̶s̶c̶r̶e̶e̶n̶.̶
 
-- Make live.js work better (it sometimes causes issues with the guide, however it isn't the guides fault.)
+ ̶-̶ ̶M̶a̶k̶e̶ ̶l̶i̶v̶e̶.̶j̶s̶ ̶w̶o̶r̶k̶ ̶b̶e̶t̶t̶e̶r̶ ̶(̶i̶t̶ ̶s̶o̶m̶e̶t̶i̶m̶e̶s̶ ̶c̶a̶u̶s̶e̶s̶ ̶i̶s̶s̶u̶e̶s̶ ̶w̶i̶t̶h̶ ̶t̶h̶e̶ ̶g̶u̶i̶d̶e̶,̶ ̶h̶o̶w̶e̶v̶e̶r̶ ̶i̶t̶ ̶i̶s̶n̶'̶t̶ ̶t̶h̶e̶ ̶g̶u̶i̶d̶e̶s̶ ̶f̶a̶u̶l̶t̶.̶)̶
 
 - Support other versions of YouTube TV
 

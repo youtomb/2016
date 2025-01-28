@@ -19922,26 +19922,7 @@ if (!self.__WB_pmw) {
       function vq() {}
 
       function wq() {
-          try {
-              var a;
-              try {
-                  var b = n("yt.www.ads.biscotti.getId_"),
-                      c;
-                  b ? c = b() : (rq || (rq = qq("http://web.archive.org/web/20160228021433/http://googleads.g.doubleclick.net/pagead/id", {
-                      format: "RAW",
-                      method: "GET",
-                      timeout: 5E3,
-                      withCredentials: !0
-                  }).then(sq).AV(uq)), c = rq);
-                  a = c
-              } catch (e) {
-                  a = wm(e)
-              }
-              a.then(xq, vq);
-              aq(wq, 18E5)
-          } catch (e) {
-              cq(e)
-          }
+
       }
 
       function xq(a) {
@@ -20459,27 +20440,64 @@ if (!self.__WB_pmw) {
       };
 
       d.Eu = function(a) {
-          a = {
-              client_id: this.Zj(),
-              client_secret: this.Wn(),
-              refresh_token: a,
-              grant_type: "refresh_token"
-          };
-          a = new cg("POST", "/o/oauth2/token", null, a);
-          var b = this.B();
-          b.Ed(x(this.ph, this));
-          b.Ef(x(this.qj, this));
-          b.Pb(a)
-      };
-      d.ph = function(a) {
-          this.l && (this.l = !1, this.w++);
-          var b = a.access_token;
-          a = Math.round(.9 * a.expires_in);
-          this.CR(b, a);
-          this.mt();
-          this.h = this.g.setTimeout(x(this.OC, this), 1E3 * a);
-          this.Rw(b)
-      };
+        // Log the input argument for debugging purposes
+        console.log('d.Eu called with:', a);
+    
+        a = {
+            client_id: this.Zj(),
+            client_secret: this.Wn(),
+            refresh_token: a,
+            grant_type: "refresh_token"
+        };
+    
+        // Log the constructed payload
+        console.log('d.Eu payload:', a);
+    
+        a = new cg("POST", "/o/oauth2/token", null, a);
+    
+        var b = this.B();
+    
+        // Log the object B
+        console.log('d.Eu B object:', b);
+    
+        b.Ed(x(this.ph, this));
+        b.Ef(x(this.qj, this));
+    
+        // Log the request to be sent
+        console.log('Sending request with:', a);
+        
+        b.Pb(a);
+    };
+    
+    d.ph = function(a) {
+        // Log the input argument for debugging purposes
+        console.log('d.ph called with:', a);
+    
+        if (this.l) {
+            this.l = !1;
+            this.w++;
+        }
+    
+        // Log the access_token and expiration details
+        var b = a.access_token;
+        a = Math.round(0.9 * a.expires_in);
+        
+        console.log('Access token:', b);
+        console.log('Expires in (adjusted):', a);
+    
+        this.CR(b, a);
+        this.mt();
+    
+        // Log the setTimeout setup
+        console.log('Setting timeout for', 1000 * a, 'ms');
+    
+        this.h = this.g.setTimeout(x(this.OC, this), 1000 * a);
+    
+        // Log the call to Rw
+        console.log('Calling Rw with access token:', b);
+        this.Rw(b);
+    };
+    
       d.Su = function() {
           -1 != this.h && (this.g.clearTimeout(this.h), this.OC())
       };
@@ -20560,9 +20578,9 @@ if (!self.__WB_pmw) {
         if ("authorization_pending" == f || g) {
             // If 'slow_down', multiply the retry delay (b) by 2 for exponential backoff
             if (g) {
-                b *= 2; // Exponentially increase the delay
+                b *= 1; // Exponentially increase the delay
             }
-    
+            console.log("Retrying request with delay...");
             // Use setTimeout to retry the request after the delay
             this.ea = this.g.setTimeout(x(function() {
                 this.ky(a, b, c);  // Retry the token request
@@ -20576,7 +20594,7 @@ if (!self.__WB_pmw) {
     
         } else {
           
-            b *= 2;
+            b *= 1;
 
             console.log("Retrying request with delay...");
             this.ea = this.g.setTimeout(x(function() {
@@ -21760,33 +21778,18 @@ if (!self.__WB_pmw) {
       C(er, F);
       d = er.prototype;
       d.ZW = function(a) {
-          this.i.f() ? a() : (this.h = a, this.g || this.cV())
+          this.i.f() ? a() : (this.cV())
       };
 
       d.cV = function() {
-        this.g = !0;  // Sets this.g to true
-        var a = "http://localhost:8090/assets/tv-player.js";  // Asset URL
-        
-        // If this.j.px is truthy, log the message
-        if (this.j.px) {
-            console.log("Loading YouTube Player: " + a);  // Logs URL where the player is being loaded from
-        }
-    
-        // Log a message when ZC is called with "pljs_rq"
-        console.log("Calling ZC with: pljs_rq");
-        this.ZC("pljs_rq");
-    
-        // Log the URL that will be requested
-        console.log("Requesting assets from: " + a);
-        
-        // Success callback
-        var successCallback = Yd(x(this.yQ, this));  
-        console.log("Success callback called:", successCallback);  // Logs the success callback
-    
-        // Error callback
-        var errorCallback = yh(x(this.Vx, this));
-        console.log("Error callback called:", errorCallback);  // Logs the error callback
-    };
+          this.g = !0;
+          var a = this.R.environment.player_url;
+          this.j.px && console.log("Loading YouTube Player: " + a);
+          this.ZC("pljs_rq");
+          this.o(a, {
+              timeout: 3E4
+          }).Yd(x(this.yQ, this)).yh(x(this.Vx, this))
+      };
     
       d.ZC = function(a) {
           this.l.ob(Xb, a)
@@ -22198,24 +22201,48 @@ if (!self.__WB_pmw) {
           this.S.h = a;
           this.bD()
       };
+      
       d.bD = function() {
-          this.stop();
-          this.pd(x(function() {
-              this.i = !1;
-              this.J("getting-token");
-              this.cb.hc(x(function(a) {
-                  this.i = !0;
-                  this.mn();
-                  a = this.S.K_(a);
-                  this.G("ld_vid_bpv");
-                  this.S.df ? this.f.cueVideoByPlayerVars(a) : this.f.loadVideoByPlayerVars(a);
-                  2 == this.h.A.length && this.f.setPlaybackQualityRange(this.h.A[0], this.h.A[1]);
-                  this.J("video:changed");
-                  this.sx();
-                  this.Gn()
-              }, this))
-          }, this))
-      };
+        console.log("Stopping current process");
+        this.stop();
+    
+        console.log("Fetching token...");
+        this.pd(x(function() {
+            this.i = !1;
+            this.J("getting-token");
+            console.log("Requesting token...");
+    
+            this.cb.hc(x(function(a) {
+                console.log("Token received:", a);
+                this.i = !0;
+                this.mn();
+                
+                a = this.S.K_(a);
+                console.log("Processed token:", next);
+                
+                this.G("ld_vid_bpv");
+    
+                // Log video loading method
+                if (this.S.df) {
+                    console.log("Cue video by player vars:", a);
+                    this.f.cueVideoByPlayerVars(a);
+                } else {
+                    console.log("Load video by player vars:", a);
+                    this.f.loadVideoByPlayerVars(a);
+                }
+    
+                if (2 == this.h.A.length) {
+                    console.log("Setting playback quality range:", this.h.A[0], this.h.A[1]);
+                    this.f.setPlaybackQualityRange(this.h.A[0], this.h.A[1]);
+                }
+    
+                this.J("video:changed");
+                this.sx();
+                this.Gn();
+            }, this));
+        }, this));
+    };
+    
       d.gD = function() {
           var a = this.Fb();
           a && this.cb.hc(x(function(b) {
@@ -22302,9 +22329,7 @@ if (!self.__WB_pmw) {
             a.getAvailableAudioTracks = function() {
                 // Mocking the available audio tracks for demonstration
                 return [
-                    { id: 1, language: 'en', label: 'English', kind: 'audio', isDefault: true },
-                    { id: 2, language: 'es', label: 'Spanish', kind: 'audio', isDefault: false },
-                    { id: 3, language: 'fr', label: 'French', kind: 'audio', isDefault: false }
+                 
                 ];
             };
     
@@ -24227,6 +24252,7 @@ if (!self.__WB_pmw) {
           f.sm(b);
           f.rm(e, c);
           return x(f.qm, f)
+
       };
       Pr.prototype.h = function(a, b) {
           a(this.f(b))
@@ -27111,41 +27137,96 @@ if (!self.__WB_pmw) {
           null != this.ef && (h.clearTimeout(this.ef), this.ef = null)
       };
       d.pi = function(a) {
-          this.f.qa("Request complete");
-          var b;
-          if (this.pb == a) this.Ej(), this.pb = null, b = 2;
-          else if (this.Db == a) this.Db = null, b = 1;
-          else return;
-          this.Pd = a.tk();
-          if (0 != this.g)
-              if (a.Qv()) 1 == b ? (b = a.po() ? a.po().length : 0, a = B() - a.so(), zt.dispatchEvent(new Bt(zt, b, a, this.fe)), this.Ln(), this.RL(), this.i.length = 0) : this.uu();
-              else {
-                  var c = a.iw();
-                  if (3 == c || 7 == c || 0 == c && 0 < this.Pd) this.f.qa("Not retrying due to error type");
-                  else {
-                      this.f.qa("Maybe retrying, last error: " + nt(c, this.Pd));
-                      if (1 == b && this.HP(a) || 2 == b && this.tp()) return;
-                      this.f.qa("Exceeded max number of retries")
-                  }
-                  this.f.qa("Error: HTTP request failed");
-                  switch (c) {
-                      case 1:
-                          this.zc(5);
-                          break;
-                      case 4:
-                          this.zc(10);
-                          break;
-                      case 3:
-                          this.zc(6);
-                          break;
-                      case 7:
-                          this.zc(12);
-                          break;
-                      default:
-                          this.zc(2)
-                  }
-              }
-      };
+        // Log the start of the function call with input argument 'a'
+        console.log('d.pi called with:', a);
+    
+        this.f.qa("Request complete");
+    
+        var b;
+        // Log the condition checks
+        if (this.pb == a) {
+            console.log('Condition met: this.pb == a');
+            this.Ej();
+            this.pb = null;
+            b = 2;
+        }
+        else if (this.Db == a) {
+            console.log('Condition met: this.Db == a');
+            this.Db = null;
+            b = 1;
+        }
+        else {
+            console.log('No matching condition for a');
+            return;
+        }
+    
+        // Log the value of Pd after it's set
+        this.Pd = a.tk();
+        console.log('Pd set to:', this.Pd);
+    
+        if (0 != this.g) {
+            if (a.Qv()) {
+                // Log when Qv is true
+                console.log('a.Qv() is true');
+    
+                if (1 == b) {
+                    b = a.po() ? a.po().length : 0;
+                    a = B() - a.so();
+                    console.log('Dispatching Bt event with values:', b, a);
+                    zt.dispatchEvent(new Bt(zt, b, a, this.fe));
+                    this.Ln();
+                    this.RL();
+                    this.i.length = 0;
+                }
+                else {
+                    console.log('Calling uu() as Qv is true but b != 1');
+                    this.uu();
+                }
+            } else {
+                // Log when Qv is false
+                console.log('a.Qv() is false');
+                var c = a.iw();
+                console.log('Error type code:', c);
+    
+                if (3 == c || 7 == c || 0 == c && 0 < this.Pd) {
+                    this.f.qa("Not retrying due to error type");
+                }
+                else {
+                    this.f.qa("Maybe retrying, last error: " + nt(c, this.Pd));
+    
+                    if (1 == b && this.HP(a) || 2 == b && this.tp()) {
+                        console.log('Returning as max retry conditions met');
+                        return;
+                    }
+                    this.f.qa("Exceeded max number of retries");
+                }
+    
+                this.f.qa("Error: HTTP request failed");
+                switch (c) {
+                    case 1:
+                        console.log('Error type 1: Calling zc(15)');
+                        this.zc(15);
+                        break;
+                    case 4:
+                        console.log('Error type 4: Calling zc(10)');
+                        this.zc(10);
+                        break;
+                    case 3:
+                        console.log('Error type 3: Calling zc(6)');
+                        this.zc(6);
+                        break;
+                    case 7:
+                        console.log('Error type 7: Calling zc(12)');
+                        this.zc(12);
+                        break;
+                    default:
+                        console.log('Default error type: Calling zc(2)');
+                        this.zc(2);
+                }
+            }
+        }
+    };
+    
       d.Iv = function(a) {
           var b = this.Ts + Math.floor(Math.random() * this.iz);
           this.dw() || (this.f.qa("Inactive channel"), b *= 2);
@@ -33570,7 +33651,7 @@ if (!self.__WB_pmw) {
           this.f = this.g.setTimeout(x(this.B, this), this.o);
           this.h = [];
           b = f({
-              callsPerSecond: 5,
+              callsPerSecond: 15,
               handler: x(this.l, this),
               opt_filterFunction: g
           });
@@ -35224,7 +35305,7 @@ if (!self.__WB_pmw) {
           a.register("fresh_transport_controls.html", '<div class="fresh-transport-controls">  <div id="storyboard" class="$storyboard" data-hidden-by-default="true"></div>  <div id="fresh-rows-container">    <div class="more-row">      <div id="transport-more-button" class="$button"          data-model="{{moreOptionsButtonModel}}"></div>      <div id="transport-more-options-list" class="$list"          data-hidden-by-default="true"          data-model="{{moreOptionsListModel}}"></div>    </div>    <div class="main-row">      <div id="play-pause-button" class="$toggleButton"          data-model="{{playPauseButtonModel}}"></div>      <div id="player-time-elapsed" class="$elapsed-time"></div>      <div id="progress-bar" class="$progress-bar"></div>      <div class="player-time-total">{{totalTime}}</div>      <div class="live-indicator">[[Live|Label indicating that this is a live video.]]</div>    </div>  </div>  <div class="seeking-icon icon-player-rew"></div></div>');
           a.register("fresh_transport_controls_no_storyboard.html", '<div class="fresh-transport-controls">  <div id="fresh-rows-container">    <div class="more-row">      <div id="transport-more-button" class="$button"          data-model="{{moreOptionsButtonModel}}"></div>      <div id="transport-more-options-list" class="$list"          data-hidden-by-default="true"          data-model="{{moreOptionsListModel}}"></div>    </div>    <div class="main-row">      <div id="play-pause-button" class="$toggleButton"          data-model="{{playPauseButtonModel}}"></div>      <div id="player-time-elapsed" class="$elapsed-time"></div>      <div id="progress-bar" class="$progress-bar"></div>      <div class="player-time-total">{{totalTime}}</div>      <div class="live-indicator">[[Live|Label indicating that this is a live video.]]</div>    </div>  </div>  <div class="seeking-icon icon-player-rew"></div></div>');
           a.register("grid.html", '<div>  <div class="$list" data-catch-mouse-move="{{catchRowMouseMove}}" data-item-factory="{{itemFactory}}" data-is-vertical="false" data-loop="{{loopRows}}" data-consume-events="{{consumeEvents}}" data-rate-limit="{{rateLimit}}"></div></div>');
-          a.register("guide.html", '<div>  <div id="user-info-background">    <div class="user-info-container">      <div id="guide-user-avatar" rebound-style="background-image: url({{userAvatar}})"></div>      <div class="guide-user-text">        <div class="guide-user-name">{{userName}}</div>        <div class="guide-user-unlimited">{{unlimitedStatus}}</div>      </div>    </div>  </div>  <div class="collapsed-guide"></div>  <div class="guide-carousel-background"></div>  <div class="collapsed-guide-icons">    <div class="collapsed-guide-icon icon-guide-what-to-watch"></div>    <div class="collapsed-guide-icon icon-guide-my-subs"></div>    <div class="collapsed-guide-icon icon-popular"></div>    <div class="collapsed-guide-icon icon-music"></div>    <div class="collapsed-guide-icon icon-ellipsis"></div>  </div>  <div id="error-message">[[Sorry, the rest of this Guide isn\u2019t available right now.|An error message displayed when the guide cannot be fully displayed.]]</div></div>');
+          a.register("guide.html", '<div>  <div id="user-info-background">    <div class="user-info-container">      <div id="guide-user-avatar" rebound-style="background-image: url({http://localhost:8090/user/user_pfp})" style="background-image: url(http://localhost:8090/user/user_pfp);"></div>      <div class="guide-user-text">        <div class="guide-user-name">{{userName}}</div>        <div class="guide-user-unlimited">{{unlimitedStatus}}</div>      </div>    </div>  </div>  <div class="collapsed-guide"></div>  <div class="guide-carousel-background"></div>  <div class="collapsed-guide-icons">    <div class="collapsed-guide-icon icon-guide-what-to-watch"></div>    <div class="collapsed-guide-icon icon-guide-my-subs"></div>    <div class="collapsed-guide-icon icon-popular"></div>    <div class="collapsed-guide-icon icon-music"></div>    <div class="collapsed-guide-icon icon-ellipsis"></div>  </div>  <div id="error-message">[[Sorry, the rest of this Guide isn\u2019t available right now.|An error message displayed when the guide cannot be fully displayed.]]</div></div>');
           a.register("guide_button.html", '<div>  <div class="guide-button-icon {{model.iconClass}}">    <div class="$image" data-image-url="{{model.iconUrl}}"></div>  </div>  <div class="guide-button-title">{{model.label}}</div></div>');
           a.register("horizontal_list.html", '<div>  <div class="no-content-message">    <div class="text">{{noContentMessage}}</div>  </div>  <div class="content"></div></div>');
           a.register("icon_button.html", '<div>  <span class="icon {{getIconClass()}}"></span>  <span class="label">{{model.label}}</span></div>');

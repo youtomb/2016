@@ -12,7 +12,7 @@ const { fetchNextData } = require('./next_api');
 const { handleGetVideoInfo } = require('./get_video_info');
 
 const bodyParser = require('body-parser');
-const oauthRouter = require('./oauth_api');
+const oauthRouter = require('./oauth_api_v3_api.js');
 
 const app = express();
 const port = 8090;
@@ -208,13 +208,7 @@ app.post('/api/guide', handleGuideRequest);
 
 
 app.post('/api/next', async (req, res) => {
-    const { params, videoId } = req.body;
-
-    if (typeof params !== 'string' || !params.trim()) {
-        return res.status(400).json({
-            error: '"params" is required and must be a non-empty string.'
-        });
-    }
+    const {videoId } = req.body;
 
     if (typeof videoId !== 'string' || !videoId.trim()) {
         return res.status(400).json({
@@ -223,7 +217,7 @@ app.post('/api/next', async (req, res) => {
     }
 
     try {
-        const nextData = await fetchNextData(params, videoId);
+        const nextData = await fetchNextData(videoId);
 
         res.json(nextData);
     } catch (error) {

@@ -130,7 +130,8 @@
                 "innertube_api_version": "v1",
                 "apiary_host_firstparty": "",
                 "innertube_context_client_version": "1.20160229",
-                "player_error_log_fraction": "1.0"
+                "player_error_log_fraction": "1.0",
+                "devjs": "true"
             },
             "url": "https:\/\/web.archive.org\/web\/20160301042623\/https:\/\/s.ytimg.com\/yts\/swfbin\/player-vflWp-Ns-\/watch_as3.swf",
             "messages": {
@@ -147,7 +148,7 @@
             "params": {
                 "allowfullscreen": "true",
                 "allowscriptaccess": "always",
-                "bgcolor": "#000000"
+                "bgcolor": "#fffff"
             },
             "attrs": {
                 "id": "movie_player"
@@ -170,7 +171,7 @@
                 "watchedSearchBadge": false,
                 "additionalTopics": false,
                 "voiceSearch": true,
-                "focusVideos": false,
+                "focusVideos": true,
                 "nimblePlayAllShelf": 0,
                 "mdxEnablePostplayAutoplay": true,
                 "atomSubscriptionsRecentThreshold": 0,
@@ -187,7 +188,7 @@
                 "delayInstantSearch": 1,
                 "bentoRetentionPlayAll": false,
                 "samsungSeek": false,
-                "showTopicsPage": false,
+                "showTopicsPage": true,
                 "useYoutubeiDomain": false,
                 "twoRowSearchOrder": 1,
                 "newMdxSkipButtonCast": false,
@@ -196,7 +197,7 @@
                 "freshTransport": false,
                 "mdxIgnoreFlings": false,
                 "noStoryboard": true,
-                "hdBadging": false
+                "hdBadging": true
             },
             "xsrf_token": "QUFFLUhqa0EwT3N5dVcwX3ZrdGFteTZQSHhKeDVJcTN0QXxBQ3Jtc0tualJ1dTBIS2hEUGxVbFdhUjlqNzhTWmpPZXBoVmI1bEN5eG1WckVsUGhid2Jib0xXb2VHXzhjd0U3ZUlvQ20zaGREQVhSLWkyQ2hPejR6Z3A4dUZQZ3k2ck9welBBeW9xMXlDZVpuMVg3ekQ3QTZnaExwRy1Wc0xzTUJkRGxxOHZVM2xIYmxSSWs0UjNpM1VTNkhRQXN3bm9NYkE=",
             "varz": {
@@ -220,16 +221,17 @@
                 "tv_4k_house_channel": true
             },
             "tv_css": "http://localhost:8090/assets/app-prod.css",
+            'player_url': "http://localhost:8090/assets/tv-player.js",
             "background": "",
             "server_ua": "Mozilla\/5.0 (compatible; heritrix\/3.3.0-SNAPSHOT-20140702-2247 +http:\/\/archive.org\/details\/archive.org_bot),gzip(gfe)",
             "theme": "cl",
-        
+   
         };
         window['loader'] = "live";
         window['devjs'] = false;
         window['appRoot'] = "/assets/";
         ytcfg.set("EXPERIMENT_FLAGS", {});
-        ytcfg.set("CORS_HEADER_ADD_ORIGIN", false);
+        ytcfg.set("CORS_HEADER_ADD_ORIGIN", true);
     </script>
     <script src="assets/live.js"></script>
 
