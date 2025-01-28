@@ -131,8 +131,6 @@ async function getYouTubeChannelData() {
     }
 }
 
-getYouTubeChannelData().then(data => console.log(data)).catch(error => console.error(error));
-
 const oauthRouter = (app) => {
 
     app.post('/o/oauth2/device/code', async (req, res) => {
