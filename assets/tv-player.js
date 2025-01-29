@@ -13913,15 +13913,43 @@ if (!self.__WB_pmw) {
       g.pause = function() {
           this.b.pause()
       };
-      g.play = function() {
-        var a = this.b;
-        a.muted = true;  // Mute the media
-        a.play().then(function() {
-            // Media played successfully
-        }).catch(function(error) {
-            console.error('Play failed:', error);
-        });
-    };
+
+    g.play = function() {
+    var a = this.b;
+
+    // Log the source and type being used
+    console.log('Media source:', a.src);
+    console.log('Media type:', a.type);
+
+    // If there are multiple sources, check each one
+    if (a.getElementsByTagName('source').length > 0) {
+        var sources = a.getElementsByTagName('source');
+        for (var i = 0; i < sources.length; i++) {
+            console.log('Source ' + (i+1) + ':', sources[i].src, 'Type:', sources[i].type);
+        }
+    }
+
+    // Ensure the media is loaded before playing
+    a.load();
+
+    // Mute and attempt to play the media
+    a.muted = true;  // Mute the media
+
+    a.play().then(function() {
+        // Media played successfully
+        console.log('Media played successfully');
+    }).catch(function(error) {
+        // Handle errors and log detailed message
+        console.error('Play failed:', error);
+
+        // If the error is related to unsupported format
+        if (error.name === 'NotSupportedError') {
+            console.error('The media format is not supported. Try a different format.');
+        }
+    });
+};
+
+    
     
       g.Ha = function() {
           return this.b.error ? this.b.error.code : null
