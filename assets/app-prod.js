@@ -22244,7 +22244,6 @@ if (!self.__WB_pmw) {
           this.S.h = a;
           this.bD()
       };
-      
       d.bD = function() {
         console.log("Stopping current process");
         this.stop();
@@ -22262,6 +22261,46 @@ if (!self.__WB_pmw) {
                 
                 a = this.S.K_(a);
                 console.log("Processed token:", next);
+                
+                this.G("ld_vid_bpv");
+    
+                // Log video loading method
+                if (this.S.df) {
+                    console.log("Cue video by player vars:", a);
+                    this.f.cueVideoByPlayerVars(a);
+                } else {
+                    console.log("Load video by player vars:", a);
+                    this.f.loadVideoByPlayerVars(a);
+                }
+    
+                if (2 == this.h.A.length) {
+                    console.log("Setting playback quality range:", this.h.A[0], this.h.A[1]);
+                    this.f.setPlaybackQualityRange(this.h.A[0], this.h.A[1]);
+                }
+    
+                this.J("video:changed");
+                this.sx();
+                this.Gn();
+            }, this));
+        }, this));
+    };
+        d.bD = function() {
+        console.log("Stopping current process");
+        this.stop();
+    
+        console.log("Fetching token...");
+        this.pd(x(function() {
+            this.i = !1;
+            this.J("getting-token");
+            console.log("Requesting token...");
+    
+            this.cb.hc(x(function(a) {
+                console.log("Token received:", a);
+                this.i = !0;
+                this.mn();
+                
+                a = this.S.K_(a);
+                //console.log("Processed token:", next);
                 
                 this.G("ld_vid_bpv");
     
@@ -22365,35 +22404,9 @@ if (!self.__WB_pmw) {
       d.F0 = function() {
         var a = this.Fb(),
             b = [];
-    
-        // Check if 'a' exists
-        if (a) {
-            // Define the getAvailableAudioTracks method directly
-            a.getAvailableAudioTracks = function() {
-                // Mocking the available audio tracks for demonstration
-                return [
-                 
-                ];
-            };
-    
-            // Now, you can use the newly defined getAvailableAudioTracks method
-            const audioTracks = a.getAvailableAudioTracks();
-            console.log("Available Audio Tracks Data:", audioTracks);  // Log the data
-    
-            // Optionally log individual tracks
-            audioTracks.forEach((track, index) => {
-                console.log(`Track ${index + 1}:`, track);
-                console.log(`  ID: ${track.id}, Language: ${track.language}, Label: ${track.label}`);
-            });
-    
-            b = audioTracks;
-        } else {
-            console.log("No data received from Fb() or method not present.");
-        }
-    
-        return b;
-    };
-    
+        a && (b = a.getAvailableAudioTracks());
+        return b
+      };
 
       d.E0 = function() {
        

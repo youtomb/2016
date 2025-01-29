@@ -28,6 +28,21 @@ A project to revive the old 2015-2016 YouTubeTV HTML5 Web App.
 
 - Venus5687 found a sound effect
 
+## Before Posting An Issue!
+
+- Do not hide your damn local ip adress, I have no idea why SO many people
+do not know that a 192.168.1.blank or equivlient is not your public IP. I
+cannot help you if you're hiding part of your screen.
+
+- Do not report an issue if you modified the port or adress you're hosting this on
+, you're on your own if you wanna host it on a different port.
+
+## If You're Going To Host This
+
+PLEASE disable Oauth, so just delete refrences to it in server.js, why 
+because this is designed for someone to host themeselves and only themeselves
+so I save your token/refresh token in a .json file.
+
 ## Why We Use "youtube-dl-exec"
 
 This is so we can get video urls, without having to deal with all the chiper bs you have

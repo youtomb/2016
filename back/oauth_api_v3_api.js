@@ -363,30 +363,28 @@ const oauthRouter = (app) => {
     });
     app.get('/user/user_pfp', async (req, res) => {
         try {
-            // Fetch YouTube channel data
+
             const channelData = await getYouTubeChannelData();
     
-            // Log the fetched channel data for inspection
             console.log('Fetched YouTube channel data:', JSON.stringify(channelData, null, 2));
     
-            // Recursive function to find the first thumbnail URL in the JSON response
             function findThumbnailUrl(obj) {
                 if (Array.isArray(obj)) {
                     for (let item of obj) {
                         const result = findThumbnailUrl(item);
                         if (result) {
-                            return result;  // Return the first found URL
+                            return result;  
                         }
                     }
                 } else if (typeof obj === 'object' && obj !== null) {
                     for (let key in obj) {
                         if (obj.hasOwnProperty(key)) {
                             if (key === 'url' && obj[key]) {
-                                return obj[key];  // Return the URL
+                                return obj[key];  
                             }
                             const result = findThumbnailUrl(obj[key]);
                             if (result) {
-                                return result;  // Return the first found URL
+                                return result;  
                             }
                         }
                     }

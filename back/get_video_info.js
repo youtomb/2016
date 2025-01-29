@@ -4,8 +4,8 @@ const youtubeDl = require('youtube-dl-exec');
 
 function handleGetVideoInfo(req, res) {
     const videoId = req.query.video_id;
-    const prettyPrint = req.query.prettyprint === 'true'; // Check for prettyprint
-    const unurlencode = req.query.unurlencode === 'true'; // Check for unurlencode
+    const prettyPrint = req.query.prettyprint === 'true';
+    const unurlencode = req.query.unurlencode === 'true';
 
     if (!videoId) {
         return res.status(400).send('Video ID is required');
@@ -35,7 +35,6 @@ function handleGetVideoInfo(req, res) {
         console.log('Video info logged to file:', logFilePath);
         if (output.formats && Array.isArray(output.formats)) {
             output.formats.forEach(format => {
-                // Skip formats with specific format_id values
                 const skipFormatIds = ["sb1", "sb2", "sb0"];
                 if (skipFormatIds.includes(format.format_id)) {
                     console.log('Skipping format with format_id:', format.format_id);
@@ -43,7 +42,6 @@ function handleGetVideoInfo(req, res) {
                 }
             
                 if (format.url && format.format_id) {
-                    // Dynamically determine the MIME type based on format properties
                     let mimeType;
                     if (format.vcodec && format.vcodec !== "none" && format.acodec && format.acodec !== "none") {
                         // Format has both video and audio
@@ -59,10 +57,8 @@ function handleGetVideoInfo(req, res) {
                         mimeType = `application/octet-stream`;
                     }
             
-                    // Log the determined MIME type for debugging purposes
                     console.log(`Determined MIME type for format_id ${format.format_id}: ${mimeType}`);
             
-                    // Create a new URLSearchParams object for adaptive formats
                     const urlParams = new URLSearchParams();
                     urlParams.append('url', format.url);
                     urlParams.append('itag', format.format_id);
@@ -74,16 +70,14 @@ function handleGetVideoInfo(req, res) {
                     urlParams.append('bitrate', format.tbr || 'unknown');
                     urlParams.append('type', mimeType);
             
-                    // Convert URLSearchParams into a URL-encoded string and push to adaptiveFmts
                     adaptiveFmts.push(urlParams.toString());
             
-                    // Construct the fmtList format (format_id/resolution/quality/...)
                     const width = format.width || "unknown";
                     const height = format.height || "unknown";
             
                     if (width === "unknown" || height === "unknown") {
                         console.log('Skipping format with unknown width or height:', format);
-                        return; // Skip this format
+                        return; 
                     }
             
                     if (format.format_id) {
@@ -105,13 +99,10 @@ function handleGetVideoInfo(req, res) {
             return res.status(404).send('No adaptive formats found');
         }
     
-        // Join the fmtList array into a single string, URL-encode it, and log it
         const fmtList = encodeURIComponent(fmtListArr.join(','));
         
-        // Join all adaptive formats into a single string for the response
         const adaptiveFmtsResponse = adaptiveFmts.join(',');
 
-        // Log adaptive_fmts for debugging purposes
         console.log('Constructed adaptive_fmts:', adaptiveFmtsResponse);
 
         console.log('Constructed fmt_list:', fmtList);
@@ -189,19 +180,12 @@ function handleGetVideoInfo(req, res) {
 
     const properties = videoInfo.trim().split("\n");
 
-    // Process each property and URL encode the value (but only if it's not already encoded)
     const encodedProperties = properties.map(prop => {
-        // Split by '=' to get the key and value
         const [key, value] = prop.split('=');
-
-        // Check if the value is already encoded
         const decodedValue = decodeURIComponent(value || '');
-        
-        // Encode only if it's not already URL-encoded
         return `${key}=${decodedValue !== value ? value : encodeURIComponent(value || '')}`;
     });
 
-    // Join the properties back together with '&' separator and remove spaces between values
     const encodedResponse = encodedProperties.join('&').replace(/\s+/g, '');
 
 

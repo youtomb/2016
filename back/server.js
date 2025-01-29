@@ -20,10 +20,35 @@ const port = 8090;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-corsAnywhere.createServer({
-    originWhitelist: [], 
-    removeHeaders: ['cookie', 'cookie2'], 
-}).listen(8070, 'localhost', () => {
+
+
+const server = corsAnywhere.createServer({
+    originWhitelist: ['http://localhost:8090', '*', '""', ''], 
+    removeHeaders: ['cookie', 'cookie2'],
+    handleInitialRequest: (req, res) => {
+        const origin = req.headers.origin;  
+
+        if (origin === 'http://localhost:8090' || origin === '*') {
+            res.setHeader('Access-Control-Allow-Origin', origin);  
+        } else {
+            res.setHeader('Access-Control-Allow-Origin', '*'); 
+        }
+
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+        
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+        
+        if (req.method === 'OPTIONS') {
+            res.writeHead(204);
+            res.end();
+            return true; 
+        }
+        return false; 
+    }
+});
+
+
+server.listen(8070, 'localhost', () => {
     console.log('CORS Anywhere proxy running on http://localhost:8070');
 });
 
@@ -146,6 +171,38 @@ app.get('/device_204', async (req, res) => {
 });
 
 
+app.get('/api/stats/qoe', (req, res) => {
+    const qoeData = req.query; 
+    console.log('QoE Data received:', qoeData);
+
+    const { event, fmt, afmt, cpn, ei, el, docid, ns, fexp, html5, c, cver, cplayer, cbrand, cbr, cbrver, ctheme, cmodel, cnetwork, cos, cosver, cplatform, vps, cmt, afs, vfs, view, bwe, bh, vis } = qoeData;
+
+    if (!event || !fmt || !afmt || !cpn || !ei || !docid || !ns) {
+        return res.status(400).json({ error: 'Missing required fields' });
+    }
+
+    const logEntry = `
+    Event: ${event}, Format: ${fmt}, Audio Format: ${afmt}, CPN: ${cpn}, EI: ${ei}, EL: ${el}, DocID: ${docid}, 
+    NS: ${ns}, Exp: ${fexp}, HTML5: ${html5}, C: ${c}, CVer: ${cver}, CPlayer: ${cplayer}, CBrand: ${cbrand}, 
+    CBR: ${cbr}, CBRVer: ${cbrver}, CTheme: ${ctheme}, CModel: ${cmodel}, CNetwork: ${cnetwork}, COS: ${cos}, 
+    COSVer: ${cosver}, CPlatform: ${cplatform}, VPS: ${vps}, CMT: ${cmt}, AFS: ${afs}, VFS: ${vfs}, View: ${view}, 
+    BWE: ${bwe}, BH: ${bh}, VIS: ${vis}, Timestamp: ${new Date().toISOString()}
+    \n`;
+
+    const logFilePath = path.join(logsDir, 'qoe_report.txt');
+
+    fs.appendFile(logFilePath, logEntry, (err) => {
+        if (err) {
+            console.error('Error writing to log file:', err);
+            return res.status(500).json({ error: 'Failed to log data' });
+        }
+
+        res.status(200).json({
+            message: 'QoE data received and logged successfully',
+            data: qoeData
+        });
+    });
+});
 
 app.get('/api/browse', async (req, res) => {
     const { browseId } = req.query;  

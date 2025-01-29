@@ -6,15 +6,12 @@ async function fetchNextData(videoId) {
     const apiKey = 'AIzaSyDCU8hByM-4DrUqRUYnGn-3llEO78bcxq8';
     const apiUrl = `https://www.googleapis.com/youtubei/v1/next?key=${apiKey}`;
 
-    // Fixed 'params' string provided
     const params = "qgMCZGG6AwoI5tiC0qjb9sRrugMKCNPa26_4mbGDJboDCgjYjIz7k73C8X26AwsIsuTT3PDW45rJAboDCgj_neig0riToyG6AwsI4Ifex42A0rbBAboDCwiBv8K9jND2_LkBugMLCJ6Oxdqf5r_QugG6AwsIiLTcqYLIvozQAboDCgi54P_p4OqE13m6AwsIkNCS1LL";
 
-    // Ensure params is not empty or undefined
     if (!params || params.trim() === "") {
         throw new Error('"params" must be a non-empty string.');
     }
 
-    // Construct the postData with the fixed 'params' string
     const postData = {
         context: {
             client: {
