@@ -38,7 +38,7 @@ if (!self.__WB_pmw) {
             q = window.csp_nonce;
 
         window.label = h || b?.["default"] || "unknown";
-        var r = window.appRoot + window.label,
+        var r = "/2016/" + window.label,
             t,
             u = false,
             v = [];
