@@ -19,7 +19,7 @@ if (!self.__WB_pmw) {
     let frames = _____WB$wombat$assign$function_____("frames");
     let opener = _____WB$wombat$assign$function_____("opener");
 
-    window.labels = { 'default': '8adac3f2' };
+    window.labels = { 'default': '' };
 
     (function () {
         var b = window.labels;
