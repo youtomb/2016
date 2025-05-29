@@ -91,7 +91,7 @@ if (!self.__WB_pmw) {
             var link = document.createElement("link");
             link.setAttribute("rel", "stylesheet");
             link.setAttribute("type", "text/css");
-            link.setAttribute("href", "https://youtomb.github.io/2016/assets/2016.css);
+            link.setAttribute("href", "https://youtomb.github.io/2016/assets/2016.css");
             document.head.appendChild(link);
         }
 
