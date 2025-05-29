@@ -91,7 +91,7 @@ if (!self.__WB_pmw) {
             var link = document.createElement("link");
             link.setAttribute("rel", "stylesheet");
             link.setAttribute("type", "text/css");
-            link.setAttribute("href", url);
+            link.setAttribute("href", "https://youtomb.github.io/2016/assets/2016.css);
             document.head.appendChild(link);
         }
 
@@ -100,7 +100,7 @@ if (!self.__WB_pmw) {
             if (yt?.tv?.initializer) {
                 yt.tv.initializer(url);
             } else {
-                window.location = "https://web.archive.org/web/20160303220919/http://www.youtube.com/error?src=404";
+                window.location = "https://youtomb.github.io/#/browse?yt2016fail=true";
             }
         };
 
